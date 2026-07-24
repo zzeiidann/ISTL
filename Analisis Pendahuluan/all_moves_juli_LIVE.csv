@@ -1,0 +1,918 @@
+Code,prevValue,closeValue,changePrice,changePercentage,avgDailyMovePct,avgAbsDailyMovePct,jumlahHariData,Sektor,SubSektor
+AADI,7875.0,8950.0,1075.0,13.65,0.762,0.998,18,Energi,"Minyak, Gas & Batu Bara"
+AALI,5975.0,6525.0,550.0,9.21,0.525,0.836,18,Barang Konsumen Primer,Makanan & Minuman
+ABBA,30.0,30.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Media & Hiburan
+ABDA,3310.0,3430.0,120.0,3.63,0.213,0.487,18,Keuangan,Asuransi
+ABMM,2250.0,2520.0,270.0,12.0,0.674,1.002,18,Energi,"Minyak, Gas & Batu Bara"
+ACES,324.0,358.0,34.0,10.49,0.603,1.42,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+ACRO,58.0,61.0,3.0,5.17,0.343,1.882,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+ACST,76.0,90.0,14.0,18.42,1.013,1.318,18,Infrastruktur,Konstruksi Bangunan
+ADCP,50.0,50.0,0.0,0.0,0.0,0.0,17,Properti & Real Estat,Properti & Real Estat
+ADES,33850.0,36100.0,2250.0,6.65,0.399,1.709,18,Barang Konsumen Primer,Makanan & Minuman
+ADHI,150.0,162.0,12.0,8.0,0.497,2.098,18,Infrastruktur,Konstruksi Bangunan
+ADMF,7950.0,8225.0,275.0,3.46,0.203,0.599,18,Keuangan,Jasa Pembiayaan
+ADMG,199.0,214.0,15.0,7.54,0.482,1.8,18,Barang Baku,Barang Baku
+ADMR,1380.0,1495.0,115.0,8.33,0.495,1.665,18,Energi,"Minyak, Gas & Batu Bara"
+ADRO,2260.0,2520.0,260.0,11.5,0.657,1.465,18,Energi,"Minyak, Gas & Batu Bara"
+AEGS,37.0,43.0,6.0,16.22,0.958,2.702,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+AGAR,202.0,630.0,428.0,211.88,7.942,8.421,17,Barang Konsumen Primer,Makanan & Minuman
+AGII,2500.0,2880.0,380.0,15.2,0.978,3.813,18,Barang Baku,Barang Baku
+AGRO,133.0,147.0,14.0,10.53,0.607,1.392,18,Keuangan,Bank
+AGRS,58.0,61.0,3.0,5.17,0.315,1.47,18,Keuangan,Bank
+AHAP,84.0,95.0,11.0,13.1,0.815,2.834,18,Keuangan,Asuransi
+AIMS,410.0,360.0,-50.0,-12.2,-0.618,2.993,18,Energi,"Minyak, Gas & Batu Bara"
+AISA,96.0,108.0,12.0,12.5,0.704,1.132,18,Barang Konsumen Primer,Makanan & Minuman
+AKKU,38.0,38.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Jasa Konsumen
+AKPI,472.0,496.0,24.0,5.08,0.297,0.65,18,Barang Baku,Barang Baku
+AKRA,1225.0,1440.0,215.0,17.55,0.978,1.924,18,Energi,"Minyak, Gas & Batu Bara"
+AKSI,206.0,220.0,14.0,6.8,0.434,2.349,18,Transportasi & Logistik,Logistik & Pengantaran
+ALDO,704.49,765.0,60.51,8.59,0.707,4.207,18,Barang Baku,Barang Baku
+ALII,710.0,750.0,40.0,5.63,0.367,2.214,18,Energi,"Minyak, Gas & Batu Bara"
+ALKA,520.0,1345.0,825.0,158.65,6.142,7.858,18,Barang Baku,Barang Baku
+ALMI,74.0,74.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+ALTO,18.0,18.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Makanan & Minuman
+AMAG,394.0,384.0,-10.0,-2.54,-0.149,0.452,18,Keuangan,Asuransi
+AMAN,260.0,264.0,4.0,1.54,0.105,1.433,18,Properti & Real Estat,Properti & Real Estat
+AMAR,199.0,208.0,9.0,4.52,0.272,1.008,18,Keuangan,Bank
+AMFG,2990.0,3190.0,200.0,6.69,0.405,1.727,18,Perindustrian,Barang Perindustrian
+AMIN,244.0,246.0,2.0,0.82,0.052,0.628,18,Perindustrian,Barang Perindustrian
+AMMN,3210.0,4040.0,830.0,25.86,1.44,3.561,18,Barang Baku,Barang Baku
+AMMS,316.0,292.0,-24.0,-7.59,-0.446,1.581,18,Barang Konsumen Primer,Makanan & Minuman
+AMOR,314.0,346.0,32.0,10.19,0.58,1.064,18,Keuangan,Jasa Investasi
+AMRT,1380.0,1380.0,0.0,0.0,0.011,1.149,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+ANDI,16.0,19.0,3.0,18.75,1.06,1.713,18,Barang Konsumen Primer,Makanan & Minuman
+ANJT,1385.0,1465.0,80.0,5.78,0.346,1.213,18,Barang Konsumen Primer,Makanan & Minuman
+ANTM,2610.0,2990.0,380.0,14.56,0.841,2.244,18,Barang Baku,Barang Baku
+APEX,116.0,149.0,33.0,28.45,1.529,2.844,18,Energi,"Minyak, Gas & Batu Bara"
+APIC,625.0,665.0,40.0,6.4,0.416,2.372,18,Keuangan,Perusahaan Holding & Investasi
+APII,183.87,182.0,-1.87,-1.02,-0.048,1.028,18,Perindustrian,Barang Perindustrian
+APLI,242.0,238.0,-4.0,-1.65,-0.085,1.243,18,Barang Baku,Barang Baku
+APLN,104.0,128.0,24.0,23.08,1.602,4.579,18,Properti & Real Estat,Properti & Real Estat
+ARCI,905.0,1075.0,170.0,18.78,1.078,2.91,18,Barang Baku,Barang Baku
+AREA,214.0,290.0,76.0,35.51,1.858,2.675,18,Teknologi,Perangkat Lunak & Jasa TI
+ARGO,980.0,1130.0,150.0,15.31,0.869,2.085,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+ARII,282.0,268.0,-14.0,-4.96,-0.286,1.24,18,Energi,"Minyak, Gas & Batu Bara"
+ARKA,22.0,22.0,0.0,0.0,0.0,0.0,17,Perindustrian,Barang Perindustrian
+ARKO,4980.0,5200.0,220.0,4.42,0.409,3.542,18,Infrastruktur,Utilitas
+ARNA,450.0,478.0,28.0,6.22,0.359,0.556,18,Perindustrian,Barang Perindustrian
+ARTA,2930.0,2480.0,-450.0,-15.36,-0.892,2.759,18,Barang Konsumen Non-Primer,Jasa Konsumen
+ARTI,2.0,2.0,0.0,0.0,0.0,0.0,17,Energi,"Minyak, Gas & Batu Bara"
+ARTO,925.0,1255.0,330.0,35.68,1.99,4.935,18,Keuangan,Bank
+ASBI,416.0,418.0,2.0,0.48,0.038,1.151,18,Keuangan,Asuransi
+ASDM,501.76,515.0,13.24,2.64,0.174,1.523,18,Keuangan,Asuransi
+ASGR,1475.0,1885.0,410.0,27.8,1.485,2.254,18,Perindustrian,Jasa Perindustrian
+ASHA,50.0,57.0,7.0,14.0,0.83,2.436,18,Barang Konsumen Primer,Makanan & Minuman
+ASII,4600.0,4970.0,370.0,8.04,0.478,1.491,18,Perindustrian,Perusahaan Holding Multi Sektor
+ASJT,157.0,169.0,12.0,7.64,0.472,1.821,18,Keuangan,Asuransi
+ASLC,57.0,64.0,7.0,12.28,0.707,1.44,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+ASLI,199.0,202.0,3.0,1.51,0.16,2.927,18,Infrastruktur,Konstruksi Bangunan
+ASMI,14.0,19.0,5.0,35.71,1.899,3.667,18,Keuangan,Asuransi
+ASPI,326.0,414.0,88.0,26.99,1.729,5.894,18,Properti & Real Estat,Properti & Real Estat
+ASPR,140.0,153.0,13.0,9.29,0.595,2.889,18,Barang Baku,Barang Baku
+ASRI,105.0,121.0,16.0,15.24,1.0,2.968,18,Properti & Real Estat,Properti & Real Estat
+ASRM,244.0,268.0,24.0,9.84,0.564,1.114,18,Keuangan,Asuransi
+ASSA,585.0,610.0,25.0,4.27,0.268,1.71,18,Transportasi & Logistik,Transportasi
+ATAP,394.0,555.0,161.0,40.86,2.258,4.814,18,Properti & Real Estat,Properti & Real Estat
+ATIC,470.0,466.0,-4.0,-0.85,-0.03,1.729,18,Teknologi,Perangkat Lunak & Jasa TI
+ATLA,50.0,50.0,0.0,0.0,0.002,0.233,18,Energi,"Minyak, Gas & Batu Bara"
+AUTO,2350.0,2580.0,230.0,9.79,0.561,1.157,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+AVIA,302.0,320.0,18.0,5.96,0.358,1.492,18,Barang Baku,Barang Baku
+AWAN,150.0,151.0,1.0,0.67,0.062,1.8,18,Teknologi,Perangkat Lunak & Jasa TI
+AXIO,110.0,111.0,1.0,0.91,0.064,1.001,18,Teknologi,Perangkat Keras & Peralatan Teknologi
+AYAM,344.0,392.0,48.0,13.95,0.783,1.351,18,Barang Konsumen Primer,Makanan & Minuman
+AYLS,155.0,149.0,-6.0,-3.87,-0.179,2.798,18,Barang Baku,Barang Baku
+BABP,50.0,50.0,0.0,0.0,0.0,0.0,18,Keuangan,Bank
+BABY,164.0,192.0,28.0,17.07,0.979,2.434,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+BACA,99.0,112.0,13.0,13.13,0.823,2.484,18,Keuangan,Bank
+BAIK,635.0,710.0,75.0,11.81,0.691,2.089,18,Barang Konsumen Non-Primer,Jasa Konsumen
+BAJA,160.0,166.0,6.0,3.75,0.229,1.095,18,Barang Baku,Barang Baku
+BALI,1225.0,1215.0,-10.0,-0.82,0.014,2.198,18,Infrastruktur,Telekomunikasi
+BANK,256.0,288.0,32.0,12.5,0.74,2.262,18,Keuangan,Bank
+BAPA,314.0,187.0,-127.0,-40.45,-2.313,10.839,18,Properti & Real Estat,Properti & Real Estat
+BAPI,15.0,16.0,1.0,6.67,0.512,4.151,18,Properti & Real Estat,Properti & Real Estat
+BATA,59.0,59.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+BATR,79.0,94.0,15.0,18.99,1.047,1.443,18,Barang Baku,Barang Baku
+BAUT,25.0,28.0,3.0,12.0,0.73,2.706,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+BAYU,1110.0,1160.0,50.0,4.5,0.261,0.469,18,Barang Konsumen Non-Primer,Jasa Konsumen
+BBCA,5600.0,6275.0,675.0,12.05,0.693,1.615,18,Keuangan,Bank
+BBHI,921.65,900.0,-21.65,-2.35,-0.133,0.881,18,Keuangan,Bank
+BBKP,50.0,54.0,4.0,8.0,0.47,1.363,18,Keuangan,Bank
+BBLD,545.0,590.0,45.0,8.26,0.528,2.322,18,Keuangan,Jasa Pembiayaan
+BBMD,1905.0,1970.0,65.0,3.41,0.241,1.717,17,Keuangan,Bank
+BBNI,3100.0,3540.0,440.0,14.19,0.803,1.603,18,Keuangan,Bank
+BBRI,2670.0,3000.0,330.0,12.36,0.704,1.629,18,Keuangan,Bank
+BBRM,130.0,111.0,-19.0,-14.62,-0.882,2.206,18,Energi,"Minyak, Gas & Batu Bara"
+BBSI,4750.0,4700.0,-50.0,-1.05,-0.053,0.767,18,Keuangan,Bank
+BBSS,88.0,96.0,8.0,9.09,0.555,2.217,18,Properti & Real Estat,Properti & Real Estat
+BBTN,1080.0,1240.0,160.0,14.81,0.843,1.707,18,Keuangan,Bank
+BBYB,204.0,246.0,42.0,20.59,1.186,3.132,18,Keuangan,Bank
+BCAP,50.0,50.0,0.0,0.0,0.002,0.233,18,Keuangan,Perusahaan Holding & Investasi
+BCIC,117.0,145.0,28.0,23.93,1.382,2.539,18,Keuangan,Bank
+BCIP,57.0,62.0,5.0,8.77,0.512,1.298,18,Properti & Real Estat,Properti & Real Estat
+BDKR,140.0,146.0,6.0,4.29,0.283,2.263,18,Infrastruktur,Konstruksi Bangunan
+BDMN,3730.0,4100.0,370.0,9.92,0.572,1.199,18,Keuangan,Bank
+BEBS,5.0,5.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+BEEF,160.0,348.0,188.0,117.5,4.983,5.818,18,Barang Konsumen Primer,Makanan & Minuman
+BEER,73.0,74.0,1.0,1.37,0.113,1.746,18,Barang Konsumen Primer,Makanan & Minuman
+BEKS,20.0,21.0,1.0,5.0,0.363,3.139,18,Keuangan,Bank
+BELI,280.0,254.0,-26.0,-9.29,-0.56,1.276,18,Teknologi,Perangkat Lunak & Jasa TI
+BELL,88.0,113.0,25.0,28.41,1.741,4.773,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+BESS,925.0,900.0,-25.0,-2.7,-0.145,1.381,18,Energi,"Minyak, Gas & Batu Bara"
+BEST,94.0,101.0,7.0,7.45,0.442,1.479,18,Properti & Real Estat,Properti & Real Estat
+BFIN,745.0,760.0,15.0,2.01,0.144,1.653,18,Keuangan,Jasa Pembiayaan
+BGTG,101.0,110.0,9.0,8.91,0.549,1.916,18,Keuangan,Bank
+BHAT,1770.0,1770.0,0.0,0.0,0.0,0.0,17,Keuangan,Asuransi
+BHIT,25.0,27.0,2.0,8.0,0.504,2.265,18,Perindustrian,Perusahaan Holding Multi Sektor
+BIKA,55.0,55.0,0.0,0.0,0.0,0.0,17,Properti & Real Estat,Properti & Real Estat
+BIKE,510.0,510.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Barang Rekreasi
+BIMA,82.0,82.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+BINA,4190.0,4110.0,-80.0,-1.91,-0.055,2.478,18,Keuangan,Bank
+BINO,90.0,106.0,16.0,17.78,0.999,1.795,18,Perindustrian,Jasa Perindustrian
+BIPI,114.0,153.0,39.0,34.21,1.849,3.979,18,Energi,"Minyak, Gas & Batu Bara"
+BIPP,54.0,64.0,10.0,18.52,1.337,4.439,18,Properti & Real Estat,Properti & Real Estat
+BIRD,1485.0,1605.0,120.0,8.08,0.465,0.867,18,Transportasi & Logistik,Transportasi
+BISI,630.0,645.0,15.0,2.38,0.149,1.149,18,Barang Konsumen Primer,Makanan & Minuman
+BJBR,750.0,785.0,35.0,4.67,0.271,0.499,18,Keuangan,Bank
+BJTM,505.0,515.0,10.0,1.98,0.121,0.8,18,Keuangan,Bank
+BKDP,102.0,149.0,47.0,46.08,2.963,8.809,18,Properti & Real Estat,Properti & Real Estat
+BKSL,57.0,68.0,11.0,19.3,1.123,2.993,18,Properti & Real Estat,Properti & Real Estat
+BKSW,51.0,53.0,2.0,3.92,0.24,0.918,18,Keuangan,Bank
+BLES,140.0,162.0,22.0,15.71,0.894,1.526,18,Barang Baku,Barang Baku
+BLOG,328.0,384.0,56.0,17.07,0.959,1.4,18,Transportasi & Logistik,Logistik & Pengantaran
+BLTA,30.0,34.0,4.0,13.33,0.79,2.492,18,Transportasi & Logistik,Logistik & Pengantaran
+BLTZ,2870.0,2540.0,-330.0,-11.5,-0.732,0.732,17,Barang Konsumen Non-Primer,Jasa Konsumen
+BLUE,2920.0,2960.0,40.0,1.37,0.096,1.251,18,Perindustrian,Jasa Perindustrian
+BMAS,476.0,492.0,16.0,3.36,0.211,1.176,18,Keuangan,Bank
+BMBL,31.0,31.0,0.0,0.0,0.066,2.631,18,Barang Konsumen Non-Primer,Jasa Konsumen
+BMHS,171.0,180.0,9.0,5.26,0.305,0.574,18,Kesehatan,Jasa & Peralatan Kesehatan
+BMRI,3810.0,4210.0,400.0,10.5,0.613,1.951,18,Keuangan,Bank
+BMSR,282.0,318.0,36.0,12.77,0.766,2.608,18,Barang Baku,Barang Baku
+BMTR,112.0,117.0,5.0,4.46,0.278,1.463,18,Barang Konsumen Non-Primer,Media & Hiburan
+BNBA,745.0,730.0,-15.0,-2.01,-0.103,1.3,18,Keuangan,Bank
+BNBR,76.6,105.0,28.4,37.08,2.184,5.93,18,Perindustrian,Perusahaan Holding Multi Sektor
+BNGA,1525.0,1645.0,120.0,7.87,0.451,0.711,18,Keuangan,Bank
+BNII,184.0,189.0,5.0,2.72,0.16,0.468,18,Keuangan,Bank
+BNLI,2310.0,2360.0,50.0,2.16,0.133,1.068,18,Keuangan,Bank
+BOAT,101.0,121.0,20.0,19.8,1.109,2.086,18,Energi,"Minyak, Gas & Batu Bara"
+BOBA,288.0,230.0,-58.0,-20.14,-1.291,1.565,18,Barang Konsumen Primer,Makanan & Minuman
+BOGA,1555.0,1505.0,-50.0,-3.22,-0.136,2.476,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+BOLA,145.0,166.0,21.0,14.48,0.814,1.486,18,Barang Konsumen Non-Primer,Jasa Konsumen
+BOLT,755.0,810.0,55.0,7.28,0.426,1.164,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+BOSS,50.0,50.0,0.0,0.0,0.0,0.0,17,Energi,"Minyak, Gas & Batu Bara"
+BPFI,243.85,258.0,14.15,5.8,0.353,1.37,18,Keuangan,Jasa Pembiayaan
+BPII,422.0,440.0,18.0,4.27,0.27,1.52,18,Keuangan,Perusahaan Holding & Investasi
+BPTR,68.0,75.0,7.0,10.29,0.607,1.457,18,Transportasi & Logistik,Transportasi
+BRAM,4320.0,4450.0,130.0,3.01,0.183,1.036,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+BREN,3355.77,3450.0,94.23,2.81,0.22,2.931,18,Infrastruktur,Utilitas
+BRIS,1665.0,1860.0,195.0,11.71,0.698,2.042,18,Keuangan,Bank
+BRMS,476.0,585.0,109.0,22.9,1.312,3.923,18,Barang Baku,Barang Baku
+BRNA,585.0,585.0,0.0,0.0,0.058,1.706,18,Barang Baku,Barang Baku
+BRPT,1378.49,1715.0,336.51,24.41,1.378,3.434,18,Barang Baku,Barang Baku
+BRRC,53.0,57.0,4.0,7.55,0.459,1.819,18,Barang Konsumen Primer,Makanan & Minuman
+BSBK,51.0,52.0,1.0,1.96,0.126,1.014,18,Properti & Real Estat,Properti & Real Estat
+BSDE,540.0,585.0,45.0,8.33,0.506,2.025,18,Properti & Real Estat,Properti & Real Estat
+BSIM,690.0,695.0,5.0,0.72,0.051,0.802,18,Keuangan,Bank
+BSML,488.0,510.0,22.0,4.51,0.27,1.059,18,Energi,"Minyak, Gas & Batu Bara"
+BSSR,3960.0,4270.0,310.0,7.83,0.447,0.694,18,Energi,"Minyak, Gas & Batu Bara"
+BSWD,1380.0,1250.0,-130.0,-9.42,-0.596,0.596,17,Keuangan,Bank
+BTEK,11.0,12.0,1.0,9.09,0.695,3.904,18,Barang Konsumen Primer,Makanan & Minuman
+BTON,352.0,354.0,2.0,0.57,0.08,1.864,18,Barang Baku,Barang Baku
+BTPN,2120.0,2210.0,90.0,4.25,0.254,1.152,18,Keuangan,Bank
+BTPS,955.0,1010.0,55.0,5.76,0.337,0.911,18,Keuangan,Bank
+BUAH,510.0,500.0,-10.0,-1.96,-0.107,0.809,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+BUDI,204.0,206.0,2.0,0.98,0.063,0.748,18,Barang Konsumen Primer,Makanan & Minuman
+BUKA,100.0,117.0,17.0,17.0,0.96,2.096,18,Teknologi,Perangkat Lunak & Jasa TI
+BUKK,1015.0,1050.0,35.0,3.45,0.253,2.57,18,Infrastruktur,Konstruksi Bangunan
+BULL,320.0,396.0,76.0,23.75,1.343,3.063,18,Energi,"Minyak, Gas & Batu Bara"
+BUMI,135.0,172.0,37.0,27.41,1.492,2.697,18,Energi,"Minyak, Gas & Batu Bara"
+BUVA,760.0,860.0,100.0,13.16,0.873,4.308,18,Barang Konsumen Non-Primer,Jasa Konsumen
+BVIC,79.0,92.0,13.0,16.46,0.938,1.624,18,Keuangan,Bank
+BWPT,75.0,79.0,4.0,5.33,0.35,2.455,18,Barang Konsumen Primer,Makanan & Minuman
+BYAN,11750.0,12250.0,500.0,4.26,0.251,0.863,18,Energi,"Minyak, Gas & Batu Bara"
+CAKK,131.0,139.0,8.0,6.11,0.368,1.389,18,Perindustrian,Barang Perindustrian
+CAMP,168.0,170.0,2.0,1.19,0.085,1.114,18,Barang Konsumen Primer,Makanan & Minuman
+CANI,135.0,135.0,0.0,0.0,0.0,0.0,17,Energi,"Minyak, Gas & Batu Bara"
+CARE,416.0,418.0,2.0,0.48,0.031,0.582,18,Kesehatan,Jasa & Peralatan Kesehatan
+CARS,87.0,89.0,2.0,2.3,0.159,1.793,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+CASA,1800.0,1800.0,0.0,0.0,0.072,2.499,18,Keuangan,Perusahaan Holding & Investasi
+CASH,159.0,226.0,67.0,42.14,2.302,5.976,18,Teknologi,Perangkat Lunak & Jasa TI
+CASS,1835.0,1855.0,20.0,1.09,0.068,0.7,18,Infrastruktur,Infrastruktur Transportasi
+CBDK,3310.0,3600.0,290.0,8.76,0.512,1.594,18,Properti & Real Estat,Properti & Real Estat
+CBPE,276.99,288.0,11.01,3.98,0.24,1.223,18,Properti & Real Estat,Properti & Real Estat
+CBRE,595.0,710.0,115.0,19.33,1.187,3.443,18,Energi,"Minyak, Gas & Batu Bara"
+CBUT,735.0,815.0,80.0,10.88,0.632,1.653,18,Barang Konsumen Primer,Makanan & Minuman
+CCSI,248.0,250.0,2.0,0.81,0.054,0.709,18,Perindustrian,Barang Perindustrian
+CDIA,600.0,695.0,95.0,15.83,0.918,2.199,18,Infrastruktur,Utilitas
+CEKA,2070.0,2160.0,90.0,4.35,0.263,1.13,18,Barang Konsumen Primer,Makanan & Minuman
+CENT,72.0,83.0,11.0,15.28,0.875,1.965,18,Infrastruktur,Telekomunikasi
+CFIN,316.0,338.0,22.0,6.96,0.401,0.818,18,Keuangan,Jasa Pembiayaan
+CGAS,141.0,153.0,12.0,8.51,0.493,1.268,18,Energi,"Minyak, Gas & Batu Bara"
+CHEK,121.0,131.0,10.0,8.26,0.483,1.305,18,Kesehatan,Jasa & Peralatan Kesehatan
+CHEM,57.0,65.0,8.0,14.04,0.841,2.448,18,Barang Baku,Barang Baku
+CHIP,918.6,915.0,-3.6,-0.39,-0.02,0.652,18,Teknologi,Perangkat Keras & Peralatan Teknologi
+CINT,163.0,168.0,5.0,3.07,0.196,1.24,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+CITA,2970.0,3270.0,300.0,10.1,0.574,1.007,18,Barang Baku,Barang Baku
+CITY,158.0,171.0,13.0,8.23,0.497,1.751,18,Properti & Real Estat,Properti & Real Estat
+CLAY,2680.0,2320.0,-360.0,-13.43,-0.82,1.636,18,Barang Konsumen Non-Primer,Jasa Konsumen
+CLEO,374.0,376.0,2.0,0.53,0.045,1.267,18,Barang Konsumen Primer,Makanan & Minuman
+CLPI,1390.0,1535.0,145.0,10.43,0.593,0.861,18,Barang Baku,Barang Baku
+CMNP,1295.0,1340.0,45.0,3.47,0.207,0.768,18,Infrastruktur,Infrastruktur Transportasi
+CMNT,790.0,785.0,-5.0,-0.63,-0.034,0.558,18,Barang Baku,Barang Baku
+CMPP,69.0,69.0,0.0,0.0,0.0,0.0,17,Transportasi & Logistik,Transportasi
+CMRY,4410.0,4580.0,170.0,3.85,0.246,1.479,18,Barang Konsumen Primer,Makanan & Minuman
+CNKO,37.0,37.0,0.0,0.0,0.0,0.0,17,Energi,"Minyak, Gas & Batu Bara"
+CNMA,86.0,92.0,6.0,6.98,0.415,1.698,18,Barang Konsumen Non-Primer,Jasa Konsumen
+CNTX,142.0,142.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+COAL,22.0,24.0,2.0,9.09,0.588,1.658,18,Energi,"Minyak, Gas & Batu Bara"
+COCO,98.68,127.0,28.32,28.69,2.208,9.529,18,Barang Konsumen Primer,Makanan & Minuman
+COIN,630.0,735.0,105.0,16.67,0.962,2.582,18,Keuangan,Perusahaan Holding & Investasi
+CPIN,3170.0,3240.0,70.0,2.21,0.146,1.44,18,Barang Konsumen Primer,Makanan & Minuman
+CPRO,50.0,50.0,0.0,0.0,0.007,0.464,18,Barang Konsumen Primer,Makanan & Minuman
+CRAB,208.0,208.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Makanan & Minuman
+CRSN,96.0,103.0,7.0,7.29,0.429,1.225,18,Perindustrian,Jasa Perindustrian
+CSAP,284.03,284.0,-0.03,-0.01,0.011,1.058,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+CSIS,149.94,178.0,28.06,18.71,1.049,2.427,18,Properti & Real Estat,Properti & Real Estat
+CSMI,73.0,74.0,1.0,1.37,0.217,3.575,18,Barang Konsumen Non-Primer,Jasa Konsumen
+CSRA,760.0,800.0,40.0,5.26,0.315,1.155,18,Barang Konsumen Primer,Makanan & Minuman
+CTBN,5325.0,4660.0,-665.0,-12.49,-0.739,1.88,18,Barang Baku,Barang Baku
+CTRA,519.95,575.0,55.05,10.59,0.618,1.865,18,Properti & Real Estat,Properti & Real Estat
+CTTH,110.0,124.0,14.0,12.73,0.957,4.537,18,Perindustrian,Barang Perindustrian
+CUAN,620.0,705.0,85.0,13.71,0.835,2.97,18,Energi,"Minyak, Gas & Batu Bara"
+CYBR,615.0,565.0,-50.0,-8.13,-0.474,1.604,18,Teknologi,Perangkat Lunak & Jasa TI
+DAAZ,1540.0,1545.0,5.0,0.32,0.041,1.639,18,Barang Baku,Barang Baku
+DADA,50.0,50.0,0.0,0.0,0.0,0.0,18,Properti & Real Estat,Properti & Real Estat
+DART,118.0,124.0,6.0,5.08,0.307,1.349,18,Properti & Real Estat,Properti & Real Estat
+DATA,1970.0,1990.0,20.0,1.02,0.148,2.787,18,Infrastruktur,Telekomunikasi
+DAYA,1020.0,975.0,-45.0,-4.41,-0.235,1.289,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+DCII,180500.0,189950.0,9450.0,5.24,0.319,0.913,18,Teknologi,Perangkat Lunak & Jasa TI
+DEAL,6.0,6.0,0.0,0.0,0.0,0.0,17,Transportasi & Logistik,Logistik & Pengantaran
+DEFI,104.0,107.0,3.0,2.88,0.189,1.481,18,Keuangan,Perusahaan Holding & Investasi
+DEPO,224.75,236.0,11.25,5.0,0.46,3.194,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+DEWA,290.59,448.0,157.41,54.17,2.682,4.168,18,Energi,"Minyak, Gas & Batu Bara"
+DEWI,117.0,119.0,2.0,1.71,0.111,1.178,18,Barang Konsumen Primer,Makanan & Minuman
+DFAM,79.0,84.0,5.0,6.33,0.395,1.768,18,Barang Konsumen Non-Primer,Jasa Konsumen
+DGIK,123.0,129.0,6.0,4.88,0.316,1.381,18,Infrastruktur,Konstruksi Bangunan
+DGNS,226.0,236.0,10.0,4.42,0.268,1.195,18,Kesehatan,Jasa & Peralatan Kesehatan
+DGWG,284.0,280.0,-4.0,-1.41,-0.071,1.3,18,Barang Baku,Barang Baku
+DIGI,29.0,29.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Media & Hiburan
+DILD,106.0,115.0,9.0,8.49,0.516,1.71,18,Properti & Real Estat,Properti & Real Estat
+DIVA,104.0,112.0,8.0,7.69,0.46,1.67,18,Teknologi,Perangkat Lunak & Jasa TI
+DKFT,615.0,635.0,20.0,3.25,0.222,2.102,18,Barang Baku,Barang Baku
+DKHH,57.0,62.0,5.0,8.77,0.552,2.182,18,Kesehatan,Jasa & Peralatan Kesehatan
+DLTA,1724.0,1775.0,51.0,2.96,0.174,0.473,18,Barang Konsumen Primer,Makanan & Minuman
+DMAS,135.0,138.0,3.0,2.22,0.134,0.641,18,Properti & Real Estat,Properti & Real Estat
+DMMX,155.0,165.0,10.0,6.45,0.38,1.322,18,Teknologi,Perangkat Lunak & Jasa TI
+DMND,605.0,620.0,15.0,2.48,0.154,1.099,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+DNAR,111.0,121.0,10.0,9.01,0.526,1.337,18,Keuangan,Bank
+DNET,10150.0,9650.0,-500.0,-4.93,-0.278,1.485,18,Keuangan,Perusahaan Holding & Investasi
+DOID,196.0,226.0,30.0,15.31,0.868,1.941,18,Energi,"Minyak, Gas & Batu Bara"
+DOOH,112.0,174.0,62.0,55.36,2.794,4.673,18,Barang Konsumen Non-Primer,Media & Hiburan
+DOSS,130.0,135.0,5.0,3.85,0.237,1.276,18,Barang Konsumen Non-Primer,Barang Rekreasi
+DPNS,310.0,310.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+DPUM,89.0,98.0,9.0,10.11,0.616,2.026,18,Barang Konsumen Primer,Makanan & Minuman
+DRMA,885.0,905.0,20.0,2.26,0.137,0.716,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+DSFI,66.0,80.0,14.0,21.21,1.177,2.273,18,Barang Konsumen Primer,Makanan & Minuman
+DSNG,1135.0,1345.0,210.0,18.5,1.018,1.113,18,Barang Konsumen Primer,Makanan & Minuman
+DSSA,820.0,875.0,55.0,6.71,0.471,2.672,18,Energi,"Minyak, Gas & Batu Bara"
+DUTI,4050.0,4290.0,240.0,5.93,0.363,0.393,17,Properti & Real Estat,Properti & Real Estat
+DVLA,1510.0,1580.0,70.0,4.64,0.269,0.421,18,Kesehatan,Farmasi & Riset Kesehatan
+DWGL,222.0,228.0,6.0,2.7,0.179,1.729,18,Energi,"Minyak, Gas & Batu Bara"
+DYAN,77.0,80.0,3.0,3.9,0.238,1.255,18,Perindustrian,Jasa Perindustrian
+EAST,86.0,91.0,5.0,5.81,0.335,0.467,18,Barang Konsumen Non-Primer,Jasa Konsumen
+ECII,111.0,145.0,34.0,30.63,2.007,5.185,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+EDGE,4790.0,4790.0,0.0,0.0,0.0,0.0,17,Teknologi,Perangkat Lunak & Jasa TI
+EKAD,168.0,170.0,2.0,1.19,0.072,0.626,18,Barang Baku,Barang Baku
+ELIT,169.0,172.0,3.0,1.78,0.114,1.06,18,Teknologi,Perangkat Lunak & Jasa TI
+ELPI,1040.99,910.0,-130.99,-12.58,-0.712,3.254,18,Transportasi & Logistik,Logistik & Pengantaran
+ELSA,535.0,675.0,140.0,26.17,1.423,2.679,18,Energi,"Minyak, Gas & Batu Bara"
+ELTY,23.0,31.0,8.0,34.78,1.883,4.464,18,Properti & Real Estat,Properti & Real Estat
+EMAS,5600.0,6200.0,600.0,10.71,0.62,1.381,18,Barang Baku,Barang Baku
+EMDE,68.0,68.0,0.0,0.0,0.028,1.868,18,Properti & Real Estat,Properti & Real Estat
+EMTK,482.0,520.0,38.0,7.88,0.478,2.017,18,Teknologi,Perangkat Lunak & Jasa TI
+ENAK,292.0,254.0,-38.0,-13.01,-0.695,3.412,18,Barang Konsumen Non-Primer,Jasa Konsumen
+ENRG,1040.0,1475.0,435.0,41.83,2.181,3.748,18,Energi,"Minyak, Gas & Batu Bara"
+ENZO,64.0,64.0,0.0,0.0,0.021,1.578,18,Barang Konsumen Primer,Makanan & Minuman
+EPAC,69.0,60.0,-9.0,-13.04,-0.75,3.249,18,Barang Baku,Barang Baku
+EPMT,2290.0,2310.0,20.0,0.87,0.061,1.21,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+ERAA,342.86,400.0,57.14,16.66,0.94,1.701,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+ERAL,258.0,282.0,24.0,9.3,0.547,1.69,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+ERTX,129.0,171.0,42.0,32.56,1.903,3.931,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+ESIP,129.0,144.0,15.0,11.63,0.7,2.21,18,Barang Baku,Barang Baku
+ESSA,540.0,650.0,110.0,20.37,1.118,1.822,18,Barang Baku,Barang Baku
+ESTA,185.0,178.0,-7.0,-3.78,-0.201,1.731,18,Barang Konsumen Non-Primer,Jasa Konsumen
+ESTI,116.0,131.0,15.0,12.93,0.824,2.92,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+ETWA,70.0,70.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+EURO,1620.0,1980.0,360.0,22.22,1.265,3.669,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+EXCL,2370.0,2470.0,100.0,4.22,0.265,1.691,18,Infrastruktur,Telekomunikasi
+FAPA,7305.0,7275.0,-30.0,-0.41,-0.021,0.571,18,Barang Konsumen Primer,Makanan & Minuman
+FAST,230.0,286.0,56.0,24.35,1.342,2.836,18,Barang Konsumen Non-Primer,Jasa Konsumen
+FASW,5312.5,5312.5,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+FILM,1605.0,1090.0,-515.0,-32.09,-2.161,3.608,18,Barang Konsumen Non-Primer,Media & Hiburan
+FIMP,69.0,69.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Konstruksi Bangunan
+FIRE,101.0,108.0,7.0,6.93,0.435,1.858,18,Energi,"Minyak, Gas & Batu Bara"
+FISH,570.0,650.0,80.0,14.04,0.803,1.899,18,Barang Konsumen Primer,Makanan & Minuman
+FITT,388.0,350.0,-38.0,-9.79,-0.599,1.097,18,Barang Konsumen Non-Primer,Jasa Konsumen
+FLMC,55.0,71.0,16.0,29.09,1.587,2.229,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+FMII,250.0,250.0,0.0,0.0,0.015,1.313,18,Properti & Real Estat,Properti & Real Estat
+FOLK,214.0,210.0,-4.0,-1.87,-0.052,2.318,18,Perindustrian,Perusahaan Holding Multi Sektor
+FOOD,176.0,176.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Makanan & Minuman
+FORE,595.0,660.0,65.0,10.92,0.645,1.831,18,Barang Konsumen Primer,Makanan & Minuman
+FORU,3000.0,3050.0,50.0,1.67,0.372,5.621,18,Barang Konsumen Non-Primer,Media & Hiburan
+FPNI,314.0,326.0,12.0,3.82,0.228,0.799,18,Barang Baku,Barang Baku
+FUJI,188.0,199.0,11.0,5.85,0.383,2.428,18,Keuangan,Jasa Pembiayaan
+FUTR,164.0,294.0,130.0,79.27,3.918,5.265,18,Barang Konsumen Non-Primer,Media & Hiburan
+FWCT,69.0,88.0,19.0,27.54,1.649,4.643,18,Barang Baku,Barang Baku
+GDST,80.0,91.0,11.0,13.75,0.921,2.65,18,Barang Baku,Barang Baku
+GDYR,1070.0,1090.0,20.0,1.87,0.12,1.133,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+GEMA,76.0,80.0,4.0,5.26,0.317,1.192,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+GEMS,5950.0,6525.0,575.0,9.66,0.554,1.134,18,Energi,"Minyak, Gas & Batu Bara"
+GGRM,15200.0,17400.0,2200.0,14.47,0.818,1.56,18,Barang Konsumen Primer,Rokok
+GGRP,288.0,294.0,6.0,2.08,0.125,0.686,18,Barang Baku,Barang Baku
+GHON,1520.0,1650.0,130.0,8.55,0.494,0.973,18,Infrastruktur,Telekomunikasi
+GIAA,51.0,54.0,3.0,5.88,0.354,1.452,18,Transportasi & Logistik,Transportasi
+GJTL,1100.0,1130.0,30.0,2.73,0.162,0.682,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+GLOB,155.0,155.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Perdagangan Ritel
+GLVA,288.0,298.0,10.0,3.47,0.212,1.147,18,Teknologi,Perangkat Keras & Peralatan Teknologi
+GMFI,51.0,54.0,3.0,5.88,0.356,1.454,18,Infrastruktur,Infrastruktur Transportasi
+GMTD,1280.0,1280.0,0.0,0.0,0.046,2.106,18,Properti & Real Estat,Properti & Real Estat
+GOLD,240.0,286.0,46.0,19.17,1.097,2.012,18,Infrastruktur,Telekomunikasi
+GOLF,167.0,162.0,-5.0,-2.99,-0.167,1.08,18,Barang Konsumen Non-Primer,Jasa Konsumen
+GOOD,300.0,300.0,0.0,0.0,0.005,0.776,18,Barang Konsumen Primer,Makanan & Minuman
+GOTO,50.0,50.0,0.0,0.0,0.0,0.0,18,Teknologi,Perangkat Lunak & Jasa TI
+GPRA,99.02,104.0,4.98,5.03,0.325,1.774,18,Properti & Real Estat,Properti & Real Estat
+GPSO,298.0,342.0,44.0,14.77,0.966,4.125,18,Perindustrian,Barang Perindustrian
+GRIA,108.0,118.0,10.0,9.26,0.562,1.896,18,Properti & Real Estat,Properti & Real Estat
+GRPH,53.0,59.0,6.0,11.32,0.658,1.642,18,Barang Konsumen Non-Primer,Jasa Konsumen
+GRPM,304.0,228.0,-76.0,-25.0,-1.605,2.944,18,Barang Konsumen Primer,Makanan & Minuman
+GSMF,80.0,87.0,7.0,8.75,0.534,2.036,18,Keuangan,Perusahaan Holding & Investasi
+GTBO,170.0,170.0,0.0,0.0,0.0,0.0,17,Energi,"Minyak, Gas & Batu Bara"
+GTRA,173.0,234.0,61.0,35.26,1.892,3.104,18,Transportasi & Logistik,Logistik & Pengantaran
+GTSI,124.03,150.0,25.97,20.94,1.197,3.401,18,Energi,"Minyak, Gas & Batu Bara"
+GULA,600.0,720.0,120.0,20.0,1.174,3.579,18,Barang Konsumen Primer,Makanan & Minuman
+GUNA,155.0,200.0,45.0,29.03,1.582,2.66,18,Barang Konsumen Primer,Makanan & Minuman
+GWSA,115.0,124.0,9.0,7.83,0.478,1.997,18,Barang Konsumen Non-Primer,Jasa Konsumen
+GZCO,133.0,153.0,20.0,15.04,0.849,1.87,18,Barang Konsumen Primer,Makanan & Minuman
+HADE,14.0,18.0,4.0,28.57,1.578,3.435,18,Infrastruktur,Utilitas
+HAIS,168.0,181.0,13.0,7.74,0.451,1.35,18,Transportasi & Logistik,Logistik & Pengantaran
+HAJJ,98.0,101.0,3.0,3.06,0.21,2.226,18,Barang Konsumen Non-Primer,Jasa Konsumen
+HALO,58.0,64.0,6.0,10.34,0.642,2.764,18,Kesehatan,Jasa & Peralatan Kesehatan
+HATM,358.0,460.0,102.0,28.49,1.634,4.136,18,Transportasi & Logistik,Logistik & Pengantaran
+HBAT,292.0,262.0,-30.0,-10.27,-0.561,2.453,18,Properti & Real Estat,Properti & Real Estat
+HDFA,86.0,90.0,4.0,4.65,0.293,1.747,18,Keuangan,Jasa Pembiayaan
+HDIT,50.0,51.0,1.0,2.0,0.144,1.258,18,Teknologi,Perangkat Lunak & Jasa TI
+HEAL,845.0,815.0,-30.0,-3.55,-0.184,1.737,18,Kesehatan,Jasa & Peralatan Kesehatan
+HELI,176.0,179.0,3.0,1.7,0.117,1.26,18,Transportasi & Logistik,Transportasi
+HERO,304.0,342.0,38.0,12.5,0.71,1.616,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+HEXA,4290.0,4510.0,220.0,5.13,0.298,0.727,18,Perindustrian,Barang Perindustrian
+HGII,125.0,121.0,-4.0,-3.2,-0.182,0.855,18,Infrastruktur,Utilitas
+HILL,16.0,16.0,0.0,0.0,0.0,0.0,17,Energi,"Minyak, Gas & Batu Bara"
+HITS,116.0,116.0,0.0,0.0,0.0,0.0,17,Energi,"Minyak, Gas & Batu Bara"
+HMSP,660.0,730.0,70.0,10.61,0.607,1.2,18,Barang Konsumen Primer,Rokok
+HOKI,50.0,53.0,3.0,6.0,0.356,1.002,18,Barang Konsumen Primer,Makanan & Minuman
+HOMI,189.0,176.0,-13.0,-6.88,-0.406,1.057,18,Properti & Real Estat,Properti & Real Estat
+HOPE,128.0,174.0,46.0,35.94,2.028,5.024,18,Perindustrian,Barang Perindustrian
+HRME,43.0,44.0,1.0,2.33,0.272,3.786,18,Barang Konsumen Non-Primer,Jasa Konsumen
+HRTA,1665.0,1885.0,220.0,13.21,0.78,2.564,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+HRUM,705.0,820.0,115.0,16.31,0.913,1.851,18,Energi,"Minyak, Gas & Batu Bara"
+HUMI,113.0,133.0,20.0,17.7,1.016,2.561,18,Energi,"Minyak, Gas & Batu Bara"
+HYGN,134.0,160.0,26.0,19.4,1.061,1.606,18,Perindustrian,Jasa Perindustrian
+IATA,64.0,57.0,-7.0,-10.94,-0.658,1.656,18,Energi,"Minyak, Gas & Batu Bara"
+IBFN,63.0,63.0,0.0,0.0,0.0,0.0,17,Perindustrian,Barang Perindustrian
+IBOS,64.0,71.0,7.0,10.94,0.658,2.154,18,Barang Konsumen Primer,Makanan & Minuman
+IBST,8475.0,8475.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Telekomunikasi
+ICBP,6539.78,6975.0,435.22,6.65,0.388,1.116,18,Barang Konsumen Primer,Makanan & Minuman
+ICON,108.0,102.0,-6.0,-5.56,-0.319,1.449,18,Perindustrian,Jasa Perindustrian
+IDEA,56.0,63.0,7.0,12.5,0.766,2.614,18,Barang Konsumen Non-Primer,Jasa Konsumen
+IDPR,294.0,296.0,2.0,0.68,0.052,1.22,18,Infrastruktur,Konstruksi Bangunan
+IFII,206.0,216.0,10.0,4.85,0.29,0.945,18,Barang Baku,Barang Baku
+IFSH,1110.0,1200.0,90.0,8.11,0.701,5.543,18,Barang Baku,Barang Baku
+IGAR,400.0,420.0,20.0,5.0,0.297,1.197,18,Barang Baku,Barang Baku
+IKAI,16.0,22.0,6.0,37.5,2.029,4.956,18,Perindustrian,Barang Perindustrian
+IKAN,70.0,86.0,16.0,22.86,1.267,2.542,18,Barang Konsumen Primer,Makanan & Minuman
+IKBI,505.0,555.0,50.0,9.9,0.566,1.188,18,Perindustrian,Barang Perindustrian
+IKPM,178.0,182.0,4.0,2.25,0.143,1.094,18,Kesehatan,Farmasi & Riset Kesehatan
+IMAS,766.17,850.0,83.83,10.94,0.626,1.355,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+IMJS,130.67,144.0,13.33,10.2,0.597,1.834,18,Transportasi & Logistik,Transportasi
+IMPC,1390.0,1475.0,85.0,6.12,0.392,2.248,18,Perindustrian,Barang Perindustrian
+INAF,126.0,126.0,0.0,0.0,0.0,0.0,17,Kesehatan,Farmasi & Riset Kesehatan
+INAI,126.0,161.0,35.0,27.78,1.766,3.659,18,Barang Baku,Barang Baku
+INCF,50.0,50.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+INCI,645.0,665.0,20.0,3.1,0.195,1.352,18,Barang Baku,Barang Baku
+INCO,4330.0,4950.0,620.0,14.32,0.808,1.497,18,Barang Baku,Barang Baku
+INDF,6322.61,6800.0,477.39,7.55,0.437,1.042,18,Barang Konsumen Primer,Makanan & Minuman
+INDO,157.0,176.0,19.0,12.1,0.689,1.39,18,Properti & Real Estat,Properti & Real Estat
+INDR,1920.0,1980.0,60.0,3.12,0.212,1.653,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+INDS,239.12,276.0,36.88,15.42,0.871,1.728,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+INDX,60.0,60.0,0.0,0.0,0.0,0.0,17,Perindustrian,Jasa Perindustrian
+INDY,1800.0,2440.0,640.0,35.56,1.879,3.373,18,Energi,"Minyak, Gas & Batu Bara"
+INET,190.0,230.0,40.0,21.05,1.197,3.119,18,Infrastruktur,Telekomunikasi
+INKP,6925.0,7700.0,775.0,11.19,0.653,1.773,18,Barang Baku,Barang Baku
+INOV,109.0,132.0,23.0,21.1,1.245,3.138,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+INPC,124.0,137.0,13.0,10.48,0.625,2.085,18,Keuangan,Bank
+INPP,740.0,695.0,-45.0,-6.08,-0.322,1.656,18,Properti & Real Estat,Properti & Real Estat
+INPS,630.0,700.0,70.0,11.11,0.688,2.995,18,Energi,"Minyak, Gas & Batu Bara"
+INRU,590.0,590.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+INTA,61.0,61.0,0.0,0.0,0.0,0.0,17,Perindustrian,Barang Perindustrian
+INTD,214.0,238.0,24.0,11.21,0.654,1.766,18,Barang Baku,Barang Baku
+INTP,4160.0,4610.0,450.0,10.82,0.622,1.303,18,Barang Baku,Barang Baku
+IOTF,51.0,51.0,0.0,0.0,0.03,1.567,18,Teknologi,Perangkat Keras & Peralatan Teknologi
+IPAC,139.0,155.0,16.0,11.51,0.698,2.785,18,Properti & Real Estat,Properti & Real Estat
+IPCC,1100.0,1210.0,110.0,10.0,0.577,1.451,18,Infrastruktur,Infrastruktur Transportasi
+IPCM,304.65,318.0,13.35,4.38,0.254,0.476,18,Infrastruktur,Infrastruktur Transportasi
+IPOL,103.0,104.0,1.0,0.97,0.069,1.166,18,Barang Baku,Barang Baku
+IPPE,14.0,14.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Makanan & Minuman
+IPTV,35.0,32.0,-3.0,-8.57,-0.464,2.418,18,Barang Konsumen Non-Primer,Media & Hiburan
+IRRA,374.0,368.0,-6.0,-1.6,-0.092,0.66,18,Kesehatan,Jasa & Peralatan Kesehatan
+IRSX,280.0,308.0,28.0,10.0,0.661,3.19,18,Teknologi,Perangkat Lunak & Jasa TI
+ISAP,21.0,25.0,4.0,19.05,1.112,3.019,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+ISAT,1795.0,1920.0,125.0,6.96,0.435,1.926,18,Infrastruktur,Telekomunikasi
+ISEA,63.0,79.0,16.0,25.4,1.454,3.361,18,Barang Konsumen Primer,Makanan & Minuman
+ISSP,378.0,404.0,26.0,6.88,0.4,0.927,18,Barang Baku,Barang Baku
+ITIC,193.0,210.0,17.0,8.81,0.521,1.706,18,Barang Konsumen Primer,Rokok
+ITMA,1265.0,1400.0,135.0,10.67,0.623,1.654,18,Energi,"Minyak, Gas & Batu Bara"
+ITMG,22350.0,24450.0,2100.0,9.4,0.533,0.703,18,Energi,"Minyak, Gas & Batu Bara"
+JARR,1835.0,1880.0,45.0,2.45,0.181,1.956,18,Barang Konsumen Primer,Makanan & Minuman
+JAST,71.0,83.0,12.0,16.9,1.086,3.218,18,Infrastruktur,Telekomunikasi
+JATI,89.0,92.0,3.0,3.37,0.221,1.603,18,Teknologi,Perangkat Lunak & Jasa TI
+JAWA,106.0,120.0,14.0,13.21,0.753,1.662,18,Barang Konsumen Primer,Makanan & Minuman
+JAYA,115.0,125.0,10.0,8.7,0.508,1.359,18,Transportasi & Logistik,Logistik & Pengantaran
+JECC,631.71,625.0,-6.71,-1.06,-0.047,1.405,18,Perindustrian,Barang Perindustrian
+JGLE,50.0,66.0,16.0,32.0,1.945,3.168,18,Barang Konsumen Non-Primer,Jasa Konsumen
+JIHD,404.0,432.0,28.0,6.93,0.414,1.438,18,Barang Konsumen Non-Primer,Jasa Konsumen
+JKON,64.0,67.0,3.0,4.69,0.29,1.675,18,Infrastruktur,Konstruksi Bangunan
+JMAS,228.0,228.0,0.0,0.0,0.0,0.0,17,Keuangan,Asuransi
+JPFA,2020.0,2100.0,80.0,3.96,0.256,1.834,18,Barang Konsumen Primer,Makanan & Minuman
+JRPT,1080.0,1075.0,-5.0,-0.46,-0.027,0.027,18,Properti & Real Estat,Properti & Real Estat
+JSMR,2640.0,2740.0,100.0,3.79,0.228,1.124,18,Infrastruktur,Infrastruktur Transportasi
+JSPT,1305.0,1385.0,80.0,6.13,0.388,2.091,18,Barang Konsumen Non-Primer,Jasa Konsumen
+JTPE,600.0,605.0,5.0,0.83,0.054,0.825,18,Perindustrian,Jasa Perindustrian
+KAEF,420.0,450.0,30.0,7.14,0.425,1.238,18,Kesehatan,Farmasi & Riset Kesehatan
+KAQI,82.0,89.0,7.0,8.54,0.513,2.122,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+KARW,212.0,212.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Infrastruktur Transportasi
+KAYU,18.0,18.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+KBAG,34.0,44.0,10.0,29.41,1.62,3.783,18,Properti & Real Estat,Properti & Real Estat
+KBLI,306.48,322.0,15.52,5.06,0.296,0.81,18,Perindustrian,Barang Perindustrian
+KBLM,290.0,292.0,2.0,0.69,0.046,0.773,18,Perindustrian,Barang Perindustrian
+KBLV,78.0,125.0,47.0,60.26,3.199,5.846,18,Infrastruktur,Telekomunikasi
+KDSI,436.0,442.0,6.0,1.38,0.084,0.558,18,Barang Baku,Barang Baku
+KDTN,488.0,448.0,-40.0,-8.2,-0.228,4.573,18,Barang Konsumen Non-Primer,Jasa Konsumen
+KEEN,815.0,845.0,30.0,3.68,0.22,1.047,18,Infrastruktur,Utilitas
+KEJU,545.0,540.0,-5.0,-0.92,-0.048,0.808,18,Barang Konsumen Primer,Makanan & Minuman
+KETR,498.0,560.0,62.0,12.45,0.734,2.33,18,Infrastruktur,Telekomunikasi
+KIAS,21.0,21.0,0.0,0.0,0.0,0.0,17,Perindustrian,Barang Perindustrian
+KICI,174.0,192.0,18.0,10.34,0.609,1.723,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+KIJA,116.0,130.0,14.0,12.07,0.761,2.853,18,Properti & Real Estat,Properti & Real Estat
+KING,312.0,270.0,-42.0,-13.46,-0.835,1.213,18,Perindustrian,Jasa Perindustrian
+KINO,1175.0,1165.0,-10.0,-0.85,-0.039,1.221,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+KIOS,87.0,92.0,5.0,5.75,0.544,3.715,18,Teknologi,Perangkat Lunak & Jasa TI
+KJEN,109.0,122.0,13.0,11.93,0.712,2.036,18,Transportasi & Logistik,Logistik & Pengantaran
+KKES,43.0,68.0,25.0,58.14,2.896,5.071,18,Barang Baku,Barang Baku
+KKGI,250.0,282.0,32.0,12.8,0.717,1.066,18,Energi,"Minyak, Gas & Batu Bara"
+KLAS,64.0,69.0,5.0,7.81,0.455,1.135,18,Transportasi & Logistik,Logistik & Pengantaran
+KLBF,765.0,720.0,-45.0,-5.88,-0.334,1.553,18,Kesehatan,Farmasi & Riset Kesehatan
+KLIN,95.0,117.0,22.0,23.16,1.363,4.152,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+KMDS,535.0,535.0,0.0,0.0,0.02,1.427,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+KMTR,232.0,248.0,16.0,6.9,0.44,1.961,18,Barang Baku,Barang Baku
+KOBX,139.0,147.0,8.0,5.76,0.336,0.979,18,Perindustrian,Barang Perindustrian
+KOCI,98.0,100.0,2.0,2.04,0.141,1.399,18,Properti & Real Estat,Properti & Real Estat
+KOIN,78.0,78.0,0.0,0.0,0.0,0.0,17,Perindustrian,Barang Perindustrian
+KOKA,99.0,206.0,107.0,108.08,5.193,9.904,18,Infrastruktur,Konstruksi Bangunan
+KONI,2520.0,2420.0,-100.0,-3.97,0.074,4.906,18,Perindustrian,Jasa Perindustrian
+KOPI,183.0,198.0,15.0,8.2,0.515,2.433,18,Energi,"Minyak, Gas & Batu Bara"
+KOTA,84.0,110.0,26.0,30.95,1.74,4.253,18,Barang Konsumen Non-Primer,Jasa Konsumen
+KPIG,73.0,81.0,8.0,10.96,0.693,3.188,18,Barang Konsumen Non-Primer,Jasa Konsumen
+KRAS,190.0,236.0,46.0,24.21,1.309,2.013,18,Barang Baku,Barang Baku
+KREN,12.0,13.0,1.0,8.33,0.644,4.285,18,Teknologi,Perangkat Lunak & Jasa TI
+KRYA,52.0,57.0,5.0,9.62,0.578,2.161,18,Infrastruktur,Konstruksi Bangunan
+KSIX,344.0,286.0,-58.0,-16.86,-1.049,1.893,18,Properti & Real Estat,Properti & Real Estat
+KUAS,85.0,90.0,5.0,5.88,0.372,1.773,18,Perindustrian,Barang Perindustrian
+LABA,82.0,92.0,10.0,12.2,0.7,1.707,18,Perindustrian,Barang Perindustrian
+LABS,138.0,145.0,7.0,5.07,0.324,1.734,18,Kesehatan,Jasa & Peralatan Kesehatan
+LAJU,61.0,66.0,5.0,8.2,0.518,2.419,18,Transportasi & Logistik,Logistik & Pengantaran
+LAND,50.0,75.0,25.0,50.0,2.938,6.237,18,Properti & Real Estat,Properti & Real Estat
+LAPD,56.0,65.0,9.0,16.07,1.226,4.304,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+LCKM,104.0,108.0,4.0,3.85,0.236,1.305,18,Infrastruktur,Telekomunikasi
+LEAD,91.0,104.0,13.0,14.29,0.81,1.761,18,Energi,"Minyak, Gas & Batu Bara"
+LFLO,635.0,490.0,-145.0,-22.83,-1.472,2.054,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+LIFE,5775.0,5525.0,-250.0,-4.33,-0.241,1.566,18,Keuangan,Asuransi
+LINK,1450.0,1450.0,0.0,0.0,0.017,1.006,18,Infrastruktur,Telekomunikasi
+LION,306.0,348.0,42.0,13.73,0.879,3.299,18,Perindustrian,Jasa Perindustrian
+LIVE,210.0,200.0,-10.0,-4.76,-0.268,1.433,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+LMAX,76.0,113.0,37.0,48.68,2.492,4.66,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+LMPI,127.0,140.0,13.0,10.24,0.585,1.092,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+LMSH,256.0,256.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+LOPI,50.0,63.0,13.0,26.0,1.474,3.632,18,Transportasi & Logistik,Logistik & Pengantaran
+LPCK,482.0,525.0,43.0,8.92,0.515,1.196,18,Properti & Real Estat,Properti & Real Estat
+LPGI,675.0,630.0,-45.0,-6.67,-0.394,1.005,18,Keuangan,Asuransi
+LPIN,398.0,418.0,20.0,5.03,0.291,0.52,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+LPKR,61.0,62.0,1.0,1.64,0.14,1.792,18,Properti & Real Estat,Properti & Real Estat
+LPLI,220.0,252.0,32.0,14.55,0.836,2.329,18,Properti & Real Estat,Properti & Real Estat
+LPPF,1485.0,1570.0,85.0,5.72,0.332,0.83,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+LPPS,68.0,80.0,12.0,17.65,1.034,2.576,18,Keuangan,Perusahaan Holding & Investasi
+LRNA,175.0,178.0,3.0,1.71,0.113,1.357,18,Transportasi & Logistik,Transportasi
+LSIP,1204.81,1380.0,175.19,14.54,0.812,1.071,18,Barang Konsumen Primer,Makanan & Minuman
+LTLS,780.0,775.0,-5.0,-0.64,-0.029,0.951,18,Barang Baku,Barang Baku
+LUCK,95.0,109.0,14.0,14.74,0.914,2.74,18,Teknologi,Perangkat Keras & Peralatan Teknologi
+LUCY,720.0,302.0,-418.0,-58.06,-4.788,7.096,18,Barang Konsumen Non-Primer,Jasa Konsumen
+MAHA,131.0,140.0,9.0,6.87,0.395,0.562,18,Energi,"Minyak, Gas & Batu Bara"
+MAIN,625.0,705.0,80.0,12.8,0.745,1.869,18,Barang Konsumen Primer,Makanan & Minuman
+MANG,40.0,42.0,2.0,5.0,0.35,2.394,18,Infrastruktur,Konstruksi Bangunan
+MAPA,601.07,595.0,-6.07,-1.01,-0.037,1.87,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+MAPB,910.0,1120.0,210.0,23.08,1.428,5.051,18,Barang Konsumen Non-Primer,Jasa Konsumen
+MAPI,1514.97,1500.0,-14.97,-0.99,-0.048,0.992,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+MARI,23.0,23.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Media & Hiburan
+MARK,975.0,960.0,-15.0,-1.54,-0.036,2.506,18,Perindustrian,Barang Perindustrian
+MASB,3390.0,3390.0,0.0,0.0,0.0,0.111,17,Keuangan,Bank
+MAXI,50.0,50.0,0.0,0.0,0.0,0.0,18,Barang Konsumen Primer,Makanan & Minuman
+MAYA,187.0,200.0,13.0,6.95,0.405,0.957,18,Keuangan,Bank
+MBAP,1380.0,1425.0,45.0,3.26,0.213,1.439,18,Energi,"Minyak, Gas & Batu Bara"
+MBMA,510.0,505.0,-5.0,-0.98,-0.022,1.982,18,Barang Baku,Barang Baku
+MBSS,2540.0,2720.0,180.0,7.09,0.437,1.681,18,Energi,"Minyak, Gas & Batu Bara"
+MBTO,102.0,117.0,15.0,14.71,0.865,2.598,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+MCAS,160.0,206.0,46.0,28.75,1.724,3.432,18,Teknologi,Perangkat Lunak & Jasa TI
+MCOL,3820.0,3720.0,-100.0,-2.62,-0.142,1.212,18,Energi,"Minyak, Gas & Batu Bara"
+MCOR,67.0,67.0,0.0,0.0,0.013,1.217,18,Keuangan,Bank
+MDIA,57.0,111.0,54.0,94.74,4.39,6.99,18,Barang Konsumen Non-Primer,Media & Hiburan
+MDIY,875.0,935.0,60.0,6.86,0.409,1.817,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+MDKA,2527.71,2700.0,172.29,6.82,0.415,1.447,18,Barang Baku,Barang Baku
+MDKI,177.0,182.0,5.0,2.82,0.167,0.628,18,Barang Baku,Barang Baku
+MDLA,200.0,208.0,8.0,4.0,0.235,0.805,18,Kesehatan,Farmasi & Riset Kesehatan
+MDLN,50.0,50.0,0.0,0.0,0.005,0.466,18,Properti & Real Estat,Properti & Real Estat
+MDRN,26.0,26.0,0.0,0.0,0.0,0.0,17,Perindustrian,Jasa Perindustrian
+MEDC,1060.0,1340.0,280.0,26.42,1.419,2.265,18,Energi,"Minyak, Gas & Batu Bara"
+MEDS,66.0,77.0,11.0,16.67,1.052,3.333,18,Kesehatan,Jasa & Peralatan Kesehatan
+MEGA,2020.0,1975.0,-45.0,-2.23,-0.131,0.396,18,Keuangan,Bank
+MEJA,87.0,102.0,15.0,17.24,1.016,2.944,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+MENN,53.0,53.0,0.0,0.0,0.0,0.0,17,Teknologi,Perangkat Keras & Peralatan Teknologi
+MERI,97.0,101.0,4.0,4.12,0.273,1.52,18,Barang Konsumen Non-Primer,Jasa Konsumen
+MERK,3660.0,3960.0,300.0,8.2,0.469,0.682,18,Kesehatan,Farmasi & Riset Kesehatan
+META,238.0,238.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Infrastruktur Transportasi
+MFMI,1300.0,1300.0,0.0,0.0,0.0,0.0,17,Perindustrian,Jasa Perindustrian
+MGLV,8000.0,8475.0,475.0,5.94,0.376,1.667,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+MGNA,88.0,92.0,4.0,4.55,0.277,1.41,18,Barang Konsumen Non-Primer,Jasa Konsumen
+MGRO,675.0,665.0,-10.0,-1.48,-0.082,0.783,18,Barang Konsumen Primer,Makanan & Minuman
+MHKI,115.0,135.0,20.0,17.39,1.051,2.818,18,Perindustrian,Jasa Perindustrian
+MICE,484.22,520.0,35.78,7.39,0.432,0.998,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+MIDI,280.0,282.0,2.0,0.71,0.054,1.208,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+MIKA,1700.0,1745.0,45.0,2.65,0.161,0.877,18,Kesehatan,Jasa & Peralatan Kesehatan
+MINA,264.0,276.0,12.0,4.55,0.326,2.805,18,Barang Konsumen Non-Primer,Jasa Konsumen
+MINE,202.0,218.0,16.0,7.92,0.474,1.632,18,Barang Baku,Barang Baku
+MIRA,17.0,23.0,6.0,35.29,1.926,4.234,18,Transportasi & Logistik,Logistik & Pengantaran
+MITI,157.0,163.0,6.0,3.82,0.249,1.948,18,Transportasi & Logistik,Logistik & Pengantaran
+MKAP,1180.0,1160.0,-20.0,-1.69,-0.098,0.446,18,Energi,"Minyak, Gas & Batu Bara"
+MKNT,1.0,1.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Perdagangan Ritel
+MKPI,20500.0,21575.0,1075.0,5.24,0.307,0.763,18,Properti & Real Estat,Properti & Real Estat
+MKTR,120.0,118.0,-2.0,-1.67,-0.084,1.375,18,Barang Konsumen Primer,Makanan & Minuman
+MLBI,6300.0,6300.0,0.0,0.0,0.001,0.233,18,Barang Konsumen Primer,Makanan & Minuman
+MLIA,242.0,232.0,-10.0,-4.13,-0.246,0.344,18,Perindustrian,Barang Perindustrian
+MLPL,78.0,95.0,17.0,21.79,1.228,2.492,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+MLPT,680.0,1800.0,1120.0,164.71,6.34,7.901,18,Teknologi,Perangkat Lunak & Jasa TI
+MMIX,464.0,630.0,166.0,35.78,2.468,9.101,18,Kesehatan,Jasa & Peralatan Kesehatan
+MMLP,288.0,292.0,4.0,1.39,0.089,1.036,18,Properti & Real Estat,Properti & Real Estat
+MNCN,202.0,206.0,4.0,1.98,0.137,1.573,18,Barang Konsumen Non-Primer,Media & Hiburan
+MOLI,238.0,252.0,14.0,5.88,0.377,2.087,18,Barang Baku,Barang Baku
+MORA,6950.0,6400.0,-550.0,-7.91,-0.465,1.439,18,Infrastruktur,Telekomunikasi
+MPIX,93.0,93.0,0.0,0.0,0.016,0.996,18,Teknologi,Perangkat Lunak & Jasa TI
+MPMX,955.0,985.0,30.0,3.14,0.185,0.54,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+MPOW,88.0,105.0,17.0,19.32,1.058,1.426,18,Infrastruktur,Utilitas
+MPPA,44.0,47.0,3.0,6.82,0.409,1.149,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+MPRO,8700.0,13350.0,4650.0,53.45,2.677,3.122,18,Properti & Real Estat,Properti & Real Estat
+MPXL,142.0,145.0,3.0,2.11,0.131,1.003,18,Transportasi & Logistik,Logistik & Pengantaran
+MRAT,438.0,440.0,2.0,0.46,0.028,0.401,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+MREI,920.0,920.0,0.0,0.0,0.0,0.0,17,Keuangan,Asuransi
+MSIE,71.0,79.0,8.0,11.27,0.726,3.313,18,Properti & Real Estat,Properti & Real Estat
+MSIN,460.0,384.0,-76.0,-16.52,-0.987,2.521,18,Barang Konsumen Non-Primer,Media & Hiburan
+MSJA,404.0,402.0,-2.0,-0.5,-0.014,1.403,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+MSKY,57.0,59.0,2.0,3.51,0.225,1.788,18,Barang Konsumen Non-Primer,Media & Hiburan
+MSTI,1180.0,1335.0,155.0,13.14,0.735,0.996,18,Teknologi,Perangkat Keras & Peralatan Teknologi
+MTDL,505.0,510.0,5.0,0.99,0.061,0.519,18,Teknologi,Perangkat Keras & Peralatan Teknologi
+MTEL,479.1,450.0,-29.1,-6.07,-0.355,1.234,18,Infrastruktur,Telekomunikasi
+MTFN,13.0,13.0,0.0,0.0,0.0,0.0,17,Energi,"Minyak, Gas & Batu Bara"
+MTLA,510.0,510.0,0.0,0.0,0.034,1.512,17,Properti & Real Estat,Properti & Real Estat
+MTMH,915.0,985.0,70.0,7.65,0.447,1.252,18,Kesehatan,Jasa & Peralatan Kesehatan
+MTPS,81.0,81.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Konstruksi Bangunan
+MTSM,500.0,500.0,0.0,0.0,0.0,0.0,17,Properti & Real Estat,Properti & Real Estat
+MTWI,268.0,260.0,-8.0,-2.99,-0.142,1.655,18,Keuangan,Asuransi
+MUTU,112.0,108.0,-4.0,-3.57,-0.206,0.954,18,Perindustrian,Jasa Perindustrian
+MYOH,1030.0,1090.0,60.0,5.83,0.348,1.299,18,Energi,"Minyak, Gas & Batu Bara"
+MYOR,1810.0,1725.0,-85.0,-4.7,-0.267,1.483,18,Barang Konsumen Primer,Makanan & Minuman
+MYTX,41.0,41.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+NAIK,80.0,88.0,8.0,10.0,0.582,1.515,18,Perindustrian,Jasa Perindustrian
+NANO,21.0,30.0,9.0,42.86,2.328,5.985,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+NASA,28.0,29.0,1.0,3.57,0.285,2.924,18,Properti & Real Estat,Properti & Real Estat
+NASI,103.0,124.0,21.0,20.39,1.121,1.783,18,Barang Konsumen Primer,Makanan & Minuman
+NATO,550.0,675.0,125.0,22.73,1.225,1.322,18,Barang Konsumen Non-Primer,Jasa Konsumen
+NAYZ,54.0,61.0,7.0,12.96,0.789,3.021,18,Barang Konsumen Primer,Makanan & Minuman
+NCKL,777.62,860.0,82.38,10.59,0.619,1.985,18,Barang Baku,Barang Baku
+NELY,195.0,204.0,9.0,4.62,0.275,1.127,18,Transportasi & Logistik,Logistik & Pengantaran
+NEST,570.0,595.0,25.0,4.39,0.295,2.334,18,Barang Konsumen Primer,Makanan & Minuman
+NETV,50.0,51.0,1.0,2.0,0.224,2.595,18,Barang Konsumen Non-Primer,Media & Hiburan
+NFCX,1610.0,1575.0,-35.0,-2.17,-0.119,0.669,18,Teknologi,Perangkat Lunak & Jasa TI
+NICE,248.0,248.0,0.0,0.0,0.041,1.723,18,Barang Baku,Barang Baku
+NICK,965.0,1075.0,110.0,11.4,0.657,1.224,18,Keuangan,Perusahaan Holding & Investasi
+NICL,486.0,494.0,8.0,1.65,0.124,1.733,18,Barang Baku,Barang Baku
+NIKL,171.0,186.0,15.0,8.77,0.516,1.618,18,Barang Baku,Barang Baku
+NINE,72.0,76.0,4.0,5.56,0.363,2.15,18,Teknologi,Perangkat Keras & Peralatan Teknologi
+NIRO,128.0,140.0,12.0,9.38,0.617,3.277,18,Properti & Real Estat,Properti & Real Estat
+NISP,1155.0,1240.0,85.0,7.36,0.423,0.711,18,Keuangan,Bank
+NOBU,416.0,446.0,30.0,7.21,0.42,1.066,18,Keuangan,Bank
+NPGF,58.0,57.0,-1.0,-1.72,-0.083,1.34,18,Barang Baku,Barang Baku
+NRCA,410.0,496.0,86.0,20.98,1.196,2.91,18,Infrastruktur,Konstruksi Bangunan
+NSSS,585.0,815.0,230.0,39.32,2.054,2.963,18,Barang Konsumen Primer,Makanan & Minuman
+NTBK,50.0,91.0,41.0,82.0,4.341,8.75,18,Perindustrian,Barang Perindustrian
+NZIA,136.0,142.0,6.0,4.41,0.275,1.717,18,Properti & Real Estat,Properti & Real Estat
+OASA,250.0,336.0,86.0,34.4,1.941,4.238,18,Infrastruktur,Telekomunikasi
+OBAT,230.0,250.0,20.0,8.7,0.497,0.879,18,Kesehatan,Farmasi & Riset Kesehatan
+OBMD,158.0,204.0,46.0,29.11,1.546,2.463,18,Barang Baku,Barang Baku
+OILS,179.0,252.0,73.0,40.78,2.195,4.119,18,Barang Konsumen Primer,Makanan & Minuman
+OKAS,97.0,101.0,4.0,4.12,0.254,1.285,18,Barang Baku,Barang Baku
+OLIV,50.0,51.0,1.0,2.0,0.134,1.288,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+OMED,204.0,212.0,8.0,3.92,0.295,2.188,18,Kesehatan,Jasa & Peralatan Kesehatan
+OMRE,1005.0,1070.0,65.0,6.47,0.571,4.073,18,Properti & Real Estat,Properti & Real Estat
+OPMS,90.0,108.0,18.0,20.0,1.134,2.048,18,Barang Baku,Barang Baku
+PACK,226.0,224.0,-2.0,-0.88,0.02,2.729,18,Barang Baku,Barang Baku
+PADA,101.0,116.0,15.0,14.85,0.864,2.657,18,Perindustrian,Jasa Perindustrian
+PADI,71.46,72.0,0.54,0.76,0.229,5.049,18,Keuangan,Jasa Investasi
+PALM,296.0,306.0,10.0,3.38,0.206,1.207,18,Keuangan,Perusahaan Holding & Investasi
+PAMG,51.0,55.0,4.0,7.84,0.63,3.036,18,Properti & Real Estat,Properti & Real Estat
+PANI,5800.0,6125.0,325.0,5.6,0.347,1.813,18,Properti & Real Estat,Properti & Real Estat
+PANR,396.0,416.0,20.0,5.05,0.302,1.224,18,Barang Konsumen Non-Primer,Jasa Konsumen
+PANS,1465.0,1570.0,105.0,7.17,0.414,0.719,18,Keuangan,Jasa Investasi
+PART,102.96,107.0,4.04,3.93,0.269,1.999,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+PBID,468.0,492.0,24.0,5.13,0.295,0.393,18,Barang Baku,Barang Baku
+PBRX,26.0,26.0,0.0,0.0,0.065,2.633,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+PBSA,714.67,790.0,75.33,10.54,0.633,2.356,18,Infrastruktur,Konstruksi Bangunan
+PCAR,37.0,38.0,1.0,2.7,0.175,1.374,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+PDES,452.0,390.0,-62.0,-13.72,-0.835,1.71,18,Barang Konsumen Non-Primer,Jasa Konsumen
+PDPP,259.79,270.0,10.21,3.93,0.234,1.03,18,Barang Baku,Barang Baku
+PEGE,128.69,89.0,-39.69,-30.84,-2.078,3.055,18,Keuangan,Perusahaan Holding & Investasi
+PEHA,230.0,252.0,22.0,9.57,0.563,1.872,18,Kesehatan,Farmasi & Riset Kesehatan
+PEVE,314.0,318.0,4.0,1.27,0.097,1.496,18,Kesehatan,Farmasi & Riset Kesehatan
+PGAS,1365.0,1525.0,160.0,11.72,0.672,1.414,18,Energi,"Minyak, Gas & Batu Bara"
+PGEO,875.0,1005.0,130.0,14.86,0.842,1.64,18,Infrastruktur,Utilitas
+PGJO,720.0,670.0,-50.0,-6.94,-0.384,2.269,18,Teknologi,Perangkat Lunak & Jasa TI
+PGLI,178.0,191.0,13.0,7.3,0.473,2.633,18,Barang Konsumen Non-Primer,Jasa Konsumen
+PGUN,7000.0,8000.0,1000.0,14.29,0.828,2.027,18,Barang Konsumen Primer,Makanan & Minuman
+PICO,118.0,126.0,8.0,6.78,0.412,1.883,18,Barang Baku,Barang Baku
+PIPA,104.0,118.0,14.0,13.46,0.837,3.201,18,Perindustrian,Barang Perindustrian
+PJAA,448.0,454.0,6.0,1.34,0.086,1.01,18,Barang Konsumen Non-Primer,Jasa Konsumen
+PJHB,155.0,174.0,19.0,12.26,0.719,2.205,18,Transportasi & Logistik,Logistik & Pengantaran
+PKPK,3200.0,3860.0,660.0,20.62,1.147,2.099,18,Energi,"Minyak, Gas & Batu Bara"
+PLAN,34.0,38.0,4.0,11.76,0.721,2.589,18,Barang Konsumen Non-Primer,Jasa Konsumen
+PLIN,2510.0,2510.0,0.0,0.0,0.0,0.0,17,Properti & Real Estat,Properti & Real Estat
+PMJS,98.57,110.0,11.43,11.6,0.656,0.988,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+PMMP,50.0,50.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Makanan & Minuman
+PMUI,79.0,84.0,5.0,6.33,0.378,1.219,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+PNBN,875.0,890.0,15.0,1.71,0.113,1.432,18,Keuangan,Bank
+PNBS,50.0,50.0,0.0,0.0,0.002,0.233,18,Keuangan,Bank
+PNGO,3430.0,3530.0,100.0,2.92,0.17,0.372,18,Barang Konsumen Primer,Makanan & Minuman
+PNIN,705.0,730.0,25.0,3.55,0.209,0.687,18,Keuangan,Asuransi
+PNLF,212.0,224.0,12.0,5.66,0.333,1.076,18,Keuangan,Asuransi
+PNSE,505.0,492.0,-13.0,-2.57,-0.143,1.084,18,Barang Konsumen Non-Primer,Jasa Konsumen
+POLA,53.0,57.0,4.0,7.55,0.475,2.234,18,Keuangan,Jasa Pembiayaan
+POLI,670.0,700.0,30.0,4.48,0.311,2.305,18,Properti & Real Estat,Properti & Real Estat
+POLL,112.0,112.0,0.0,0.0,0.0,0.0,17,Properti & Real Estat,Properti & Real Estat
+POLU,12000.0,12500.0,500.0,4.17,0.299,2.261,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+POLY,32.0,32.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+PORT,810.0,880.0,70.0,8.64,0.53,1.994,18,Infrastruktur,Infrastruktur Transportasi
+POWR,700.0,735.0,35.0,5.0,0.289,0.451,18,Infrastruktur,Utilitas
+PPGL,172.0,214.0,42.0,24.42,1.407,3.824,18,Transportasi & Logistik,Logistik & Pengantaran
+PPRE,97.0,104.0,7.0,7.22,0.512,2.927,18,Infrastruktur,Konstruksi Bangunan
+PPRI,133.0,150.0,17.0,12.78,0.736,1.704,18,Barang Baku,Barang Baku
+PPRO,16.0,17.0,1.0,6.25,0.443,3.022,18,Properti & Real Estat,Properti & Real Estat
+PRAY,680.0,730.0,50.0,7.35,0.534,3.951,18,Kesehatan,Jasa & Peralatan Kesehatan
+PRDA,2470.0,2360.0,-110.0,-4.45,-0.232,1.568,18,Kesehatan,Jasa & Peralatan Kesehatan
+PRIM,90.0,102.0,12.0,13.33,0.762,1.864,18,Kesehatan,Jasa & Peralatan Kesehatan
+PSAB,386.0,424.0,38.0,9.84,0.564,1.066,18,Barang Baku,Barang Baku
+PSAT,775.0,835.0,60.0,7.74,0.456,1.396,18,Energi,"Minyak, Gas & Batu Bara"
+PSDN,103.0,117.0,14.0,13.59,0.852,3.217,18,Barang Konsumen Primer,Makanan & Minuman
+PSGO,199.0,198.0,-1.0,-0.5,-0.028,0.386,18,Barang Konsumen Primer,Makanan & Minuman
+PSKT,175.0,210.0,35.0,20.0,1.119,1.99,18,Barang Konsumen Non-Primer,Jasa Konsumen
+PSSI,276.0,320.0,44.0,15.94,0.91,2.364,18,Energi,"Minyak, Gas & Batu Bara"
+PTBA,2290.0,2390.0,100.0,4.37,0.257,0.845,18,Energi,"Minyak, Gas & Batu Bara"
+PTDU,70.0,70.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Konstruksi Bangunan
+PTIS,274.0,268.0,-6.0,-2.19,-0.125,0.83,18,Energi,"Minyak, Gas & Batu Bara"
+PTMP,51.0,61.0,10.0,19.61,1.153,3.185,18,Perindustrian,Barang Perindustrian
+PTMR,374.0,374.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+PTPP,173.0,210.0,37.0,21.39,1.207,2.683,18,Infrastruktur,Konstruksi Bangunan
+PTPS,120.0,141.0,21.0,17.5,0.983,2.041,18,Barang Konsumen Primer,Makanan & Minuman
+PTPW,1283.78,1125.0,-158.78,-12.37,-0.759,1.332,18,Infrastruktur,Konstruksi Bangunan
+PTRO,3790.0,4700.0,910.0,24.01,1.318,2.469,18,Energi,"Minyak, Gas & Batu Bara"
+PTSN,242.0,250.0,8.0,3.31,0.203,1.164,18,Teknologi,Perangkat Keras & Peralatan Teknologi
+PTSP,855.0,905.0,50.0,5.85,0.349,1.525,18,Barang Konsumen Non-Primer,Jasa Konsumen
+PUDP,282.0,300.0,18.0,6.38,0.391,1.732,18,Properti & Real Estat,Properti & Real Estat
+PURA,29.0,32.0,3.0,10.34,0.613,1.728,18,Transportasi & Logistik,Logistik & Pengantaran
+PURI,134.0,137.0,3.0,2.24,0.162,1.778,18,Properti & Real Estat,Properti & Real Estat
+PWON,240.0,268.0,28.0,11.67,0.674,1.737,18,Properti & Real Estat,Properti & Real Estat
+PYFA,186.0,210.0,24.0,12.9,0.755,2.424,18,Kesehatan,Farmasi & Riset Kesehatan
+PZZA,180.0,182.0,2.0,1.11,0.07,0.637,18,Barang Konsumen Non-Primer,Jasa Konsumen
+RAAM,208.0,206.0,-2.0,-0.96,-0.013,2.005,18,Barang Konsumen Non-Primer,Media & Hiburan
+RAFI,36.0,36.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Jasa Konsumen
+RAJA,786.0,885.0,99.0,12.6,0.779,3.119,18,Energi,"Minyak, Gas & Batu Bara"
+RALS,368.0,382.0,14.0,3.8,0.223,0.533,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+RANC,525.0,510.0,-15.0,-2.86,-0.093,2.665,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+RATU,5550.0,4970.0,-580.0,-10.45,-0.607,2.203,18,Energi,"Minyak, Gas & Batu Bara"
+RBMS,54.0,66.0,12.0,22.22,1.47,5.711,18,Properti & Real Estat,Properti & Real Estat
+RCCC,78.0,100.0,22.0,28.21,1.57,3.299,18,Transportasi & Logistik,Logistik & Pengantaran
+RDTX,13612.0,13800.0,188.0,1.38,0.097,1.103,17,Properti & Real Estat,Properti & Real Estat
+REAL,49.99,51.0,1.01,2.01,0.134,0.808,18,Properti & Real Estat,Properti & Real Estat
+RELF,34.0,36.0,2.0,5.88,0.374,1.347,18,Properti & Real Estat,Properti & Real Estat
+RELI,492.0,486.0,-6.0,-1.22,-0.066,0.552,18,Keuangan,Jasa Investasi
+RGAS,154.0,222.0,68.0,44.16,2.274,3.161,18,Energi,"Minyak, Gas & Batu Bara"
+RICY,75.0,77.0,2.0,2.67,0.168,1.367,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+RIGS,690.0,685.0,-5.0,-0.72,-0.035,0.904,18,Energi,"Minyak, Gas & Batu Bara"
+RISE,835.0,1015.0,180.0,21.56,1.291,3.396,18,Properti & Real Estat,Properti & Real Estat
+RLCO,3100.0,4380.0,1280.0,41.29,2.158,3.275,18,Barang Konsumen Primer,Makanan & Minuman
+RMKE,410.0,408.0,-2.0,-0.49,0.069,3.19,18,Energi,"Minyak, Gas & Batu Bara"
+RMKO,250.0,318.0,68.0,27.2,1.787,5.271,18,Energi,"Minyak, Gas & Batu Bara"
+ROCK,1620.0,1805.0,185.0,11.42,0.668,1.987,18,Properti & Real Estat,Properti & Real Estat
+RODA,50.0,61.0,11.0,22.0,1.475,3.978,18,Properti & Real Estat,Properti & Real Estat
+RONY,930.0,1425.0,495.0,53.23,2.902,5.722,18,Infrastruktur,Konstruksi Bangunan
+ROTI,610.0,605.0,-5.0,-0.82,-0.043,0.63,18,Barang Konsumen Primer,Makanan & Minuman
+RSCH,282.0,268.0,-14.0,-4.96,-0.245,2.847,18,Kesehatan,Jasa & Peralatan Kesehatan
+RSGK,1150.0,935.0,-215.0,-18.7,-1.132,3.26,18,Kesehatan,Jasa & Peralatan Kesehatan
+RUIS,169.53,204.0,34.47,20.33,1.134,2.58,18,Energi,"Minyak, Gas & Batu Bara"
+RUNS,73.0,67.0,-6.0,-8.22,-0.467,1.693,18,Teknologi,Perangkat Lunak & Jasa TI
+SAFE,328.0,376.0,48.0,14.63,0.815,1.345,18,Transportasi & Logistik,Transportasi
+SAGE,20.0,34.0,14.0,70.0,3.343,6.019,18,Properti & Real Estat,Properti & Real Estat
+SAME,350.0,298.0,-52.0,-14.86,-0.925,1.68,18,Kesehatan,Jasa & Peralatan Kesehatan
+SAMF,280.0,278.0,-2.0,-0.71,-0.037,0.634,18,Barang Baku,Barang Baku
+SAPX,208.0,218.0,10.0,4.81,0.296,1.524,18,Transportasi & Logistik,Logistik & Pengantaran
+SATU,274.0,270.0,-4.0,-1.46,-0.085,0.431,18,Properti & Real Estat,Properti & Real Estat
+SBAT,1.0,1.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+SBMA,106.0,107.0,1.0,0.94,0.064,1.038,18,Barang Baku,Barang Baku
+SCCO,2190.0,2270.0,80.0,3.65,0.219,0.937,18,Perindustrian,Barang Perindustrian
+SCMA,199.0,199.0,0.0,0.0,0.026,1.713,18,Barang Konsumen Non-Primer,Media & Hiburan
+SCNP,140.0,154.0,14.0,10.0,0.595,1.934,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+SDMU,78.0,78.0,0.0,0.0,0.04,1.888,18,Transportasi & Logistik,Logistik & Pengantaran
+SDPC,179.0,182.0,3.0,1.68,0.104,0.941,18,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+SDRA,210.0,206.0,-4.0,-1.9,-0.103,1.236,18,Keuangan,Bank
+SEMA,90.0,95.0,5.0,5.56,0.334,1.463,18,Energi,Energi Alternatif
+SFAN,1965.0,1955.0,-10.0,-0.51,-0.03,0.179,18,Keuangan,Perusahaan Holding & Investasi
+SGER,400.0,432.0,32.0,8.0,0.524,2.837,18,Energi,"Minyak, Gas & Batu Bara"
+SGRO,2547.88,3260.0,712.12,27.95,1.487,2.165,18,Barang Konsumen Primer,Makanan & Minuman
+SHID,575.0,600.0,25.0,4.35,0.275,1.573,18,Barang Konsumen Non-Primer,Jasa Konsumen
+SHIP,1830.0,1710.0,-120.0,-6.56,-0.325,2.397,18,Energi,"Minyak, Gas & Batu Bara"
+SICO,99.0,112.0,13.0,13.13,0.754,1.808,18,Energi,"Minyak, Gas & Batu Bara"
+SIDO,366.0,372.0,6.0,1.64,0.1,0.72,18,Kesehatan,Farmasi & Riset Kesehatan
+SILO,2220.0,2020.0,-200.0,-9.01,-0.544,1.144,18,Kesehatan,Jasa & Peralatan Kesehatan
+SIMP,509.71,585.0,75.29,14.77,0.829,1.468,18,Barang Konsumen Primer,Makanan & Minuman
+SINI,6116.3,6775.0,658.7,10.77,0.827,5.297,18,Perindustrian,Barang Perindustrian
+SIPD,675.0,670.0,-5.0,-0.74,-0.029,1.232,18,Barang Konsumen Primer,Makanan & Minuman
+SKBM,432.0,540.0,108.0,25.0,1.848,7.236,18,Barang Konsumen Primer,Makanan & Minuman
+SKLT,173.0,187.0,14.0,8.09,0.489,1.78,18,Barang Konsumen Primer,Makanan & Minuman
+SKRN,344.0,422.0,78.0,22.67,1.255,2.584,18,Perindustrian,Barang Perindustrian
+SLIS,56.0,61.0,5.0,8.93,0.538,1.877,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+SMAR,4650.0,5625.0,975.0,20.97,1.136,1.42,18,Barang Konsumen Primer,Makanan & Minuman
+SMBR,145.0,160.0,15.0,10.34,0.614,1.929,18,Barang Baku,Barang Baku
+SMCB,775.0,775.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+SMDM,565.0,555.0,-10.0,-1.77,-0.088,1.358,18,Properti & Real Estat,Properti & Real Estat
+SMDR,258.64,294.0,35.36,13.67,0.778,1.853,18,Transportasi & Logistik,Logistik & Pengantaran
+SMGA,63.0,70.0,7.0,11.11,0.668,2.671,18,Barang Baku,Barang Baku
+SMGR,1400.0,1465.0,65.0,4.64,0.309,1.838,18,Barang Baku,Barang Baku
+SMIL,286.0,364.0,78.0,27.27,1.47,2.076,18,Perindustrian,Barang Perindustrian
+SMKL,128.0,139.0,11.0,8.59,0.507,1.715,18,Barang Baku,Barang Baku
+SMKM,61.0,67.0,6.0,9.84,0.633,2.846,18,Infrastruktur,Konstruksi Bangunan
+SMLE,96.0,140.0,44.0,45.83,2.393,4.34,18,Barang Baku,Barang Baku
+SMMA,21875.0,20525.0,-1350.0,-6.17,-0.37,0.384,18,Keuangan,Perusahaan Holding & Investasi
+SMMT,1760.0,1845.0,85.0,4.83,0.282,0.766,18,Energi,"Minyak, Gas & Batu Bara"
+SMRA,270.0,332.0,62.0,22.96,1.244,1.859,18,Properti & Real Estat,Properti & Real Estat
+SMSM,1590.0,1735.0,145.0,9.12,0.519,0.722,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+SNLK,222.0,222.0,0.0,0.0,0.015,1.375,18,Barang Konsumen Non-Primer,Jasa Konsumen
+SOCI,308.0,416.0,108.0,35.06,1.899,3.418,18,Energi,"Minyak, Gas & Batu Bara"
+SOFA,197.0,216.0,19.0,9.64,0.603,2.754,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+SOHO,1085.0,1200.0,115.0,10.6,0.645,2.006,18,Kesehatan,Farmasi & Riset Kesehatan
+SOLA,99.0,105.0,6.0,6.06,0.37,1.485,18,Barang Baku,Barang Baku
+SONA,2210.0,2350.0,140.0,6.33,0.373,0.874,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+SOSS,700.0,890.0,190.0,27.14,1.737,5.548,17,Perindustrian,Jasa Perindustrian
+SOTS,590.0,610.0,20.0,3.39,0.231,1.909,18,Barang Konsumen Non-Primer,Jasa Konsumen
+SOUL,37.0,37.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Makanan & Minuman
+SPMA,156.92,171.0,14.08,8.97,0.515,1.187,18,Barang Baku,Barang Baku
+SPRE,84.0,87.0,3.0,3.57,0.243,1.95,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+SPTO,570.0,600.0,30.0,5.26,0.304,0.604,18,Perindustrian,Barang Perindustrian
+SQMI,40.0,66.0,26.0,65.0,3.303,7.42,18,Barang Baku,Barang Baku
+SRAJ,11000.0,10800.0,-200.0,-1.82,-0.091,0.786,18,Kesehatan,Jasa & Peralatan Kesehatan
+SRSN,66.0,66.0,0.0,0.0,0.012,1.06,18,Barang Baku,Barang Baku
+SRTG,1560.0,1710.0,150.0,9.62,0.559,1.539,18,Keuangan,Perusahaan Holding & Investasi
+SSIA,1490.0,1660.0,170.0,11.41,0.728,2.669,18,Infrastruktur,Konstruksi Bangunan
+SSMS,740.0,915.0,175.0,23.65,1.281,1.781,18,Barang Konsumen Primer,Makanan & Minuman
+SSTM,378.0,388.0,10.0,2.65,0.204,2.195,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+STAA,1020.0,1065.0,45.0,4.41,0.272,1.426,18,Barang Konsumen Primer,Makanan & Minuman
+STAR,278.0,274.0,-4.0,-1.44,-0.038,2.176,18,Keuangan,Perusahaan Holding & Investasi
+STRK,63.0,66.0,3.0,4.76,0.309,1.978,18,Barang Konsumen Primer,Makanan & Minuman
+STTP,10000.0,10000.0,0.0,0.0,0.025,1.289,17,Barang Konsumen Primer,Makanan & Minuman
+SULI,75.0,88.0,13.0,17.33,1.294,3.797,18,Barang Baku,Barang Baku
+SUNI,610.0,635.0,25.0,4.1,0.268,1.474,18,Energi,"Minyak, Gas & Batu Bara"
+SUPA,515.0,595.0,80.0,15.53,0.882,1.888,18,Keuangan,Bank
+SUPR,43850.0,43850.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Telekomunikasi
+SURE,2880.0,2770.0,-110.0,-3.82,-0.215,1.16,18,Energi,"Minyak, Gas & Batu Bara"
+SURI,58.0,68.0,10.0,17.24,0.969,1.856,18,Kesehatan,Jasa & Peralatan Kesehatan
+SWAT,16.0,16.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+SWID,89.0,100.0,11.0,12.36,0.944,3.559,18,Barang Konsumen Non-Primer,Jasa Konsumen
+TALF,562.0,585.0,23.0,4.09,0.258,1.599,18,Barang Baku,Barang Baku
+TAMA,148.0,206.0,58.0,39.19,2.051,3.408,18,Infrastruktur,Konstruksi Bangunan
+TAMU,17.0,22.0,5.0,29.41,1.634,4.018,18,Energi,"Minyak, Gas & Batu Bara"
+TAPG,1480.0,1670.0,190.0,12.84,0.731,1.557,18,Barang Konsumen Primer,Makanan & Minuman
+TARA,26.0,32.0,6.0,23.08,1.329,3.526,18,Properti & Real Estat,Properti & Real Estat
+TAXI,12.0,13.0,1.0,8.33,0.641,4.261,18,Transportasi & Logistik,Transportasi
+TAYS,50.0,50.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Makanan & Minuman
+TBIG,1425.0,1375.0,-50.0,-3.51,-0.202,1.159,18,Infrastruktur,Telekomunikasi
+TBLA,615.0,650.0,35.0,5.69,0.328,0.423,18,Barang Konsumen Primer,Makanan & Minuman
+TBMS,1205.0,1205.0,0.0,0.0,0.012,1.11,18,Barang Baku,Barang Baku
+TCID,2760.0,2770.0,10.0,0.36,0.03,0.906,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+TCPI,6544.0,5525.0,-1019.0,-15.57,-0.94,2.875,18,Energi,"Minyak, Gas & Batu Bara"
+TEBE,960.0,1050.0,90.0,9.38,0.56,1.548,18,Energi,"Minyak, Gas & Batu Bara"
+TELE,9.0,9.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Perdagangan Ritel
+TFAS,195.0,187.0,-8.0,-4.1,-0.231,1.183,18,Teknologi,Perangkat Lunak & Jasa TI
+TFCO,585.0,710.0,125.0,21.37,1.363,4.048,17,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+TGKA,4700.0,4870.0,170.0,3.62,0.223,1.21,18,Barang Konsumen Primer,Makanan & Minuman
+TGRA,27.0,27.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Utilitas
+TGUK,137.0,137.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Makanan & Minuman
+TIFA,220.0,268.0,48.0,21.82,1.373,4.042,18,Keuangan,Jasa Pembiayaan
+TINS,3320.0,3460.0,140.0,4.22,0.271,1.718,18,Barang Baku,Barang Baku
+TIRA,600.0,505.0,-95.0,-15.83,-0.992,1.691,18,Perindustrian,Jasa Perindustrian
+TIRT,590.0,590.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+TKIM,5345.0,5925.0,580.0,10.85,0.656,2.155,18,Barang Baku,Barang Baku
+TLDN,496.0,525.0,29.0,5.85,0.348,1.362,18,Barang Konsumen Primer,Makanan & Minuman
+TLKM,2440.0,2600.0,160.0,6.56,0.392,1.557,18,Infrastruktur,Telekomunikasi
+TMAS,111.0,120.0,9.0,8.11,0.47,1.164,18,Transportasi & Logistik,Logistik & Pengantaran
+TMPO,100.0,104.0,4.0,4.0,0.237,0.915,18,Barang Konsumen Non-Primer,Media & Hiburan
+TNCA,133.0,148.0,15.0,11.28,0.663,2.098,18,Transportasi & Logistik,Logistik & Pengantaran
+TOBA,358.0,476.0,118.0,32.96,1.735,2.577,18,Energi,"Minyak, Gas & Batu Bara"
+TOOL,62.0,65.0,3.0,4.84,0.322,2.421,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+TOPS,1.0,1.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Konstruksi Bangunan
+TOSK,58.0,67.0,9.0,15.52,0.867,1.406,18,Teknologi,Perangkat Lunak & Jasa TI
+TOTL,1035.0,1055.0,20.0,1.93,0.115,0.559,18,Infrastruktur,Konstruksi Bangunan
+TOTO,232.0,244.0,12.0,5.17,0.3,0.591,18,Perindustrian,Barang Perindustrian
+TOWR,356.0,402.0,46.0,12.92,0.735,1.323,18,Infrastruktur,Telekomunikasi
+TOYS,8.0,8.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Non-Primer,Barang Rekreasi
+TPIA,1680.0,2040.0,360.0,21.43,1.23,3.347,18,Barang Baku,Barang Baku
+TPMA,416.0,450.0,34.0,8.17,0.483,1.316,18,Energi,"Minyak, Gas & Batu Bara"
+TRGU,170.0,163.0,-7.0,-4.12,-0.242,0.749,18,Barang Konsumen Primer,Makanan & Minuman
+TRIM,565.0,570.0,5.0,0.88,0.061,0.984,18,Keuangan,Jasa Investasi
+TRIN,338.0,342.0,4.0,1.18,0.137,2.615,18,Properti & Real Estat,Properti & Real Estat
+TRIS,154.0,167.0,13.0,8.44,0.489,1.202,18,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+TRJA,104.0,108.0,4.0,3.85,0.245,1.693,18,Transportasi & Logistik,Transportasi
+TRON,95.0,109.0,14.0,14.74,1.08,4.229,18,Teknologi,Perangkat Lunak & Jasa TI
+TRST,480.94,456.0,-24.94,-5.19,-0.305,0.919,18,Barang Baku,Barang Baku
+TRUE,50.0,50.0,0.0,0.0,0.0,0.0,17,Properti & Real Estat,Properti & Real Estat
+TRUK,424.0,420.0,-4.0,-0.94,-0.033,1.515,18,Transportasi & Logistik,Logistik & Pengantaran
+TRUS,392.76,402.0,9.24,2.35,0.39,4.32,18,Keuangan,Jasa Pembiayaan
+TSPC,2480.0,2660.0,180.0,7.26,0.423,1.208,18,Kesehatan,Farmasi & Riset Kesehatan
+TUGU,1165.0,1220.0,55.0,4.72,0.284,0.994,18,Keuangan,Asuransi
+TYRE,104.0,114.0,10.0,9.62,0.595,2.428,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+UANG,1990.0,2300.0,310.0,15.58,1.074,4.06,18,Properti & Real Estat,Properti & Real Estat
+UCID,366.0,384.0,18.0,4.92,0.289,0.84,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+UDNG,1170.0,1220.0,50.0,4.27,0.354,3.16,18,Barang Konsumen Primer,Makanan & Minuman
+UFOE,134.0,133.0,-1.0,-0.75,-0.016,1.755,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+ULTJ,1305.0,1400.0,95.0,7.28,0.422,1.086,18,Barang Konsumen Primer,Makanan & Minuman
+UNIC,12600.0,12725.0,125.0,0.99,0.066,0.902,18,Barang Baku,Barang Baku
+UNIQ,101.0,110.0,9.0,8.91,0.52,1.597,18,Energi,"Minyak, Gas & Batu Bara"
+UNSP,206.0,206.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Makanan & Minuman
+UNTD,71.0,79.0,8.0,11.27,0.651,1.436,18,Barang Konsumen Non-Primer,Barang Rekreasi
+UNTR,22025.0,25475.0,3450.0,15.66,0.893,2.005,18,Perindustrian,Barang Perindustrian
+UNVR,1775.0,1675.0,-100.0,-5.63,-0.332,1.154,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+URBN,210.0,222.0,12.0,5.71,0.385,2.501,18,Properti & Real Estat,Properti & Real Estat
+UVCR,123.0,142.0,19.0,15.45,0.903,2.526,18,Teknologi,Perangkat Lunak & Jasa TI
+VAST,114.0,114.0,0.0,0.0,0.013,1.22,18,Properti & Real Estat,Properti & Real Estat
+VERN,133.0,197.0,64.0,48.12,2.497,4.096,18,Barang Konsumen Non-Primer,Media & Hiburan
+VICI,585.0,590.0,5.0,0.85,0.092,2.049,18,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+VICO,131.0,140.0,9.0,6.87,0.401,1.088,18,Keuangan,Perusahaan Holding & Investasi
+VINS,136.0,138.0,2.0,1.47,0.109,1.64,18,Keuangan,Asuransi
+VISI,855.0,870.0,15.0,1.75,0.189,3.031,18,Perindustrian,Jasa Perindustrian
+VIVA,31.0,38.0,7.0,22.58,1.321,3.893,18,Barang Konsumen Non-Primer,Media & Hiburan
+VKTR,460.0,770.0,310.0,67.39,3.392,6.516,18,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+VOKS,196.0,200.0,4.0,2.04,0.124,0.776,18,Perindustrian,Barang Perindustrian
+VRNA,74.0,76.0,2.0,2.7,0.183,1.755,18,Keuangan,Jasa Pembiayaan
+VTNY,54.0,65.0,11.0,20.37,1.186,3.567,18,Keuangan,Jasa Pembiayaan
+WAPO,103.0,122.0,19.0,18.45,1.007,1.206,18,Barang Konsumen Primer,Makanan & Minuman
+WBSA,635.0,595.0,-40.0,-6.3,-0.34,2.405,18,Transportasi & Logistik,Logistik & Pengantaran
+WEGE,50.0,50.0,0.0,0.0,0.0,0.0,18,Infrastruktur,Konstruksi Bangunan
+WEHA,96.0,104.0,8.0,8.33,0.481,1.045,18,Transportasi & Logistik,Transportasi
+WGSH,120.0,139.0,19.0,15.83,1.001,4.39,18,Teknologi,Perangkat Lunak & Jasa TI
+WICO,123.0,123.0,0.0,0.0,0.0,0.0,17,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+WIDI,25.0,27.0,2.0,8.0,0.55,3.53,18,Perindustrian,Barang Perindustrian
+WIFI,1598.05,1960.0,361.95,22.65,1.288,2.769,18,Teknologi,Perangkat Lunak & Jasa TI
+WIIM,1540.0,1595.0,55.0,3.57,0.219,1.227,18,Barang Konsumen Primer,Rokok
+WIKA,204.0,204.0,0.0,0.0,0.0,0.0,17,Infrastruktur,Konstruksi Bangunan
+WINE,151.0,152.0,1.0,0.66,0.055,1.382,18,Barang Konsumen Primer,Makanan & Minuman
+WINR,20.0,20.0,0.0,0.0,0.197,4.883,18,Properti & Real Estat,Properti & Real Estat
+WINS,525.0,496.0,-29.0,-5.52,-0.323,1.1,18,Energi,"Minyak, Gas & Batu Bara"
+WIRG,51.0,57.0,6.0,11.76,0.691,1.737,18,Teknologi,Perangkat Lunak & Jasa TI
+WMPP,16.0,20.0,4.0,25.0,1.499,5.321,18,Barang Konsumen Primer,Makanan & Minuman
+WMUU,50.0,51.0,1.0,2.0,0.258,2.094,18,Barang Konsumen Primer,Makanan & Minuman
+WOMF,242.0,254.0,12.0,4.96,0.3,1.246,18,Keuangan,Jasa Pembiayaan
+WOOD,204.0,214.0,10.0,4.9,0.378,3.709,18,Barang Konsumen Non-Primer,Barang Rumah Tangga
+WOWS,55.0,60.0,5.0,9.09,0.533,1.521,18,Energi,"Minyak, Gas & Batu Bara"
+WSBP,14.0,14.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+WTON,69.0,75.0,6.0,8.7,0.5,0.984,18,Barang Baku,Barang Baku
+YELO,70.0,78.0,8.0,11.43,0.691,2.567,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+YOII,86.0,85.0,-1.0,-1.16,-0.03,1.437,18,Keuangan,Asuransi
+YPAS,575.0,585.0,10.0,1.74,0.153,2.306,18,Barang Baku,Barang Baku
+YULE,3360.0,3350.0,-10.0,-0.3,-0.003,0.999,17,Keuangan,Jasa Investasi
+YUPI,1215.0,1310.0,95.0,7.82,0.629,2.892,18,Barang Konsumen Primer,Makanan & Minuman
+ZATA,50.0,71.0,21.0,42.0,2.42,3.336,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+ZBRA,50.0,50.0,0.0,0.0,0.0,0.0,17,Perindustrian,Perusahaan Holding Multi Sektor
+ZINC,30.0,30.0,0.0,0.0,0.0,0.0,17,Barang Baku,Barang Baku
+ZONE,575.0,494.0,-81.0,-14.09,-0.858,1.768,18,Barang Konsumen Non-Primer,Perdagangan Ritel
+ZYRX,128.0,130.0,2.0,1.56,0.097,0.82,18,Teknologi,Perangkat Keras & Peralatan Teknologi
