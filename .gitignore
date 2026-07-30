@@ -1,0 +1,10 @@
+.DS_Store
+
+# Generated research caches and run outputs
+Model Screening UMA/data/
+Model Screening UMA/outputs/
+
+# Kaggle/local fine-tuning artifacts
+Kronos IDX FineTune/outputs/
+Kronos IDX FineTune/checkpoints/
+Kronos IDX FineTune/*.zip
