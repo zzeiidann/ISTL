@@ -19,9 +19,9 @@ def code(text):
 
 cells = [
     md("""
-    # Kronos-small — IDX Multi-Asset Fine-Tuning & Forecasting
+    # Kronos-base — Full IDX Universe Fine-Tuning & Forecasting
 
-    Fine-tune **Kronos-small** pada 50 emiten IDX, menggunakan OHLCV harian,
+    Fine-tune **Kronos-base** pada seluruh universe IDX, menggunakan OHLCV harian,
     split waktu tanpa leakage, dan GPU Kaggle. Notebook menyimpan forecast
     seluruh emiten, menampilkan ranking 30 kandidat, serta dashboard profesional
     untuk lima saham teratas.
@@ -42,6 +42,8 @@ cells = [
     mengunci commit yang telah diuji.
     """),
     code("""
+    # CUDA 11.8 build dipin untuk kompatibilitas Tesla P100 (sm_60) dan T4 (sm_75).
+    %pip install -q --upgrade torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu118
     %pip install -q einops==0.8.1 huggingface_hub==0.33.1 safetensors==0.6.2 pyarrow plotly kaleido tqdm
     """),
     code("""
@@ -66,19 +68,24 @@ cells = [
     torch.manual_seed(SEED)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(SEED)
+        # Kronos memakai scaled_dot_product_attention. Fused SDPA dapat memilih
+        # kernel yang tidak tersedia pada P100; math SDPA bekerja pada P100/T4.
+        torch.backends.cuda.enable_flash_sdp(False)
+        torch.backends.cuda.enable_mem_efficient_sdp(False)
+        torch.backends.cuda.enable_math_sdp(True)
 
     def find_data():
         roots = [Path.cwd(), Path("/kaggle/working"), Path("/kaggle/input")]
         for root in roots:
             if not root.exists():
                 continue
-            direct = root / "Kronos IDX FineTune" / "data" / "idx_kronos_50_daily.parquet"
+            direct = root / "Kronos IDX FineTune" / "data" / "idx_kronos_all_daily.parquet"
             if direct.exists():
                 return direct
-            hits = list(root.glob("**/idx_kronos_50_daily.parquet"))
+            hits = list(root.glob("**/idx_kronos_all_daily.parquet"))
             if hits:
                 return hits[0]
-        raise FileNotFoundError("idx_kronos_50_daily.parquet tidak ditemukan. Clone repo ISTL ke /kaggle/working.")
+        raise FileNotFoundError("idx_kronos_all_daily.parquet tidak ditemukan. Clone repo ISTL ke /kaggle/working.")
 
     DATA_PATH = find_data().resolve()
     PROJECT_DIR = DATA_PATH.parent.parent
@@ -95,41 +102,66 @@ cells = [
     from model import Kronos, KronosTokenizer, KronosPredictor
 
     OUTPUT_DIR = Path("/kaggle/working/kronos_idx_outputs")
-    CHECKPOINT_DIR = OUTPUT_DIR / "kronos_small_idx" / "best_model"
+    CHECKPOINT_DIR = OUTPUT_DIR / "kronos_base_idx_all" / "best_model"
     CHART_DIR = OUTPUT_DIR / "charts"
     for p in [OUTPUT_DIR, CHECKPOINT_DIR, CHART_DIR]:
         p.mkdir(parents=True, exist_ok=True)
 
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print({"device": str(DEVICE), "data": str(DATA_PATH), "kronos_source": str(KRONOS_DIR)})
+    cuda_info = {
+        "torch": torch.__version__,
+        "torch_cuda": torch.version.cuda,
+        "device": str(DEVICE),
+        "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None,
+        "compute_capability": torch.cuda.get_device_capability(0) if torch.cuda.is_available() else None,
+        "compiled_arches": torch.cuda.get_arch_list() if torch.cuda.is_available() else [],
+        "data": str(DATA_PATH),
+        "kronos_source": str(KRONOS_DIR),
+    }
+    print(cuda_info)
     if DEVICE.type != "cuda":
         warnings.warn("GPU tidak aktif. Fine-tuning akan sangat lambat; aktifkan Kaggle GPU Accelerator.")
+    else:
+        capability = torch.cuda.get_device_capability(0)
+        supported_arches = set(torch.cuda.get_arch_list())
+        expected_arch = f"sm_{capability[0]}{capability[1]}"
+        if expected_arch not in supported_arches:
+            raise RuntimeError(
+                f"PyTorch {torch.__version__} tidak membawa kernel {expected_arch}. "
+                "Restart Kaggle session, lalu Run All agar torch 2.3.1+cu118 dimuat sebelum import."
+            )
+        try:
+            smoke = torch.ones(8, device=DEVICE)
+            torch.cuda.synchronize()
+            del smoke
+            torch.cuda.empty_cache()
+            print("✓ CUDA compatibility smoke test passed; math SDPA enabled.")
+        except RuntimeError as exc:
+            raise RuntimeError(
+                "CUDA binary tidak kompatibel dengan GPU Kaggle. Restart session "
+                "dan jalankan notebook dari sel pertama; jangan hanya rerun sel ini."
+            ) from exc
     """),
     md("""
     ## 2. Configuration
 
-    Lookback 120 sesi dipilih agar emiten termuda tetap dapat di-forecast.
-    `PRED_LEN=20` mengikuti target riset 20 hari bursa. Untuk eksperimen pertama,
-    tiga epoch dan maksimum 20.000 training windows cukup aman pada Kaggle GPU.
+    Lookback 120 sesi dan `PRED_LEN=20` mengikuti target riset 20 hari bursa.
+    Kronos-base dilatih maksimal enam epoch pada balanced sample 20.000 windows;
+    early stopping menjaga agar panel universe besar tidak overfit.
     """),
     code("""
-    TICKERS = [
-        'MCAS','MGNA','MPRO','KDTN','DMMX','BAJA','MLPT','COCO','ZONE','MDIA',
-        'KOKA','DWGL','INAI','ECII','DOOH','KOBX','PSDN','NTBK','FUTR','LUCY',
-        'JGLE','DEPO','SQMI','TAMA','FLMC','TNCA','KBLV','KLIN','GDST','KOTA',
-        'PEGE','SULI','MMIX','TFAS','ZATA','WOOD','LAND','KOPI','HOPE','FILM',
-        'PTMP','OILS','TRUS','ALDO','DIVA','LION','RLCO','NANO','ELPI','RONY'
-    ]
-
+    MODEL_ID = "NeoQuasar/Kronos-base"
     LOOKBACK = 120
     PRED_LEN = 20
     MAX_CONTEXT = 512
     TRAIN_END = pd.Timestamp("2025-12-31")
     VAL_START = pd.Timestamp("2025-07-01")
-    BATCH_SIZE = 16
-    GRAD_ACCUM_STEPS = 2
-    EPOCHS = 3
-    LEARNING_RATE = 1e-5
+    AS_OF_DATE = pd.Timestamp("2026-07-29")  # last completed session for this snapshot
+    MAX_STALE_CALENDAR_DAYS = 10
+    BATCH_SIZE = 8
+    GRAD_ACCUM_STEPS = 4
+    EPOCHS = 6
+    LEARNING_RATE = 5e-6
     WEIGHT_DECAY = 0.05
     MAX_TRAIN_SAMPLES = 20_000
     MAX_VAL_SAMPLES = 4_000
@@ -148,6 +180,10 @@ cells = [
     code("""
     raw = pd.read_parquet(DATA_PATH)
     raw["date"] = pd.to_datetime(raw["date"]).dt.tz_localize(None)
+    universe_path = DATA_PATH.parent / "universe_all.csv"
+    universe = pd.read_csv(universe_path) if universe_path.exists() else pd.DataFrame({"ticker": sorted(raw["ticker"].unique())})
+    universe["ticker"] = universe["ticker"].astype(str).str.strip().str.upper()
+    TICKERS = universe["ticker"].drop_duplicates().tolist()
     raw = raw[raw["ticker"].isin(TICKERS)].copy()
     raw = raw.sort_values(["ticker", "date"]).drop_duplicates(["ticker", "date"])
 
@@ -175,7 +211,8 @@ cells = [
     fig.update_layout(template="plotly_white", height=900, coloraxis_colorbar_title="Active %")
     fig.show()
 
-    print(f"{raw.ticker.nunique()} tickers | {len(raw):,} rows | {raw.date.min().date()} → {raw.date.max().date()}")
+    print(f"{raw.ticker.nunique()} / {len(TICKERS)} tickers with data | {len(raw):,} rows | {raw.date.min().date()} → {raw.date.max().date()}")
+    print(f"Forecast anchor: close terakhir pada/sebelum {AS_OF_DATE.date()} (bar sesudah tanggal ini tidak dipakai).")
     """),
     md("""
     ## 4. Multi-asset chronological dataset
@@ -218,9 +255,24 @@ cells = [
                         self.indices.append((ticker, start))
 
             if max_samples and len(self.indices) > max_samples:
+                # Balanced cap: setiap ticker eligible mendapat representasi,
+                # lalu sisa slot diisi dari seluruh pool.
                 rng = np.random.default_rng(SEED + (0 if split == "train" else 1))
-                selected = np.sort(rng.choice(len(self.indices), max_samples, replace=False))
-                self.indices = [self.indices[i] for i in selected]
+                by_ticker = {}
+                for item in self.indices:
+                    by_ticker.setdefault(item[0], []).append(item)
+                quota = max(1, max_samples // len(by_ticker))
+                selected, leftovers = [], []
+                for ticker, items in by_ticker.items():
+                    order = rng.permutation(len(items))
+                    take = min(quota, len(items))
+                    selected.extend([items[i] for i in order[:take]])
+                    leftovers.extend([items[i] for i in order[take:]])
+                remaining = max_samples - len(selected)
+                if remaining > 0 and leftovers:
+                    order = rng.permutation(len(leftovers))[:remaining]
+                    selected.extend([leftovers[i] for i in order])
+                self.indices = selected[:max_samples]
             print(f"{split}: {len(self.indices):,} windows across {len(self.series)} tickers")
 
         def __len__(self):
@@ -252,14 +304,14 @@ cells = [
     )
     """),
     md("""
-    ## 5. Load pretrained Kronos-small
+    ## 5. Load pretrained Kronos-base
 
     Tokenizer tidak diubah. Hanya bobot predictor 24.7M parameter yang
     di-fine-tune agar token dynamics menyesuaikan karakter saham IDX.
     """),
     code("""
     tokenizer = KronosTokenizer.from_pretrained("NeoQuasar/Kronos-Tokenizer-base").to(DEVICE).eval()
-    model = Kronos.from_pretrained("NeoQuasar/Kronos-small").to(DEVICE)
+    model = Kronos.from_pretrained(MODEL_ID).to(DEVICE)
     for p in tokenizer.parameters():
         p.requires_grad = False
 
@@ -361,7 +413,7 @@ cells = [
     fig.add_trace(go.Scatter(x=history_df.epoch, y=history_df.train_loss, mode="lines+markers", name="Train"))
     fig.add_trace(go.Scatter(x=history_df.epoch, y=history_df.val_loss, mode="lines+markers", name="Validation"))
     fig.update_layout(
-        title="Kronos-small Fine-Tuning Loss", xaxis_title="Epoch", yaxis_title="Token Cross-Entropy",
+        title="Kronos-base Fine-Tuning Loss", xaxis_title="Epoch", yaxis_title="Token Cross-Entropy",
         template="plotly_white", height=430, hovermode="x unified"
     )
     fig.show()
@@ -377,21 +429,28 @@ cells = [
     best_model = Kronos.from_pretrained(str(CHECKPOINT_DIR))
     predictor = KronosPredictor(best_model, tokenizer, device=str(DEVICE), max_context=MAX_CONTEXT)
 
-    contexts, x_times, y_times, valid_tickers, last_close_map = [], [], [], [], {}
+    contexts, x_times, y_times, valid_tickers, last_close_map, skipped = [], [], [], [], {}, []
+    global_future_dates = pd.Series(pd.bdate_range(AS_OF_DATE + pd.offsets.BDay(1), periods=PRED_LEN))
     for ticker in TICKERS:
-        g = raw[raw.ticker.eq(ticker)].sort_values("date").tail(LOOKBACK).copy()
+        g = raw[(raw.ticker.eq(ticker)) & (raw.date <= AS_OF_DATE)].sort_values("date").tail(LOOKBACK).copy()
         if len(g) < LOOKBACK:
-            print(f"Skip {ticker}: hanya {len(g)} bar, butuh {LOOKBACK}.")
+            skipped.append({"ticker": ticker, "reason": "insufficient_history", "bars": len(g), "last_date": g.date.max() if len(g) else pd.NaT})
+            continue
+        stale_days = int((AS_OF_DATE - g["date"].max()).days)
+        if stale_days > MAX_STALE_CALENDAR_DAYS:
+            skipped.append({"ticker": ticker, "reason": "stale_or_suspended", "bars": len(g), "last_date": g.date.max()})
             continue
         x_df = g[FEATURES].copy()
         x_ts = pd.Series(pd.to_datetime(g["date"]).to_numpy())
-        # Approximation: weekdays; libur resmi IDX mendatang perlu calendar khusus.
-        future = pd.Series(pd.bdate_range(g["date"].max() + pd.offsets.BDay(1), periods=PRED_LEN))
         contexts.append(x_df)
         x_times.append(x_ts)
-        y_times.append(future)
+        y_times.append(global_future_dates.copy())
         valid_tickers.append(ticker)
         last_close_map[ticker] = float(g["close"].iloc[-1])
+    skipped_df = pd.DataFrame(skipped)
+    skipped_df.to_csv(OUTPUT_DIR / "skipped_tickers.csv", index=False)
+    print(f"Eligible forecast: {len(valid_tickers)} / {len(TICKERS)} | skipped: {len(skipped_df)}")
+    display(skipped_df["reason"].value_counts().rename("count").to_frame() if len(skipped_df) else pd.DataFrame())
 
     all_paths = []
     for path_id in range(N_FORECAST_PATHS):
@@ -483,21 +542,97 @@ cells = [
     ))
     fig.add_vline(x=0, line_dash="dash", line_color="#64748b")
     fig.update_layout(
-        title="Kronos-small — Top 30 Expected 20-Day Returns",
+        title="Kronos-base — Top 30 Expected 20-Day Returns",
         xaxis_tickformat=".1%", xaxis_title="Expected return", yaxis_title="",
         template="plotly_white", height=850, margin=dict(l=70, r=40, t=80, b=60)
     )
     fig.write_html(CHART_DIR / "top30_expected_returns.html")
     fig.show()
     """),
-    md("## 9. Professional dashboards for the top five stocks"),
+    md("""
+    ## 9. Positive picks for each of the next five sessions
+
+    Return Day 1 memakai close aktual terakhir pada/sebelum `AS_OF_DATE`.
+    Return Day 2 memakai predicted close Day 1 pada path yang sama, dan
+    seterusnya. Rasio dihitung per stochastic path sebelum dirata-ratakan.
+    """),
+    code("""
+    first_5 = (
+        forecasts[forecasts["horizon_day"].between(1, 5)]
+        .sort_values(["ticker", "path_id", "horizon_day"])
+        .copy()
+    )
+    first_5["last_actual_close"] = first_5["ticker"].map(last_close_map)
+    first_5["previous_close"] = (
+        first_5.groupby(["ticker", "path_id"])["close"].shift(1)
+        .fillna(first_5["last_actual_close"])
+    )
+    first_5["daily_return"] = first_5["close"] / first_5["previous_close"] - 1
+
+    daily_ranking = (
+        first_5.groupby(["horizon_day", "date", "ticker"])
+        .agg(
+            previous_expected_close=("previous_close", "mean"),
+            expected_close=("close", "mean"),
+            expected_daily_return=("daily_return", "mean"),
+            median_daily_return=("daily_return", "median"),
+            probability_daily_up=("daily_return", lambda x: float((x > 0).mean())),
+            downside_p10=("daily_return", lambda x: float(np.quantile(x, 0.10))),
+            upside_p90=("daily_return", lambda x: float(np.quantile(x, 0.90))),
+        )
+        .reset_index()
+    )
+    positive_each_day = daily_ranking[
+        (daily_ranking["expected_daily_return"] > 0) &
+        (daily_ranking["probability_daily_up"] >= 0.60)
+    ].copy()
+    positive_each_day["rank"] = (
+        positive_each_day.groupby("horizon_day")["expected_daily_return"]
+        .rank(method="first", ascending=False).astype(int)
+    )
+    positive_each_day = positive_each_day.sort_values(["horizon_day", "rank"])
+    daily_ranking.to_parquet(OUTPUT_DIR / "all_daily_rankings_day1_to_day5.parquet", index=False)
+    positive_each_day.to_csv(OUTPUT_DIR / "positive_picks_day1_to_day5.csv", index=False)
+
+    for day in range(1, 6):
+        result = positive_each_day[positive_each_day.horizon_day.eq(day)].head(30)
+        forecast_date = result["date"].iloc[0].date() if len(result) else global_future_dates.iloc[day-1].date()
+        print(f"DAY {day} ({forecast_date}) — {len(result)} positive candidates shown")
+        display(result.style.format({
+            "previous_expected_close": "{:,.0f}", "expected_close": "{:,.0f}",
+            "expected_daily_return": "{:+.2%}", "median_daily_return": "{:+.2%}",
+            "probability_daily_up": "{:.0%}", "downside_p10": "{:+.2%}",
+            "upside_p90": "{:+.2%}",
+        }).background_gradient(subset=["expected_daily_return"], cmap="RdYlGn"))
+    """),
+    code("""
+    heatmap_names = (
+        positive_each_day.groupby("ticker")["expected_daily_return"].mean()
+        .nlargest(30).index
+    )
+    heatmap = (
+        daily_ranking[daily_ranking.ticker.isin(heatmap_names)]
+        .pivot(index="ticker", columns="horizon_day", values="expected_daily_return")
+        .reindex(heatmap_names)
+    )
+    fig = px.imshow(
+        heatmap, aspect="auto", color_continuous_scale="RdYlGn",
+        color_continuous_midpoint=0, text_auto=".1%",
+        labels={"x": "Forecast day", "y": "Ticker", "color": "Daily return"},
+        title=f"Expected Daily Return — Anchor Close {AS_OF_DATE.date()}"
+    )
+    fig.update_layout(template="plotly_white", height=850)
+    fig.write_html(CHART_DIR / "daily_return_heatmap_day1_to_day5.html")
+    fig.show()
+    """),
+    md("## 10. Professional dashboards for the top five stocks"),
     code("""
     top5_pool = top30 if len(top30) >= 5 else ranking[ranking["expected_return_20d"] > 0]
     top5 = top5_pool.head(5)["ticker"].tolist()
     print("Top 5:", top5)
 
     for ticker in top5:
-        hist = raw[raw.ticker.eq(ticker)].sort_values("date").tail(70)
+        hist = raw[(raw.ticker.eq(ticker)) & (raw.date <= AS_OF_DATE)].sort_values("date").tail(70)
         fc = forecasts[forecasts.ticker.eq(ticker)]
         band = (
             fc.groupby("date")
@@ -556,14 +691,15 @@ cells = [
         fig.write_html(CHART_DIR / f"{ticker}_forecast_dashboard.html")
         fig.show()
     """),
-    md("## 10. Package Kaggle outputs"),
+    md("## 11. Package Kaggle outputs"),
     code("""
     metadata = {
         "kronos_commit": KRONOS_COMMIT,
-        "pretrained_model": "NeoQuasar/Kronos-small",
+        "pretrained_model": MODEL_ID,
         "pretrained_tokenizer": "NeoQuasar/Kronos-Tokenizer-base",
         "train_gradient_cutoff": str(TRAIN_END.date()),
         "validation_start": str(VAL_START.date()),
+        "forecast_as_of_date": str(AS_OF_DATE.date()),
         "lookback": LOOKBACK,
         "prediction_horizon": PRED_LEN,
         "forecast_paths": N_FORECAST_PATHS,

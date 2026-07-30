@@ -1,0 +1,960 @@
+ticker,sector,subsector,has_yfinance_data
+AADI,Energi,"Minyak, Gas & Batu Bara",True
+AALI,Barang Konsumen Primer,Makanan & Minuman,True
+ABBA,Barang Konsumen Non-Primer,Media & Hiburan,True
+ABDA,Keuangan,Asuransi,True
+ABMM,Energi,"Minyak, Gas & Batu Bara",True
+ACES,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+ACRO,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+ACST,Infrastruktur,Konstruksi Bangunan,True
+ADCP,Properti & Real Estat,Properti & Real Estat,True
+ADES,Barang Konsumen Primer,Makanan & Minuman,True
+ADHI,Infrastruktur,Konstruksi Bangunan,True
+ADMF,Keuangan,Jasa Pembiayaan,True
+ADMG,Barang Baku,Barang Baku,True
+ADMR,Energi,"Minyak, Gas & Batu Bara",True
+ADRO,Energi,"Minyak, Gas & Batu Bara",True
+AEGS,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+AGAR,Barang Konsumen Primer,Makanan & Minuman,True
+AGII,Barang Baku,Barang Baku,True
+AGRO,Keuangan,Bank,True
+AGRS,Keuangan,Bank,True
+AHAP,Keuangan,Asuransi,True
+AIMS,Energi,"Minyak, Gas & Batu Bara",True
+AISA,Barang Konsumen Primer,Makanan & Minuman,True
+AKKU,Barang Konsumen Non-Primer,Jasa Konsumen,True
+AKPI,Barang Baku,Barang Baku,True
+AKRA,Energi,"Minyak, Gas & Batu Bara",True
+AKSI,Transportasi & Logistik,Logistik & Pengantaran,True
+ALDO,Barang Baku,Barang Baku,True
+ALII,Energi,"Minyak, Gas & Batu Bara",True
+ALKA,Barang Baku,Barang Baku,True
+ALMI,Barang Baku,Barang Baku,True
+ALTO,Barang Konsumen Primer,Makanan & Minuman,True
+AMAG,Keuangan,Asuransi,True
+AMAN,Properti & Real Estat,Properti & Real Estat,True
+AMAR,Keuangan,Bank,True
+AMFG,Perindustrian,Barang Perindustrian,True
+AMIN,Perindustrian,Barang Perindustrian,True
+AMMN,Barang Baku,Barang Baku,True
+AMMS,Barang Konsumen Primer,Makanan & Minuman,True
+AMOR,Keuangan,Jasa Investasi,True
+AMRT,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+ANDI,Barang Konsumen Primer,Makanan & Minuman,True
+ANJT,Barang Konsumen Primer,Makanan & Minuman,True
+ANTM,Barang Baku,Barang Baku,True
+APEX,Energi,"Minyak, Gas & Batu Bara",True
+APIC,Keuangan,Perusahaan Holding & Investasi,True
+APII,Perindustrian,Barang Perindustrian,True
+APLI,Barang Baku,Barang Baku,True
+APLN,Properti & Real Estat,Properti & Real Estat,True
+ARCI,Barang Baku,Barang Baku,True
+AREA,Teknologi,Perangkat Lunak & Jasa TI,True
+ARGO,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+ARII,Energi,"Minyak, Gas & Batu Bara",True
+ARKA,Perindustrian,Barang Perindustrian,True
+ARKO,Infrastruktur,Utilitas,True
+ARMY,Properti & Real Estat,Properti & Real Estat,True
+ARNA,Perindustrian,Barang Perindustrian,True
+ARTA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+ARTI,Energi,"Minyak, Gas & Batu Bara",True
+ARTO,Keuangan,Bank,True
+ASBI,Keuangan,Asuransi,True
+ASDM,Keuangan,Asuransi,True
+ASGR,Perindustrian,Jasa Perindustrian,True
+ASHA,Barang Konsumen Primer,Makanan & Minuman,True
+ASII,Perindustrian,Perusahaan Holding Multi Sektor,True
+ASJT,Keuangan,Asuransi,True
+ASLC,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+ASLI,Infrastruktur,Konstruksi Bangunan,True
+ASMI,Keuangan,Asuransi,True
+ASPI,Properti & Real Estat,Properti & Real Estat,True
+ASPR,Barang Baku,Barang Baku,True
+ASRI,Properti & Real Estat,Properti & Real Estat,True
+ASRM,Keuangan,Asuransi,True
+ASSA,Transportasi & Logistik,Transportasi,True
+ATAP,Properti & Real Estat,Properti & Real Estat,True
+ATIC,Teknologi,Perangkat Lunak & Jasa TI,True
+ATLA,Energi,"Minyak, Gas & Batu Bara",True
+AUTO,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+AVIA,Barang Baku,Barang Baku,True
+AWAN,Teknologi,Perangkat Lunak & Jasa TI,True
+AXIO,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+AYAM,Barang Konsumen Primer,Makanan & Minuman,True
+AYLS,Barang Baku,Barang Baku,True
+BABP,Keuangan,Bank,True
+BABY,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+BACA,Keuangan,Bank,True
+BAIK,Barang Konsumen Non-Primer,Jasa Konsumen,True
+BAJA,Barang Baku,Barang Baku,True
+BALI,Infrastruktur,Telekomunikasi,True
+BANK,Keuangan,Bank,True
+BAPA,Properti & Real Estat,Properti & Real Estat,True
+BAPI,Properti & Real Estat,Properti & Real Estat,True
+BATA,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+BATR,Barang Baku,Barang Baku,True
+BAUT,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+BAYU,Barang Konsumen Non-Primer,Jasa Konsumen,True
+BBCA,Keuangan,Bank,True
+BBHI,Keuangan,Bank,True
+BBKP,Keuangan,Bank,True
+BBLD,Keuangan,Jasa Pembiayaan,True
+BBMD,Keuangan,Bank,True
+BBNI,Keuangan,Bank,True
+BBRI,Keuangan,Bank,True
+BBRM,Energi,"Minyak, Gas & Batu Bara",True
+BBSI,Keuangan,Bank,True
+BBSS,Properti & Real Estat,Properti & Real Estat,True
+BBTN,Keuangan,Bank,True
+BBYB,Keuangan,Bank,True
+BCAP,Keuangan,Perusahaan Holding & Investasi,True
+BCIC,Keuangan,Bank,True
+BCIP,Properti & Real Estat,Properti & Real Estat,True
+BDKR,Infrastruktur,Konstruksi Bangunan,True
+BDMN,Keuangan,Bank,True
+BEBS,Barang Baku,Barang Baku,True
+BEEF,Barang Konsumen Primer,Makanan & Minuman,True
+BEER,Barang Konsumen Primer,Makanan & Minuman,True
+BEKS,Keuangan,Bank,True
+BELI,Teknologi,Perangkat Lunak & Jasa TI,True
+BELL,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+BESS,Energi,"Minyak, Gas & Batu Bara",True
+BEST,Properti & Real Estat,Properti & Real Estat,True
+BFIN,Keuangan,Jasa Pembiayaan,True
+BGTG,Keuangan,Bank,True
+BHAT,Keuangan,Asuransi,True
+BHIT,Perindustrian,Perusahaan Holding Multi Sektor,True
+BIKA,Properti & Real Estat,Properti & Real Estat,True
+BIKE,Barang Konsumen Non-Primer,Barang Rekreasi,True
+BIMA,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+BINA,Keuangan,Bank,True
+BINO,Perindustrian,Jasa Perindustrian,True
+BIPI,Energi,"Minyak, Gas & Batu Bara",True
+BIPP,Properti & Real Estat,Properti & Real Estat,True
+BIRD,Transportasi & Logistik,Transportasi,True
+BISI,Barang Konsumen Primer,Makanan & Minuman,True
+BJBR,Keuangan,Bank,True
+BJTM,Keuangan,Bank,True
+BKDP,Properti & Real Estat,Properti & Real Estat,True
+BKSL,Properti & Real Estat,Properti & Real Estat,True
+BKSW,Keuangan,Bank,True
+BLES,Barang Baku,Barang Baku,True
+BLOG,Transportasi & Logistik,Logistik & Pengantaran,True
+BLTA,Transportasi & Logistik,Logistik & Pengantaran,True
+BLTZ,Barang Konsumen Non-Primer,Jasa Konsumen,True
+BLUE,Perindustrian,Jasa Perindustrian,True
+BMAS,Keuangan,Bank,True
+BMBL,Barang Konsumen Non-Primer,Jasa Konsumen,True
+BMHS,Kesehatan,Jasa & Peralatan Kesehatan,True
+BMRI,Keuangan,Bank,True
+BMSR,Barang Baku,Barang Baku,True
+BMTR,Barang Konsumen Non-Primer,Media & Hiburan,True
+BNBA,Keuangan,Bank,True
+BNBR,Perindustrian,Perusahaan Holding Multi Sektor,True
+BNGA,Keuangan,Bank,True
+BNII,Keuangan,Bank,True
+BNLI,Keuangan,Bank,True
+BOAT,Energi,"Minyak, Gas & Batu Bara",True
+BOBA,Barang Konsumen Primer,Makanan & Minuman,True
+BOGA,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+BOLA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+BOLT,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+BOSS,Energi,"Minyak, Gas & Batu Bara",True
+BPFI,Keuangan,Jasa Pembiayaan,True
+BPII,Keuangan,Perusahaan Holding & Investasi,True
+BPTR,Transportasi & Logistik,Transportasi,True
+BRAM,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+BREN,Infrastruktur,Utilitas,True
+BRIS,Keuangan,Bank,True
+BRMS,Barang Baku,Barang Baku,True
+BRNA,Barang Baku,Barang Baku,True
+BRPT,Barang Baku,Barang Baku,True
+BRRC,Barang Konsumen Primer,Makanan & Minuman,True
+BSBK,Properti & Real Estat,Properti & Real Estat,True
+BSDE,Properti & Real Estat,Properti & Real Estat,True
+BSIM,Keuangan,Bank,True
+BSML,Energi,"Minyak, Gas & Batu Bara",True
+BSSR,Energi,"Minyak, Gas & Batu Bara",True
+BSWD,Keuangan,Bank,True
+BTEK,Barang Konsumen Primer,Makanan & Minuman,True
+BTEL,Infrastruktur,Telekomunikasi,True
+BTON,Barang Baku,Barang Baku,True
+BTPN,Keuangan,Bank,True
+BTPS,Keuangan,Bank,True
+BUAH,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+BUDI,Barang Konsumen Primer,Makanan & Minuman,True
+BUKA,Teknologi,Perangkat Lunak & Jasa TI,True
+BUKK,Infrastruktur,Konstruksi Bangunan,True
+BULL,Energi,"Minyak, Gas & Batu Bara",True
+BUMI,Energi,"Minyak, Gas & Batu Bara",True
+BUVA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+BVIC,Keuangan,Bank,True
+BWPT,Barang Konsumen Primer,Makanan & Minuman,True
+BYAN,Energi,"Minyak, Gas & Batu Bara",True
+CAKK,Perindustrian,Barang Perindustrian,True
+CAMP,Barang Konsumen Primer,Makanan & Minuman,True
+CANI,Energi,"Minyak, Gas & Batu Bara",True
+CARE,Kesehatan,Jasa & Peralatan Kesehatan,True
+CARS,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+CASA,Keuangan,Perusahaan Holding & Investasi,True
+CASH,Teknologi,Perangkat Lunak & Jasa TI,True
+CASS,Infrastruktur,Infrastruktur Transportasi,True
+CBDK,Properti & Real Estat,Properti & Real Estat,True
+CBMF,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+CBPE,Properti & Real Estat,Properti & Real Estat,True
+CBRE,Energi,"Minyak, Gas & Batu Bara",True
+CBUT,Barang Konsumen Primer,Makanan & Minuman,True
+CCSI,Perindustrian,Barang Perindustrian,True
+CDIA,Infrastruktur,Utilitas,True
+CEKA,Barang Konsumen Primer,Makanan & Minuman,True
+CENT,Infrastruktur,Telekomunikasi,True
+CFIN,Keuangan,Jasa Pembiayaan,True
+CGAS,Energi,"Minyak, Gas & Batu Bara",True
+CHEK,Kesehatan,Jasa & Peralatan Kesehatan,True
+CHEM,Barang Baku,Barang Baku,True
+CHIP,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+CINT,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+CITA,Barang Baku,Barang Baku,True
+CITY,Properti & Real Estat,Properti & Real Estat,True
+CLAY,Barang Konsumen Non-Primer,Jasa Konsumen,True
+CLEO,Barang Konsumen Primer,Makanan & Minuman,True
+CLPI,Barang Baku,Barang Baku,True
+CMNP,Infrastruktur,Infrastruktur Transportasi,True
+CMNT,Barang Baku,Barang Baku,True
+CMPP,Transportasi & Logistik,Transportasi,True
+CMRY,Barang Konsumen Primer,Makanan & Minuman,True
+CNKO,Energi,"Minyak, Gas & Batu Bara",True
+CNMA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+CNTB,,,True
+CNTX,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+COAL,Energi,"Minyak, Gas & Batu Bara",True
+COCO,Barang Konsumen Primer,Makanan & Minuman,True
+COIN,Keuangan,Perusahaan Holding & Investasi,True
+COWL,Properti & Real Estat,Properti & Real Estat,True
+CPIN,Barang Konsumen Primer,Makanan & Minuman,True
+CPRI,Properti & Real Estat,Properti & Real Estat,True
+CPRO,Barang Konsumen Primer,Makanan & Minuman,True
+CRAB,Barang Konsumen Primer,Makanan & Minuman,True
+CRSN,Perindustrian,Jasa Perindustrian,True
+CSAP,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+CSIS,Properti & Real Estat,Properti & Real Estat,True
+CSMI,Barang Konsumen Non-Primer,Jasa Konsumen,True
+CSRA,Barang Konsumen Primer,Makanan & Minuman,True
+CTBN,Barang Baku,Barang Baku,True
+CTRA,Properti & Real Estat,Properti & Real Estat,True
+CTTH,Perindustrian,Barang Perindustrian,True
+CUAN,Energi,"Minyak, Gas & Batu Bara",True
+CYBR,Teknologi,Perangkat Lunak & Jasa TI,True
+DAAZ,Barang Baku,Barang Baku,True
+DADA,Properti & Real Estat,Properti & Real Estat,True
+DART,Properti & Real Estat,Properti & Real Estat,True
+DATA,Infrastruktur,Telekomunikasi,True
+DAYA,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+DCII,Teknologi,Perangkat Lunak & Jasa TI,True
+DEAL,Transportasi & Logistik,Logistik & Pengantaran,True
+DEFI,Keuangan,Perusahaan Holding & Investasi,True
+DEPO,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+DEWA,Energi,"Minyak, Gas & Batu Bara",True
+DEWI,Barang Konsumen Primer,Makanan & Minuman,True
+DFAM,Barang Konsumen Non-Primer,Jasa Konsumen,True
+DGIK,Infrastruktur,Konstruksi Bangunan,True
+DGNS,Kesehatan,Jasa & Peralatan Kesehatan,True
+DGWG,Barang Baku,Barang Baku,True
+DIGI,Barang Konsumen Non-Primer,Media & Hiburan,True
+DILD,Properti & Real Estat,Properti & Real Estat,True
+DIVA,Teknologi,Perangkat Lunak & Jasa TI,True
+DKFT,Barang Baku,Barang Baku,True
+DKHH,Kesehatan,Jasa & Peralatan Kesehatan,True
+DLTA,Barang Konsumen Primer,Makanan & Minuman,True
+DMAS,Properti & Real Estat,Properti & Real Estat,True
+DMMX,Teknologi,Perangkat Lunak & Jasa TI,True
+DMND,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+DNAR,Keuangan,Bank,True
+DNET,Keuangan,Perusahaan Holding & Investasi,True
+DOID,Energi,"Minyak, Gas & Batu Bara",True
+DOOH,Barang Konsumen Non-Primer,Media & Hiburan,True
+DOSS,Barang Konsumen Non-Primer,Barang Rekreasi,True
+DPNS,Barang Baku,Barang Baku,True
+DPUM,Barang Konsumen Primer,Makanan & Minuman,True
+DRMA,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+DSFI,Barang Konsumen Primer,Makanan & Minuman,True
+DSNG,Barang Konsumen Primer,Makanan & Minuman,True
+DSSA,Energi,"Minyak, Gas & Batu Bara",True
+DUCK,Barang Konsumen Non-Primer,Jasa Konsumen,True
+DUTI,Properti & Real Estat,Properti & Real Estat,True
+DVLA,Kesehatan,Farmasi & Riset Kesehatan,True
+DWGL,Energi,"Minyak, Gas & Batu Bara",True
+DYAN,Perindustrian,Jasa Perindustrian,True
+EAST,Barang Konsumen Non-Primer,Jasa Konsumen,True
+ECII,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+EDGE,Teknologi,Perangkat Lunak & Jasa TI,True
+EKAD,Barang Baku,Barang Baku,True
+ELIT,Teknologi,Perangkat Lunak & Jasa TI,True
+ELPI,Transportasi & Logistik,Logistik & Pengantaran,True
+ELSA,Energi,"Minyak, Gas & Batu Bara",True
+ELTY,Properti & Real Estat,Properti & Real Estat,True
+EMAS,Barang Baku,Barang Baku,True
+EMDE,Properti & Real Estat,Properti & Real Estat,True
+EMTK,Teknologi,Perangkat Lunak & Jasa TI,True
+ENAK,Barang Konsumen Non-Primer,Jasa Konsumen,True
+ENRG,Energi,"Minyak, Gas & Batu Bara",True
+ENVY,Teknologi,Perangkat Lunak & Jasa TI,True
+ENZO,Barang Konsumen Primer,Makanan & Minuman,True
+EPAC,Barang Baku,Barang Baku,True
+EPMT,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+ERAA,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+ERAL,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+ERTX,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+ESIP,Barang Baku,Barang Baku,True
+ESSA,Barang Baku,Barang Baku,True
+ESTA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+ESTI,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+ETWA,Barang Baku,Barang Baku,True
+EURO,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+EXCL,Infrastruktur,Telekomunikasi,True
+FAPA,Barang Konsumen Primer,Makanan & Minuman,True
+FAST,Barang Konsumen Non-Primer,Jasa Konsumen,True
+FASW,Barang Baku,Barang Baku,True
+FILM,Barang Konsumen Non-Primer,Media & Hiburan,True
+FIMP,Infrastruktur,Konstruksi Bangunan,True
+FIRE,Energi,"Minyak, Gas & Batu Bara",True
+FISH,Barang Konsumen Primer,Makanan & Minuman,True
+FITT,Barang Konsumen Non-Primer,Jasa Konsumen,True
+FLMC,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+FMII,Properti & Real Estat,Properti & Real Estat,True
+FOLK,Perindustrian,Perusahaan Holding Multi Sektor,True
+FOOD,Barang Konsumen Primer,Makanan & Minuman,True
+FORE,Barang Konsumen Primer,Makanan & Minuman,True
+FORU,Barang Konsumen Non-Primer,Media & Hiburan,True
+FPNI,Barang Baku,Barang Baku,True
+FUJI,Keuangan,Jasa Pembiayaan,True
+FUTR,Barang Konsumen Non-Primer,Media & Hiburan,True
+FWCT,Barang Baku,Barang Baku,True
+GAMA,Properti & Real Estat,Properti & Real Estat,True
+GDST,Barang Baku,Barang Baku,True
+GDYR,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+GEMA,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+GEMS,Energi,"Minyak, Gas & Batu Bara",True
+GGRM,Barang Konsumen Primer,Rokok,True
+GGRP,Barang Baku,Barang Baku,True
+GHON,Infrastruktur,Telekomunikasi,True
+GIAA,Transportasi & Logistik,Transportasi,True
+GJTL,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+GLOB,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+GLVA,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+GMFI,Infrastruktur,Infrastruktur Transportasi,True
+GMTD,Properti & Real Estat,Properti & Real Estat,True
+GOLD,Infrastruktur,Telekomunikasi,True
+GOLF,Barang Konsumen Non-Primer,Jasa Konsumen,True
+GOLL,Barang Konsumen Primer,Makanan & Minuman,True
+GOOD,Barang Konsumen Primer,Makanan & Minuman,True
+GOTO,Teknologi,Perangkat Lunak & Jasa TI,True
+GOTOM,,,False
+GPRA,Properti & Real Estat,Properti & Real Estat,True
+GPSO,Perindustrian,Barang Perindustrian,True
+GRIA,Properti & Real Estat,Properti & Real Estat,True
+GRPH,Barang Konsumen Non-Primer,Jasa Konsumen,True
+GRPM,Barang Konsumen Primer,Makanan & Minuman,True
+GSMF,Keuangan,Perusahaan Holding & Investasi,True
+GTBO,Energi,"Minyak, Gas & Batu Bara",True
+GTRA,Transportasi & Logistik,Logistik & Pengantaran,True
+GTSI,Energi,"Minyak, Gas & Batu Bara",True
+GULA,Barang Konsumen Primer,Makanan & Minuman,True
+GUNA,Barang Konsumen Primer,Makanan & Minuman,True
+GWSA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+GZCO,Barang Konsumen Primer,Makanan & Minuman,True
+HADE,Infrastruktur,Utilitas,True
+HAIS,Transportasi & Logistik,Logistik & Pengantaran,True
+HAJJ,Barang Konsumen Non-Primer,Jasa Konsumen,True
+HALO,Kesehatan,Jasa & Peralatan Kesehatan,True
+HATM,Transportasi & Logistik,Logistik & Pengantaran,True
+HBAT,Properti & Real Estat,Properti & Real Estat,True
+HDFA,Keuangan,Jasa Pembiayaan,True
+HDIT,Teknologi,Perangkat Lunak & Jasa TI,True
+HEAL,Kesehatan,Jasa & Peralatan Kesehatan,True
+HELI,Transportasi & Logistik,Transportasi,True
+HERO,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+HEXA,Perindustrian,Barang Perindustrian,True
+HGII,Infrastruktur,Utilitas,True
+HILL,Energi,"Minyak, Gas & Batu Bara",True
+HITS,Energi,"Minyak, Gas & Batu Bara",True
+HKMU,Barang Baku,Barang Baku,True
+HMSP,Barang Konsumen Primer,Rokok,True
+HOKI,Barang Konsumen Primer,Makanan & Minuman,True
+HOME,Barang Konsumen Non-Primer,Jasa Konsumen,True
+HOMI,Properti & Real Estat,Properti & Real Estat,True
+HOPE,Perindustrian,Barang Perindustrian,True
+HOTL,Barang Konsumen Non-Primer,Jasa Konsumen,True
+HRME,Barang Konsumen Non-Primer,Jasa Konsumen,True
+HRTA,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+HRUM,Energi,"Minyak, Gas & Batu Bara",True
+HUMI,Energi,"Minyak, Gas & Batu Bara",True
+HYGN,Perindustrian,Jasa Perindustrian,True
+IATA,Energi,"Minyak, Gas & Batu Bara",True
+IBFN,Perindustrian,Barang Perindustrian,True
+IBOS,Barang Konsumen Primer,Makanan & Minuman,True
+IBST,Infrastruktur,Telekomunikasi,True
+ICBP,Barang Konsumen Primer,Makanan & Minuman,True
+ICON,Perindustrian,Jasa Perindustrian,True
+IDEA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+IDPR,Infrastruktur,Konstruksi Bangunan,True
+IFII,Barang Baku,Barang Baku,True
+IFSH,Barang Baku,Barang Baku,True
+IGAR,Barang Baku,Barang Baku,True
+IIKP,Barang Konsumen Non-Primer,Barang Rekreasi,True
+IKAI,Perindustrian,Barang Perindustrian,True
+IKAN,Barang Konsumen Primer,Makanan & Minuman,True
+IKBI,Perindustrian,Barang Perindustrian,True
+IKPM,Kesehatan,Farmasi & Riset Kesehatan,True
+IMAS,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+IMJS,Transportasi & Logistik,Transportasi,True
+IMPC,Perindustrian,Barang Perindustrian,True
+INAF,Kesehatan,Farmasi & Riset Kesehatan,True
+INAI,Barang Baku,Barang Baku,True
+INCF,Barang Baku,Barang Baku,True
+INCI,Barang Baku,Barang Baku,True
+INCO,Barang Baku,Barang Baku,True
+INDF,Barang Konsumen Primer,Makanan & Minuman,True
+INDO,Properti & Real Estat,Properti & Real Estat,True
+INDR,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+INDS,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+INDX,Perindustrian,Jasa Perindustrian,True
+INDY,Energi,"Minyak, Gas & Batu Bara",True
+INET,Infrastruktur,Telekomunikasi,True
+INKP,Barang Baku,Barang Baku,True
+INOV,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+INPC,Keuangan,Bank,True
+INPP,Properti & Real Estat,Properti & Real Estat,True
+INPS,Energi,"Minyak, Gas & Batu Bara",True
+INRU,Barang Baku,Barang Baku,True
+INTA,Perindustrian,Barang Perindustrian,True
+INTD,Barang Baku,Barang Baku,True
+INTP,Barang Baku,Barang Baku,True
+IOTF,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+IPAC,Properti & Real Estat,Properti & Real Estat,True
+IPCC,Infrastruktur,Infrastruktur Transportasi,True
+IPCM,Infrastruktur,Infrastruktur Transportasi,True
+IPOL,Barang Baku,Barang Baku,True
+IPPE,Barang Konsumen Primer,Makanan & Minuman,True
+IPTV,Barang Konsumen Non-Primer,Media & Hiburan,True
+IRRA,Kesehatan,Jasa & Peralatan Kesehatan,True
+IRSX,Teknologi,Perangkat Lunak & Jasa TI,True
+ISAP,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+ISAT,Infrastruktur,Telekomunikasi,True
+ISEA,Barang Konsumen Primer,Makanan & Minuman,True
+ISSP,Barang Baku,Barang Baku,True
+ITIC,Barang Konsumen Primer,Rokok,True
+ITMA,Energi,"Minyak, Gas & Batu Bara",True
+ITMG,Energi,"Minyak, Gas & Batu Bara",True
+JARR,Barang Konsumen Primer,Makanan & Minuman,True
+JAST,Infrastruktur,Telekomunikasi,True
+JATI,Teknologi,Perangkat Lunak & Jasa TI,True
+JAWA,Barang Konsumen Primer,Makanan & Minuman,True
+JAYA,Transportasi & Logistik,Logistik & Pengantaran,True
+JECC,Perindustrian,Barang Perindustrian,True
+JGLE,Barang Konsumen Non-Primer,Jasa Konsumen,True
+JIHD,Barang Konsumen Non-Primer,Jasa Konsumen,True
+JKON,Infrastruktur,Konstruksi Bangunan,True
+JMAS,Keuangan,Asuransi,True
+JPFA,Barang Konsumen Primer,Makanan & Minuman,True
+JRPT,Properti & Real Estat,Properti & Real Estat,True
+JSKY,Energi,Energi Alternatif,True
+JSMR,Infrastruktur,Infrastruktur Transportasi,True
+JSPT,Barang Konsumen Non-Primer,Jasa Konsumen,True
+JTPE,Perindustrian,Jasa Perindustrian,True
+KAEF,Kesehatan,Farmasi & Riset Kesehatan,True
+KAQI,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+KARW,Infrastruktur,Infrastruktur Transportasi,True
+KAYU,Barang Baku,Barang Baku,True
+KBAG,Properti & Real Estat,Properti & Real Estat,True
+KBLI,Perindustrian,Barang Perindustrian,True
+KBLM,Perindustrian,Barang Perindustrian,True
+KBLV,Infrastruktur,Telekomunikasi,True
+KBRI,Barang Baku,Barang Baku,True
+KDSI,Barang Baku,Barang Baku,True
+KDTN,Barang Konsumen Non-Primer,Jasa Konsumen,True
+KEEN,Infrastruktur,Utilitas,True
+KEJU,Barang Konsumen Primer,Makanan & Minuman,True
+KETR,Infrastruktur,Telekomunikasi,True
+KIAS,Perindustrian,Barang Perindustrian,True
+KICI,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+KIJA,Properti & Real Estat,Properti & Real Estat,True
+KING,Perindustrian,Jasa Perindustrian,True
+KINO,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+KIOS,Teknologi,Perangkat Lunak & Jasa TI,True
+KJEN,Transportasi & Logistik,Logistik & Pengantaran,True
+KKES,Barang Baku,Barang Baku,True
+KKGI,Energi,"Minyak, Gas & Batu Bara",True
+KLAS,Transportasi & Logistik,Logistik & Pengantaran,True
+KLBF,Kesehatan,Farmasi & Riset Kesehatan,True
+KLIN,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+KMDS,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+KMTR,Barang Baku,Barang Baku,True
+KOBX,Perindustrian,Barang Perindustrian,True
+KOCI,Properti & Real Estat,Properti & Real Estat,True
+KOIN,Perindustrian,Barang Perindustrian,True
+KOKA,Infrastruktur,Konstruksi Bangunan,True
+KONI,Perindustrian,Jasa Perindustrian,True
+KOPI,Energi,"Minyak, Gas & Batu Bara",True
+KOTA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+KPIG,Barang Konsumen Non-Primer,Jasa Konsumen,True
+KRAS,Barang Baku,Barang Baku,True
+KREN,Teknologi,Perangkat Lunak & Jasa TI,True
+KRYA,Infrastruktur,Konstruksi Bangunan,True
+KSIX,Properti & Real Estat,Properti & Real Estat,True
+KUAS,Perindustrian,Barang Perindustrian,True
+LABA,Perindustrian,Barang Perindustrian,True
+LABS,Kesehatan,Jasa & Peralatan Kesehatan,True
+LAJU,Transportasi & Logistik,Logistik & Pengantaran,True
+LAND,Properti & Real Estat,Properti & Real Estat,True
+LAPD,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+LCGP,Properti & Real Estat,Properti & Real Estat,True
+LCKM,Infrastruktur,Telekomunikasi,True
+LEAD,Energi,"Minyak, Gas & Batu Bara",True
+LFLO,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+LIFE,Keuangan,Asuransi,True
+LINK,Infrastruktur,Telekomunikasi,True
+LION,Perindustrian,Jasa Perindustrian,True
+LIVE,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+LMAS,Teknologi,Perangkat Lunak & Jasa TI,True
+LMAX,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+LMPI,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+LMSH,Barang Baku,Barang Baku,True
+LOPI,Transportasi & Logistik,Logistik & Pengantaran,True
+LPCK,Properti & Real Estat,Properti & Real Estat,True
+LPGI,Keuangan,Asuransi,True
+LPIN,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+LPKR,Properti & Real Estat,Properti & Real Estat,True
+LPLI,Properti & Real Estat,Properti & Real Estat,True
+LPPF,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+LPPS,Keuangan,Perusahaan Holding & Investasi,True
+LRNA,Transportasi & Logistik,Transportasi,True
+LSIP,Barang Konsumen Primer,Makanan & Minuman,True
+LTLS,Barang Baku,Barang Baku,True
+LUCK,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+LUCY,Barang Konsumen Non-Primer,Jasa Konsumen,True
+MABA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+MAGP,Barang Konsumen Primer,Makanan & Minuman,True
+MAHA,Energi,"Minyak, Gas & Batu Bara",True
+MAIN,Barang Konsumen Primer,Makanan & Minuman,True
+MANG,Infrastruktur,Konstruksi Bangunan,True
+MAPA,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+MAPB,Barang Konsumen Non-Primer,Jasa Konsumen,True
+MAPI,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+MARI,Barang Konsumen Non-Primer,Media & Hiburan,True
+MARK,Perindustrian,Barang Perindustrian,True
+MASB,Keuangan,Bank,True
+MAXI,Barang Konsumen Primer,Makanan & Minuman,True
+MAYA,Keuangan,Bank,True
+MBAP,Energi,"Minyak, Gas & Batu Bara",True
+MBMA,Barang Baku,Barang Baku,True
+MBSS,Energi,"Minyak, Gas & Batu Bara",True
+MBTO,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+MCAS,Teknologi,Perangkat Lunak & Jasa TI,True
+MCOL,Energi,"Minyak, Gas & Batu Bara",True
+MCOR,Keuangan,Bank,True
+MDIA,Barang Konsumen Non-Primer,Media & Hiburan,True
+MDIY,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+MDKA,Barang Baku,Barang Baku,True
+MDKI,Barang Baku,Barang Baku,True
+MDLA,Kesehatan,Farmasi & Riset Kesehatan,True
+MDLN,Properti & Real Estat,Properti & Real Estat,True
+MDRN,Perindustrian,Jasa Perindustrian,True
+MEDC,Energi,"Minyak, Gas & Batu Bara",True
+MEDS,Kesehatan,Jasa & Peralatan Kesehatan,True
+MEGA,Keuangan,Bank,True
+MEJA,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+MENN,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+MERI,Barang Konsumen Non-Primer,Jasa Konsumen,True
+MERK,Kesehatan,Farmasi & Riset Kesehatan,True
+META,Infrastruktur,Infrastruktur Transportasi,True
+MFMI,Perindustrian,Jasa Perindustrian,True
+MGLV,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+MGNA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+MGRO,Barang Konsumen Primer,Makanan & Minuman,True
+MHKI,Perindustrian,Jasa Perindustrian,True
+MICE,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+MIDI,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+MIKA,Kesehatan,Jasa & Peralatan Kesehatan,True
+MINA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+MINE,Barang Baku,Barang Baku,True
+MIRA,Transportasi & Logistik,Logistik & Pengantaran,True
+MITI,Transportasi & Logistik,Logistik & Pengantaran,True
+MKAP,Energi,"Minyak, Gas & Batu Bara",True
+MKNT,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+MKPI,Properti & Real Estat,Properti & Real Estat,True
+MKTR,Barang Konsumen Primer,Makanan & Minuman,True
+MLBI,Barang Konsumen Primer,Makanan & Minuman,True
+MLIA,Perindustrian,Barang Perindustrian,True
+MLPL,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+MLPT,Teknologi,Perangkat Lunak & Jasa TI,True
+MMIX,Kesehatan,Jasa & Peralatan Kesehatan,True
+MMLP,Properti & Real Estat,Properti & Real Estat,True
+MNCN,Barang Konsumen Non-Primer,Media & Hiburan,True
+MOLI,Barang Baku,Barang Baku,True
+MORA,Infrastruktur,Telekomunikasi,True
+MPIX,Teknologi,Perangkat Lunak & Jasa TI,True
+MPMX,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+MPOW,Infrastruktur,Utilitas,True
+MPPA,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+MPRO,Properti & Real Estat,Properti & Real Estat,True
+MPXL,Transportasi & Logistik,Logistik & Pengantaran,True
+MRAT,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+MREI,Keuangan,Asuransi,True
+MSIE,Properti & Real Estat,Properti & Real Estat,True
+MSIN,Barang Konsumen Non-Primer,Media & Hiburan,True
+MSJA,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+MSKY,Barang Konsumen Non-Primer,Media & Hiburan,True
+MSTI,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+MTDL,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+MTEL,Infrastruktur,Telekomunikasi,True
+MTFN,Energi,"Minyak, Gas & Batu Bara",True
+MTLA,Properti & Real Estat,Properti & Real Estat,True
+MTMH,Kesehatan,Jasa & Peralatan Kesehatan,True
+MTPS,Infrastruktur,Konstruksi Bangunan,True
+MTRA,Infrastruktur,Konstruksi Bangunan,True
+MTSM,Properti & Real Estat,Properti & Real Estat,True
+MTWI,Keuangan,Asuransi,True
+MUTU,Perindustrian,Jasa Perindustrian,True
+MYOH,Energi,"Minyak, Gas & Batu Bara",True
+MYOR,Barang Konsumen Primer,Makanan & Minuman,True
+MYTX,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+NAIK,Perindustrian,Jasa Perindustrian,True
+NANO,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+NASA,Properti & Real Estat,Properti & Real Estat,True
+NASI,Barang Konsumen Primer,Makanan & Minuman,True
+NATO,Barang Konsumen Non-Primer,Jasa Konsumen,True
+NAYZ,Barang Konsumen Primer,Makanan & Minuman,True
+NCKL,Barang Baku,Barang Baku,True
+NELY,Transportasi & Logistik,Logistik & Pengantaran,True
+NEST,Barang Konsumen Primer,Makanan & Minuman,True
+NETV,Barang Konsumen Non-Primer,Media & Hiburan,True
+NFCX,Teknologi,Perangkat Lunak & Jasa TI,True
+NICE,Barang Baku,Barang Baku,True
+NICK,Keuangan,Perusahaan Holding & Investasi,True
+NICL,Barang Baku,Barang Baku,True
+NIKL,Barang Baku,Barang Baku,True
+NINE,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+NIRO,Properti & Real Estat,Properti & Real Estat,True
+NISP,Keuangan,Bank,True
+NOBU,Keuangan,Bank,True
+NPGF,Barang Baku,Barang Baku,True
+NRCA,Infrastruktur,Konstruksi Bangunan,True
+NSSS,Barang Konsumen Primer,Makanan & Minuman,True
+NTBK,Perindustrian,Barang Perindustrian,True
+NUSA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+NZIA,Properti & Real Estat,Properti & Real Estat,True
+OASA,Infrastruktur,Telekomunikasi,True
+OBAT,Kesehatan,Farmasi & Riset Kesehatan,True
+OBMD,Barang Baku,Barang Baku,True
+OCAP,Keuangan,Perusahaan Holding & Investasi,True
+OILS,Barang Konsumen Primer,Makanan & Minuman,True
+OKAS,Barang Baku,Barang Baku,True
+OLIV,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+OMED,Kesehatan,Jasa & Peralatan Kesehatan,True
+OMRE,Properti & Real Estat,Properti & Real Estat,True
+OPMS,Barang Baku,Barang Baku,True
+PACK,Barang Baku,Barang Baku,True
+PADA,Perindustrian,Jasa Perindustrian,True
+PADI,Keuangan,Jasa Investasi,True
+PALM,Keuangan,Perusahaan Holding & Investasi,True
+PAMG,Properti & Real Estat,Properti & Real Estat,True
+PANI,Properti & Real Estat,Properti & Real Estat,True
+PANR,Barang Konsumen Non-Primer,Jasa Konsumen,True
+PANS,Keuangan,Jasa Investasi,True
+PART,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+PBID,Barang Baku,Barang Baku,True
+PBRX,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+PBSA,Infrastruktur,Konstruksi Bangunan,True
+PCAR,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+PDES,Barang Konsumen Non-Primer,Jasa Konsumen,True
+PDPP,Barang Baku,Barang Baku,True
+PEGE,Keuangan,Perusahaan Holding & Investasi,True
+PEHA,Kesehatan,Farmasi & Riset Kesehatan,True
+PEVE,Kesehatan,Farmasi & Riset Kesehatan,True
+PGAS,Energi,"Minyak, Gas & Batu Bara",True
+PGEO,Infrastruktur,Utilitas,True
+PGJO,Teknologi,Perangkat Lunak & Jasa TI,True
+PGLI,Barang Konsumen Non-Primer,Jasa Konsumen,True
+PGUN,Barang Konsumen Primer,Makanan & Minuman,True
+PICO,Barang Baku,Barang Baku,True
+PIPA,Perindustrian,Barang Perindustrian,True
+PJAA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+PJHB,Transportasi & Logistik,Logistik & Pengantaran,True
+PKPK,Energi,"Minyak, Gas & Batu Bara",True
+PLAN,Barang Konsumen Non-Primer,Jasa Konsumen,True
+PLAS,Keuangan,Perusahaan Holding & Investasi,True
+PLIN,Properti & Real Estat,Properti & Real Estat,True
+PMJS,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+PMMP,Barang Konsumen Primer,Makanan & Minuman,True
+PMUI,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+PNBN,Keuangan,Bank,True
+PNBS,Keuangan,Bank,True
+PNGO,Barang Konsumen Primer,Makanan & Minuman,True
+PNIN,Keuangan,Asuransi,True
+PNLF,Keuangan,Asuransi,True
+PNSE,Barang Konsumen Non-Primer,Jasa Konsumen,True
+POLA,Keuangan,Jasa Pembiayaan,True
+POLI,Properti & Real Estat,Properti & Real Estat,True
+POLL,Properti & Real Estat,Properti & Real Estat,True
+POLU,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+POLY,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+POOL,Keuangan,Perusahaan Holding & Investasi,True
+PORT,Infrastruktur,Infrastruktur Transportasi,True
+POSA,Properti & Real Estat,Properti & Real Estat,True
+POWR,Infrastruktur,Utilitas,True
+PPGL,Transportasi & Logistik,Logistik & Pengantaran,True
+PPRE,Infrastruktur,Konstruksi Bangunan,True
+PPRI,Barang Baku,Barang Baku,True
+PPRO,Properti & Real Estat,Properti & Real Estat,True
+PRAY,Kesehatan,Jasa & Peralatan Kesehatan,True
+PRDA,Kesehatan,Jasa & Peralatan Kesehatan,True
+PRIM,Kesehatan,Jasa & Peralatan Kesehatan,True
+PSAB,Barang Baku,Barang Baku,True
+PSAT,Energi,"Minyak, Gas & Batu Bara",True
+PSDN,Barang Konsumen Primer,Makanan & Minuman,True
+PSGO,Barang Konsumen Primer,Makanan & Minuman,True
+PSKT,Barang Konsumen Non-Primer,Jasa Konsumen,True
+PSSI,Energi,"Minyak, Gas & Batu Bara",True
+PTBA,Energi,"Minyak, Gas & Batu Bara",True
+PTDU,Infrastruktur,Konstruksi Bangunan,True
+PTIS,Energi,"Minyak, Gas & Batu Bara",True
+PTMP,Perindustrian,Barang Perindustrian,True
+PTMR,Barang Baku,Barang Baku,True
+PTPP,Infrastruktur,Konstruksi Bangunan,True
+PTPS,Barang Konsumen Primer,Makanan & Minuman,True
+PTPW,Infrastruktur,Konstruksi Bangunan,True
+PTRO,Energi,"Minyak, Gas & Batu Bara",True
+PTSN,Teknologi,Perangkat Keras & Peralatan Teknologi,True
+PTSP,Barang Konsumen Non-Primer,Jasa Konsumen,True
+PUDP,Properti & Real Estat,Properti & Real Estat,True
+PURA,Transportasi & Logistik,Logistik & Pengantaran,True
+PURE,Barang Baku,Barang Baku,True
+PURI,Properti & Real Estat,Properti & Real Estat,True
+PWON,Properti & Real Estat,Properti & Real Estat,True
+PYFA,Kesehatan,Farmasi & Riset Kesehatan,True
+PZZA,Barang Konsumen Non-Primer,Jasa Konsumen,True
+RAAM,Barang Konsumen Non-Primer,Media & Hiburan,True
+RAFI,Barang Konsumen Non-Primer,Jasa Konsumen,True
+RAJA,Energi,"Minyak, Gas & Batu Bara",True
+RALS,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+RANC,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+RATU,Energi,"Minyak, Gas & Batu Bara",True
+RBMS,Properti & Real Estat,Properti & Real Estat,True
+RCCC,Transportasi & Logistik,Logistik & Pengantaran,True
+RDTX,Properti & Real Estat,Properti & Real Estat,True
+REAL,Properti & Real Estat,Properti & Real Estat,True
+RELF,Properti & Real Estat,Properti & Real Estat,True
+RELI,Keuangan,Jasa Investasi,True
+RGAS,Energi,"Minyak, Gas & Batu Bara",True
+RICY,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+RIGS,Energi,"Minyak, Gas & Batu Bara",True
+RIMO,Properti & Real Estat,Properti & Real Estat,True
+RISE,Properti & Real Estat,Properti & Real Estat,True
+RLCO,Barang Konsumen Primer,Makanan & Minuman,True
+RMKE,Energi,"Minyak, Gas & Batu Bara",True
+RMKO,Energi,"Minyak, Gas & Batu Bara",True
+ROCK,Properti & Real Estat,Properti & Real Estat,True
+RODA,Properti & Real Estat,Properti & Real Estat,True
+RONY,Infrastruktur,Konstruksi Bangunan,True
+ROTI,Barang Konsumen Primer,Makanan & Minuman,True
+RSCH,Kesehatan,Jasa & Peralatan Kesehatan,True
+RSGK,Kesehatan,Jasa & Peralatan Kesehatan,True
+RUIS,Energi,"Minyak, Gas & Batu Bara",True
+RUNS,Teknologi,Perangkat Lunak & Jasa TI,True
+SAFE,Transportasi & Logistik,Transportasi,True
+SAGE,Properti & Real Estat,Properti & Real Estat,True
+SAME,Kesehatan,Jasa & Peralatan Kesehatan,True
+SAMF,Barang Baku,Barang Baku,True
+SAPX,Transportasi & Logistik,Logistik & Pengantaran,True
+SATU,Properti & Real Estat,Properti & Real Estat,True
+SBAT,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+SBMA,Barang Baku,Barang Baku,True
+SCCO,Perindustrian,Barang Perindustrian,True
+SCMA,Barang Konsumen Non-Primer,Media & Hiburan,True
+SCNP,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+SCPI,Kesehatan,Farmasi & Riset Kesehatan,True
+SDMU,Transportasi & Logistik,Logistik & Pengantaran,True
+SDPC,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+SDRA,Keuangan,Bank,True
+SEMA,Energi,Energi Alternatif,True
+SFAN,Keuangan,Perusahaan Holding & Investasi,True
+SGER,Energi,"Minyak, Gas & Batu Bara",True
+SGRO,Barang Konsumen Primer,Makanan & Minuman,True
+SHID,Barang Konsumen Non-Primer,Jasa Konsumen,True
+SHIP,Energi,"Minyak, Gas & Batu Bara",True
+SICO,Energi,"Minyak, Gas & Batu Bara",True
+SIDO,Kesehatan,Farmasi & Riset Kesehatan,True
+SILO,Kesehatan,Jasa & Peralatan Kesehatan,True
+SIMA,Barang Baku,Barang Baku,True
+SIMP,Barang Konsumen Primer,Makanan & Minuman,True
+SINI,Perindustrian,Barang Perindustrian,True
+SIPD,Barang Konsumen Primer,Makanan & Minuman,True
+SKBM,Barang Konsumen Primer,Makanan & Minuman,True
+SKLT,Barang Konsumen Primer,Makanan & Minuman,True
+SKRN,Perindustrian,Barang Perindustrian,True
+SKYB,Teknologi,Perangkat Lunak & Jasa TI,True
+SLIS,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+SMAR,Barang Konsumen Primer,Makanan & Minuman,True
+SMBR,Barang Baku,Barang Baku,True
+SMCB,Barang Baku,Barang Baku,True
+SMDM,Properti & Real Estat,Properti & Real Estat,True
+SMDR,Transportasi & Logistik,Logistik & Pengantaran,True
+SMGA,Barang Baku,Barang Baku,True
+SMGR,Barang Baku,Barang Baku,True
+SMIL,Perindustrian,Barang Perindustrian,True
+SMKL,Barang Baku,Barang Baku,True
+SMKM,Infrastruktur,Konstruksi Bangunan,True
+SMLE,Barang Baku,Barang Baku,True
+SMMA,Keuangan,Perusahaan Holding & Investasi,True
+SMMT,Energi,"Minyak, Gas & Batu Bara",True
+SMRA,Properti & Real Estat,Properti & Real Estat,True
+SMRU,Energi,"Minyak, Gas & Batu Bara",True
+SMSM,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+SNLK,Barang Konsumen Non-Primer,Jasa Konsumen,True
+SOCI,Energi,"Minyak, Gas & Batu Bara",True
+SOFA,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+SOHO,Kesehatan,Farmasi & Riset Kesehatan,True
+SOLA,Barang Baku,Barang Baku,True
+SONA,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+SOSS,Perindustrian,Jasa Perindustrian,True
+SOTS,Barang Konsumen Non-Primer,Jasa Konsumen,True
+SOUL,Barang Konsumen Primer,Makanan & Minuman,True
+SPMA,Barang Baku,Barang Baku,True
+SPRE,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+SPTO,Perindustrian,Barang Perindustrian,True
+SQMI,Barang Baku,Barang Baku,True
+SRAJ,Kesehatan,Jasa & Peralatan Kesehatan,True
+SRIL,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+SRSN,Barang Baku,Barang Baku,True
+SRTG,Keuangan,Perusahaan Holding & Investasi,True
+SSIA,Infrastruktur,Konstruksi Bangunan,True
+SSMS,Barang Konsumen Primer,Makanan & Minuman,True
+SSTM,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+STAA,Barang Konsumen Primer,Makanan & Minuman,True
+STAR,Keuangan,Perusahaan Holding & Investasi,True
+STRK,Barang Konsumen Primer,Makanan & Minuman,True
+STTP,Barang Konsumen Primer,Makanan & Minuman,True
+SUGI,Energi,"Minyak, Gas & Batu Bara",True
+SULI,Barang Baku,Barang Baku,True
+SUNI,Energi,"Minyak, Gas & Batu Bara",True
+SUPA,Keuangan,Bank,True
+SUPR,Infrastruktur,Telekomunikasi,True
+SURE,Energi,"Minyak, Gas & Batu Bara",True
+SURI,Kesehatan,Jasa & Peralatan Kesehatan,True
+SWAT,Barang Baku,Barang Baku,True
+SWID,Barang Konsumen Non-Primer,Jasa Konsumen,True
+TALF,Barang Baku,Barang Baku,True
+TAMA,Infrastruktur,Konstruksi Bangunan,True
+TAMU,Energi,"Minyak, Gas & Batu Bara",True
+TAPG,Barang Konsumen Primer,Makanan & Minuman,True
+TARA,Properti & Real Estat,Properti & Real Estat,True
+TAXI,Transportasi & Logistik,Transportasi,True
+TAYS,Barang Konsumen Primer,Makanan & Minuman,True
+TBIG,Infrastruktur,Telekomunikasi,True
+TBLA,Barang Konsumen Primer,Makanan & Minuman,True
+TBMS,Barang Baku,Barang Baku,True
+TCID,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+TCPI,Energi,"Minyak, Gas & Batu Bara",True
+TDPM,Barang Baku,Barang Baku,True
+TEBE,Energi,"Minyak, Gas & Batu Bara",True
+TECH,Teknologi,Perangkat Lunak & Jasa TI,True
+TELE,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+TFAS,Teknologi,Perangkat Lunak & Jasa TI,True
+TFCO,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+TGKA,Barang Konsumen Primer,Makanan & Minuman,True
+TGRA,Infrastruktur,Utilitas,True
+TGUK,Barang Konsumen Primer,Makanan & Minuman,True
+TIFA,Keuangan,Jasa Pembiayaan,True
+TINS,Barang Baku,Barang Baku,True
+TIRA,Perindustrian,Jasa Perindustrian,True
+TIRT,Barang Baku,Barang Baku,True
+TKIM,Barang Baku,Barang Baku,True
+TLDN,Barang Konsumen Primer,Makanan & Minuman,True
+TLKM,Infrastruktur,Telekomunikasi,True
+TMAS,Transportasi & Logistik,Logistik & Pengantaran,True
+TMPO,Barang Konsumen Non-Primer,Media & Hiburan,True
+TNCA,Transportasi & Logistik,Logistik & Pengantaran,True
+TOBA,Energi,"Minyak, Gas & Batu Bara",True
+TOOL,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+TOPS,Infrastruktur,Konstruksi Bangunan,True
+TOSK,Teknologi,Perangkat Lunak & Jasa TI,True
+TOTL,Infrastruktur,Konstruksi Bangunan,True
+TOTO,Perindustrian,Barang Perindustrian,True
+TOWR,Infrastruktur,Telekomunikasi,True
+TOYS,Barang Konsumen Non-Primer,Barang Rekreasi,True
+TPIA,Barang Baku,Barang Baku,True
+TPMA,Energi,"Minyak, Gas & Batu Bara",True
+TRAM,Energi,"Minyak, Gas & Batu Bara",True
+TRGU,Barang Konsumen Primer,Makanan & Minuman,True
+TRIL,Perindustrian,Jasa Perindustrian,True
+TRIM,Keuangan,Jasa Investasi,True
+TRIN,Properti & Real Estat,Properti & Real Estat,True
+TRIO,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+TRIS,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+TRJA,Transportasi & Logistik,Transportasi,True
+TRON,Teknologi,Perangkat Lunak & Jasa TI,True
+TRST,Barang Baku,Barang Baku,True
+TRUE,Properti & Real Estat,Properti & Real Estat,True
+TRUK,Transportasi & Logistik,Logistik & Pengantaran,True
+TRUS,Keuangan,Jasa Pembiayaan,True
+TSPC,Kesehatan,Farmasi & Riset Kesehatan,True
+TUGU,Keuangan,Asuransi,True
+TYRE,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+UANG,Properti & Real Estat,Properti & Real Estat,True
+UCID,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+UDNG,Barang Konsumen Primer,Makanan & Minuman,True
+UFOE,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+ULTJ,Barang Konsumen Primer,Makanan & Minuman,True
+UNIC,Barang Baku,Barang Baku,True
+UNIQ,Energi,"Minyak, Gas & Batu Bara",True
+UNIT,Barang Konsumen Non-Primer,Pakaian & Barang Mewah,True
+UNSP,Barang Konsumen Primer,Makanan & Minuman,True
+UNTD,Barang Konsumen Non-Primer,Barang Rekreasi,True
+UNTR,Perindustrian,Barang Perindustrian,True
+UNVR,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+URBN,Properti & Real Estat,Properti & Real Estat,True
+UVCR,Teknologi,Perangkat Lunak & Jasa TI,True
+VAST,Properti & Real Estat,Properti & Real Estat,True
+VERN,Barang Konsumen Non-Primer,Media & Hiburan,True
+VICI,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama,True
+VICO,Keuangan,Perusahaan Holding & Investasi,True
+VINS,Keuangan,Asuransi,True
+VISI,Perindustrian,Jasa Perindustrian,True
+VIVA,Barang Konsumen Non-Primer,Media & Hiburan,True
+VKTR,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif,True
+VOKS,Perindustrian,Barang Perindustrian,True
+VRNA,Keuangan,Jasa Pembiayaan,True
+VTNY,Keuangan,Jasa Pembiayaan,True
+WAPO,Barang Konsumen Primer,Makanan & Minuman,True
+WBSA,Transportasi & Logistik,Logistik & Pengantaran,True
+WEGE,Infrastruktur,Konstruksi Bangunan,True
+WEHA,Transportasi & Logistik,Transportasi,True
+WGSH,Teknologi,Perangkat Lunak & Jasa TI,True
+WICO,Barang Konsumen Primer,Perdagangan Ritel Barang Primer,True
+WIDI,Perindustrian,Barang Perindustrian,True
+WIFI,Teknologi,Perangkat Lunak & Jasa TI,True
+WIIM,Barang Konsumen Primer,Rokok,True
+WIKA,Infrastruktur,Konstruksi Bangunan,True
+WINE,Barang Konsumen Primer,Makanan & Minuman,True
+WINR,Properti & Real Estat,Properti & Real Estat,True
+WINS,Energi,"Minyak, Gas & Batu Bara",True
+WIRG,Teknologi,Perangkat Lunak & Jasa TI,True
+WMPP,Barang Konsumen Primer,Makanan & Minuman,True
+WMUU,Barang Konsumen Primer,Makanan & Minuman,True
+WOMF,Keuangan,Jasa Pembiayaan,True
+WOOD,Barang Konsumen Non-Primer,Barang Rumah Tangga,True
+WOWS,Energi,"Minyak, Gas & Batu Bara",True
+WSBP,Barang Baku,Barang Baku,True
+WSKT,Infrastruktur,Konstruksi Bangunan,True
+WTON,Barang Baku,Barang Baku,True
+YELO,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+YOII,Keuangan,Asuransi,True
+YPAS,Barang Baku,Barang Baku,True
+YULE,Keuangan,Jasa Investasi,True
+YUPI,Barang Konsumen Primer,Makanan & Minuman,True
+ZATA,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+ZBRA,Perindustrian,Perusahaan Holding Multi Sektor,True
+ZINC,Barang Baku,Barang Baku,True
+ZONE,Barang Konsumen Non-Primer,Perdagangan Ritel,True
+ZYRX,Teknologi,Perangkat Keras & Peralatan Teknologi,True
