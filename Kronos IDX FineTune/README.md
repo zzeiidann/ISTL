@@ -25,12 +25,11 @@ dengan Kaggle Tesla P100 maupun T4. Setelah mengganti versi PyTorch atau setelah
 CUDA error, restart Kaggle session sebelum menjalankan ulang dari awal.
 
 Notebook membekukan tokenizer dan hanya fine-tune predictor Kronos-base.
-Training gradient berhenti pada 2025-12-31; data 2026 hanya dipakai sebagai
-context inference agar prinsip untouched 2026 tetap terjaga.
+Training target berakhir sebelum 1 Juli 2026, sedangkan validation target
+memakai 1–30 Juli 2026.
 
-Snapshot ini memakai `AS_OF_DATE = 2026-07-29`. Bar 30 Juli tidak menjadi
-anchor karena dapat merupakan bar intraday ketika dataset diambil. Day 1
-forecast dimulai pada 30 Juli dan dibandingkan dengan close terakhir pada atau
-sebelum 29 Juli.
+Snapshot ini memakai completed close `AS_OF_DATE = 2026-07-30`. Day 1 forecast
+dimulai pada 31 Juli dan dibandingkan dengan close terakhir pada atau sebelum
+30 Juli.
 
 Prediksi adalah keluaran model statistik, bukan rekomendasi investasi.

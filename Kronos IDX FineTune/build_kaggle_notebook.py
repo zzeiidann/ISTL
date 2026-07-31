@@ -26,12 +26,12 @@ cells = [
     seluruh emiten, menampilkan ranking 30 kandidat, serta dashboard profesional
     untuk lima saham teratas.
 
-    **Research guardrail**
+    **Production split**
 
     - Tokenizer pretrained dibekukan.
-    - Predictor di-fine-tune hanya sampai `2025-12-31`.
-    - Data 2026 boleh menjadi context saat membuat forecast live, tetapi tidak
-      pernah masuk gradient update.
+    - Training target berakhir sebelum `2026-07-01`.
+    - Validation target memakai `2026-07-01` sampai `2026-07-30`.
+    - Forecast live memakai context lengkap sampai close `2026-07-30`.
     - Forecast bersifat probabilistik dan bukan rekomendasi investasi.
     """),
     md("""
@@ -154,9 +154,9 @@ cells = [
     LOOKBACK = 120
     PRED_LEN = 20
     MAX_CONTEXT = 512
-    TRAIN_END = pd.Timestamp("2025-12-31")
-    VAL_START = pd.Timestamp("2025-07-01")
-    AS_OF_DATE = pd.Timestamp("2026-07-29")  # last completed session for this snapshot
+    TRAIN_END = pd.Timestamp("2026-07-30")
+    VAL_START = pd.Timestamp("2026-07-01")
+    AS_OF_DATE = pd.Timestamp("2026-07-30")
     MAX_STALE_CALENDAR_DAYS = 10
     BATCH_SIZE = 8
     GRAD_ACCUM_STEPS = 4
@@ -697,8 +697,9 @@ cells = [
         "kronos_commit": KRONOS_COMMIT,
         "pretrained_model": MODEL_ID,
         "pretrained_tokenizer": "NeoQuasar/Kronos-Tokenizer-base",
-        "train_gradient_cutoff": str(TRAIN_END.date()),
+        "training_target_end_exclusive": str(VAL_START.date()),
         "validation_start": str(VAL_START.date()),
+        "validation_end": str(TRAIN_END.date()),
         "forecast_as_of_date": str(AS_OF_DATE.date()),
         "lookback": LOOKBACK,
         "prediction_horizon": PRED_LEN,
