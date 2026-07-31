@@ -1,0 +1,41 @@
+# BackTest Kronos Screener
+
+Six standalone Kaggle notebooks compare three frozen Kronos checkpoints on two
+rolling daily backtest modes:
+
+| Checkpoint | 1-day | 5-day |
+|---|---|---|
+| Validated no-refit epoch 15 | `backtest_1d_validated_no_refit_e15.ipynb` | `backtest_5d_validated_no_refit_e15.ipynb` |
+| Refit-run validated epoch 4 | `backtest_1d_refit_run_validated_e4.ipynb` | `backtest_5d_refit_run_validated_e4.ipynb` |
+| Production refit epoch 4 | `backtest_1d_production_refit_e4.ipynb` | `backtest_5d_production_refit_e4.ipynb` |
+
+Each notebook clones `https://github.com/zzeiidann/ISTL.git`, pulls only its own
+Git LFS checkpoint, installs PyTorch 2.3.1 CUDA 11.8 for Kaggle P100/T4, runs
+frozen-model rolling inference, and performs 400 Optuna TPE trials. The runner
+also clones the official Kronos source at the pinned tested commit when it is
+not present in ISTL.
+
+For every origin and horizon, the candidate universe is at most 100 stocks with
+positive predicted daily close gain. A single global weighted percentile-rank
+score selects 30. A realized hit requires:
+
+```text
+actual target-day high / actual previous-session close - 1 >= 5%
+```
+
+The engine uses 42 backtest origins, a chronological 70/30 optimization/holdout
+split, and an embargo equal to the maximum forecast horizon. Outputs include
+the full candidate panel, selected daily top 30, Optuna trials, global weights,
+horizon win rates, baselines, and a JSON summary.
+
+These runs calibrate a secondary screener around already-trained frozen models.
+They are not independent evaluations of the underlying Kronos checkpoints for
+dates that were included in those checkpoints' fine-tuning data. The temporal
+holdout measures the scorer weights, while genuinely live dates after the model
+cutoff remain the strongest final check.
+
+Regenerate all notebooks with:
+
+```bash
+python3 "BackTest Kronos Screener/build_kaggle_notebooks.py"
+```
