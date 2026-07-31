@@ -46,12 +46,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model-path", type=Path, required=True)
     parser.add_argument("--run-name", required=True)
     parser.add_argument("--horizon-mode", type=int, choices=[1, 5], required=True)
-    parser.add_argument("--trials", type=int, default=400)
+    parser.add_argument("--trials", type=int, default=1500)
     parser.add_argument("--backtest-sessions", type=int, default=42)
     parser.add_argument("--paths", type=int, default=5)
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--top-positive", type=int, default=100)
     parser.add_argument("--select", type=int, default=30)
+    parser.add_argument("--min-universe-ratio", type=float, default=0.80)
     parser.add_argument("--lookback", type=int, default=120)
     parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
@@ -268,11 +269,54 @@ def attach_actual_labels(
     )
 
 
-def prepare_candidate_panel(frame: pd.DataFrame, top_positive: int) -> pd.DataFrame:
+def remove_anomalous_origins(
+    frame: pd.DataFrame,
+    select: int,
+    min_universe_ratio: float,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Remove a whole origin when any horizon has partial coverage or too few candidates."""
+    if not 0 < min_universe_ratio <= 1:
+        raise ValueError("--min-universe-ratio harus berada dalam interval (0, 1].")
+
+    coverage = (
+        frame.groupby(["origin", "horizon"], as_index=False)
+        .agg(
+            forecast_tickers=("ticker", "nunique"),
+            positive_candidates=("pred_close_gain_mean", lambda values: int(values.gt(0).sum())),
+        )
+    )
+    reference = coverage.groupby("horizon")["forecast_tickers"].median().rename("median_tickers")
+    coverage = coverage.merge(reference, on="horizon", how="left")
+    coverage["minimum_tickers"] = np.ceil(
+        coverage["median_tickers"] * min_universe_ratio
+    ).astype(int)
+    coverage["low_coverage"] = coverage["forecast_tickers"].lt(coverage["minimum_tickers"])
+    coverage["too_few_positive"] = coverage["positive_candidates"].lt(select)
+    coverage["excluded"] = coverage["low_coverage"] | coverage["too_few_positive"]
+    coverage["reason"] = np.select(
+        [
+            coverage["low_coverage"] & coverage["too_few_positive"],
+            coverage["low_coverage"],
+            coverage["too_few_positive"],
+        ],
+        ["low_coverage_and_too_few_positive", "low_coverage", "too_few_positive"],
+        default="",
+    )
+
+    # One broken horizon makes that rolling origin incomparable, so all its
+    # horizons are removed together in the 5D experiment.
+    excluded_origins = set(coverage.loc[coverage["excluded"], "origin"])
+    cleaned = frame.loc[~frame["origin"].isin(excluded_origins)].copy()
+    if cleaned.empty:
+        raise RuntimeError("Semua origin dianggap anomali; periksa data dan threshold coverage.")
+    return cleaned, coverage
+
+
+def prepare_candidate_panel(frame: pd.DataFrame, top_positive: int, select: int) -> pd.DataFrame:
     groups = []
     for _, group in frame.groupby(["origin", "horizon"], sort=True):
         group = group[group["pred_close_gain_mean"].gt(0)].copy()
-        if group.empty:
+        if len(group) < select:
             continue
         group = group.nlargest(top_positive, "pred_close_gain_mean").copy()
         for feature in SCORE_FEATURES:
@@ -402,8 +446,26 @@ def main() -> None:
         origin_frames.append(result)
 
     forecasts = pd.concat(origin_frames, ignore_index=True)
+    forecasts, origin_audit = remove_anomalous_origins(
+        forecasts,
+        select=args.select,
+        min_universe_ratio=args.min_universe_ratio,
+    )
+    origin_audit.to_csv(output_dir / "origin_quality_audit.csv", index=False)
+    excluded = origin_audit.loc[origin_audit["excluded"]]
+    if not excluded.empty:
+        print("Origin anomali yang otomatis dikeluarkan:")
+        print(
+            excluded[
+                [
+                    "origin", "horizon", "forecast_tickers", "median_tickers",
+                    "positive_candidates", "reason",
+                ]
+            ].to_string(index=False)
+        )
+
     labeled = attach_actual_labels(forecasts, prices, calendar)
-    candidates = prepare_candidate_panel(labeled, args.top_positive)
+    candidates = prepare_candidate_panel(labeled, args.top_positive, args.select)
     candidates.to_parquet(output_dir / "daily_positive_top100_panel.parquet", index=False)
 
     unique_origins = sorted(candidates["origin"].unique())
@@ -440,6 +502,9 @@ def main() -> None:
         "horizon_mode": args.horizon_mode,
         "horizons": horizons,
         "backtest_sessions": len(origins),
+        "valid_backtest_sessions": int(candidates["origin"].nunique()),
+        "excluded_anomalous_sessions": int(origin_audit.loc[origin_audit["excluded"], "origin"].nunique()),
+        "min_universe_ratio": args.min_universe_ratio,
         "origin_start": str(pd.Timestamp(origins[0]).date()),
         "origin_end": str(pd.Timestamp(origins[-1]).date()),
         "target": "actual_high / previous_actual_close - 1 >= 0.05",

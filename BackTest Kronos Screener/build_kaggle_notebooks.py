@@ -102,7 +102,7 @@ def build_notebook(model: dict, horizon: int) -> dict:
             %pip install -q einops==0.8.1 huggingface_hub==0.33.1 safetensors==0.6.2 pyarrow optuna==4.4.0 tqdm
             """
         ),
-        markdown("## 3. Run rolling inference and Optuna 400-trial optimization"),
+        markdown("## 3. Run rolling inference and Optuna 1,500-trial optimization"),
         code(
             f"""
             import subprocess, sys
@@ -114,12 +114,13 @@ def build_notebook(model: dict, horizon: int) -> dict:
                 "--model-path", str(checkpoint),
                 "--run-name", "{run_name}",
                 "--horizon-mode", "{horizon}",
-                "--trials", "400",
+                "--trials", "1500",
                 "--backtest-sessions", "42",
                 "--paths", "5",
                 "--batch-size", "32",
                 "--top-positive", "100",
                 "--select", "30",
+                "--min-universe-ratio", "0.80",
                 "--lookback", "120",
                 "--seed", "42",
             ]
@@ -132,7 +133,7 @@ def build_notebook(model: dict, horizon: int) -> dict:
             f"""
             import json, shutil
             import pandas as pd
-            from IPython.display import display
+            from IPython.display import Javascript, display
 
             output_dir = Path("/kaggle/working/backtest_kronos_screener/{run_name}")
             summary = json.loads((output_dir / "backtest_summary.json").read_text())
@@ -152,6 +153,18 @@ def build_notebook(model: dict, horizon: int) -> dict:
                 f"/kaggle/working/{run_name}", "zip", output_dir
             )
             print("Download:", archive)
+
+            # Start downloading automatically as soon as the ZIP exists.
+            archive_name = Path(archive).name
+            download_url = f"/files/kaggle/working/{{archive_name}}"
+            display(Javascript(
+                "const link=document.createElement('a');"
+                f"link.href={{json.dumps(download_url)}};"
+                f"link.download={{json.dumps(archive_name)}};"
+                "document.body.appendChild(link);"
+                "link.click();"
+                "link.remove();"
+            ))
             """
         ),
     ]

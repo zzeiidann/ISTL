@@ -11,7 +11,7 @@ rolling daily backtest modes:
 
 Each notebook clones `https://github.com/zzeiidann/ISTL.git`, pulls only its own
 Git LFS checkpoint, installs PyTorch 2.3.1 CUDA 11.8 for Kaggle P100/T4, runs
-frozen-model rolling inference, and performs 400 Optuna TPE trials. The runner
+frozen-model rolling inference, and performs 1,500 Optuna TPE trials. The runner
 also clones the official Kronos source at the pinned tested commit when it is
 not present in ISTL.
 
@@ -26,7 +26,11 @@ actual target-day high / actual previous-session close - 1 >= 5%
 The engine uses 42 backtest origins, a chronological 70/30 optimization/holdout
 split, and an embargo equal to the maximum forecast horizon. Outputs include
 the full candidate panel, selected daily top 30, Optuna trials, global weights,
-horizon win rates, baselines, and a JSON summary.
+horizon win rates, baselines, a JSON summary, and `origin_quality_audit.csv`.
+Before optimization, a whole origin is automatically removed when any horizon
+has forecast coverage below 80% of the median daily universe or fewer than 30
+positive candidates. Each notebook packages the results and automatically
+starts downloading its ZIP when the run finishes.
 
 These runs calibrate a secondary screener around already-trained frozen models.
 They are not independent evaluations of the underlying Kronos checkpoints for
