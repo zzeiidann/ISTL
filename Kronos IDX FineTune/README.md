@@ -33,3 +33,11 @@ dimulai pada 31 Juli dan dibandingkan dengan close terakhir pada atau sebelum
 30 Juli.
 
 Prediksi adalah keluaran model statistik, bukan rekomendasi investasi.
+
+## Varian GPU 80 GB
+
+`kronos_idx_kaggle_finetune_80gb.ipynb` adalah notebook terpisah untuk GPU
+A100/H100 80 GB. Varian ini memakai 200.000 dynamic, recency-aware windows per
+epoch, BF16, batch 128, seluruh validation Juli, dan clean production refit
+sampai 30 Juli. Regenerasikan dengan `build_kaggle_notebook_80gb.py`; notebook
+standar tidak diubah oleh konfigurasi training varian ini.
