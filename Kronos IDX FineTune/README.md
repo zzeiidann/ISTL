@@ -48,3 +48,12 @@ Output varian 80 GB bersifat runtime-adaptive: Kaggle memakai
 mounted di `/content/drive/MyDrive`, dengan fallback `/content`, dan runtime
 lokal memakai direktori project. Checkpoint terbaik dan final production model
 disimpan di bawah output directory tersebut.
+
+## Varian 80 GB tanpa refit
+
+`kronos_idx_kaggle_finetune_80gb_no_refit.ipynb` adalah varian yang disarankan
+untuk evaluasi dan forecast saat ini. Gradient training berhenti sebelum Juli,
+seluruh Juli menjadi validation, dan best validated checkpoint langsung dipakai
+untuk forecast dengan context sampai 30 Juli. Tidak ada post-validation refit,
+sehingga model final tetap memiliki pengukuran validation independen. Notebook
+ini diregenerasikan dengan `build_kaggle_notebook_80gb_no_refit.py`.
