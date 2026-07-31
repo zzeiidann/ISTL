@@ -65,6 +65,44 @@ for cell in notebook["cells"]:
             'print("✓ CUDA compatibility smoke test passed; math SDPA enabled.")',
             'print("✓ CUDA compatibility smoke test passed; Blackwell SDPA enabled.")',
         )
+        text = text.replace(
+            'roots = [Path.cwd(), Path("/kaggle/working"), Path("/kaggle/input")]',
+            'roots = [Path.cwd(), Path("/content"), Path("/kaggle/working"), Path("/kaggle/input")]',
+        )
+        text = text.replace(
+            'KRONOS_DIR = PROJECT_DIR / "Kronos"\nKRONOS_COMMIT',
+            'KRONOS_DIR = PROJECT_DIR / "Kronos"\n\n'
+            '# Colab: mount Drive for persistent checkpoints when possible.\n'
+            'if Path("/content").exists():\n'
+            '    if not Path("/content/drive/MyDrive").exists():\n'
+            '        try:\n'
+            '            from google.colab import drive\n'
+            '            drive.mount("/content/drive")\n'
+            '        except Exception as exc:\n'
+            '            warnings.warn(f"Google Drive mount gagal; output Colab bersifat sementara: {exc}")\n'
+            '    RUNTIME_ROOT = (\n'
+            '        Path("/content/drive/MyDrive/ISTL-Kronos")\n'
+            '        if Path("/content/drive/MyDrive").exists() else Path("/content")\n'
+            '    )\n'
+            'elif Path("/kaggle/working").exists():\n'
+            '    RUNTIME_ROOT = Path("/kaggle/working")\n'
+            'else:\n'
+            '    RUNTIME_ROOT = PROJECT_DIR\n'
+            'RUNTIME_ROOT.mkdir(parents=True, exist_ok=True)\n\n'
+            'KRONOS_COMMIT',
+        )
+        text = text.replace(
+            'KRONOS_DIR = Path("/kaggle/working/Kronos")',
+            'KRONOS_DIR = RUNTIME_ROOT / "Kronos"',
+        )
+        text = text.replace(
+            'OUTPUT_DIR = Path("/kaggle/working/kronos_idx_outputs")',
+            'OUTPUT_DIR = RUNTIME_ROOT / "kronos_idx_outputs"',
+        )
+        text = text.replace(
+            'print(cuda_info)',
+            'print(cuda_info)\nprint("Persistent output directory:", OUTPUT_DIR)',
+        )
         cell["source"] = text.splitlines(True)
 
     elif "balanced sample 20.000 windows" in text:
@@ -100,7 +138,10 @@ for cell in notebook["cells"]:
             TRAIN_WINDOWS_PER_EPOCH = 200_000
             REFIT_WINDOWS_PER_EPOCH = 200_000
             RECENT_SAMPLE_WEIGHT = 3.0
-            NUM_WORKERS = 12
+            # Notebook kernels and Python 3.12 can tear down forked persistent
+            # workers from a different PID. Start with the stable in-process
+            # loader; benchmark multiprocessing separately after correctness.
+            NUM_WORKERS = 0
             MIN_ACTIVE_RATIO = 0.60
             PATIENCE = 2
 
@@ -191,11 +232,15 @@ for cell in notebook["cells"]:
                     return torch.from_numpy(x), torch.from_numpy(stamps)
 
             def make_loader(dataset, shuffle):
-                return DataLoader(
-                    dataset, batch_size=BATCH_SIZE, shuffle=shuffle,
+                kwargs = dict(
+                    dataset=dataset, batch_size=BATCH_SIZE, shuffle=shuffle,
                     num_workers=NUM_WORKERS, pin_memory=True, drop_last=shuffle,
-                    persistent_workers=NUM_WORKERS > 0, prefetch_factor=4,
                 )
+                if NUM_WORKERS > 0:
+                    # Dynamic indices are refreshed each epoch, so workers must
+                    # not persist with a stale private copy of the dataset.
+                    kwargs.update(persistent_workers=False, prefetch_factor=4)
+                return DataLoader(**kwargs)
 
             train_ds = DynamicPanelKlineDataset(raw[raw.date <= TRAIN_END], "train", TRAIN_WINDOWS_PER_EPOCH)
             val_ds = DynamicPanelKlineDataset(raw[raw.date <= TRAIN_END], "val")
@@ -330,6 +375,59 @@ for cell in notebook["cells"]:
             """
         )
 
+# Keep expensive production refit separate from restartable batched inference.
+rank_cell_index = next(
+    i for i, cell in enumerate(notebook["cells"])
+    if "## 8. Rank all stocks" in "".join(cell.get("source", []))
+)
+notebook["cells"].insert(
+    rank_cell_index,
+    {
+        "cell_type": "code",
+        "execution_count": None,
+        "metadata": {},
+        "outputs": [],
+        "source": source(
+            """
+            if not valid_tickers:
+                raise RuntimeError("Tidak ada ticker eligible untuk forecast.")
+
+            all_paths = []
+            for path_id in range(N_FORECAST_PATHS):
+                torch.manual_seed(SEED + 10_000 + path_id)
+                if torch.cuda.is_available():
+                    torch.cuda.manual_seed_all(SEED + 10_000 + path_id)
+                for start in tqdm(range(0, len(valid_tickers), INFERENCE_ASSET_BATCH), desc=f"Forecast path {path_id+1}"):
+                    stop = start + INFERENCE_ASSET_BATCH
+                    preds = predictor.predict_batch(
+                        df_list=contexts[start:stop],
+                        x_timestamp_list=x_times[start:stop],
+                        y_timestamp_list=y_times[start:stop],
+                        pred_len=PRED_LEN,
+                        T=TEMPERATURE,
+                        top_p=TOP_P,
+                        top_k=0,
+                        sample_count=1,
+                        verbose=False,
+                    )
+                    for ticker, pred in zip(valid_tickers[start:stop], preds):
+                        path = pred.reset_index().rename(columns={"index": "date"})
+                        path["ticker"] = ticker
+                        path["path_id"] = path_id
+                        path["horizon_day"] = np.arange(1, len(path) + 1)
+                        all_paths.append(path)
+
+            if not all_paths:
+                raise RuntimeError("Predictor tidak menghasilkan forecast path.")
+            forecasts = pd.concat(all_paths, ignore_index=True)
+            forecasts["date"] = pd.to_datetime(forecasts["date"])
+            forecasts.to_parquet(OUTPUT_DIR / "all_forecast_paths.parquet", index=False)
+            print(f"Saved {len(forecasts):,} forecast rows for {forecasts.ticker.nunique()} tickers.")
+            """
+        ),
+    },
+)
+
 # Add profile-specific metadata to the existing export cell.
 for cell in notebook["cells"]:
     text = "".join(cell.get("source", []))
@@ -337,6 +435,10 @@ for cell in notebook["cells"]:
         text = text.replace(
             '"pretrained_model": MODEL_ID,',
             '"pretrained_model": MODEL_ID,\n    "training_profile": "80gb_dynamic_refit",\n    "selected_epochs": int(best_epoch),\n    "train_windows_per_epoch": TRAIN_WINDOWS_PER_EPOCH,\n    "refit_windows_per_epoch": REFIT_WINDOWS_PER_EPOCH,',
+        )
+        text = text.replace(
+            'shutil.make_archive("/kaggle/working/kronos_idx_outputs", "zip", OUTPUT_DIR)',
+            'shutil.make_archive(str(OUTPUT_DIR), "zip", OUTPUT_DIR)',
         )
         cell["source"] = text.splitlines(True)
 

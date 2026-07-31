@@ -38,6 +38,13 @@ Prediksi adalah keluaran model statistik, bukan rekomendasi investasi.
 
 `kronos_idx_kaggle_finetune_80gb.ipynb` adalah notebook terpisah untuk GPU
 A100/H100 80 GB. Varian ini memakai 200.000 dynamic, recency-aware windows per
-epoch, BF16, batch 128, seluruh validation Juli, dan clean production refit
-sampai 30 Juli. Regenerasikan dengan `build_kaggle_notebook_80gb.py`; notebook
+epoch, BF16, batch 128, DataLoader notebook-safe, seluruh validation Juli, dan
+clean production refit sampai 30 Juli. Regenerasikan dengan
+`build_kaggle_notebook_80gb.py`; notebook
 standar tidak diubah oleh konfigurasi training varian ini.
+
+Output varian 80 GB bersifat runtime-adaptive: Kaggle memakai
+`/kaggle/working/kronos_idx_outputs`, Colab memakai Google Drive jika sudah
+mounted di `/content/drive/MyDrive`, dengan fallback `/content`, dan runtime
+lokal memakai direktori project. Checkpoint terbaik dan final production model
+disimpan di bawah output directory tersebut.
