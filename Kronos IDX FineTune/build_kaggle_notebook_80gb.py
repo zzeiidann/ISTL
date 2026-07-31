@@ -39,7 +39,35 @@ notebook["cells"][0]["source"] = source(
 for cell in notebook["cells"]:
     text = "".join(cell.get("source", []))
 
-    if "balanced sample 20.000 windows" in text:
+    if "torch==2.3.1" in text and "cu118" in text:
+        cell["source"] = source(
+            """
+            # Blackwell (sm_120) requires a PyTorch binary built with CUDA 12.8+.
+            # After this install completes, restart the Kaggle kernel once, then Run All.
+            %pip install -q --upgrade torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+            %pip install -q einops==0.8.1 huggingface_hub==0.33.1 safetensors==0.6.2 pyarrow plotly kaleido tqdm
+            """
+        )
+
+    elif "from pathlib import Path" in text and "CUDA compatibility smoke test" in text:
+        text = text.replace(
+            "# Kronos memakai scaled_dot_product_attention. Fused SDPA dapat memilih\n"
+            "    # kernel yang tidak tersedia pada P100; math SDPA bekerja pada P100/T4.",
+            "# Blackwell memakai CUDA 12.8 build; izinkan PyTorch memilih SDPA tercepat.",
+        )
+        text = text.replace("torch.backends.cuda.enable_flash_sdp(False)", "torch.backends.cuda.enable_flash_sdp(True)")
+        text = text.replace("torch.backends.cuda.enable_mem_efficient_sdp(False)", "torch.backends.cuda.enable_mem_efficient_sdp(True)")
+        text = text.replace(
+            '"Restart Kaggle session, lalu Run All agar torch 2.3.1+cu118 dimuat sebelum import."',
+            '"Install torch 2.7.1+cu128 dari sel pertama, restart kernel, lalu Run All."',
+        )
+        text = text.replace(
+            'print("✓ CUDA compatibility smoke test passed; math SDPA enabled.")',
+            'print("✓ CUDA compatibility smoke test passed; Blackwell SDPA enabled.")',
+        )
+        cell["source"] = text.splitlines(True)
+
+    elif "balanced sample 20.000 windows" in text:
         cell["source"] = source(
             """
             ## 2. Configuration — 80 GB profile
