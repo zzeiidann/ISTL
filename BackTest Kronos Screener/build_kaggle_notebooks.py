@@ -251,7 +251,7 @@ def build_july_31_and_august_week_screen_notebook() -> dict:
         code(
             """
             %pip install -q --upgrade torch==2.3.1 --index-url https://download.pytorch.org/whl/cu118
-            %pip install -q einops==0.8.1 huggingface_hub==0.33.1 safetensors==0.6.2 pyarrow optuna==4.4.0 tqdm
+            %pip install -q einops==0.8.1 huggingface_hub==0.33.1 safetensors==0.6.2 pyarrow optuna==4.4.0 tqdm yfinance
             """
         ),
         markdown("## 3. Siapkan data, runtime, dan arti feature"),
@@ -268,6 +268,16 @@ def build_july_31_and_august_week_screen_notebook() -> dict:
             runner = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(runner)
 
+            # Refresh actual OHLCV 31 Juli sebelum membentuk stock features.
+            subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO / "Kronos IDX FineTune/update_daily_parquet.py"),
+                    "--date", "2026-07-31",
+                ],
+                check=True,
+            )
+
             device = runner.configure_runtime(42)
             prices = runner.load_prices(REPO)
             featured = runner.add_stock_features(prices)
@@ -277,17 +287,7 @@ def build_july_31_and_august_week_screen_notebook() -> dict:
             AUGUST_TARGETS = list(pd.date_range("2026-08-03", "2026-08-07", freq="D"))
             assert JULY_30 in available_dates, "Data 30 Juli 2026 belum tersedia."
 
-            if JULY_31 in available_dates:
-                week_origin = JULY_31
-                week_future_dates = AUGUST_TARGETS
-                week_horizons = [1, 2, 3, 4, 5]
-            else:
-                # Tetap menghasilkan target 3–7 Agustus ketika actual 31 Juli
-                # belum tersedia: 31 Juli menjadi langkah forecast perantara.
-                week_origin = JULY_30
-                week_future_dates = [JULY_31, *AUGUST_TARGETS]
-                week_horizons = [2, 3, 4, 5, 6]
-                print("Data 31 Juli belum tersedia; week screen memakai origin 30 Juli.")
+            assert JULY_31 in available_dates, "Unduhan yfinance 31 Juli tidak masuk ke parquet."
 
             SCREEN_JOBS = [
                 {
@@ -298,9 +298,9 @@ def build_july_31_and_august_week_screen_notebook() -> dict:
                 },
                 {
                     "name": "2026-08-03_to_07",
-                    "origin": week_origin,
-                    "target_dates": week_future_dates,
-                    "horizons": week_horizons,
+                    "origin": JULY_31,
+                    "target_dates": AUGUST_TARGETS,
+                    "horizons": [1, 2, 3, 4, 5],
                 },
             ]
 

@@ -14,6 +14,8 @@ serta 3–7 Agustus 2026 dengan checkpoint validated no-refit E15 dan production
 refit E4. Masing-masing model menggunakan bobot terbaik dari arsip backtest 1D
 miliknya, menampilkan arti serta arah setiap bobot, menghasilkan top 30 per
 model per tanggal, lalu membuat top 30 consensus per tanggal.
+Sebelum screening, notebook memperbarui actual OHLCV 31 Juli melalui
+`yfinance`; forecast 3–7 Agustus selalu menggunakan 31 Juli sebagai origin.
 
 Each notebook clones `https://github.com/zzeiidann/ISTL.git`, pulls only its own
 Git LFS checkpoint, installs PyTorch 2.3.1 CUDA 11.8 for Kaggle P100/T4, runs
