@@ -1,959 +1,959 @@
 ticker,rows,start,end,zero_volume,sector,subsector
-AADI,390,2024-12-05,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-AALI,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-ABBA,1234,2021-06-16,2026-07-30,33,Barang Konsumen Non-Primer,Media & Hiburan
-ABDA,1234,2021-06-16,2026-07-30,878,Keuangan,Asuransi
-ABMM,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-ACES,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-ACRO,604,2024-01-11,2026-07-30,7,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-ACST,1234,2021-06-16,2026-07-30,5,Infrastruktur,Konstruksi Bangunan
-ADCP,1061,2022-02-23,2026-07-30,45,Properti & Real Estat,Properti & Real Estat
-ADES,1234,2021-06-16,2026-07-30,5,Barang Konsumen Primer,Makanan & Minuman
-ADHI,1234,2021-06-16,2026-07-30,4,Infrastruktur,Konstruksi Bangunan
-ADMF,1234,2021-06-16,2026-07-30,4,Keuangan,Jasa Pembiayaan
-ADMG,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-ADMR,1096,2022-01-03,2026-07-30,12,Energi,"Minyak, Gas & Batu Bara"
-ADRO,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-AEGS,688,2023-09-11,2026-07-30,7,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-AGAR,1234,2021-06-16,2026-07-30,125,Barang Konsumen Primer,Makanan & Minuman
-AGII,1234,2021-06-16,2026-07-30,17,Barang Baku,Barang Baku
-AGRO,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-AGRS,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-AHAP,1234,2021-06-16,2026-07-30,11,Keuangan,Asuransi
-AIMS,1234,2021-06-16,2026-07-30,25,Energi,"Minyak, Gas & Batu Bara"
-AISA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-AKKU,1237,2021-06-16,2026-07-30,236,Barang Konsumen Non-Primer,Jasa Konsumen
-AKPI,1234,2021-06-16,2026-07-30,12,Barang Baku,Barang Baku
-AKRA,1234,2021-06-16,2026-07-30,5,Energi,"Minyak, Gas & Batu Bara"
-AKSI,1234,2021-06-16,2026-07-30,15,Transportasi & Logistik,Logistik & Pengantaran
-ALDO,1234,2021-06-16,2026-07-30,5,Barang Baku,Barang Baku
-ALII,585,2024-02-07,2026-07-30,13,Energi,"Minyak, Gas & Batu Bara"
-ALKA,1234,2021-06-16,2026-07-30,10,Barang Baku,Barang Baku
-ALMI,1237,2021-06-16,2026-07-30,429,Barang Baku,Barang Baku
-ALTO,1237,2021-06-16,2026-07-30,285,Barang Konsumen Primer,Makanan & Minuman
-AMAG,1234,2021-06-16,2026-07-30,4,Keuangan,Asuransi
-AMAN,1234,2021-06-16,2026-07-30,5,Properti & Real Estat,Properti & Real Estat
-AMAR,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-AMFG,1234,2021-06-16,2026-07-30,20,Perindustrian,Barang Perindustrian
-AMIN,1234,2021-06-16,2026-07-30,6,Perindustrian,Barang Perindustrian
-AMMN,732,2023-07-07,2026-07-30,7,Barang Baku,Barang Baku
-AMMS,956,2022-08-04,2026-07-30,34,Barang Konsumen Primer,Makanan & Minuman
-AMOR,1234,2021-06-16,2026-07-30,21,Keuangan,Jasa Investasi
-AMRT,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-ANDI,1234,2021-06-16,2026-07-30,42,Barang Konsumen Primer,Makanan & Minuman
-ANJT,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-ANTM,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-APEX,1234,2021-06-16,2026-07-30,6,Energi,"Minyak, Gas & Batu Bara"
-APIC,1234,2021-06-16,2026-07-30,4,Keuangan,Perusahaan Holding & Investasi
-APII,1234,2021-06-16,2026-07-30,13,Perindustrian,Barang Perindustrian
-APLI,1234,2021-06-16,2026-07-30,66,Barang Baku,Barang Baku
-APLN,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-ARCI,1226,2021-06-28,2026-07-30,12,Barang Baku,Barang Baku
-AREA,553,2024-04-01,2026-07-30,13,Teknologi,Perangkat Lunak & Jasa TI
-ARGO,1234,2021-06-16,2026-07-30,546,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-ARII,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-ARKA,1234,2021-06-16,2026-07-30,30,Perindustrian,Barang Perindustrian
-ARKO,975,2022-07-08,2026-07-30,28,Infrastruktur,Utilitas
+AADI,391,2024-12-05,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+AALI,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+ABBA,1235,2021-06-16,2026-07-31,34,Barang Konsumen Non-Primer,Media & Hiburan
+ABDA,1235,2021-06-16,2026-07-31,878,Keuangan,Asuransi
+ABMM,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+ACES,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+ACRO,605,2024-01-11,2026-07-31,7,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+ACST,1235,2021-06-16,2026-07-31,5,Infrastruktur,Konstruksi Bangunan
+ADCP,1062,2022-02-23,2026-07-31,46,Properti & Real Estat,Properti & Real Estat
+ADES,1235,2021-06-16,2026-07-31,5,Barang Konsumen Primer,Makanan & Minuman
+ADHI,1235,2021-06-16,2026-07-31,4,Infrastruktur,Konstruksi Bangunan
+ADMF,1235,2021-06-16,2026-07-31,4,Keuangan,Jasa Pembiayaan
+ADMG,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+ADMR,1097,2022-01-03,2026-07-31,12,Energi,"Minyak, Gas & Batu Bara"
+ADRO,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+AEGS,689,2023-09-11,2026-07-31,7,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+AGAR,1235,2021-06-16,2026-07-31,126,Barang Konsumen Primer,Makanan & Minuman
+AGII,1235,2021-06-16,2026-07-31,17,Barang Baku,Barang Baku
+AGRO,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+AGRS,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+AHAP,1235,2021-06-16,2026-07-31,11,Keuangan,Asuransi
+AIMS,1235,2021-06-16,2026-07-31,25,Energi,"Minyak, Gas & Batu Bara"
+AISA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+AKKU,1238,2021-06-16,2026-07-31,237,Barang Konsumen Non-Primer,Jasa Konsumen
+AKPI,1235,2021-06-16,2026-07-31,12,Barang Baku,Barang Baku
+AKRA,1235,2021-06-16,2026-07-31,5,Energi,"Minyak, Gas & Batu Bara"
+AKSI,1235,2021-06-16,2026-07-31,15,Transportasi & Logistik,Logistik & Pengantaran
+ALDO,1235,2021-06-16,2026-07-31,5,Barang Baku,Barang Baku
+ALII,586,2024-02-07,2026-07-31,13,Energi,"Minyak, Gas & Batu Bara"
+ALKA,1235,2021-06-16,2026-07-31,11,Barang Baku,Barang Baku
+ALMI,1238,2021-06-16,2026-07-31,430,Barang Baku,Barang Baku
+ALTO,1238,2021-06-16,2026-07-31,286,Barang Konsumen Primer,Makanan & Minuman
+AMAG,1235,2021-06-16,2026-07-31,4,Keuangan,Asuransi
+AMAN,1235,2021-06-16,2026-07-31,5,Properti & Real Estat,Properti & Real Estat
+AMAR,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+AMFG,1235,2021-06-16,2026-07-31,20,Perindustrian,Barang Perindustrian
+AMIN,1235,2021-06-16,2026-07-31,6,Perindustrian,Barang Perindustrian
+AMMN,733,2023-07-07,2026-07-31,7,Barang Baku,Barang Baku
+AMMS,957,2022-08-04,2026-07-31,34,Barang Konsumen Primer,Makanan & Minuman
+AMOR,1235,2021-06-16,2026-07-31,21,Keuangan,Jasa Investasi
+AMRT,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+ANDI,1235,2021-06-16,2026-07-31,42,Barang Konsumen Primer,Makanan & Minuman
+ANJT,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+ANTM,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+APEX,1235,2021-06-16,2026-07-31,6,Energi,"Minyak, Gas & Batu Bara"
+APIC,1235,2021-06-16,2026-07-31,4,Keuangan,Perusahaan Holding & Investasi
+APII,1235,2021-06-16,2026-07-31,13,Perindustrian,Barang Perindustrian
+APLI,1235,2021-06-16,2026-07-31,66,Barang Baku,Barang Baku
+APLN,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+ARCI,1227,2021-06-28,2026-07-31,12,Barang Baku,Barang Baku
+AREA,554,2024-04-01,2026-07-31,13,Teknologi,Perangkat Lunak & Jasa TI
+ARGO,1235,2021-06-16,2026-07-31,546,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+ARII,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+ARKA,1235,2021-06-16,2026-07-31,31,Perindustrian,Barang Perindustrian
+ARKO,976,2022-07-08,2026-07-31,28,Infrastruktur,Utilitas
 ARMY,1,2026-07-17,2026-07-17,1,Properti & Real Estat,Properti & Real Estat
-ARNA,1234,2021-06-16,2026-07-30,5,Perindustrian,Barang Perindustrian
-ARTA,1234,2021-06-16,2026-07-30,108,Barang Konsumen Non-Primer,Jasa Konsumen
-ARTI,1237,2021-06-16,2026-07-30,988,Energi,"Minyak, Gas & Batu Bara"
-ARTO,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-ASBI,1234,2021-06-16,2026-07-30,84,Keuangan,Asuransi
-ASDM,1234,2021-06-16,2026-07-30,11,Keuangan,Asuransi
-ASGR,1234,2021-06-16,2026-07-30,4,Perindustrian,Jasa Perindustrian
-ASHA,1004,2022-05-27,2026-07-30,8,Barang Konsumen Primer,Makanan & Minuman
-ASII,1234,2021-06-16,2026-07-30,4,Perindustrian,Perusahaan Holding Multi Sektor
-ASJT,1234,2021-06-16,2026-07-30,7,Keuangan,Asuransi
-ASLC,1080,2022-01-25,2026-07-30,9,Barang Konsumen Non-Primer,Perdagangan Ritel
-ASLI,608,2024-01-05,2026-07-30,67,Infrastruktur,Konstruksi Bangunan
-ASMI,1234,2021-06-16,2026-07-30,32,Keuangan,Asuransi
-ASPI,1234,2021-06-16,2026-07-30,33,Properti & Real Estat,Properti & Real Estat
-ASPR,260,2025-07-08,2026-07-30,12,Barang Baku,Barang Baku
-ASRI,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-ASRM,1234,2021-06-16,2026-07-30,238,Keuangan,Asuransi
-ASSA,1234,2021-06-16,2026-07-30,4,Transportasi & Logistik,Transportasi
-ATAP,1234,2021-06-16,2026-07-30,39,Properti & Real Estat,Properti & Real Estat
-ATIC,1234,2021-06-16,2026-07-30,10,Teknologi,Perangkat Lunak & Jasa TI
-ATLA,548,2024-04-16,2026-07-30,5,Energi,"Minyak, Gas & Batu Bara"
-AUTO,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-AVIA,1113,2021-12-08,2026-07-30,8,Barang Baku,Barang Baku
-AWAN,778,2023-04-18,2026-07-30,7,Teknologi,Perangkat Lunak & Jasa TI
-AXIO,967,2022-07-20,2026-07-30,7,Teknologi,Perangkat Keras & Peralatan Teknologi
-AYAM,631,2023-11-30,2026-07-30,16,Barang Konsumen Primer,Makanan & Minuman
-AYLS,1234,2021-06-16,2026-07-30,66,Barang Baku,Barang Baku
-BABP,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BABY,690,2023-09-07,2026-07-30,7,Barang Konsumen Non-Primer,Perdagangan Ritel
-BACA,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BAIK,583,2024-02-15,2026-07-30,23,Barang Konsumen Non-Primer,Jasa Konsumen
-BAJA,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-BALI,1234,2021-06-16,2026-07-30,10,Infrastruktur,Telekomunikasi
-BANK,1234,2021-06-16,2026-07-30,7,Keuangan,Bank
-BAPA,1237,2021-06-16,2026-07-30,56,Properti & Real Estat,Properti & Real Estat
-BAPI,1234,2021-06-16,2026-07-30,313,Properti & Real Estat,Properti & Real Estat
-BATA,1234,2021-06-16,2026-07-30,269,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-BATR,514,2024-06-10,2026-07-30,4,Barang Baku,Barang Baku
-BAUT,1077,2022-01-28,2026-07-30,7,Barang Konsumen Non-Primer,Perdagangan Ritel
-BAYU,1234,2021-06-16,2026-07-30,99,Barang Konsumen Non-Primer,Jasa Konsumen
-BBCA,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BBHI,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BBKP,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BBLD,1234,2021-06-16,2026-07-30,65,Keuangan,Jasa Pembiayaan
-BBMD,1235,2021-06-16,2026-07-30,337,Keuangan,Bank
-BBNI,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BBRI,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BBRM,1234,2021-06-16,2026-07-30,11,Energi,"Minyak, Gas & Batu Bara"
-BBSI,1234,2021-06-16,2026-07-30,96,Keuangan,Bank
-BBSS,1234,2021-06-16,2026-07-30,6,Properti & Real Estat,Properti & Real Estat
-BBTN,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BBYB,1234,2021-06-16,2026-07-30,5,Keuangan,Bank
-BCAP,1234,2021-06-16,2026-07-30,9,Keuangan,Perusahaan Holding & Investasi
-BCIC,1234,2021-06-16,2026-07-30,198,Keuangan,Bank
-BCIP,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-BDKR,807,2023-03-03,2026-07-30,8,Infrastruktur,Konstruksi Bangunan
-BDMN,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BEBS,1237,2021-06-16,2026-07-30,424,Barang Baku,Barang Baku
-BEEF,1234,2021-06-16,2026-07-30,11,Barang Konsumen Primer,Makanan & Minuman
-BEER,846,2023-01-06,2026-07-30,7,Barang Konsumen Primer,Makanan & Minuman
-BEKS,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BELI,889,2022-11-08,2026-07-30,7,Teknologi,Perangkat Lunak & Jasa TI
-BELL,1234,2021-06-16,2026-07-30,24,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-BESS,1234,2021-06-16,2026-07-30,12,Energi,"Minyak, Gas & Batu Bara"
-BEST,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-BFIN,1234,2021-06-16,2026-07-30,4,Keuangan,Jasa Pembiayaan
-BGTG,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BHAT,1234,2021-06-16,2026-07-30,136,Keuangan,Asuransi
-BHIT,1234,2021-06-16,2026-07-30,5,Perindustrian,Perusahaan Holding Multi Sektor
-BIKA,1237,2021-06-16,2026-07-30,531,Properti & Real Estat,Properti & Real Estat
-BIKE,1047,2022-03-21,2026-07-30,69,Barang Konsumen Non-Primer,Barang Rekreasi
-BIMA,1237,2021-06-16,2026-07-30,169,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-BINA,1234,2021-06-16,2026-07-30,12,Keuangan,Bank
-BINO,1122,2021-11-25,2026-07-30,7,Perindustrian,Jasa Perindustrian
-BIPI,1234,2021-06-16,2026-07-30,50,Energi,"Minyak, Gas & Batu Bara"
-BIPP,1234,2021-06-16,2026-07-30,78,Properti & Real Estat,Properti & Real Estat
-BIRD,1234,2021-06-16,2026-07-30,4,Transportasi & Logistik,Transportasi
-BISI,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-BJBR,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
+ARNA,1235,2021-06-16,2026-07-31,5,Perindustrian,Barang Perindustrian
+ARTA,1235,2021-06-16,2026-07-31,108,Barang Konsumen Non-Primer,Jasa Konsumen
+ARTI,1238,2021-06-16,2026-07-31,989,Energi,"Minyak, Gas & Batu Bara"
+ARTO,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+ASBI,1235,2021-06-16,2026-07-31,84,Keuangan,Asuransi
+ASDM,1235,2021-06-16,2026-07-31,11,Keuangan,Asuransi
+ASGR,1235,2021-06-16,2026-07-31,4,Perindustrian,Jasa Perindustrian
+ASHA,1005,2022-05-27,2026-07-31,8,Barang Konsumen Primer,Makanan & Minuman
+ASII,1235,2021-06-16,2026-07-31,4,Perindustrian,Perusahaan Holding Multi Sektor
+ASJT,1235,2021-06-16,2026-07-31,7,Keuangan,Asuransi
+ASLC,1081,2022-01-25,2026-07-31,9,Barang Konsumen Non-Primer,Perdagangan Ritel
+ASLI,609,2024-01-05,2026-07-31,67,Infrastruktur,Konstruksi Bangunan
+ASMI,1235,2021-06-16,2026-07-31,33,Keuangan,Asuransi
+ASPI,1235,2021-06-16,2026-07-31,33,Properti & Real Estat,Properti & Real Estat
+ASPR,261,2025-07-08,2026-07-31,12,Barang Baku,Barang Baku
+ASRI,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+ASRM,1235,2021-06-16,2026-07-31,238,Keuangan,Asuransi
+ASSA,1235,2021-06-16,2026-07-31,4,Transportasi & Logistik,Transportasi
+ATAP,1235,2021-06-16,2026-07-31,39,Properti & Real Estat,Properti & Real Estat
+ATIC,1235,2021-06-16,2026-07-31,10,Teknologi,Perangkat Lunak & Jasa TI
+ATLA,549,2024-04-16,2026-07-31,5,Energi,"Minyak, Gas & Batu Bara"
+AUTO,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+AVIA,1114,2021-12-08,2026-07-31,8,Barang Baku,Barang Baku
+AWAN,779,2023-04-18,2026-07-31,7,Teknologi,Perangkat Lunak & Jasa TI
+AXIO,968,2022-07-20,2026-07-31,7,Teknologi,Perangkat Keras & Peralatan Teknologi
+AYAM,632,2023-11-30,2026-07-31,16,Barang Konsumen Primer,Makanan & Minuman
+AYLS,1235,2021-06-16,2026-07-31,66,Barang Baku,Barang Baku
+BABP,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BABY,691,2023-09-07,2026-07-31,7,Barang Konsumen Non-Primer,Perdagangan Ritel
+BACA,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BAIK,584,2024-02-15,2026-07-31,23,Barang Konsumen Non-Primer,Jasa Konsumen
+BAJA,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+BALI,1235,2021-06-16,2026-07-31,10,Infrastruktur,Telekomunikasi
+BANK,1235,2021-06-16,2026-07-31,7,Keuangan,Bank
+BAPA,1238,2021-06-16,2026-07-31,56,Properti & Real Estat,Properti & Real Estat
+BAPI,1235,2021-06-16,2026-07-31,313,Properti & Real Estat,Properti & Real Estat
+BATA,1235,2021-06-16,2026-07-31,270,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+BATR,515,2024-06-10,2026-07-31,4,Barang Baku,Barang Baku
+BAUT,1078,2022-01-28,2026-07-31,7,Barang Konsumen Non-Primer,Perdagangan Ritel
+BAYU,1235,2021-06-16,2026-07-31,99,Barang Konsumen Non-Primer,Jasa Konsumen
+BBCA,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BBHI,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BBKP,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BBLD,1235,2021-06-16,2026-07-31,65,Keuangan,Jasa Pembiayaan
+BBMD,1236,2021-06-16,2026-07-31,337,Keuangan,Bank
+BBNI,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BBRI,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BBRM,1235,2021-06-16,2026-07-31,11,Energi,"Minyak, Gas & Batu Bara"
+BBSI,1235,2021-06-16,2026-07-31,96,Keuangan,Bank
+BBSS,1235,2021-06-16,2026-07-31,6,Properti & Real Estat,Properti & Real Estat
+BBTN,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BBYB,1235,2021-06-16,2026-07-31,5,Keuangan,Bank
+BCAP,1235,2021-06-16,2026-07-31,9,Keuangan,Perusahaan Holding & Investasi
+BCIC,1235,2021-06-16,2026-07-31,198,Keuangan,Bank
+BCIP,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+BDKR,808,2023-03-03,2026-07-31,8,Infrastruktur,Konstruksi Bangunan
+BDMN,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BEBS,1238,2021-06-16,2026-07-31,425,Barang Baku,Barang Baku
+BEEF,1235,2021-06-16,2026-07-31,11,Barang Konsumen Primer,Makanan & Minuman
+BEER,847,2023-01-06,2026-07-31,7,Barang Konsumen Primer,Makanan & Minuman
+BEKS,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BELI,890,2022-11-08,2026-07-31,7,Teknologi,Perangkat Lunak & Jasa TI
+BELL,1235,2021-06-16,2026-07-31,24,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+BESS,1235,2021-06-16,2026-07-31,12,Energi,"Minyak, Gas & Batu Bara"
+BEST,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+BFIN,1235,2021-06-16,2026-07-31,4,Keuangan,Jasa Pembiayaan
+BGTG,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BHAT,1235,2021-06-16,2026-07-31,137,Keuangan,Asuransi
+BHIT,1235,2021-06-16,2026-07-31,5,Perindustrian,Perusahaan Holding Multi Sektor
+BIKA,1238,2021-06-16,2026-07-31,532,Properti & Real Estat,Properti & Real Estat
+BIKE,1048,2022-03-21,2026-07-31,70,Barang Konsumen Non-Primer,Barang Rekreasi
+BIMA,1238,2021-06-16,2026-07-31,170,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+BINA,1235,2021-06-16,2026-07-31,12,Keuangan,Bank
+BINO,1123,2021-11-25,2026-07-31,7,Perindustrian,Jasa Perindustrian
+BIPI,1235,2021-06-16,2026-07-31,50,Energi,"Minyak, Gas & Batu Bara"
+BIPP,1235,2021-06-16,2026-07-31,78,Properti & Real Estat,Properti & Real Estat
+BIRD,1235,2021-06-16,2026-07-31,4,Transportasi & Logistik,Transportasi
+BISI,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+BJBR,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
 BJTM,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BKDP,1236,2021-06-16,2026-07-30,76,Properti & Real Estat,Properti & Real Estat
-BKSL,1234,2021-06-16,2026-07-30,237,Properti & Real Estat,Properti & Real Estat
-BKSW,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BLES,496,2024-07-08,2026-07-30,14,Barang Baku,Barang Baku
-BLOG,258,2025-07-10,2026-07-30,4,Transportasi & Logistik,Logistik & Pengantaran
-BLTA,1234,2021-06-16,2026-07-30,40,Transportasi & Logistik,Logistik & Pengantaran
-BLTZ,1235,2021-06-16,2026-07-30,438,Barang Konsumen Non-Primer,Jasa Konsumen
-BLUE,1234,2021-06-16,2026-07-30,22,Perindustrian,Jasa Perindustrian
-BMAS,1234,2021-06-16,2026-07-30,59,Keuangan,Bank
-BMBL,843,2023-01-11,2026-07-30,7,Barang Konsumen Non-Primer,Jasa Konsumen
-BMHS,1220,2021-07-06,2026-07-30,8,Kesehatan,Jasa & Peralatan Kesehatan
-BMRI,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BMSR,1234,2021-06-16,2026-07-30,17,Barang Baku,Barang Baku
-BMTR,1234,2021-06-16,2026-07-30,5,Barang Konsumen Non-Primer,Media & Hiburan
-BNBA,1234,2021-06-16,2026-07-30,5,Keuangan,Bank
-BNBR,1236,2021-06-16,2026-07-30,431,Perindustrian,Perusahaan Holding Multi Sektor
-BNGA,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BNII,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BNLI,1234,2021-06-16,2026-07-30,5,Keuangan,Bank
-BOAT,406,2024-11-12,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-BOBA,1140,2021-11-01,2026-07-30,8,Barang Konsumen Primer,Makanan & Minuman
-BOGA,1235,2021-06-16,2026-07-30,65,Barang Konsumen Non-Primer,Perdagangan Ritel
-BOLA,1234,2021-06-16,2026-07-30,11,Barang Konsumen Non-Primer,Jasa Konsumen
-BOLT,1234,2021-06-16,2026-07-30,37,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-BOSS,1237,2021-06-16,2026-07-30,585,Energi,"Minyak, Gas & Batu Bara"
-BPFI,1234,2021-06-16,2026-07-30,118,Keuangan,Jasa Pembiayaan
-BPII,1234,2021-06-16,2026-07-30,519,Keuangan,Perusahaan Holding & Investasi
-BPTR,1234,2021-06-16,2026-07-30,11,Transportasi & Logistik,Transportasi
-BRAM,1234,2021-06-16,2026-07-30,59,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-BREN,669,2023-10-09,2026-07-30,11,Infrastruktur,Utilitas
-BRIS,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BRMS,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-BRNA,1234,2021-06-16,2026-07-30,387,Barang Baku,Barang Baku
-BRPT,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-BRRC,369,2025-01-09,2026-07-30,7,Barang Konsumen Primer,Makanan & Minuman
-BSBK,889,2022-11-08,2026-07-30,7,Properti & Real Estat,Properti & Real Estat
-BSDE,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-BSIM,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BSML,1107,2021-12-16,2026-07-30,9,Energi,"Minyak, Gas & Batu Bara"
-BSSR,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-BSWD,1236,2021-06-16,2026-07-30,1086,Keuangan,Bank
-BTEK,1234,2021-06-16,2026-07-30,269,Barang Konsumen Primer,Makanan & Minuman
+BKDP,1237,2021-06-16,2026-07-31,77,Properti & Real Estat,Properti & Real Estat
+BKSL,1235,2021-06-16,2026-07-31,237,Properti & Real Estat,Properti & Real Estat
+BKSW,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BLES,497,2024-07-08,2026-07-31,14,Barang Baku,Barang Baku
+BLOG,259,2025-07-10,2026-07-31,4,Transportasi & Logistik,Logistik & Pengantaran
+BLTA,1235,2021-06-16,2026-07-31,40,Transportasi & Logistik,Logistik & Pengantaran
+BLTZ,1236,2021-06-16,2026-07-31,439,Barang Konsumen Non-Primer,Jasa Konsumen
+BLUE,1235,2021-06-16,2026-07-31,22,Perindustrian,Jasa Perindustrian
+BMAS,1235,2021-06-16,2026-07-31,59,Keuangan,Bank
+BMBL,844,2023-01-11,2026-07-31,7,Barang Konsumen Non-Primer,Jasa Konsumen
+BMHS,1221,2021-07-06,2026-07-31,8,Kesehatan,Jasa & Peralatan Kesehatan
+BMRI,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BMSR,1235,2021-06-16,2026-07-31,17,Barang Baku,Barang Baku
+BMTR,1235,2021-06-16,2026-07-31,5,Barang Konsumen Non-Primer,Media & Hiburan
+BNBA,1235,2021-06-16,2026-07-31,5,Keuangan,Bank
+BNBR,1237,2021-06-16,2026-07-31,431,Perindustrian,Perusahaan Holding Multi Sektor
+BNGA,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BNII,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BNLI,1235,2021-06-16,2026-07-31,5,Keuangan,Bank
+BOAT,407,2024-11-12,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+BOBA,1141,2021-11-01,2026-07-31,8,Barang Konsumen Primer,Makanan & Minuman
+BOGA,1236,2021-06-16,2026-07-31,65,Barang Konsumen Non-Primer,Perdagangan Ritel
+BOLA,1235,2021-06-16,2026-07-31,11,Barang Konsumen Non-Primer,Jasa Konsumen
+BOLT,1235,2021-06-16,2026-07-31,37,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+BOSS,1238,2021-06-16,2026-07-31,586,Energi,"Minyak, Gas & Batu Bara"
+BPFI,1235,2021-06-16,2026-07-31,118,Keuangan,Jasa Pembiayaan
+BPII,1235,2021-06-16,2026-07-31,519,Keuangan,Perusahaan Holding & Investasi
+BPTR,1235,2021-06-16,2026-07-31,11,Transportasi & Logistik,Transportasi
+BRAM,1235,2021-06-16,2026-07-31,59,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+BREN,670,2023-10-09,2026-07-31,11,Infrastruktur,Utilitas
+BRIS,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BRMS,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+BRNA,1235,2021-06-16,2026-07-31,387,Barang Baku,Barang Baku
+BRPT,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+BRRC,370,2025-01-09,2026-07-31,7,Barang Konsumen Primer,Makanan & Minuman
+BSBK,890,2022-11-08,2026-07-31,7,Properti & Real Estat,Properti & Real Estat
+BSDE,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+BSIM,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BSML,1108,2021-12-16,2026-07-31,9,Energi,"Minyak, Gas & Batu Bara"
+BSSR,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+BSWD,1237,2021-06-16,2026-07-31,1087,Keuangan,Bank
+BTEK,1235,2021-06-16,2026-07-31,269,Barang Konsumen Primer,Makanan & Minuman
 BTEL,1,2026-07-17,2026-07-17,1,Infrastruktur,Telekomunikasi
-BTON,1234,2021-06-16,2026-07-30,70,Barang Baku,Barang Baku
-BTPN,1234,2021-06-16,2026-07-30,5,Keuangan,Bank
-BTPS,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-BUAH,953,2022-08-09,2026-07-30,7,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-BUDI,1234,2021-06-16,2026-07-30,5,Barang Konsumen Primer,Makanan & Minuman
-BUKA,1198,2021-08-06,2026-07-30,8,Teknologi,Perangkat Lunak & Jasa TI
-BUKK,1234,2021-06-16,2026-07-30,11,Infrastruktur,Konstruksi Bangunan
-BULL,1234,2021-06-16,2026-07-30,88,Energi,"Minyak, Gas & Batu Bara"
-BUMI,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-BUVA,1234,2021-06-16,2026-07-30,508,Barang Konsumen Non-Primer,Jasa Konsumen
-BVIC,1234,2021-06-16,2026-07-30,5,Keuangan,Bank
-BWPT,1234,2021-06-16,2026-07-30,15,Barang Konsumen Primer,Makanan & Minuman
-BYAN,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-CAKK,1234,2021-06-16,2026-07-30,5,Perindustrian,Barang Perindustrian
-CAMP,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-CANI,1234,2021-06-16,2026-07-30,129,Energi,"Minyak, Gas & Batu Bara"
-CARE,1234,2021-06-16,2026-07-30,61,Kesehatan,Jasa & Peralatan Kesehatan
-CARS,1234,2021-06-16,2026-07-30,7,Barang Konsumen Non-Primer,Perdagangan Ritel
-CASA,1234,2021-06-16,2026-07-30,43,Keuangan,Perusahaan Holding & Investasi
-CASH,1234,2021-06-16,2026-07-30,4,Teknologi,Perangkat Lunak & Jasa TI
-CASS,1234,2021-06-16,2026-07-30,4,Infrastruktur,Infrastruktur Transportasi
-CBDK,367,2025-01-13,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
+BTON,1235,2021-06-16,2026-07-31,70,Barang Baku,Barang Baku
+BTPN,1235,2021-06-16,2026-07-31,5,Keuangan,Bank
+BTPS,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+BUAH,954,2022-08-09,2026-07-31,7,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+BUDI,1235,2021-06-16,2026-07-31,5,Barang Konsumen Primer,Makanan & Minuman
+BUKA,1199,2021-08-06,2026-07-31,8,Teknologi,Perangkat Lunak & Jasa TI
+BUKK,1235,2021-06-16,2026-07-31,11,Infrastruktur,Konstruksi Bangunan
+BULL,1235,2021-06-16,2026-07-31,88,Energi,"Minyak, Gas & Batu Bara"
+BUMI,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+BUVA,1235,2021-06-16,2026-07-31,508,Barang Konsumen Non-Primer,Jasa Konsumen
+BVIC,1235,2021-06-16,2026-07-31,5,Keuangan,Bank
+BWPT,1235,2021-06-16,2026-07-31,15,Barang Konsumen Primer,Makanan & Minuman
+BYAN,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+CAKK,1235,2021-06-16,2026-07-31,5,Perindustrian,Barang Perindustrian
+CAMP,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+CANI,1235,2021-06-16,2026-07-31,130,Energi,"Minyak, Gas & Batu Bara"
+CARE,1235,2021-06-16,2026-07-31,61,Kesehatan,Jasa & Peralatan Kesehatan
+CARS,1235,2021-06-16,2026-07-31,7,Barang Konsumen Non-Primer,Perdagangan Ritel
+CASA,1235,2021-06-16,2026-07-31,43,Keuangan,Perusahaan Holding & Investasi
+CASH,1235,2021-06-16,2026-07-31,4,Teknologi,Perangkat Lunak & Jasa TI
+CASS,1235,2021-06-16,2026-07-31,4,Infrastruktur,Infrastruktur Transportasi
+CBDK,368,2025-01-13,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
 CBMF,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Barang Rumah Tangga
-CBPE,846,2023-01-06,2026-07-30,7,Properti & Real Estat,Properti & Real Estat
-CBRE,845,2023-01-09,2026-07-30,26,Energi,"Minyak, Gas & Batu Bara"
-CBUT,889,2022-11-08,2026-07-30,28,Barang Konsumen Primer,Makanan & Minuman
-CCSI,1234,2021-06-16,2026-07-30,5,Perindustrian,Barang Perindustrian
-CDIA,259,2025-07-09,2026-07-30,7,Infrastruktur,Utilitas
-CEKA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-CENT,1234,2021-06-16,2026-07-30,5,Infrastruktur,Telekomunikasi
-CFIN,1234,2021-06-16,2026-07-30,4,Keuangan,Jasa Pembiayaan
-CGAS,607,2024-01-08,2026-07-30,14,Energi,"Minyak, Gas & Batu Bara"
-CHEK,258,2025-07-10,2026-07-30,4,Kesehatan,Jasa & Peralatan Kesehatan
-CHEM,975,2022-07-08,2026-07-30,8,Barang Baku,Barang Baku
-CHIP,824,2023-02-08,2026-07-30,14,Teknologi,Perangkat Keras & Peralatan Teknologi
-CINT,1234,2021-06-16,2026-07-30,28,Barang Konsumen Non-Primer,Barang Rumah Tangga
-CITA,1234,2021-06-16,2026-07-30,85,Barang Baku,Barang Baku
-CITY,1234,2021-06-16,2026-07-30,42,Properti & Real Estat,Properti & Real Estat
-CLAY,1234,2021-06-16,2026-07-30,312,Barang Konsumen Non-Primer,Jasa Konsumen
-CLEO,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-CLPI,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-CMNP,1234,2021-06-16,2026-07-30,11,Infrastruktur,Infrastruktur Transportasi
-CMNT,1177,2021-09-08,2026-07-30,7,Barang Baku,Barang Baku
-CMPP,1234,2021-06-16,2026-07-30,173,Transportasi & Logistik,Transportasi
-CMRY,1115,2021-12-06,2026-07-30,7,Barang Konsumen Primer,Makanan & Minuman
-CNKO,1234,2021-06-16,2026-07-30,181,Energi,"Minyak, Gas & Batu Bara"
-CNMA,715,2023-08-02,2026-07-30,7,Barang Konsumen Non-Primer,Jasa Konsumen
+CBPE,847,2023-01-06,2026-07-31,7,Properti & Real Estat,Properti & Real Estat
+CBRE,846,2023-01-09,2026-07-31,26,Energi,"Minyak, Gas & Batu Bara"
+CBUT,890,2022-11-08,2026-07-31,28,Barang Konsumen Primer,Makanan & Minuman
+CCSI,1235,2021-06-16,2026-07-31,5,Perindustrian,Barang Perindustrian
+CDIA,260,2025-07-09,2026-07-31,7,Infrastruktur,Utilitas
+CEKA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+CENT,1235,2021-06-16,2026-07-31,5,Infrastruktur,Telekomunikasi
+CFIN,1235,2021-06-16,2026-07-31,4,Keuangan,Jasa Pembiayaan
+CGAS,608,2024-01-08,2026-07-31,14,Energi,"Minyak, Gas & Batu Bara"
+CHEK,259,2025-07-10,2026-07-31,4,Kesehatan,Jasa & Peralatan Kesehatan
+CHEM,976,2022-07-08,2026-07-31,8,Barang Baku,Barang Baku
+CHIP,825,2023-02-08,2026-07-31,14,Teknologi,Perangkat Keras & Peralatan Teknologi
+CINT,1235,2021-06-16,2026-07-31,28,Barang Konsumen Non-Primer,Barang Rumah Tangga
+CITA,1235,2021-06-16,2026-07-31,85,Barang Baku,Barang Baku
+CITY,1235,2021-06-16,2026-07-31,42,Properti & Real Estat,Properti & Real Estat
+CLAY,1235,2021-06-16,2026-07-31,312,Barang Konsumen Non-Primer,Jasa Konsumen
+CLEO,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+CLPI,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+CMNP,1235,2021-06-16,2026-07-31,11,Infrastruktur,Infrastruktur Transportasi
+CMNT,1178,2021-09-08,2026-07-31,7,Barang Baku,Barang Baku
+CMPP,1235,2021-06-16,2026-07-31,174,Transportasi & Logistik,Transportasi
+CMRY,1116,2021-12-06,2026-07-31,7,Barang Konsumen Primer,Makanan & Minuman
+CNKO,1235,2021-06-16,2026-07-31,182,Energi,"Minyak, Gas & Batu Bara"
+CNMA,716,2023-08-02,2026-07-31,7,Barang Konsumen Non-Primer,Jasa Konsumen
 CNTB,1,2026-07-17,2026-07-17,1,,
-CNTX,1237,2021-06-16,2026-07-30,806,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-COAL,933,2022-09-07,2026-07-30,21,Energi,"Minyak, Gas & Batu Bara"
-COCO,1234,2021-06-16,2026-07-30,35,Barang Konsumen Primer,Makanan & Minuman
-COIN,259,2025-07-09,2026-07-30,11,Keuangan,Perusahaan Holding & Investasi
+CNTX,1238,2021-06-16,2026-07-31,807,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+COAL,934,2022-09-07,2026-07-31,22,Energi,"Minyak, Gas & Batu Bara"
+COCO,1235,2021-06-16,2026-07-31,35,Barang Konsumen Primer,Makanan & Minuman
+COIN,260,2025-07-09,2026-07-31,11,Keuangan,Perusahaan Holding & Investasi
 COWL,1,2026-07-17,2026-07-17,1,Properti & Real Estat,Properti & Real Estat
-CPIN,1234,2021-06-16,2026-07-30,5,Barang Konsumen Primer,Makanan & Minuman
+CPIN,1235,2021-06-16,2026-07-31,5,Barang Konsumen Primer,Makanan & Minuman
 CPRI,1,2026-07-17,2026-07-17,1,Properti & Real Estat,Properti & Real Estat
-CPRO,1234,2021-06-16,2026-07-30,37,Barang Konsumen Primer,Makanan & Minuman
-CRAB,952,2022-08-10,2026-07-30,30,Barang Konsumen Primer,Makanan & Minuman
-CRSN,731,2023-07-10,2026-07-30,7,Perindustrian,Jasa Perindustrian
-CSAP,1234,2021-06-16,2026-07-30,15,Barang Konsumen Non-Primer,Perdagangan Ritel
-CSIS,1234,2021-06-16,2026-07-30,6,Properti & Real Estat,Properti & Real Estat
-CSMI,1234,2021-06-16,2026-07-30,639,Barang Konsumen Non-Primer,Jasa Konsumen
-CSRA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-CTBN,1234,2021-06-16,2026-07-30,274,Barang Baku,Barang Baku
-CTRA,1234,2021-06-16,2026-07-30,5,Properti & Real Estat,Properti & Real Estat
-CTTH,1234,2021-06-16,2026-07-30,194,Perindustrian,Barang Perindustrian
-CUAN,804,2023-03-08,2026-07-30,32,Energi,"Minyak, Gas & Batu Bara"
-CYBR,712,2023-08-08,2026-07-30,8,Teknologi,Perangkat Lunak & Jasa TI
-DAAZ,407,2024-11-11,2026-07-30,7,Barang Baku,Barang Baku
-DADA,1234,2021-06-16,2026-07-30,89,Properti & Real Estat,Properti & Real Estat
-DART,1234,2021-06-16,2026-07-30,29,Properti & Real Estat,Properti & Real Estat
-DATA,534,2024-05-07,2026-07-30,19,Infrastruktur,Telekomunikasi
-DAYA,1234,2021-06-16,2026-07-30,7,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-DCII,1234,2021-06-16,2026-07-30,187,Teknologi,Perangkat Lunak & Jasa TI
-DEAL,1237,2021-06-16,2026-07-30,673,Transportasi & Logistik,Logistik & Pengantaran
-DEFI,1234,2021-06-16,2026-07-30,944,Keuangan,Perusahaan Holding & Investasi
-DEPO,1122,2021-11-25,2026-07-30,7,Barang Konsumen Non-Primer,Perdagangan Ritel
-DEWA,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-DEWI,969,2022-07-18,2026-07-30,62,Barang Konsumen Primer,Makanan & Minuman
-DFAM,1234,2021-06-16,2026-07-30,35,Barang Konsumen Non-Primer,Jasa Konsumen
-DGIK,1234,2021-06-16,2026-07-30,4,Infrastruktur,Konstruksi Bangunan
-DGNS,1234,2021-06-16,2026-07-30,8,Kesehatan,Jasa & Peralatan Kesehatan
-DGWG,367,2025-01-13,2026-07-30,4,Barang Baku,Barang Baku
-DIGI,1234,2021-06-16,2026-07-30,35,Barang Konsumen Non-Primer,Media & Hiburan
-DILD,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-DIVA,1234,2021-06-16,2026-07-30,4,Teknologi,Perangkat Lunak & Jasa TI
-DKFT,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-DKHH,296,2025-05-08,2026-07-30,16,Kesehatan,Jasa & Peralatan Kesehatan
-DLTA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-DMAS,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-DMMX,1234,2021-06-16,2026-07-30,14,Teknologi,Perangkat Lunak & Jasa TI
-DMND,1234,2021-06-16,2026-07-30,45,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-DNAR,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-DNET,1234,2021-06-16,2026-07-30,8,Keuangan,Perusahaan Holding & Investasi
-DOID,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-DOOH,770,2023-05-08,2026-07-30,25,Barang Konsumen Non-Primer,Media & Hiburan
-DOSS,474,2024-08-07,2026-07-30,4,Barang Konsumen Non-Primer,Barang Rekreasi
-DPNS,1237,2021-06-16,2026-07-30,187,Barang Baku,Barang Baku
-DPUM,1234,2021-06-16,2026-07-30,523,Barang Konsumen Primer,Makanan & Minuman
-DRMA,1105,2021-12-20,2026-07-30,8,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-DSFI,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-DSNG,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-DSSA,1234,2021-06-16,2026-07-30,344,Energi,"Minyak, Gas & Batu Bara"
+CPRO,1235,2021-06-16,2026-07-31,37,Barang Konsumen Primer,Makanan & Minuman
+CRAB,953,2022-08-10,2026-07-31,31,Barang Konsumen Primer,Makanan & Minuman
+CRSN,732,2023-07-10,2026-07-31,7,Perindustrian,Jasa Perindustrian
+CSAP,1235,2021-06-16,2026-07-31,15,Barang Konsumen Non-Primer,Perdagangan Ritel
+CSIS,1235,2021-06-16,2026-07-31,6,Properti & Real Estat,Properti & Real Estat
+CSMI,1235,2021-06-16,2026-07-31,639,Barang Konsumen Non-Primer,Jasa Konsumen
+CSRA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+CTBN,1235,2021-06-16,2026-07-31,274,Barang Baku,Barang Baku
+CTRA,1235,2021-06-16,2026-07-31,5,Properti & Real Estat,Properti & Real Estat
+CTTH,1235,2021-06-16,2026-07-31,194,Perindustrian,Barang Perindustrian
+CUAN,805,2023-03-08,2026-07-31,32,Energi,"Minyak, Gas & Batu Bara"
+CYBR,713,2023-08-08,2026-07-31,8,Teknologi,Perangkat Lunak & Jasa TI
+DAAZ,408,2024-11-11,2026-07-31,7,Barang Baku,Barang Baku
+DADA,1235,2021-06-16,2026-07-31,89,Properti & Real Estat,Properti & Real Estat
+DART,1235,2021-06-16,2026-07-31,29,Properti & Real Estat,Properti & Real Estat
+DATA,535,2024-05-07,2026-07-31,19,Infrastruktur,Telekomunikasi
+DAYA,1235,2021-06-16,2026-07-31,7,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+DCII,1235,2021-06-16,2026-07-31,187,Teknologi,Perangkat Lunak & Jasa TI
+DEAL,1238,2021-06-16,2026-07-31,674,Transportasi & Logistik,Logistik & Pengantaran
+DEFI,1235,2021-06-16,2026-07-31,944,Keuangan,Perusahaan Holding & Investasi
+DEPO,1123,2021-11-25,2026-07-31,7,Barang Konsumen Non-Primer,Perdagangan Ritel
+DEWA,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+DEWI,970,2022-07-18,2026-07-31,62,Barang Konsumen Primer,Makanan & Minuman
+DFAM,1235,2021-06-16,2026-07-31,35,Barang Konsumen Non-Primer,Jasa Konsumen
+DGIK,1235,2021-06-16,2026-07-31,4,Infrastruktur,Konstruksi Bangunan
+DGNS,1235,2021-06-16,2026-07-31,8,Kesehatan,Jasa & Peralatan Kesehatan
+DGWG,368,2025-01-13,2026-07-31,4,Barang Baku,Barang Baku
+DIGI,1235,2021-06-16,2026-07-31,36,Barang Konsumen Non-Primer,Media & Hiburan
+DILD,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+DIVA,1235,2021-06-16,2026-07-31,4,Teknologi,Perangkat Lunak & Jasa TI
+DKFT,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+DKHH,297,2025-05-08,2026-07-31,16,Kesehatan,Jasa & Peralatan Kesehatan
+DLTA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+DMAS,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+DMMX,1235,2021-06-16,2026-07-31,14,Teknologi,Perangkat Lunak & Jasa TI
+DMND,1235,2021-06-16,2026-07-31,45,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+DNAR,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+DNET,1235,2021-06-16,2026-07-31,8,Keuangan,Perusahaan Holding & Investasi
+DOID,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+DOOH,771,2023-05-08,2026-07-31,25,Barang Konsumen Non-Primer,Media & Hiburan
+DOSS,475,2024-08-07,2026-07-31,4,Barang Konsumen Non-Primer,Barang Rekreasi
+DPNS,1238,2021-06-16,2026-07-31,188,Barang Baku,Barang Baku
+DPUM,1235,2021-06-16,2026-07-31,523,Barang Konsumen Primer,Makanan & Minuman
+DRMA,1106,2021-12-20,2026-07-31,8,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+DSFI,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+DSNG,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+DSSA,1235,2021-06-16,2026-07-31,344,Energi,"Minyak, Gas & Batu Bara"
 DUCK,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Jasa Konsumen
-DUTI,1234,2021-06-16,2026-07-30,158,Properti & Real Estat,Properti & Real Estat
-DVLA,1234,2021-06-16,2026-07-30,5,Kesehatan,Farmasi & Riset Kesehatan
-DWGL,1234,2021-06-16,2026-07-30,44,Energi,"Minyak, Gas & Batu Bara"
-DYAN,1234,2021-06-16,2026-07-30,4,Perindustrian,Jasa Perindustrian
-EAST,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Jasa Konsumen
-ECII,1234,2021-06-16,2026-07-30,87,Barang Konsumen Non-Primer,Perdagangan Ritel
-EDGE,1237,2021-06-16,2026-07-30,204,Teknologi,Perangkat Lunak & Jasa TI
-EKAD,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-ELIT,846,2023-01-06,2026-07-30,7,Teknologi,Perangkat Lunak & Jasa TI
-ELPI,955,2022-08-08,2026-07-30,13,Transportasi & Logistik,Logistik & Pengantaran
-ELSA,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-ELTY,1234,2021-06-16,2026-07-30,268,Properti & Real Estat,Properti & Real Estat
-EMAS,207,2025-09-23,2026-07-30,4,Barang Baku,Barang Baku
-EMDE,1234,2021-06-16,2026-07-30,92,Properti & Real Estat,Properti & Real Estat
-EMTK,1234,2021-06-16,2026-07-30,4,Teknologi,Perangkat Lunak & Jasa TI
-ENAK,1071,2022-02-08,2026-07-30,10,Barang Konsumen Non-Primer,Jasa Konsumen
-ENRG,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
+DUTI,1235,2021-06-16,2026-07-31,158,Properti & Real Estat,Properti & Real Estat
+DVLA,1235,2021-06-16,2026-07-31,5,Kesehatan,Farmasi & Riset Kesehatan
+DWGL,1235,2021-06-16,2026-07-31,44,Energi,"Minyak, Gas & Batu Bara"
+DYAN,1235,2021-06-16,2026-07-31,4,Perindustrian,Jasa Perindustrian
+EAST,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Jasa Konsumen
+ECII,1235,2021-06-16,2026-07-31,87,Barang Konsumen Non-Primer,Perdagangan Ritel
+EDGE,1238,2021-06-16,2026-07-31,205,Teknologi,Perangkat Lunak & Jasa TI
+EKAD,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+ELIT,847,2023-01-06,2026-07-31,7,Teknologi,Perangkat Lunak & Jasa TI
+ELPI,956,2022-08-08,2026-07-31,13,Transportasi & Logistik,Logistik & Pengantaran
+ELSA,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+ELTY,1235,2021-06-16,2026-07-31,268,Properti & Real Estat,Properti & Real Estat
+EMAS,208,2025-09-23,2026-07-31,4,Barang Baku,Barang Baku
+EMDE,1235,2021-06-16,2026-07-31,92,Properti & Real Estat,Properti & Real Estat
+EMTK,1235,2021-06-16,2026-07-31,4,Teknologi,Perangkat Lunak & Jasa TI
+ENAK,1072,2022-02-08,2026-07-31,10,Barang Konsumen Non-Primer,Jasa Konsumen
+ENRG,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
 ENVY,1,2026-07-17,2026-07-17,1,Teknologi,Perangkat Lunak & Jasa TI
-ENZO,1234,2021-06-16,2026-07-30,42,Barang Konsumen Primer,Makanan & Minuman
-EPAC,1234,2021-06-16,2026-07-30,33,Barang Baku,Barang Baku
-EPMT,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-ERAA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-ERAL,711,2023-08-08,2026-07-30,7,Barang Konsumen Non-Primer,Perdagangan Ritel
-ERTX,1234,2021-06-16,2026-07-30,5,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-ESIP,1234,2021-06-16,2026-07-30,18,Barang Baku,Barang Baku
-ESSA,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-ESTA,1234,2021-06-16,2026-07-30,23,Barang Konsumen Non-Primer,Jasa Konsumen
-ESTI,1234,2021-06-16,2026-07-30,20,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-ETWA,1237,2021-06-16,2026-07-30,902,Barang Baku,Barang Baku
-EURO,954,2022-08-08,2026-07-30,51,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-EXCL,1234,2021-06-16,2026-07-30,4,Infrastruktur,Telekomunikasi
-FAPA,1234,2021-06-16,2026-07-30,18,Barang Konsumen Primer,Makanan & Minuman
-FAST,1234,2021-06-16,2026-07-30,14,Barang Konsumen Non-Primer,Jasa Konsumen
+ENZO,1235,2021-06-16,2026-07-31,42,Barang Konsumen Primer,Makanan & Minuman
+EPAC,1235,2021-06-16,2026-07-31,33,Barang Baku,Barang Baku
+EPMT,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+ERAA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+ERAL,712,2023-08-08,2026-07-31,7,Barang Konsumen Non-Primer,Perdagangan Ritel
+ERTX,1235,2021-06-16,2026-07-31,5,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+ESIP,1235,2021-06-16,2026-07-31,18,Barang Baku,Barang Baku
+ESSA,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+ESTA,1235,2021-06-16,2026-07-31,23,Barang Konsumen Non-Primer,Jasa Konsumen
+ESTI,1235,2021-06-16,2026-07-31,20,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+ETWA,1238,2021-06-16,2026-07-31,903,Barang Baku,Barang Baku
+EURO,955,2022-08-08,2026-07-31,51,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+EXCL,1235,2021-06-16,2026-07-31,4,Infrastruktur,Telekomunikasi
+FAPA,1235,2021-06-16,2026-07-31,18,Barang Konsumen Primer,Makanan & Minuman
+FAST,1235,2021-06-16,2026-07-31,14,Barang Konsumen Non-Primer,Jasa Konsumen
 FASW,1237,2021-06-16,2026-07-30,989,Barang Baku,Barang Baku
-FILM,1234,2021-06-16,2026-07-30,36,Barang Konsumen Non-Primer,Media & Hiburan
-FIMP,1237,2021-06-16,2026-07-30,351,Infrastruktur,Konstruksi Bangunan
-FIRE,1234,2021-06-16,2026-07-30,14,Energi,"Minyak, Gas & Batu Bara"
-FISH,1234,2021-06-16,2026-07-30,522,Barang Konsumen Primer,Makanan & Minuman
-FITT,1234,2021-06-16,2026-07-30,61,Barang Konsumen Non-Primer,Jasa Konsumen
-FLMC,1218,2021-07-08,2026-07-30,385,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-FMII,1234,2021-06-16,2026-07-30,104,Properti & Real Estat,Properti & Real Estat
-FOLK,712,2023-08-07,2026-07-30,29,Perindustrian,Perusahaan Holding Multi Sektor
-FOOD,1234,2021-06-16,2026-07-30,44,Barang Konsumen Primer,Makanan & Minuman
-FORE,312,2025-04-14,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-FORU,1235,2021-06-16,2026-07-30,131,Barang Konsumen Non-Primer,Media & Hiburan
-FPNI,1234,2021-06-16,2026-07-30,12,Barang Baku,Barang Baku
-FUJI,1234,2021-06-16,2026-07-30,36,Keuangan,Jasa Pembiayaan
-FUTR,811,2023-02-27,2026-07-30,32,Barang Konsumen Non-Primer,Media & Hiburan
-FWCT,829,2023-02-01,2026-07-30,7,Barang Baku,Barang Baku
+FILM,1235,2021-06-16,2026-07-31,36,Barang Konsumen Non-Primer,Media & Hiburan
+FIMP,1238,2021-06-16,2026-07-31,352,Infrastruktur,Konstruksi Bangunan
+FIRE,1235,2021-06-16,2026-07-31,14,Energi,"Minyak, Gas & Batu Bara"
+FISH,1235,2021-06-16,2026-07-31,522,Barang Konsumen Primer,Makanan & Minuman
+FITT,1235,2021-06-16,2026-07-31,61,Barang Konsumen Non-Primer,Jasa Konsumen
+FLMC,1219,2021-07-08,2026-07-31,385,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+FMII,1235,2021-06-16,2026-07-31,104,Properti & Real Estat,Properti & Real Estat
+FOLK,713,2023-08-07,2026-07-31,29,Perindustrian,Perusahaan Holding Multi Sektor
+FOOD,1235,2021-06-16,2026-07-31,45,Barang Konsumen Primer,Makanan & Minuman
+FORE,313,2025-04-14,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+FORU,1236,2021-06-16,2026-07-31,131,Barang Konsumen Non-Primer,Media & Hiburan
+FPNI,1235,2021-06-16,2026-07-31,12,Barang Baku,Barang Baku
+FUJI,1235,2021-06-16,2026-07-31,36,Keuangan,Jasa Pembiayaan
+FUTR,812,2023-02-27,2026-07-31,32,Barang Konsumen Non-Primer,Media & Hiburan
+FWCT,830,2023-02-01,2026-07-31,7,Barang Baku,Barang Baku
 GAMA,1,2026-07-17,2026-07-17,1,Properti & Real Estat,Properti & Real Estat
-GDST,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-GDYR,1234,2021-06-16,2026-07-30,56,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-GEMA,1234,2021-06-16,2026-07-30,109,Barang Konsumen Non-Primer,Barang Rumah Tangga
-GEMS,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-GGRM,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Rokok
-GGRP,1234,2021-06-16,2026-07-30,146,Barang Baku,Barang Baku
-GHON,1234,2021-06-16,2026-07-30,17,Infrastruktur,Telekomunikasi
-GIAA,1234,2021-06-16,2026-07-30,387,Transportasi & Logistik,Transportasi
-GJTL,1234,2021-06-16,2026-07-30,5,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-GLOB,1237,2021-06-16,2026-07-30,462,Barang Konsumen Non-Primer,Perdagangan Ritel
-GLVA,1234,2021-06-16,2026-07-30,5,Teknologi,Perangkat Keras & Peralatan Teknologi
-GMFI,1234,2021-06-16,2026-07-30,4,Infrastruktur,Infrastruktur Transportasi
-GMTD,1234,2021-06-16,2026-07-30,663,Properti & Real Estat,Properti & Real Estat
-GOLD,1234,2021-06-16,2026-07-30,4,Infrastruktur,Telekomunikasi
-GOLF,496,2024-07-08,2026-07-30,14,Barang Konsumen Non-Primer,Jasa Konsumen
+GDST,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+GDYR,1235,2021-06-16,2026-07-31,57,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+GEMA,1235,2021-06-16,2026-07-31,109,Barang Konsumen Non-Primer,Barang Rumah Tangga
+GEMS,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+GGRM,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Rokok
+GGRP,1235,2021-06-16,2026-07-31,146,Barang Baku,Barang Baku
+GHON,1235,2021-06-16,2026-07-31,17,Infrastruktur,Telekomunikasi
+GIAA,1235,2021-06-16,2026-07-31,387,Transportasi & Logistik,Transportasi
+GJTL,1235,2021-06-16,2026-07-31,5,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+GLOB,1238,2021-06-16,2026-07-31,463,Barang Konsumen Non-Primer,Perdagangan Ritel
+GLVA,1235,2021-06-16,2026-07-31,5,Teknologi,Perangkat Keras & Peralatan Teknologi
+GMFI,1235,2021-06-16,2026-07-31,4,Infrastruktur,Infrastruktur Transportasi
+GMTD,1235,2021-06-16,2026-07-31,663,Properti & Real Estat,Properti & Real Estat
+GOLD,1235,2021-06-16,2026-07-31,4,Infrastruktur,Telekomunikasi
+GOLF,497,2024-07-08,2026-07-31,14,Barang Konsumen Non-Primer,Jasa Konsumen
 GOLL,1,2026-07-17,2026-07-17,1,Barang Konsumen Primer,Makanan & Minuman
-GOOD,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-GOTO,1029,2022-04-11,2026-07-30,7,Teknologi,Perangkat Lunak & Jasa TI
-GPRA,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-GPSO,1179,2021-09-06,2026-07-30,41,Perindustrian,Barang Perindustrian
-GRIA,711,2023-08-08,2026-07-30,7,Properti & Real Estat,Properti & Real Estat
-GRPH,599,2024-01-18,2026-07-30,8,Barang Konsumen Non-Primer,Jasa Konsumen
-GRPM,731,2023-07-10,2026-07-30,18,Barang Konsumen Primer,Makanan & Minuman
-GSMF,1234,2021-06-16,2026-07-30,10,Keuangan,Perusahaan Holding & Investasi
-GTBO,1234,2021-06-16,2026-07-30,410,Energi,"Minyak, Gas & Batu Bara"
-GTRA,790,2023-03-30,2026-07-30,9,Transportasi & Logistik,Logistik & Pengantaran
-GTSI,1177,2021-09-08,2026-07-30,14,Energi,"Minyak, Gas & Batu Bara"
-GULA,957,2022-08-03,2026-07-30,7,Barang Konsumen Primer,Makanan & Minuman
-GUNA,495,2024-07-09,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-GWSA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Jasa Konsumen
-GZCO,1234,2021-06-16,2026-07-30,9,Barang Konsumen Primer,Makanan & Minuman
-HADE,1234,2021-06-16,2026-07-30,226,Infrastruktur,Utilitas
-HAIS,1182,2021-09-01,2026-07-30,7,Transportasi & Logistik,Logistik & Pengantaran
-HAJJ,786,2023-04-05,2026-07-30,7,Barang Konsumen Non-Primer,Jasa Konsumen
-HALO,824,2023-02-08,2026-07-30,7,Kesehatan,Jasa & Peralatan Kesehatan
-HATM,963,2022-07-26,2026-07-30,7,Transportasi & Logistik,Logistik & Pengantaran
-HBAT,712,2023-08-07,2026-07-30,16,Properti & Real Estat,Properti & Real Estat
-HDFA,1234,2021-06-16,2026-07-30,7,Keuangan,Jasa Pembiayaan
-HDIT,1234,2021-06-16,2026-07-30,8,Teknologi,Perangkat Lunak & Jasa TI
-HEAL,1234,2021-06-16,2026-07-30,4,Kesehatan,Jasa & Peralatan Kesehatan
+GOOD,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+GOTO,1030,2022-04-11,2026-07-31,7,Teknologi,Perangkat Lunak & Jasa TI
+GPRA,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+GPSO,1180,2021-09-06,2026-07-31,41,Perindustrian,Barang Perindustrian
+GRIA,712,2023-08-08,2026-07-31,7,Properti & Real Estat,Properti & Real Estat
+GRPH,600,2024-01-18,2026-07-31,8,Barang Konsumen Non-Primer,Jasa Konsumen
+GRPM,732,2023-07-10,2026-07-31,18,Barang Konsumen Primer,Makanan & Minuman
+GSMF,1235,2021-06-16,2026-07-31,10,Keuangan,Perusahaan Holding & Investasi
+GTBO,1235,2021-06-16,2026-07-31,411,Energi,"Minyak, Gas & Batu Bara"
+GTRA,791,2023-03-30,2026-07-31,9,Transportasi & Logistik,Logistik & Pengantaran
+GTSI,1178,2021-09-08,2026-07-31,14,Energi,"Minyak, Gas & Batu Bara"
+GULA,958,2022-08-03,2026-07-31,7,Barang Konsumen Primer,Makanan & Minuman
+GUNA,496,2024-07-09,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+GWSA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Jasa Konsumen
+GZCO,1235,2021-06-16,2026-07-31,9,Barang Konsumen Primer,Makanan & Minuman
+HADE,1235,2021-06-16,2026-07-31,226,Infrastruktur,Utilitas
+HAIS,1183,2021-09-01,2026-07-31,7,Transportasi & Logistik,Logistik & Pengantaran
+HAJJ,787,2023-04-05,2026-07-31,7,Barang Konsumen Non-Primer,Jasa Konsumen
+HALO,825,2023-02-08,2026-07-31,7,Kesehatan,Jasa & Peralatan Kesehatan
+HATM,964,2022-07-26,2026-07-31,7,Transportasi & Logistik,Logistik & Pengantaran
+HBAT,713,2023-08-07,2026-07-31,16,Properti & Real Estat,Properti & Real Estat
+HDFA,1235,2021-06-16,2026-07-31,7,Keuangan,Jasa Pembiayaan
+HDIT,1235,2021-06-16,2026-07-31,8,Teknologi,Perangkat Lunak & Jasa TI
+HEAL,1235,2021-06-16,2026-07-31,4,Kesehatan,Jasa & Peralatan Kesehatan
 HELI,1234,2021-06-16,2026-07-30,63,Transportasi & Logistik,Transportasi
-HERO,1234,2021-06-16,2026-07-30,16,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-HEXA,1234,2021-06-16,2026-07-30,4,Perindustrian,Barang Perindustrian
-HGII,369,2025-01-09,2026-07-30,4,Infrastruktur,Utilitas
-HILL,809,2023-03-01,2026-07-30,31,Energi,"Minyak, Gas & Batu Bara"
+HERO,1235,2021-06-16,2026-07-31,16,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+HEXA,1235,2021-06-16,2026-07-31,4,Perindustrian,Barang Perindustrian
+HGII,370,2025-01-09,2026-07-31,4,Infrastruktur,Utilitas
+HILL,810,2023-03-01,2026-07-31,32,Energi,"Minyak, Gas & Batu Bara"
 HITS,1237,2021-06-16,2026-07-30,347,Energi,"Minyak, Gas & Batu Bara"
 HKMU,1,2026-07-17,2026-07-17,1,Barang Baku,Barang Baku
-HMSP,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Rokok
-HOKI,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
+HMSP,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Rokok
+HOKI,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
 HOME,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Jasa Konsumen
-HOMI,1234,2021-06-16,2026-07-30,49,Properti & Real Estat,Properti & Real Estat
-HOPE,1234,2021-06-16,2026-07-30,37,Perindustrian,Barang Perindustrian
+HOMI,1235,2021-06-16,2026-07-31,49,Properti & Real Estat,Properti & Real Estat
+HOPE,1235,2021-06-16,2026-07-31,37,Perindustrian,Barang Perindustrian
 HOTL,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Jasa Konsumen
-HRME,1234,2021-06-16,2026-07-30,22,Barang Konsumen Non-Primer,Jasa Konsumen
-HRTA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-HRUM,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-HUMI,710,2023-08-09,2026-07-30,19,Energi,"Minyak, Gas & Batu Bara"
-HYGN,583,2024-02-13,2026-07-30,6,Perindustrian,Jasa Perindustrian
-IATA,1234,2021-06-16,2026-07-30,9,Energi,"Minyak, Gas & Batu Bara"
-IBFN,1234,2021-06-16,2026-07-30,447,Perindustrian,Barang Perindustrian
-IBOS,1020,2022-04-25,2026-07-30,27,Barang Konsumen Primer,Makanan & Minuman
-IBST,1237,2021-06-16,2026-07-30,648,Infrastruktur,Telekomunikasi
-ICBP,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-ICON,1234,2021-06-16,2026-07-30,48,Perindustrian,Jasa Perindustrian
-IDEA,1176,2021-09-09,2026-07-30,10,Barang Konsumen Non-Primer,Jasa Konsumen
-IDPR,1234,2021-06-16,2026-07-30,12,Infrastruktur,Konstruksi Bangunan
-IFII,1234,2021-06-16,2026-07-30,6,Barang Baku,Barang Baku
-IFSH,1234,2021-06-16,2026-07-30,88,Barang Baku,Barang Baku
-IGAR,1234,2021-06-16,2026-07-30,6,Barang Baku,Barang Baku
+HRME,1235,2021-06-16,2026-07-31,22,Barang Konsumen Non-Primer,Jasa Konsumen
+HRTA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+HRUM,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+HUMI,711,2023-08-09,2026-07-31,19,Energi,"Minyak, Gas & Batu Bara"
+HYGN,584,2024-02-13,2026-07-31,6,Perindustrian,Jasa Perindustrian
+IATA,1235,2021-06-16,2026-07-31,9,Energi,"Minyak, Gas & Batu Bara"
+IBFN,1235,2021-06-16,2026-07-31,448,Perindustrian,Barang Perindustrian
+IBOS,1021,2022-04-25,2026-07-31,27,Barang Konsumen Primer,Makanan & Minuman
+IBST,1238,2021-06-16,2026-07-31,649,Infrastruktur,Telekomunikasi
+ICBP,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+ICON,1235,2021-06-16,2026-07-31,48,Perindustrian,Jasa Perindustrian
+IDEA,1177,2021-09-09,2026-07-31,10,Barang Konsumen Non-Primer,Jasa Konsumen
+IDPR,1235,2021-06-16,2026-07-31,12,Infrastruktur,Konstruksi Bangunan
+IFII,1235,2021-06-16,2026-07-31,6,Barang Baku,Barang Baku
+IFSH,1235,2021-06-16,2026-07-31,88,Barang Baku,Barang Baku
+IGAR,1235,2021-06-16,2026-07-31,6,Barang Baku,Barang Baku
 IIKP,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Barang Rekreasi
 IKAI,1234,2021-06-16,2026-07-30,159,Perindustrian,Barang Perindustrian
-IKAN,1234,2021-06-16,2026-07-30,22,Barang Konsumen Primer,Makanan & Minuman
-IKBI,1234,2021-06-16,2026-07-30,21,Perindustrian,Barang Perindustrian
-IKPM,647,2023-11-08,2026-07-30,7,Kesehatan,Farmasi & Riset Kesehatan
-IMAS,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-IMJS,1234,2021-06-16,2026-07-30,5,Transportasi & Logistik,Transportasi
-IMPC,1234,2021-06-16,2026-07-30,13,Perindustrian,Barang Perindustrian
-INAF,1237,2021-06-16,2026-07-30,504,Kesehatan,Farmasi & Riset Kesehatan
-INAI,1234,2021-06-16,2026-07-30,41,Barang Baku,Barang Baku
-INCF,1234,2021-06-16,2026-07-30,52,Barang Baku,Barang Baku
-INCI,1234,2021-06-16,2026-07-30,7,Barang Baku,Barang Baku
-INCO,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-INDF,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-INDO,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-INDR,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-INDS,1234,2021-06-16,2026-07-30,25,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-INDX,1234,2021-06-16,2026-07-30,40,Perindustrian,Jasa Perindustrian
-INDY,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-INET,722,2023-07-24,2026-07-30,28,Infrastruktur,Telekomunikasi
-INKP,1234,2021-06-16,2026-07-30,5,Barang Baku,Barang Baku
-INOV,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-INPC,1234,2021-06-16,2026-07-30,21,Keuangan,Bank
-INPP,1235,2021-06-16,2026-07-30,169,Properti & Real Estat,Properti & Real Estat
-INPS,1234,2021-06-16,2026-07-30,101,Energi,"Minyak, Gas & Batu Bara"
-INRU,1237,2021-06-16,2026-07-30,189,Barang Baku,Barang Baku
-INTA,1234,2021-06-16,2026-07-30,339,Perindustrian,Barang Perindustrian
+IKAN,1235,2021-06-16,2026-07-31,22,Barang Konsumen Primer,Makanan & Minuman
+IKBI,1235,2021-06-16,2026-07-31,21,Perindustrian,Barang Perindustrian
+IKPM,648,2023-11-08,2026-07-31,7,Kesehatan,Farmasi & Riset Kesehatan
+IMAS,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+IMJS,1235,2021-06-16,2026-07-31,5,Transportasi & Logistik,Transportasi
+IMPC,1235,2021-06-16,2026-07-31,13,Perindustrian,Barang Perindustrian
+INAF,1238,2021-06-16,2026-07-31,505,Kesehatan,Farmasi & Riset Kesehatan
+INAI,1235,2021-06-16,2026-07-31,41,Barang Baku,Barang Baku
+INCF,1235,2021-06-16,2026-07-31,53,Barang Baku,Barang Baku
+INCI,1235,2021-06-16,2026-07-31,7,Barang Baku,Barang Baku
+INCO,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+INDF,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+INDO,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+INDR,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+INDS,1235,2021-06-16,2026-07-31,25,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+INDX,1235,2021-06-16,2026-07-31,41,Perindustrian,Jasa Perindustrian
+INDY,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+INET,723,2023-07-24,2026-07-31,28,Infrastruktur,Telekomunikasi
+INKP,1235,2021-06-16,2026-07-31,5,Barang Baku,Barang Baku
+INOV,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+INPC,1235,2021-06-16,2026-07-31,21,Keuangan,Bank
+INPP,1236,2021-06-16,2026-07-31,169,Properti & Real Estat,Properti & Real Estat
+INPS,1235,2021-06-16,2026-07-31,101,Energi,"Minyak, Gas & Batu Bara"
+INRU,1238,2021-06-16,2026-07-31,190,Barang Baku,Barang Baku
+INTA,1235,2021-06-16,2026-07-31,340,Perindustrian,Barang Perindustrian
 INTD,1234,2021-06-16,2026-07-30,24,Barang Baku,Barang Baku
-INTP,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-IOTF,670,2023-10-06,2026-07-30,8,Teknologi,Perangkat Keras & Peralatan Teknologi
+INTP,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+IOTF,671,2023-10-06,2026-07-31,8,Teknologi,Perangkat Keras & Peralatan Teknologi
 IPAC,1224,2021-06-30,2026-07-30,53,Properti & Real Estat,Properti & Real Estat
-IPCC,1234,2021-06-16,2026-07-30,4,Infrastruktur,Infrastruktur Transportasi
-IPCM,1234,2021-06-16,2026-07-30,4,Infrastruktur,Infrastruktur Transportasi
-IPOL,1234,2021-06-16,2026-07-30,8,Barang Baku,Barang Baku
-IPPE,1115,2021-12-09,2026-07-30,463,Barang Konsumen Primer,Makanan & Minuman
-IPTV,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Media & Hiburan
-IRRA,1234,2021-06-16,2026-07-30,4,Kesehatan,Jasa & Peralatan Kesehatan
-IRSX,825,2023-02-07,2026-07-30,40,Teknologi,Perangkat Lunak & Jasa TI
-ISAP,866,2022-12-09,2026-07-30,7,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-ISAT,1234,2021-06-16,2026-07-30,4,Infrastruktur,Telekomunikasi
-ISEA,496,2024-07-08,2026-07-30,9,Barang Konsumen Primer,Makanan & Minuman
-ISSP,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-ITIC,1234,2021-06-16,2026-07-30,10,Barang Konsumen Primer,Rokok
-ITMA,1234,2021-06-16,2026-07-30,45,Energi,"Minyak, Gas & Batu Bara"
-ITMG,1234,2021-06-16,2026-07-30,5,Energi,"Minyak, Gas & Batu Bara"
-JARR,956,2022-08-04,2026-07-30,21,Barang Konsumen Primer,Makanan & Minuman
-JAST,1234,2021-06-16,2026-07-30,7,Infrastruktur,Telekomunikasi
-JATI,770,2023-05-08,2026-07-30,18,Teknologi,Perangkat Lunak & Jasa TI
-JAWA,1234,2021-06-16,2026-07-30,21,Barang Konsumen Primer,Makanan & Minuman
-JAYA,1234,2021-06-16,2026-07-30,4,Transportasi & Logistik,Logistik & Pengantaran
-JECC,1234,2021-06-16,2026-07-30,234,Perindustrian,Barang Perindustrian
-JGLE,1234,2021-06-16,2026-07-30,325,Barang Konsumen Non-Primer,Jasa Konsumen
-JIHD,1234,2021-06-16,2026-07-30,36,Barang Konsumen Non-Primer,Jasa Konsumen
-JKON,1234,2021-06-16,2026-07-30,4,Infrastruktur,Konstruksi Bangunan
-JMAS,1234,2021-06-16,2026-07-30,40,Keuangan,Asuransi
-JPFA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-JRPT,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
+IPCC,1235,2021-06-16,2026-07-31,4,Infrastruktur,Infrastruktur Transportasi
+IPCM,1235,2021-06-16,2026-07-31,4,Infrastruktur,Infrastruktur Transportasi
+IPOL,1235,2021-06-16,2026-07-31,8,Barang Baku,Barang Baku
+IPPE,1116,2021-12-09,2026-07-31,464,Barang Konsumen Primer,Makanan & Minuman
+IPTV,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Media & Hiburan
+IRRA,1235,2021-06-16,2026-07-31,4,Kesehatan,Jasa & Peralatan Kesehatan
+IRSX,826,2023-02-07,2026-07-31,40,Teknologi,Perangkat Lunak & Jasa TI
+ISAP,867,2022-12-09,2026-07-31,7,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+ISAT,1235,2021-06-16,2026-07-31,4,Infrastruktur,Telekomunikasi
+ISEA,497,2024-07-08,2026-07-31,9,Barang Konsumen Primer,Makanan & Minuman
+ISSP,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+ITIC,1235,2021-06-16,2026-07-31,10,Barang Konsumen Primer,Rokok
+ITMA,1235,2021-06-16,2026-07-31,45,Energi,"Minyak, Gas & Batu Bara"
+ITMG,1235,2021-06-16,2026-07-31,5,Energi,"Minyak, Gas & Batu Bara"
+JARR,957,2022-08-04,2026-07-31,21,Barang Konsumen Primer,Makanan & Minuman
+JAST,1235,2021-06-16,2026-07-31,7,Infrastruktur,Telekomunikasi
+JATI,771,2023-05-08,2026-07-31,18,Teknologi,Perangkat Lunak & Jasa TI
+JAWA,1235,2021-06-16,2026-07-31,21,Barang Konsumen Primer,Makanan & Minuman
+JAYA,1235,2021-06-16,2026-07-31,4,Transportasi & Logistik,Logistik & Pengantaran
+JECC,1235,2021-06-16,2026-07-31,234,Perindustrian,Barang Perindustrian
+JGLE,1235,2021-06-16,2026-07-31,325,Barang Konsumen Non-Primer,Jasa Konsumen
+JIHD,1235,2021-06-16,2026-07-31,36,Barang Konsumen Non-Primer,Jasa Konsumen
+JKON,1235,2021-06-16,2026-07-31,4,Infrastruktur,Konstruksi Bangunan
+JMAS,1235,2021-06-16,2026-07-31,41,Keuangan,Asuransi
+JPFA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+JRPT,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
 JSKY,1,2026-07-17,2026-07-17,1,Energi,Energi Alternatif
-JSMR,1234,2021-06-16,2026-07-30,4,Infrastruktur,Infrastruktur Transportasi
-JSPT,1234,2021-06-16,2026-07-30,432,Barang Konsumen Non-Primer,Jasa Konsumen
-JTPE,1234,2021-06-16,2026-07-30,4,Perindustrian,Jasa Perindustrian
-KAEF,1234,2021-06-16,2026-07-30,13,Kesehatan,Farmasi & Riset Kesehatan
-KAQI,330,2025-03-10,2026-07-30,5,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-KARW,1234,2021-06-16,2026-07-30,107,Infrastruktur,Infrastruktur Transportasi
-KAYU,1237,2021-06-16,2026-07-30,639,Barang Baku,Barang Baku
-KBAG,1234,2021-06-16,2026-07-30,6,Properti & Real Estat,Properti & Real Estat
-KBLI,1234,2021-06-16,2026-07-30,4,Perindustrian,Barang Perindustrian
-KBLM,1234,2021-06-16,2026-07-30,4,Perindustrian,Barang Perindustrian
-KBLV,1234,2021-06-16,2026-07-30,31,Infrastruktur,Telekomunikasi
+JSMR,1235,2021-06-16,2026-07-31,4,Infrastruktur,Infrastruktur Transportasi
+JSPT,1235,2021-06-16,2026-07-31,432,Barang Konsumen Non-Primer,Jasa Konsumen
+JTPE,1235,2021-06-16,2026-07-31,4,Perindustrian,Jasa Perindustrian
+KAEF,1235,2021-06-16,2026-07-31,13,Kesehatan,Farmasi & Riset Kesehatan
+KAQI,331,2025-03-10,2026-07-31,5,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+KARW,1235,2021-06-16,2026-07-31,108,Infrastruktur,Infrastruktur Transportasi
+KAYU,1238,2021-06-16,2026-07-31,640,Barang Baku,Barang Baku
+KBAG,1235,2021-06-16,2026-07-31,6,Properti & Real Estat,Properti & Real Estat
+KBLI,1235,2021-06-16,2026-07-31,4,Perindustrian,Barang Perindustrian
+KBLM,1235,2021-06-16,2026-07-31,4,Perindustrian,Barang Perindustrian
+KBLV,1235,2021-06-16,2026-07-31,31,Infrastruktur,Telekomunikasi
 KBRI,1,2026-07-17,2026-07-17,1,Barang Baku,Barang Baku
-KDSI,1234,2021-06-16,2026-07-30,60,Barang Baku,Barang Baku
-KDTN,888,2022-11-09,2026-07-30,22,Barang Konsumen Non-Primer,Jasa Konsumen
-KEEN,1234,2021-06-16,2026-07-30,4,Infrastruktur,Utilitas
-KEJU,1234,2021-06-16,2026-07-30,8,Barang Konsumen Primer,Makanan & Minuman
-KETR,887,2022-11-10,2026-07-30,8,Infrastruktur,Telekomunikasi
-KIAS,1237,2021-06-16,2026-07-30,329,Perindustrian,Barang Perindustrian
-KICI,1234,2021-06-16,2026-07-30,7,Barang Konsumen Non-Primer,Barang Rumah Tangga
-KIJA,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-KING,819,2023-02-16,2026-07-30,19,Perindustrian,Jasa Perindustrian
-KINO,1234,2021-06-16,2026-07-30,11,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-KIOS,1234,2021-06-16,2026-07-30,24,Teknologi,Perangkat Lunak & Jasa TI
-KJEN,1234,2021-06-16,2026-07-30,47,Transportasi & Logistik,Logistik & Pengantaran
-KKES,954,2022-08-08,2026-07-30,18,Barang Baku,Barang Baku
-KKGI,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-KLAS,748,2023-06-12,2026-07-30,7,Transportasi & Logistik,Logistik & Pengantaran
-KLBF,1234,2021-06-16,2026-07-30,4,Kesehatan,Farmasi & Riset Kesehatan
-KLIN,953,2022-08-09,2026-07-30,21,Barang Konsumen Non-Primer,Perdagangan Ritel
-KMDS,1234,2021-06-16,2026-07-30,6,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-KMTR,1234,2021-06-16,2026-07-30,16,Barang Baku,Barang Baku
-KOBX,1234,2021-06-16,2026-07-30,4,Perindustrian,Barang Perindustrian
-KOCI,670,2023-10-06,2026-07-30,15,Properti & Real Estat,Properti & Real Estat
-KOIN,1234,2021-06-16,2026-07-30,257,Perindustrian,Barang Perindustrian
-KOKA,667,2023-10-11,2026-07-30,38,Infrastruktur,Konstruksi Bangunan
-KONI,1234,2021-06-16,2026-07-30,67,Perindustrian,Jasa Perindustrian
-KOPI,1234,2021-06-16,2026-07-30,40,Energi,"Minyak, Gas & Batu Bara"
-KOTA,1234,2021-06-16,2026-07-30,5,Barang Konsumen Non-Primer,Jasa Konsumen
-KPIG,1234,2021-06-16,2026-07-30,8,Barang Konsumen Non-Primer,Jasa Konsumen
-KRAS,1234,2021-06-16,2026-07-30,12,Barang Baku,Barang Baku
-KREN,1234,2021-06-16,2026-07-30,58,Teknologi,Perangkat Lunak & Jasa TI
-KRYA,963,2022-07-26,2026-07-30,15,Infrastruktur,Konstruksi Bangunan
-KSIX,370,2025-01-08,2026-07-30,7,Properti & Real Estat,Properti & Real Estat
-KUAS,1145,2021-10-25,2026-07-30,8,Perindustrian,Barang Perindustrian
-LABA,1234,2021-06-16,2026-07-30,105,Perindustrian,Barang Perindustrian
-LABS,494,2024-07-10,2026-07-30,4,Kesehatan,Jasa & Peralatan Kesehatan
-LAJU,832,2023-01-27,2026-07-30,14,Transportasi & Logistik,Logistik & Pengantaran
-LAND,1234,2021-06-16,2026-07-30,16,Properti & Real Estat,Properti & Real Estat
-LAPD,1234,2021-06-16,2026-07-30,612,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+KDSI,1235,2021-06-16,2026-07-31,60,Barang Baku,Barang Baku
+KDTN,889,2022-11-09,2026-07-31,22,Barang Konsumen Non-Primer,Jasa Konsumen
+KEEN,1235,2021-06-16,2026-07-31,4,Infrastruktur,Utilitas
+KEJU,1235,2021-06-16,2026-07-31,8,Barang Konsumen Primer,Makanan & Minuman
+KETR,888,2022-11-10,2026-07-31,8,Infrastruktur,Telekomunikasi
+KIAS,1238,2021-06-16,2026-07-31,330,Perindustrian,Barang Perindustrian
+KICI,1235,2021-06-16,2026-07-31,7,Barang Konsumen Non-Primer,Barang Rumah Tangga
+KIJA,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+KING,820,2023-02-16,2026-07-31,19,Perindustrian,Jasa Perindustrian
+KINO,1235,2021-06-16,2026-07-31,11,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+KIOS,1235,2021-06-16,2026-07-31,24,Teknologi,Perangkat Lunak & Jasa TI
+KJEN,1235,2021-06-16,2026-07-31,47,Transportasi & Logistik,Logistik & Pengantaran
+KKES,955,2022-08-08,2026-07-31,18,Barang Baku,Barang Baku
+KKGI,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+KLAS,749,2023-06-12,2026-07-31,7,Transportasi & Logistik,Logistik & Pengantaran
+KLBF,1235,2021-06-16,2026-07-31,4,Kesehatan,Farmasi & Riset Kesehatan
+KLIN,954,2022-08-09,2026-07-31,21,Barang Konsumen Non-Primer,Perdagangan Ritel
+KMDS,1235,2021-06-16,2026-07-31,6,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+KMTR,1235,2021-06-16,2026-07-31,16,Barang Baku,Barang Baku
+KOBX,1235,2021-06-16,2026-07-31,4,Perindustrian,Barang Perindustrian
+KOCI,671,2023-10-06,2026-07-31,15,Properti & Real Estat,Properti & Real Estat
+KOIN,1235,2021-06-16,2026-07-31,258,Perindustrian,Barang Perindustrian
+KOKA,668,2023-10-11,2026-07-31,38,Infrastruktur,Konstruksi Bangunan
+KONI,1235,2021-06-16,2026-07-31,67,Perindustrian,Jasa Perindustrian
+KOPI,1235,2021-06-16,2026-07-31,40,Energi,"Minyak, Gas & Batu Bara"
+KOTA,1235,2021-06-16,2026-07-31,5,Barang Konsumen Non-Primer,Jasa Konsumen
+KPIG,1235,2021-06-16,2026-07-31,8,Barang Konsumen Non-Primer,Jasa Konsumen
+KRAS,1235,2021-06-16,2026-07-31,12,Barang Baku,Barang Baku
+KREN,1235,2021-06-16,2026-07-31,58,Teknologi,Perangkat Lunak & Jasa TI
+KRYA,964,2022-07-26,2026-07-31,15,Infrastruktur,Konstruksi Bangunan
+KSIX,371,2025-01-08,2026-07-31,7,Properti & Real Estat,Properti & Real Estat
+KUAS,1146,2021-10-25,2026-07-31,8,Perindustrian,Barang Perindustrian
+LABA,1235,2021-06-16,2026-07-31,105,Perindustrian,Barang Perindustrian
+LABS,495,2024-07-10,2026-07-31,4,Kesehatan,Jasa & Peralatan Kesehatan
+LAJU,833,2023-01-27,2026-07-31,14,Transportasi & Logistik,Logistik & Pengantaran
+LAND,1235,2021-06-16,2026-07-31,16,Properti & Real Estat,Properti & Real Estat
+LAPD,1235,2021-06-16,2026-07-31,612,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
 LCGP,1,2026-07-17,2026-07-17,1,Properti & Real Estat,Properti & Real Estat
-LCKM,1234,2021-06-16,2026-07-30,185,Infrastruktur,Telekomunikasi
-LEAD,1234,2021-06-16,2026-07-30,14,Energi,"Minyak, Gas & Batu Bara"
-LFLO,1234,2021-06-16,2026-07-30,34,Barang Konsumen Non-Primer,Barang Rumah Tangga
-LIFE,1234,2021-06-16,2026-07-30,526,Keuangan,Asuransi
-LINK,1234,2021-06-16,2026-07-30,10,Infrastruktur,Telekomunikasi
-LION,1234,2021-06-16,2026-07-30,68,Perindustrian,Jasa Perindustrian
-LIVE,584,2024-02-12,2026-07-30,7,Barang Konsumen Non-Primer,Barang Rumah Tangga
+LCKM,1235,2021-06-16,2026-07-31,186,Infrastruktur,Telekomunikasi
+LEAD,1235,2021-06-16,2026-07-31,14,Energi,"Minyak, Gas & Batu Bara"
+LFLO,1235,2021-06-16,2026-07-31,34,Barang Konsumen Non-Primer,Barang Rumah Tangga
+LIFE,1235,2021-06-16,2026-07-31,526,Keuangan,Asuransi
+LINK,1235,2021-06-16,2026-07-31,10,Infrastruktur,Telekomunikasi
+LION,1235,2021-06-16,2026-07-31,68,Perindustrian,Jasa Perindustrian
+LIVE,585,2024-02-12,2026-07-31,7,Barang Konsumen Non-Primer,Barang Rumah Tangga
 LMAS,1,2026-07-17,2026-07-17,1,Teknologi,Perangkat Lunak & Jasa TI
-LMAX,710,2023-08-09,2026-07-30,8,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-LMPI,1234,2021-06-16,2026-07-30,67,Barang Konsumen Non-Primer,Barang Rumah Tangga
-LMSH,1237,2021-06-16,2026-07-30,628,Barang Baku,Barang Baku
-LOPI,667,2023-10-11,2026-07-30,12,Transportasi & Logistik,Logistik & Pengantaran
-LPCK,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-LPGI,1234,2021-06-16,2026-07-30,136,Keuangan,Asuransi
-LPIN,1234,2021-06-16,2026-07-30,5,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-LPKR,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-LPLI,1234,2021-06-16,2026-07-30,27,Properti & Real Estat,Properti & Real Estat
-LPPF,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-LPPS,1234,2021-06-16,2026-07-30,5,Keuangan,Perusahaan Holding & Investasi
-LRNA,1234,2021-06-16,2026-07-30,13,Transportasi & Logistik,Transportasi
-LSIP,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-LTLS,1234,2021-06-16,2026-07-30,5,Barang Baku,Barang Baku
-LUCK,1234,2021-06-16,2026-07-30,4,Teknologi,Perangkat Keras & Peralatan Teknologi
-LUCY,1234,2021-06-16,2026-07-30,41,Barang Konsumen Non-Primer,Jasa Konsumen
+LMAX,711,2023-08-09,2026-07-31,8,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+LMPI,1235,2021-06-16,2026-07-31,67,Barang Konsumen Non-Primer,Barang Rumah Tangga
+LMSH,1238,2021-06-16,2026-07-31,629,Barang Baku,Barang Baku
+LOPI,668,2023-10-11,2026-07-31,12,Transportasi & Logistik,Logistik & Pengantaran
+LPCK,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+LPGI,1235,2021-06-16,2026-07-31,136,Keuangan,Asuransi
+LPIN,1235,2021-06-16,2026-07-31,5,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+LPKR,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+LPLI,1235,2021-06-16,2026-07-31,27,Properti & Real Estat,Properti & Real Estat
+LPPF,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+LPPS,1235,2021-06-16,2026-07-31,5,Keuangan,Perusahaan Holding & Investasi
+LRNA,1235,2021-06-16,2026-07-31,13,Transportasi & Logistik,Transportasi
+LSIP,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+LTLS,1235,2021-06-16,2026-07-31,5,Barang Baku,Barang Baku
+LUCK,1235,2021-06-16,2026-07-31,4,Teknologi,Perangkat Keras & Peralatan Teknologi
+LUCY,1235,2021-06-16,2026-07-31,41,Barang Konsumen Non-Primer,Jasa Konsumen
 MABA,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Jasa Konsumen
 MAGP,1,2026-07-17,2026-07-17,1,Barang Konsumen Primer,Makanan & Minuman
-MAHA,721,2023-07-25,2026-07-30,7,Energi,"Minyak, Gas & Batu Bara"
-MAIN,1234,2021-06-16,2026-07-30,245,Barang Konsumen Primer,Makanan & Minuman
-MANG,604,2024-01-11,2026-07-30,7,Infrastruktur,Konstruksi Bangunan
-MAPA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-MAPB,1234,2021-06-16,2026-07-30,140,Barang Konsumen Non-Primer,Jasa Konsumen
-MAPI,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-MARI,1234,2021-06-16,2026-07-30,26,Barang Konsumen Non-Primer,Media & Hiburan
-MARK,1234,2021-06-16,2026-07-30,4,Perindustrian,Barang Perindustrian
-MASB,1224,2021-06-30,2026-07-30,219,Keuangan,Bank
-MAXI,748,2023-06-12,2026-07-30,8,Barang Konsumen Primer,Makanan & Minuman
-MAYA,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-MBAP,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-MBMA,778,2023-04-18,2026-07-30,7,Barang Baku,Barang Baku
-MBSS,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-MBTO,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-MCAS,1234,2021-06-16,2026-07-30,5,Teknologi,Perangkat Lunak & Jasa TI
-MCOL,1178,2021-09-07,2026-07-30,8,Energi,"Minyak, Gas & Batu Bara"
-MCOR,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-MDIA,1234,2021-06-16,2026-07-30,315,Barang Konsumen Non-Primer,Media & Hiburan
-MDIY,380,2024-12-19,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-MDKA,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-MDKI,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-MDLA,311,2025-04-15,2026-07-30,4,Kesehatan,Farmasi & Riset Kesehatan
-MDLN,1234,2021-06-16,2026-07-30,133,Properti & Real Estat,Properti & Real Estat
-MDRN,1234,2021-06-16,2026-07-30,282,Perindustrian,Jasa Perindustrian
-MEDC,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-MEDS,952,2022-08-10,2026-07-30,12,Kesehatan,Jasa & Peralatan Kesehatan
-MEGA,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-MEJA,584,2024-02-12,2026-07-30,84,Barang Konsumen Non-Primer,Barang Rumah Tangga
-MENN,781,2023-04-18,2026-07-30,187,Teknologi,Perangkat Keras & Peralatan Teknologi
-MERI,258,2025-07-10,2026-07-30,5,Barang Konsumen Non-Primer,Jasa Konsumen
-MERK,1234,2021-06-16,2026-07-30,5,Kesehatan,Farmasi & Riset Kesehatan
-META,1237,2021-06-16,2026-07-30,652,Infrastruktur,Infrastruktur Transportasi
-MFMI,1237,2021-06-16,2026-07-30,460,Perindustrian,Jasa Perindustrian
-MGLV,1234,2021-06-16,2026-07-30,58,Barang Konsumen Non-Primer,Barang Rumah Tangga
-MGNA,1234,2021-06-16,2026-07-30,494,Barang Konsumen Non-Primer,Jasa Konsumen
-MGRO,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-MHKI,548,2024-04-16,2026-07-30,4,Perindustrian,Jasa Perindustrian
-MICE,1235,2021-06-16,2026-07-30,15,Barang Konsumen Non-Primer,Barang Rumah Tangga
-MIDI,1234,2021-06-16,2026-07-30,25,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-MIKA,1234,2021-06-16,2026-07-30,4,Kesehatan,Jasa & Peralatan Kesehatan
-MINA,1234,2021-06-16,2026-07-30,165,Barang Konsumen Non-Primer,Jasa Konsumen
-MINE,330,2025-03-10,2026-07-30,4,Barang Baku,Barang Baku
-MIRA,1234,2021-06-16,2026-07-30,179,Transportasi & Logistik,Logistik & Pengantaran
-MITI,1234,2021-06-16,2026-07-30,14,Transportasi & Logistik,Logistik & Pengantaran
-MKAP,584,2024-02-12,2026-07-30,14,Energi,"Minyak, Gas & Batu Bara"
-MKNT,1237,2021-06-16,2026-07-30,662,Barang Konsumen Non-Primer,Perdagangan Ritel
-MKPI,1234,2021-06-16,2026-07-30,246,Properti & Real Estat,Properti & Real Estat
-MKTR,889,2022-11-08,2026-07-30,8,Barang Konsumen Primer,Makanan & Minuman
-MLBI,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-MLIA,1234,2021-06-16,2026-07-30,4,Perindustrian,Barang Perindustrian
-MLPL,1234,2021-06-16,2026-07-30,6,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+MAHA,722,2023-07-25,2026-07-31,7,Energi,"Minyak, Gas & Batu Bara"
+MAIN,1235,2021-06-16,2026-07-31,245,Barang Konsumen Primer,Makanan & Minuman
+MANG,605,2024-01-11,2026-07-31,7,Infrastruktur,Konstruksi Bangunan
+MAPA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+MAPB,1235,2021-06-16,2026-07-31,140,Barang Konsumen Non-Primer,Jasa Konsumen
+MAPI,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+MARI,1235,2021-06-16,2026-07-31,27,Barang Konsumen Non-Primer,Media & Hiburan
+MARK,1235,2021-06-16,2026-07-31,4,Perindustrian,Barang Perindustrian
+MASB,1225,2021-06-30,2026-07-31,219,Keuangan,Bank
+MAXI,749,2023-06-12,2026-07-31,8,Barang Konsumen Primer,Makanan & Minuman
+MAYA,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+MBAP,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+MBMA,779,2023-04-18,2026-07-31,7,Barang Baku,Barang Baku
+MBSS,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+MBTO,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+MCAS,1235,2021-06-16,2026-07-31,5,Teknologi,Perangkat Lunak & Jasa TI
+MCOL,1179,2021-09-07,2026-07-31,8,Energi,"Minyak, Gas & Batu Bara"
+MCOR,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+MDIA,1235,2021-06-16,2026-07-31,315,Barang Konsumen Non-Primer,Media & Hiburan
+MDIY,381,2024-12-19,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+MDKA,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+MDKI,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+MDLA,312,2025-04-15,2026-07-31,4,Kesehatan,Farmasi & Riset Kesehatan
+MDLN,1235,2021-06-16,2026-07-31,133,Properti & Real Estat,Properti & Real Estat
+MDRN,1235,2021-06-16,2026-07-31,283,Perindustrian,Jasa Perindustrian
+MEDC,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+MEDS,953,2022-08-10,2026-07-31,12,Kesehatan,Jasa & Peralatan Kesehatan
+MEGA,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+MEJA,585,2024-02-12,2026-07-31,84,Barang Konsumen Non-Primer,Barang Rumah Tangga
+MENN,782,2023-04-18,2026-07-31,188,Teknologi,Perangkat Keras & Peralatan Teknologi
+MERI,259,2025-07-10,2026-07-31,5,Barang Konsumen Non-Primer,Jasa Konsumen
+MERK,1235,2021-06-16,2026-07-31,5,Kesehatan,Farmasi & Riset Kesehatan
+META,1238,2021-06-16,2026-07-31,653,Infrastruktur,Infrastruktur Transportasi
+MFMI,1238,2021-06-16,2026-07-31,461,Perindustrian,Jasa Perindustrian
+MGLV,1235,2021-06-16,2026-07-31,58,Barang Konsumen Non-Primer,Barang Rumah Tangga
+MGNA,1235,2021-06-16,2026-07-31,494,Barang Konsumen Non-Primer,Jasa Konsumen
+MGRO,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+MHKI,549,2024-04-16,2026-07-31,4,Perindustrian,Jasa Perindustrian
+MICE,1236,2021-06-16,2026-07-31,15,Barang Konsumen Non-Primer,Barang Rumah Tangga
+MIDI,1235,2021-06-16,2026-07-31,25,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+MIKA,1235,2021-06-16,2026-07-31,4,Kesehatan,Jasa & Peralatan Kesehatan
+MINA,1235,2021-06-16,2026-07-31,165,Barang Konsumen Non-Primer,Jasa Konsumen
+MINE,331,2025-03-10,2026-07-31,4,Barang Baku,Barang Baku
+MIRA,1235,2021-06-16,2026-07-31,179,Transportasi & Logistik,Logistik & Pengantaran
+MITI,1235,2021-06-16,2026-07-31,14,Transportasi & Logistik,Logistik & Pengantaran
+MKAP,585,2024-02-12,2026-07-31,14,Energi,"Minyak, Gas & Batu Bara"
+MKNT,1238,2021-06-16,2026-07-31,663,Barang Konsumen Non-Primer,Perdagangan Ritel
+MKPI,1235,2021-06-16,2026-07-31,246,Properti & Real Estat,Properti & Real Estat
+MKTR,890,2022-11-08,2026-07-31,8,Barang Konsumen Primer,Makanan & Minuman
+MLBI,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+MLIA,1235,2021-06-16,2026-07-31,4,Perindustrian,Barang Perindustrian
+MLPL,1235,2021-06-16,2026-07-31,6,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
 MLPT,1237,2021-06-16,2026-07-30,43,Teknologi,Perangkat Lunak & Jasa TI
-MMIX,870,2022-12-06,2026-07-30,21,Kesehatan,Jasa & Peralatan Kesehatan
-MMLP,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-MNCN,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Media & Hiburan
-MOLI,1234,2021-06-16,2026-07-30,8,Barang Baku,Barang Baku
-MORA,954,2022-08-08,2026-07-30,26,Infrastruktur,Telekomunikasi
-MPIX,585,2024-02-07,2026-07-30,12,Teknologi,Perangkat Lunak & Jasa TI
-MPMX,1234,2021-06-16,2026-07-30,78,Barang Konsumen Non-Primer,Perdagangan Ritel
-MPOW,1234,2021-06-16,2026-07-30,11,Infrastruktur,Utilitas
-MPPA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-MPRO,1236,2021-06-16,2026-07-30,202,Properti & Real Estat,Properti & Real Estat
-MPXL,769,2023-05-09,2026-07-30,8,Transportasi & Logistik,Logistik & Pengantaran
-MRAT,1234,2021-06-16,2026-07-30,5,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-MREI,1234,2021-06-16,2026-07-30,100,Keuangan,Asuransi
-MSIE,710,2023-08-10,2026-07-30,23,Properti & Real Estat,Properti & Real Estat
-MSIN,1234,2021-06-16,2026-07-30,16,Barang Konsumen Non-Primer,Media & Hiburan
-MSJA,605,2024-01-10,2026-07-30,7,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-MSKY,1234,2021-06-16,2026-07-30,7,Barang Konsumen Non-Primer,Media & Hiburan
-MSTI,647,2023-11-08,2026-07-30,7,Teknologi,Perangkat Keras & Peralatan Teknologi
-MTDL,1234,2021-06-16,2026-07-30,4,Teknologi,Perangkat Keras & Peralatan Teknologi
-MTEL,1125,2021-11-22,2026-07-30,7,Infrastruktur,Telekomunikasi
-MTFN,1234,2021-06-16,2026-07-30,563,Energi,"Minyak, Gas & Batu Bara"
-MTLA,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-MTMH,1023,2022-04-20,2026-07-30,8,Kesehatan,Jasa & Peralatan Kesehatan
-MTPS,1237,2021-06-16,2026-07-30,239,Infrastruktur,Konstruksi Bangunan
+MMIX,871,2022-12-06,2026-07-31,21,Kesehatan,Jasa & Peralatan Kesehatan
+MMLP,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+MNCN,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Media & Hiburan
+MOLI,1235,2021-06-16,2026-07-31,8,Barang Baku,Barang Baku
+MORA,955,2022-08-08,2026-07-31,26,Infrastruktur,Telekomunikasi
+MPIX,586,2024-02-07,2026-07-31,12,Teknologi,Perangkat Lunak & Jasa TI
+MPMX,1235,2021-06-16,2026-07-31,78,Barang Konsumen Non-Primer,Perdagangan Ritel
+MPOW,1235,2021-06-16,2026-07-31,11,Infrastruktur,Utilitas
+MPPA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+MPRO,1237,2021-06-16,2026-07-31,202,Properti & Real Estat,Properti & Real Estat
+MPXL,770,2023-05-09,2026-07-31,8,Transportasi & Logistik,Logistik & Pengantaran
+MRAT,1235,2021-06-16,2026-07-31,5,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+MREI,1235,2021-06-16,2026-07-31,101,Keuangan,Asuransi
+MSIE,711,2023-08-10,2026-07-31,23,Properti & Real Estat,Properti & Real Estat
+MSIN,1235,2021-06-16,2026-07-31,16,Barang Konsumen Non-Primer,Media & Hiburan
+MSJA,606,2024-01-10,2026-07-31,7,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+MSKY,1235,2021-06-16,2026-07-31,7,Barang Konsumen Non-Primer,Media & Hiburan
+MSTI,648,2023-11-08,2026-07-31,7,Teknologi,Perangkat Keras & Peralatan Teknologi
+MTDL,1235,2021-06-16,2026-07-31,4,Teknologi,Perangkat Keras & Peralatan Teknologi
+MTEL,1126,2021-11-22,2026-07-31,7,Infrastruktur,Telekomunikasi
+MTFN,1235,2021-06-16,2026-07-31,564,Energi,"Minyak, Gas & Batu Bara"
+MTLA,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+MTMH,1024,2022-04-20,2026-07-31,8,Kesehatan,Jasa & Peralatan Kesehatan
+MTPS,1238,2021-06-16,2026-07-31,240,Infrastruktur,Konstruksi Bangunan
 MTRA,1,2026-07-17,2026-07-17,1,Infrastruktur,Konstruksi Bangunan
-MTSM,1237,2021-06-16,2026-07-30,402,Properti & Real Estat,Properti & Real Estat
-MTWI,1234,2021-06-16,2026-07-30,6,Keuangan,Asuransi
-MUTU,710,2023-08-09,2026-07-30,7,Perindustrian,Jasa Perindustrian
-MYOH,1234,2021-06-16,2026-07-30,5,Energi,"Minyak, Gas & Batu Bara"
-MYOR,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-MYTX,1234,2021-06-16,2026-07-30,367,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-NAIK,405,2024-11-13,2026-07-30,5,Perindustrian,Jasa Perindustrian
-NANO,1051,2022-03-10,2026-07-30,8,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-NASA,1234,2021-06-16,2026-07-30,37,Properti & Real Estat,Properti & Real Estat
-NASI,1110,2021-12-13,2026-07-30,16,Barang Konsumen Primer,Makanan & Minuman
-NATO,1234,2021-06-16,2026-07-30,59,Barang Konsumen Non-Primer,Jasa Konsumen
-NAYZ,826,2023-02-06,2026-07-30,25,Barang Konsumen Primer,Makanan & Minuman
-NCKL,782,2023-04-12,2026-07-30,7,Barang Baku,Barang Baku
-NELY,1234,2021-06-16,2026-07-30,4,Transportasi & Logistik,Logistik & Pengantaran
-NEST,473,2024-08-08,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-NETV,1079,2022-01-26,2026-07-30,9,Barang Konsumen Non-Primer,Media & Hiburan
-NFCX,1234,2021-06-16,2026-07-30,9,Teknologi,Perangkat Lunak & Jasa TI
-NICE,606,2024-01-09,2026-07-30,7,Barang Baku,Barang Baku
-NICK,1234,2021-06-16,2026-07-30,37,Keuangan,Perusahaan Holding & Investasi
-NICL,1217,2021-07-09,2026-07-30,16,Barang Baku,Barang Baku
-NIKL,1234,2021-06-16,2026-07-30,10,Barang Baku,Barang Baku
-NINE,870,2022-12-05,2026-07-30,121,Teknologi,Perangkat Keras & Peralatan Teknologi
-NIRO,1234,2021-06-16,2026-07-30,82,Properti & Real Estat,Properti & Real Estat
-NISP,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-NOBU,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-NPGF,1234,2021-06-16,2026-07-30,12,Barang Baku,Barang Baku
-NRCA,1234,2021-06-16,2026-07-30,22,Infrastruktur,Konstruksi Bangunan
-NSSS,802,2023-03-10,2026-07-30,55,Barang Konsumen Primer,Makanan & Minuman
-NTBK,1070,2022-02-09,2026-07-30,40,Perindustrian,Barang Perindustrian
+MTSM,1238,2021-06-16,2026-07-31,403,Properti & Real Estat,Properti & Real Estat
+MTWI,1235,2021-06-16,2026-07-31,6,Keuangan,Asuransi
+MUTU,711,2023-08-09,2026-07-31,7,Perindustrian,Jasa Perindustrian
+MYOH,1235,2021-06-16,2026-07-31,5,Energi,"Minyak, Gas & Batu Bara"
+MYOR,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+MYTX,1235,2021-06-16,2026-07-31,368,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+NAIK,406,2024-11-13,2026-07-31,5,Perindustrian,Jasa Perindustrian
+NANO,1052,2022-03-10,2026-07-31,8,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+NASA,1235,2021-06-16,2026-07-31,37,Properti & Real Estat,Properti & Real Estat
+NASI,1111,2021-12-13,2026-07-31,16,Barang Konsumen Primer,Makanan & Minuman
+NATO,1235,2021-06-16,2026-07-31,59,Barang Konsumen Non-Primer,Jasa Konsumen
+NAYZ,827,2023-02-06,2026-07-31,25,Barang Konsumen Primer,Makanan & Minuman
+NCKL,783,2023-04-12,2026-07-31,7,Barang Baku,Barang Baku
+NELY,1235,2021-06-16,2026-07-31,4,Transportasi & Logistik,Logistik & Pengantaran
+NEST,474,2024-08-08,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+NETV,1080,2022-01-26,2026-07-31,9,Barang Konsumen Non-Primer,Media & Hiburan
+NFCX,1235,2021-06-16,2026-07-31,9,Teknologi,Perangkat Lunak & Jasa TI
+NICE,607,2024-01-09,2026-07-31,7,Barang Baku,Barang Baku
+NICK,1235,2021-06-16,2026-07-31,37,Keuangan,Perusahaan Holding & Investasi
+NICL,1218,2021-07-09,2026-07-31,16,Barang Baku,Barang Baku
+NIKL,1235,2021-06-16,2026-07-31,10,Barang Baku,Barang Baku
+NINE,871,2022-12-05,2026-07-31,121,Teknologi,Perangkat Keras & Peralatan Teknologi
+NIRO,1235,2021-06-16,2026-07-31,82,Properti & Real Estat,Properti & Real Estat
+NISP,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+NOBU,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+NPGF,1235,2021-06-16,2026-07-31,12,Barang Baku,Barang Baku
+NRCA,1235,2021-06-16,2026-07-31,22,Infrastruktur,Konstruksi Bangunan
+NSSS,803,2023-03-10,2026-07-31,55,Barang Konsumen Primer,Makanan & Minuman
+NTBK,1071,2022-02-09,2026-07-31,40,Perindustrian,Barang Perindustrian
 NUSA,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Jasa Konsumen
-NZIA,1234,2021-06-16,2026-07-30,19,Properti & Real Estat,Properti & Real Estat
-OASA,1234,2021-06-16,2026-07-30,75,Infrastruktur,Telekomunikasi
-OBAT,367,2025-01-13,2026-07-30,4,Kesehatan,Farmasi & Riset Kesehatan
-OBMD,1113,2021-12-08,2026-07-30,9,Barang Baku,Barang Baku
+NZIA,1235,2021-06-16,2026-07-31,19,Properti & Real Estat,Properti & Real Estat
+OASA,1235,2021-06-16,2026-07-31,75,Infrastruktur,Telekomunikasi
+OBAT,368,2025-01-13,2026-07-31,4,Kesehatan,Farmasi & Riset Kesehatan
+OBMD,1114,2021-12-08,2026-07-31,9,Barang Baku,Barang Baku
 OCAP,1,2026-07-17,2026-07-17,1,Keuangan,Perusahaan Holding & Investasi
-OILS,1179,2021-09-06,2026-07-30,8,Barang Konsumen Primer,Makanan & Minuman
-OKAS,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-OLIV,1011,2022-05-17,2026-07-30,22,Barang Konsumen Non-Primer,Barang Rumah Tangga
-OMED,889,2022-11-08,2026-07-30,7,Kesehatan,Jasa & Peralatan Kesehatan
-OMRE,1234,2021-06-16,2026-07-30,367,Properti & Real Estat,Properti & Real Estat
-OPMS,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-PACK,824,2023-02-08,2026-07-30,44,Barang Baku,Barang Baku
-PADA,867,2022-12-08,2026-07-30,17,Perindustrian,Jasa Perindustrian
-PADI,1234,2021-06-16,2026-07-30,107,Keuangan,Jasa Investasi
-PALM,1234,2021-06-16,2026-07-30,5,Keuangan,Perusahaan Holding & Investasi
-PAMG,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-PANI,1234,2021-06-16,2026-07-30,28,Properti & Real Estat,Properti & Real Estat
-PANR,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Jasa Konsumen
-PANS,1234,2021-06-16,2026-07-30,4,Keuangan,Jasa Investasi
-PART,497,2024-07-05,2026-07-30,4,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-PBID,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-PBRX,1234,2021-06-16,2026-07-30,125,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-PBSA,1234,2021-06-16,2026-07-30,56,Infrastruktur,Konstruksi Bangunan
-PCAR,1234,2021-06-16,2026-07-30,25,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-PDES,1234,2021-06-16,2026-07-30,19,Barang Konsumen Non-Primer,Jasa Konsumen
-PDPP,888,2022-11-09,2026-07-30,7,Barang Baku,Barang Baku
-PEGE,1234,2021-06-16,2026-07-30,15,Keuangan,Perusahaan Holding & Investasi
-PEHA,1234,2021-06-16,2026-07-30,4,Kesehatan,Farmasi & Riset Kesehatan
-PEVE,835,2023-01-24,2026-07-30,7,Kesehatan,Farmasi & Riset Kesehatan
-PGAS,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-PGEO,812,2023-02-24,2026-07-30,7,Infrastruktur,Utilitas
-PGJO,1234,2021-06-16,2026-07-30,82,Teknologi,Perangkat Lunak & Jasa TI
-PGLI,1234,2021-06-16,2026-07-30,15,Barang Konsumen Non-Primer,Jasa Konsumen
-PGUN,1234,2021-06-16,2026-07-30,142,Barang Konsumen Primer,Makanan & Minuman
-PICO,1234,2021-06-16,2026-07-30,5,Barang Baku,Barang Baku
-PIPA,784,2023-04-10,2026-07-30,33,Perindustrian,Barang Perindustrian
-PJAA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Jasa Konsumen
-PJHB,175,2025-11-06,2026-07-30,4,Transportasi & Logistik,Logistik & Pengantaran
-PKPK,1234,2021-06-16,2026-07-30,26,Energi,"Minyak, Gas & Batu Bara"
-PLAN,1234,2021-06-16,2026-07-30,10,Barang Konsumen Non-Primer,Jasa Konsumen
+OILS,1180,2021-09-06,2026-07-31,8,Barang Konsumen Primer,Makanan & Minuman
+OKAS,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+OLIV,1012,2022-05-17,2026-07-31,22,Barang Konsumen Non-Primer,Barang Rumah Tangga
+OMED,890,2022-11-08,2026-07-31,7,Kesehatan,Jasa & Peralatan Kesehatan
+OMRE,1235,2021-06-16,2026-07-31,367,Properti & Real Estat,Properti & Real Estat
+OPMS,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+PACK,825,2023-02-08,2026-07-31,44,Barang Baku,Barang Baku
+PADA,868,2022-12-08,2026-07-31,17,Perindustrian,Jasa Perindustrian
+PADI,1235,2021-06-16,2026-07-31,107,Keuangan,Jasa Investasi
+PALM,1235,2021-06-16,2026-07-31,5,Keuangan,Perusahaan Holding & Investasi
+PAMG,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+PANI,1235,2021-06-16,2026-07-31,28,Properti & Real Estat,Properti & Real Estat
+PANR,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Jasa Konsumen
+PANS,1235,2021-06-16,2026-07-31,4,Keuangan,Jasa Investasi
+PART,498,2024-07-05,2026-07-31,4,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+PBID,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+PBRX,1235,2021-06-16,2026-07-31,125,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+PBSA,1235,2021-06-16,2026-07-31,56,Infrastruktur,Konstruksi Bangunan
+PCAR,1235,2021-06-16,2026-07-31,25,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+PDES,1235,2021-06-16,2026-07-31,19,Barang Konsumen Non-Primer,Jasa Konsumen
+PDPP,889,2022-11-09,2026-07-31,7,Barang Baku,Barang Baku
+PEGE,1235,2021-06-16,2026-07-31,15,Keuangan,Perusahaan Holding & Investasi
+PEHA,1235,2021-06-16,2026-07-31,4,Kesehatan,Farmasi & Riset Kesehatan
+PEVE,836,2023-01-24,2026-07-31,7,Kesehatan,Farmasi & Riset Kesehatan
+PGAS,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+PGEO,813,2023-02-24,2026-07-31,7,Infrastruktur,Utilitas
+PGJO,1235,2021-06-16,2026-07-31,82,Teknologi,Perangkat Lunak & Jasa TI
+PGLI,1235,2021-06-16,2026-07-31,15,Barang Konsumen Non-Primer,Jasa Konsumen
+PGUN,1235,2021-06-16,2026-07-31,142,Barang Konsumen Primer,Makanan & Minuman
+PICO,1235,2021-06-16,2026-07-31,5,Barang Baku,Barang Baku
+PIPA,785,2023-04-10,2026-07-31,33,Perindustrian,Barang Perindustrian
+PJAA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Jasa Konsumen
+PJHB,176,2025-11-06,2026-07-31,4,Transportasi & Logistik,Logistik & Pengantaran
+PKPK,1235,2021-06-16,2026-07-31,26,Energi,"Minyak, Gas & Batu Bara"
+PLAN,1235,2021-06-16,2026-07-31,10,Barang Konsumen Non-Primer,Jasa Konsumen
 PLAS,1,2026-07-17,2026-07-17,1,Keuangan,Perusahaan Holding & Investasi
-PLIN,1237,2021-06-16,2026-07-30,596,Properti & Real Estat,Properti & Real Estat
-PMJS,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-PMMP,1237,2021-06-16,2026-07-30,273,Barang Konsumen Primer,Makanan & Minuman
-PMUI,258,2025-07-10,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-PNBN,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-PNBS,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-PNGO,1234,2021-06-16,2026-07-30,29,Barang Konsumen Primer,Makanan & Minuman
-PNIN,1234,2021-06-16,2026-07-30,4,Keuangan,Asuransi
-PNLF,1234,2021-06-16,2026-07-30,4,Keuangan,Asuransi
-PNSE,1234,2021-06-16,2026-07-30,464,Barang Konsumen Non-Primer,Jasa Konsumen
-POLA,1234,2021-06-16,2026-07-30,85,Keuangan,Jasa Pembiayaan
-POLI,1234,2021-06-16,2026-07-30,280,Properti & Real Estat,Properti & Real Estat
-POLL,1237,2021-06-16,2026-07-30,524,Properti & Real Estat,Properti & Real Estat
-POLU,1234,2021-06-16,2026-07-30,237,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-POLY,1237,2021-06-16,2026-07-30,189,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+PLIN,1238,2021-06-16,2026-07-31,597,Properti & Real Estat,Properti & Real Estat
+PMJS,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+PMMP,1238,2021-06-16,2026-07-31,274,Barang Konsumen Primer,Makanan & Minuman
+PMUI,259,2025-07-10,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+PNBN,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+PNBS,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+PNGO,1235,2021-06-16,2026-07-31,29,Barang Konsumen Primer,Makanan & Minuman
+PNIN,1235,2021-06-16,2026-07-31,4,Keuangan,Asuransi
+PNLF,1235,2021-06-16,2026-07-31,4,Keuangan,Asuransi
+PNSE,1235,2021-06-16,2026-07-31,464,Barang Konsumen Non-Primer,Jasa Konsumen
+POLA,1235,2021-06-16,2026-07-31,85,Keuangan,Jasa Pembiayaan
+POLI,1235,2021-06-16,2026-07-31,280,Properti & Real Estat,Properti & Real Estat
+POLL,1238,2021-06-16,2026-07-31,525,Properti & Real Estat,Properti & Real Estat
+POLU,1235,2021-06-16,2026-07-31,237,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+POLY,1238,2021-06-16,2026-07-31,190,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
 POOL,1,2026-07-17,2026-07-17,1,Keuangan,Perusahaan Holding & Investasi
-PORT,1234,2021-06-16,2026-07-30,42,Infrastruktur,Infrastruktur Transportasi
+PORT,1235,2021-06-16,2026-07-31,42,Infrastruktur,Infrastruktur Transportasi
 POSA,1,2026-07-17,2026-07-17,1,Properti & Real Estat,Properti & Real Estat
-POWR,1234,2021-06-16,2026-07-30,4,Infrastruktur,Utilitas
-PPGL,1234,2021-06-16,2026-07-30,22,Transportasi & Logistik,Logistik & Pengantaran
-PPRE,1234,2021-06-16,2026-07-30,4,Infrastruktur,Konstruksi Bangunan
-PPRI,711,2023-08-08,2026-07-30,8,Barang Baku,Barang Baku
-PPRO,1234,2021-06-16,2026-07-30,326,Properti & Real Estat,Properti & Real Estat
-PRAY,889,2022-11-08,2026-07-30,7,Kesehatan,Jasa & Peralatan Kesehatan
-PRDA,1234,2021-06-16,2026-07-30,4,Kesehatan,Jasa & Peralatan Kesehatan
-PRIM,1234,2021-06-16,2026-07-30,4,Kesehatan,Jasa & Peralatan Kesehatan
-PSAB,1234,2021-06-16,2026-07-30,5,Barang Baku,Barang Baku
-PSAT,260,2025-07-08,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-PSDN,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-PSGO,1234,2021-06-16,2026-07-30,6,Barang Konsumen Primer,Makanan & Minuman
-PSKT,1234,2021-06-16,2026-07-30,59,Barang Konsumen Non-Primer,Jasa Konsumen
-PSSI,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-PTBA,1234,2021-06-16,2026-07-30,4,Energi,"Minyak, Gas & Batu Bara"
-PTDU,1237,2021-06-16,2026-07-30,242,Infrastruktur,Konstruksi Bangunan
-PTIS,1234,2021-06-16,2026-07-30,18,Energi,"Minyak, Gas & Batu Bara"
-PTMP,806,2023-03-06,2026-07-30,7,Perindustrian,Barang Perindustrian
-PTMR,434,2024-10-08,2026-07-30,271,Barang Baku,Barang Baku
-PTPP,1234,2021-06-16,2026-07-30,4,Infrastruktur,Konstruksi Bangunan
-PTPS,669,2023-10-09,2026-07-30,14,Barang Konsumen Primer,Makanan & Minuman
-PTPW,1234,2021-06-16,2026-07-30,7,Infrastruktur,Konstruksi Bangunan
-PTRO,1234,2021-06-16,2026-07-30,5,Energi,"Minyak, Gas & Batu Bara"
-PTSN,1234,2021-06-16,2026-07-30,4,Teknologi,Perangkat Keras & Peralatan Teknologi
-PTSP,1234,2021-06-16,2026-07-30,221,Barang Konsumen Non-Primer,Jasa Konsumen
-PUDP,1234,2021-06-16,2026-07-30,54,Properti & Real Estat,Properti & Real Estat
-PURA,1234,2021-06-16,2026-07-30,27,Transportasi & Logistik,Logistik & Pengantaran
+POWR,1235,2021-06-16,2026-07-31,4,Infrastruktur,Utilitas
+PPGL,1235,2021-06-16,2026-07-31,22,Transportasi & Logistik,Logistik & Pengantaran
+PPRE,1235,2021-06-16,2026-07-31,4,Infrastruktur,Konstruksi Bangunan
+PPRI,712,2023-08-08,2026-07-31,8,Barang Baku,Barang Baku
+PPRO,1235,2021-06-16,2026-07-31,326,Properti & Real Estat,Properti & Real Estat
+PRAY,890,2022-11-08,2026-07-31,7,Kesehatan,Jasa & Peralatan Kesehatan
+PRDA,1235,2021-06-16,2026-07-31,4,Kesehatan,Jasa & Peralatan Kesehatan
+PRIM,1235,2021-06-16,2026-07-31,4,Kesehatan,Jasa & Peralatan Kesehatan
+PSAB,1235,2021-06-16,2026-07-31,5,Barang Baku,Barang Baku
+PSAT,261,2025-07-08,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+PSDN,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+PSGO,1235,2021-06-16,2026-07-31,6,Barang Konsumen Primer,Makanan & Minuman
+PSKT,1235,2021-06-16,2026-07-31,59,Barang Konsumen Non-Primer,Jasa Konsumen
+PSSI,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+PTBA,1235,2021-06-16,2026-07-31,4,Energi,"Minyak, Gas & Batu Bara"
+PTDU,1238,2021-06-16,2026-07-31,243,Infrastruktur,Konstruksi Bangunan
+PTIS,1235,2021-06-16,2026-07-31,18,Energi,"Minyak, Gas & Batu Bara"
+PTMP,807,2023-03-06,2026-07-31,7,Perindustrian,Barang Perindustrian
+PTMR,435,2024-10-08,2026-07-31,272,Barang Baku,Barang Baku
+PTPP,1235,2021-06-16,2026-07-31,4,Infrastruktur,Konstruksi Bangunan
+PTPS,670,2023-10-09,2026-07-31,14,Barang Konsumen Primer,Makanan & Minuman
+PTPW,1235,2021-06-16,2026-07-31,7,Infrastruktur,Konstruksi Bangunan
+PTRO,1235,2021-06-16,2026-07-31,5,Energi,"Minyak, Gas & Batu Bara"
+PTSN,1235,2021-06-16,2026-07-31,4,Teknologi,Perangkat Keras & Peralatan Teknologi
+PTSP,1235,2021-06-16,2026-07-31,221,Barang Konsumen Non-Primer,Jasa Konsumen
+PUDP,1235,2021-06-16,2026-07-31,54,Properti & Real Estat,Properti & Real Estat
+PURA,1235,2021-06-16,2026-07-31,27,Transportasi & Logistik,Logistik & Pengantaran
 PURE,1,2026-07-17,2026-07-17,1,Barang Baku,Barang Baku
-PURI,1234,2021-06-16,2026-07-30,24,Properti & Real Estat,Properti & Real Estat
-PWON,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
-PYFA,1234,2021-06-16,2026-07-30,27,Kesehatan,Farmasi & Riset Kesehatan
-PZZA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Jasa Konsumen
-RAAM,770,2023-05-08,2026-07-30,7,Barang Konsumen Non-Primer,Media & Hiburan
-RAFI,958,2022-08-05,2026-07-30,188,Barang Konsumen Non-Primer,Jasa Konsumen
-RAJA,1237,2021-06-16,2026-07-30,9,Energi,"Minyak, Gas & Batu Bara"
-RALS,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Perdagangan Ritel
-RANC,1234,2021-06-16,2026-07-30,14,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-RATU,370,2025-01-08,2026-07-30,8,Energi,"Minyak, Gas & Batu Bara"
-RBMS,1234,2021-06-16,2026-07-30,64,Properti & Real Estat,Properti & Real Estat
-RCCC,958,2022-08-02,2026-07-30,8,Transportasi & Logistik,Logistik & Pengantaran
-RDTX,1235,2021-06-16,2026-07-30,297,Properti & Real Estat,Properti & Real Estat
-REAL,1234,2021-06-16,2026-07-30,27,Properti & Real Estat,Properti & Real Estat
-RELF,740,2023-06-22,2026-07-30,7,Properti & Real Estat,Properti & Real Estat
-RELI,1234,2021-06-16,2026-07-30,139,Keuangan,Jasa Investasi
-RGAS,647,2023-11-08,2026-07-30,9,Energi,"Minyak, Gas & Batu Bara"
-RICY,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-RIGS,1234,2021-06-16,2026-07-30,5,Energi,"Minyak, Gas & Batu Bara"
+PURI,1235,2021-06-16,2026-07-31,24,Properti & Real Estat,Properti & Real Estat
+PWON,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
+PYFA,1235,2021-06-16,2026-07-31,27,Kesehatan,Farmasi & Riset Kesehatan
+PZZA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Jasa Konsumen
+RAAM,771,2023-05-08,2026-07-31,7,Barang Konsumen Non-Primer,Media & Hiburan
+RAFI,959,2022-08-05,2026-07-31,189,Barang Konsumen Non-Primer,Jasa Konsumen
+RAJA,1238,2021-06-16,2026-07-31,9,Energi,"Minyak, Gas & Batu Bara"
+RALS,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Perdagangan Ritel
+RANC,1235,2021-06-16,2026-07-31,14,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+RATU,371,2025-01-08,2026-07-31,8,Energi,"Minyak, Gas & Batu Bara"
+RBMS,1235,2021-06-16,2026-07-31,64,Properti & Real Estat,Properti & Real Estat
+RCCC,959,2022-08-02,2026-07-31,8,Transportasi & Logistik,Logistik & Pengantaran
+RDTX,1236,2021-06-16,2026-07-31,297,Properti & Real Estat,Properti & Real Estat
+REAL,1235,2021-06-16,2026-07-31,27,Properti & Real Estat,Properti & Real Estat
+RELF,741,2023-06-22,2026-07-31,7,Properti & Real Estat,Properti & Real Estat
+RELI,1235,2021-06-16,2026-07-31,139,Keuangan,Jasa Investasi
+RGAS,648,2023-11-08,2026-07-31,10,Energi,"Minyak, Gas & Batu Bara"
+RICY,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+RIGS,1235,2021-06-16,2026-07-31,5,Energi,"Minyak, Gas & Batu Bara"
 RIMO,1,2026-07-17,2026-07-17,1,Properti & Real Estat,Properti & Real Estat
-RISE,1234,2021-06-16,2026-07-30,14,Properti & Real Estat,Properti & Real Estat
-RLCO,153,2025-12-08,2026-07-30,14,Barang Konsumen Primer,Makanan & Minuman
-RMKE,1117,2021-12-07,2026-07-30,23,Energi,"Minyak, Gas & Batu Bara"
-RMKO,717,2023-07-31,2026-07-30,22,Energi,"Minyak, Gas & Batu Bara"
-ROCK,1234,2021-06-16,2026-07-30,471,Properti & Real Estat,Properti & Real Estat
-RODA,1234,2021-06-16,2026-07-30,23,Properti & Real Estat,Properti & Real Estat
-RONY,1234,2021-06-16,2026-07-30,623,Infrastruktur,Konstruksi Bangunan
-ROTI,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-RSCH,698,2023-08-28,2026-07-30,7,Kesehatan,Jasa & Peralatan Kesehatan
-RSGK,1177,2021-09-08,2026-07-30,300,Kesehatan,Jasa & Peralatan Kesehatan
-RUIS,1234,2021-06-16,2026-07-30,5,Energi,"Minyak, Gas & Batu Bara"
-RUNS,1177,2021-09-08,2026-07-30,7,Teknologi,Perangkat Lunak & Jasa TI
-SAFE,1234,2021-06-16,2026-07-30,22,Transportasi & Logistik,Transportasi
-SAGE,804,2023-03-08,2026-07-30,8,Properti & Real Estat,Properti & Real Estat
-SAME,1234,2021-06-16,2026-07-30,4,Kesehatan,Jasa & Peralatan Kesehatan
-SAMF,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-SAPX,1234,2021-06-16,2026-07-30,40,Transportasi & Logistik,Logistik & Pengantaran
-SATU,1234,2021-06-16,2026-07-30,46,Properti & Real Estat,Properti & Real Estat
-SBAT,1237,2021-06-16,2026-07-30,584,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-SBMA,1177,2021-09-08,2026-07-30,7,Barang Baku,Barang Baku
-SCCO,1234,2021-06-16,2026-07-30,67,Perindustrian,Barang Perindustrian
-SCMA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Media & Hiburan
-SCNP,1234,2021-06-16,2026-07-30,28,Barang Konsumen Non-Primer,Barang Rumah Tangga
+RISE,1235,2021-06-16,2026-07-31,14,Properti & Real Estat,Properti & Real Estat
+RLCO,154,2025-12-08,2026-07-31,14,Barang Konsumen Primer,Makanan & Minuman
+RMKE,1118,2021-12-07,2026-07-31,23,Energi,"Minyak, Gas & Batu Bara"
+RMKO,718,2023-07-31,2026-07-31,22,Energi,"Minyak, Gas & Batu Bara"
+ROCK,1235,2021-06-16,2026-07-31,471,Properti & Real Estat,Properti & Real Estat
+RODA,1235,2021-06-16,2026-07-31,23,Properti & Real Estat,Properti & Real Estat
+RONY,1235,2021-06-16,2026-07-31,623,Infrastruktur,Konstruksi Bangunan
+ROTI,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+RSCH,699,2023-08-28,2026-07-31,7,Kesehatan,Jasa & Peralatan Kesehatan
+RSGK,1178,2021-09-08,2026-07-31,300,Kesehatan,Jasa & Peralatan Kesehatan
+RUIS,1235,2021-06-16,2026-07-31,5,Energi,"Minyak, Gas & Batu Bara"
+RUNS,1178,2021-09-08,2026-07-31,7,Teknologi,Perangkat Lunak & Jasa TI
+SAFE,1235,2021-06-16,2026-07-31,22,Transportasi & Logistik,Transportasi
+SAGE,805,2023-03-08,2026-07-31,8,Properti & Real Estat,Properti & Real Estat
+SAME,1235,2021-06-16,2026-07-31,4,Kesehatan,Jasa & Peralatan Kesehatan
+SAMF,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+SAPX,1235,2021-06-16,2026-07-31,40,Transportasi & Logistik,Logistik & Pengantaran
+SATU,1235,2021-06-16,2026-07-31,46,Properti & Real Estat,Properti & Real Estat
+SBAT,1238,2021-06-16,2026-07-31,585,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+SBMA,1178,2021-09-08,2026-07-31,7,Barang Baku,Barang Baku
+SCCO,1235,2021-06-16,2026-07-31,67,Perindustrian,Barang Perindustrian
+SCMA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Media & Hiburan
+SCNP,1235,2021-06-16,2026-07-31,28,Barang Konsumen Non-Primer,Barang Rumah Tangga
 SCPI,1,2026-07-17,2026-07-17,1,Kesehatan,Farmasi & Riset Kesehatan
-SDMU,1234,2021-06-16,2026-07-30,23,Transportasi & Logistik,Logistik & Pengantaran
-SDPC,1234,2021-06-16,2026-07-30,6,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-SDRA,1234,2021-06-16,2026-07-30,4,Keuangan,Bank
-SEMA,1091,2022-01-10,2026-07-30,8,Energi,Energi Alternatif
-SFAN,1234,2021-06-16,2026-07-30,4,Keuangan,Perusahaan Holding & Investasi
-SGER,1234,2021-06-16,2026-07-30,5,Energi,"Minyak, Gas & Batu Bara"
-SGRO,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-SHID,1234,2021-06-16,2026-07-30,37,Barang Konsumen Non-Primer,Jasa Konsumen
-SHIP,1235,2021-06-16,2026-07-30,36,Energi,"Minyak, Gas & Batu Bara"
-SICO,1030,2022-04-08,2026-07-30,7,Energi,"Minyak, Gas & Batu Bara"
-SIDO,1234,2021-06-16,2026-07-30,4,Kesehatan,Farmasi & Riset Kesehatan
-SILO,1234,2021-06-16,2026-07-30,4,Kesehatan,Jasa & Peralatan Kesehatan
+SDMU,1235,2021-06-16,2026-07-31,23,Transportasi & Logistik,Logistik & Pengantaran
+SDPC,1235,2021-06-16,2026-07-31,6,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+SDRA,1235,2021-06-16,2026-07-31,4,Keuangan,Bank
+SEMA,1092,2022-01-10,2026-07-31,8,Energi,Energi Alternatif
+SFAN,1235,2021-06-16,2026-07-31,4,Keuangan,Perusahaan Holding & Investasi
+SGER,1235,2021-06-16,2026-07-31,5,Energi,"Minyak, Gas & Batu Bara"
+SGRO,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+SHID,1235,2021-06-16,2026-07-31,37,Barang Konsumen Non-Primer,Jasa Konsumen
+SHIP,1236,2021-06-16,2026-07-31,36,Energi,"Minyak, Gas & Batu Bara"
+SICO,1031,2022-04-08,2026-07-31,7,Energi,"Minyak, Gas & Batu Bara"
+SIDO,1235,2021-06-16,2026-07-31,4,Kesehatan,Farmasi & Riset Kesehatan
+SILO,1235,2021-06-16,2026-07-31,4,Kesehatan,Jasa & Peralatan Kesehatan
 SIMA,1,2026-07-17,2026-07-17,1,Barang Baku,Barang Baku
-SIMP,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-SINI,1234,2021-06-16,2026-07-30,78,Perindustrian,Barang Perindustrian
-SIPD,1234,2021-06-16,2026-07-30,118,Barang Konsumen Primer,Makanan & Minuman
-SKBM,1234,2021-06-16,2026-07-30,31,Barang Konsumen Primer,Makanan & Minuman
-SKLT,1234,2021-06-16,2026-07-30,129,Barang Konsumen Primer,Makanan & Minuman
-SKRN,1234,2021-06-16,2026-07-30,5,Perindustrian,Barang Perindustrian
+SIMP,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+SINI,1235,2021-06-16,2026-07-31,78,Perindustrian,Barang Perindustrian
+SIPD,1235,2021-06-16,2026-07-31,118,Barang Konsumen Primer,Makanan & Minuman
+SKBM,1235,2021-06-16,2026-07-31,31,Barang Konsumen Primer,Makanan & Minuman
+SKLT,1235,2021-06-16,2026-07-31,129,Barang Konsumen Primer,Makanan & Minuman
+SKRN,1235,2021-06-16,2026-07-31,5,Perindustrian,Barang Perindustrian
 SKYB,1,2026-07-17,2026-07-17,1,Teknologi,Perangkat Lunak & Jasa TI
-SLIS,1234,2021-06-16,2026-07-30,7,Barang Konsumen Non-Primer,Perdagangan Ritel
-SMAR,1234,2021-06-16,2026-07-30,6,Barang Konsumen Primer,Makanan & Minuman
-SMBR,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-SMCB,1237,2021-06-16,2026-07-30,367,Barang Baku,Barang Baku
-SMDM,1234,2021-06-16,2026-07-30,21,Properti & Real Estat,Properti & Real Estat
-SMDR,1234,2021-06-16,2026-07-30,5,Transportasi & Logistik,Logistik & Pengantaran
-SMGA,591,2024-01-30,2026-07-30,6,Barang Baku,Barang Baku
-SMGR,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-SMIL,766,2023-05-12,2026-07-30,8,Perindustrian,Barang Perindustrian
-SMKL,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-SMKM,1052,2022-03-09,2026-07-30,39,Infrastruktur,Konstruksi Bangunan
-SMLE,605,2024-01-10,2026-07-30,15,Barang Baku,Barang Baku
-SMMA,1234,2021-06-16,2026-07-30,330,Keuangan,Perusahaan Holding & Investasi
-SMMT,1234,2021-06-16,2026-07-30,23,Energi,"Minyak, Gas & Batu Bara"
-SMRA,1234,2021-06-16,2026-07-30,4,Properti & Real Estat,Properti & Real Estat
+SLIS,1235,2021-06-16,2026-07-31,7,Barang Konsumen Non-Primer,Perdagangan Ritel
+SMAR,1235,2021-06-16,2026-07-31,6,Barang Konsumen Primer,Makanan & Minuman
+SMBR,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+SMCB,1238,2021-06-16,2026-07-31,368,Barang Baku,Barang Baku
+SMDM,1235,2021-06-16,2026-07-31,21,Properti & Real Estat,Properti & Real Estat
+SMDR,1235,2021-06-16,2026-07-31,5,Transportasi & Logistik,Logistik & Pengantaran
+SMGA,592,2024-01-30,2026-07-31,6,Barang Baku,Barang Baku
+SMGR,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+SMIL,767,2023-05-12,2026-07-31,8,Perindustrian,Barang Perindustrian
+SMKL,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+SMKM,1053,2022-03-09,2026-07-31,39,Infrastruktur,Konstruksi Bangunan
+SMLE,606,2024-01-10,2026-07-31,15,Barang Baku,Barang Baku
+SMMA,1235,2021-06-16,2026-07-31,330,Keuangan,Perusahaan Holding & Investasi
+SMMT,1235,2021-06-16,2026-07-31,23,Energi,"Minyak, Gas & Batu Bara"
+SMRA,1235,2021-06-16,2026-07-31,4,Properti & Real Estat,Properti & Real Estat
 SMRU,1,2026-07-17,2026-07-17,1,Energi,"Minyak, Gas & Batu Bara"
-SMSM,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-SNLK,1234,2021-06-16,2026-07-30,7,Barang Konsumen Non-Primer,Jasa Konsumen
-SOCI,1234,2021-06-16,2026-07-30,11,Energi,"Minyak, Gas & Batu Bara"
-SOFA,1234,2021-06-16,2026-07-30,17,Barang Konsumen Non-Primer,Barang Rumah Tangga
-SOHO,1234,2021-06-16,2026-07-30,109,Kesehatan,Farmasi & Riset Kesehatan
-SOLA,533,2024-05-08,2026-07-30,18,Barang Baku,Barang Baku
-SONA,1234,2021-06-16,2026-07-30,502,Barang Konsumen Non-Primer,Perdagangan Ritel
-SOSS,1235,2021-06-16,2026-07-30,61,Perindustrian,Jasa Perindustrian
-SOTS,1234,2021-06-16,2026-07-30,111,Barang Konsumen Non-Primer,Jasa Konsumen
-SOUL,846,2023-01-06,2026-07-30,30,Barang Konsumen Primer,Makanan & Minuman
-SPMA,1237,2021-06-16,2026-07-30,7,Barang Baku,Barang Baku
-SPRE,499,2024-07-03,2026-07-30,15,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-SPTO,1234,2021-06-16,2026-07-30,4,Perindustrian,Barang Perindustrian
-SQMI,1234,2021-06-16,2026-07-30,165,Barang Baku,Barang Baku
-SRAJ,1234,2021-06-16,2026-07-30,93,Kesehatan,Jasa & Peralatan Kesehatan
+SMSM,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+SNLK,1235,2021-06-16,2026-07-31,7,Barang Konsumen Non-Primer,Jasa Konsumen
+SOCI,1235,2021-06-16,2026-07-31,11,Energi,"Minyak, Gas & Batu Bara"
+SOFA,1235,2021-06-16,2026-07-31,17,Barang Konsumen Non-Primer,Barang Rumah Tangga
+SOHO,1235,2021-06-16,2026-07-31,109,Kesehatan,Farmasi & Riset Kesehatan
+SOLA,534,2024-05-08,2026-07-31,18,Barang Baku,Barang Baku
+SONA,1235,2021-06-16,2026-07-31,502,Barang Konsumen Non-Primer,Perdagangan Ritel
+SOSS,1236,2021-06-16,2026-07-31,61,Perindustrian,Jasa Perindustrian
+SOTS,1235,2021-06-16,2026-07-31,111,Barang Konsumen Non-Primer,Jasa Konsumen
+SOUL,847,2023-01-06,2026-07-31,31,Barang Konsumen Primer,Makanan & Minuman
+SPMA,1238,2021-06-16,2026-07-31,7,Barang Baku,Barang Baku
+SPRE,500,2024-07-03,2026-07-31,15,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+SPTO,1235,2021-06-16,2026-07-31,4,Perindustrian,Barang Perindustrian
+SQMI,1235,2021-06-16,2026-07-31,165,Barang Baku,Barang Baku
+SRAJ,1235,2021-06-16,2026-07-31,93,Kesehatan,Jasa & Peralatan Kesehatan
 SRIL,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-SRSN,1234,2021-06-16,2026-07-30,6,Barang Baku,Barang Baku
-SRTG,1234,2021-06-16,2026-07-30,4,Keuangan,Perusahaan Holding & Investasi
-SSIA,1234,2021-06-16,2026-07-30,4,Infrastruktur,Konstruksi Bangunan
-SSMS,1234,2021-06-16,2026-07-30,5,Barang Konsumen Primer,Makanan & Minuman
-SSTM,1234,2021-06-16,2026-07-30,450,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-STAA,1051,2022-03-10,2026-07-30,7,Barang Konsumen Primer,Makanan & Minuman
-STAR,1234,2021-06-16,2026-07-30,85,Keuangan,Perusahaan Holding & Investasi
-STRK,668,2023-10-10,2026-07-30,16,Barang Konsumen Primer,Makanan & Minuman
-STTP,1234,2021-06-16,2026-07-30,181,Barang Konsumen Primer,Makanan & Minuman
+SRSN,1235,2021-06-16,2026-07-31,6,Barang Baku,Barang Baku
+SRTG,1235,2021-06-16,2026-07-31,4,Keuangan,Perusahaan Holding & Investasi
+SSIA,1235,2021-06-16,2026-07-31,4,Infrastruktur,Konstruksi Bangunan
+SSMS,1235,2021-06-16,2026-07-31,5,Barang Konsumen Primer,Makanan & Minuman
+SSTM,1235,2021-06-16,2026-07-31,450,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+STAA,1052,2022-03-10,2026-07-31,7,Barang Konsumen Primer,Makanan & Minuman
+STAR,1235,2021-06-16,2026-07-31,85,Keuangan,Perusahaan Holding & Investasi
+STRK,669,2023-10-10,2026-07-31,16,Barang Konsumen Primer,Makanan & Minuman
+STTP,1235,2021-06-16,2026-07-31,181,Barang Konsumen Primer,Makanan & Minuman
 SUGI,1,2026-07-17,2026-07-17,1,Energi,"Minyak, Gas & Batu Bara"
-SULI,1234,2021-06-16,2026-07-30,13,Barang Baku,Barang Baku
-SUNI,845,2023-01-09,2026-07-30,7,Energi,"Minyak, Gas & Batu Bara"
-SUPA,146,2025-12-17,2026-07-30,4,Keuangan,Bank
-SUPR,1237,2021-06-16,2026-07-30,1007,Infrastruktur,Telekomunikasi
-SURE,1234,2021-06-16,2026-07-30,397,Energi,"Minyak, Gas & Batu Bara"
-SURI,626,2023-12-07,2026-07-30,8,Kesehatan,Jasa & Peralatan Kesehatan
-SWAT,1237,2021-06-16,2026-07-30,324,Barang Baku,Barang Baku
-SWID,976,2022-07-07,2026-07-30,7,Barang Konsumen Non-Primer,Jasa Konsumen
-TALF,1234,2021-06-16,2026-07-30,165,Barang Baku,Barang Baku
-TAMA,1234,2021-06-16,2026-07-30,80,Infrastruktur,Konstruksi Bangunan
-TAMU,1234,2021-06-16,2026-07-30,185,Energi,"Minyak, Gas & Batu Bara"
-TAPG,1234,2021-06-16,2026-07-30,8,Barang Konsumen Primer,Makanan & Minuman
-TARA,1234,2021-06-16,2026-07-30,124,Properti & Real Estat,Properti & Real Estat
-TAXI,1234,2021-06-16,2026-07-30,220,Transportasi & Logistik,Transportasi
-TAYS,1115,2021-12-06,2026-07-30,43,Barang Konsumen Primer,Makanan & Minuman
-TBIG,1234,2021-06-16,2026-07-30,4,Infrastruktur,Telekomunikasi
-TBLA,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-TBMS,1234,2021-06-16,2026-07-30,30,Barang Baku,Barang Baku
-TCID,1234,2021-06-16,2026-07-30,53,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-TCPI,1234,2021-06-16,2026-07-30,25,Energi,"Minyak, Gas & Batu Bara"
+SULI,1235,2021-06-16,2026-07-31,13,Barang Baku,Barang Baku
+SUNI,846,2023-01-09,2026-07-31,7,Energi,"Minyak, Gas & Batu Bara"
+SUPA,147,2025-12-17,2026-07-31,4,Keuangan,Bank
+SUPR,1238,2021-06-16,2026-07-31,1008,Infrastruktur,Telekomunikasi
+SURE,1235,2021-06-16,2026-07-31,397,Energi,"Minyak, Gas & Batu Bara"
+SURI,627,2023-12-07,2026-07-31,8,Kesehatan,Jasa & Peralatan Kesehatan
+SWAT,1238,2021-06-16,2026-07-31,325,Barang Baku,Barang Baku
+SWID,977,2022-07-07,2026-07-31,7,Barang Konsumen Non-Primer,Jasa Konsumen
+TALF,1235,2021-06-16,2026-07-31,165,Barang Baku,Barang Baku
+TAMA,1235,2021-06-16,2026-07-31,80,Infrastruktur,Konstruksi Bangunan
+TAMU,1235,2021-06-16,2026-07-31,185,Energi,"Minyak, Gas & Batu Bara"
+TAPG,1235,2021-06-16,2026-07-31,8,Barang Konsumen Primer,Makanan & Minuman
+TARA,1235,2021-06-16,2026-07-31,124,Properti & Real Estat,Properti & Real Estat
+TAXI,1235,2021-06-16,2026-07-31,220,Transportasi & Logistik,Transportasi
+TAYS,1116,2021-12-06,2026-07-31,44,Barang Konsumen Primer,Makanan & Minuman
+TBIG,1235,2021-06-16,2026-07-31,4,Infrastruktur,Telekomunikasi
+TBLA,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+TBMS,1235,2021-06-16,2026-07-31,30,Barang Baku,Barang Baku
+TCID,1235,2021-06-16,2026-07-31,53,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+TCPI,1235,2021-06-16,2026-07-31,25,Energi,"Minyak, Gas & Batu Bara"
 TDPM,1,2026-07-17,2026-07-17,1,Barang Baku,Barang Baku
-TEBE,1234,2021-06-16,2026-07-30,14,Energi,"Minyak, Gas & Batu Bara"
+TEBE,1235,2021-06-16,2026-07-31,14,Energi,"Minyak, Gas & Batu Bara"
 TECH,1,2026-07-17,2026-07-17,1,Teknologi,Perangkat Lunak & Jasa TI
-TELE,1237,2021-06-16,2026-07-30,801,Barang Konsumen Non-Primer,Perdagangan Ritel
-TFAS,1234,2021-06-16,2026-07-30,17,Teknologi,Perangkat Lunak & Jasa TI
-TFCO,1235,2021-06-16,2026-07-30,797,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-TGKA,1234,2021-06-16,2026-07-30,153,Barang Konsumen Primer,Makanan & Minuman
-TGRA,1237,2021-06-16,2026-07-30,284,Infrastruktur,Utilitas
-TGUK,734,2023-07-10,2026-07-30,293,Barang Konsumen Primer,Makanan & Minuman
-TIFA,1234,2021-06-16,2026-07-30,353,Keuangan,Jasa Pembiayaan
-TINS,1234,2021-06-16,2026-07-30,13,Barang Baku,Barang Baku
-TIRA,1234,2021-06-16,2026-07-30,84,Perindustrian,Jasa Perindustrian
-TIRT,1234,2021-06-16,2026-07-30,355,Barang Baku,Barang Baku
-TKIM,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-TLDN,1028,2022-04-12,2026-07-30,7,Barang Konsumen Primer,Makanan & Minuman
-TLKM,1234,2021-06-16,2026-07-30,4,Infrastruktur,Telekomunikasi
-TMAS,1234,2021-06-16,2026-07-30,13,Transportasi & Logistik,Logistik & Pengantaran
-TMPO,1234,2021-06-16,2026-07-30,14,Barang Konsumen Non-Primer,Media & Hiburan
-TNCA,1234,2021-06-16,2026-07-30,29,Transportasi & Logistik,Logistik & Pengantaran
-TOBA,1234,2021-06-16,2026-07-30,6,Energi,"Minyak, Gas & Batu Bara"
-TOOL,953,2022-08-09,2026-07-30,7,Barang Konsumen Non-Primer,Perdagangan Ritel
-TOPS,1237,2021-06-16,2026-07-30,565,Infrastruktur,Konstruksi Bangunan
-TOSK,585,2024-02-07,2026-07-30,6,Teknologi,Perangkat Lunak & Jasa TI
-TOTL,1234,2021-06-16,2026-07-30,4,Infrastruktur,Konstruksi Bangunan
-TOTO,1234,2021-06-16,2026-07-30,5,Perindustrian,Barang Perindustrian
-TOWR,1234,2021-06-16,2026-07-30,4,Infrastruktur,Telekomunikasi
-TOYS,1237,2021-06-16,2026-07-30,524,Barang Konsumen Non-Primer,Barang Rekreasi
-TPIA,1234,2021-06-16,2026-07-30,5,Barang Baku,Barang Baku
-TPMA,1234,2021-06-16,2026-07-30,10,Energi,"Minyak, Gas & Batu Bara"
+TELE,1238,2021-06-16,2026-07-31,802,Barang Konsumen Non-Primer,Perdagangan Ritel
+TFAS,1235,2021-06-16,2026-07-31,17,Teknologi,Perangkat Lunak & Jasa TI
+TFCO,1236,2021-06-16,2026-07-31,798,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+TGKA,1235,2021-06-16,2026-07-31,153,Barang Konsumen Primer,Makanan & Minuman
+TGRA,1238,2021-06-16,2026-07-31,285,Infrastruktur,Utilitas
+TGUK,735,2023-07-10,2026-07-31,294,Barang Konsumen Primer,Makanan & Minuman
+TIFA,1235,2021-06-16,2026-07-31,353,Keuangan,Jasa Pembiayaan
+TINS,1235,2021-06-16,2026-07-31,13,Barang Baku,Barang Baku
+TIRA,1235,2021-06-16,2026-07-31,84,Perindustrian,Jasa Perindustrian
+TIRT,1235,2021-06-16,2026-07-31,356,Barang Baku,Barang Baku
+TKIM,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+TLDN,1029,2022-04-12,2026-07-31,7,Barang Konsumen Primer,Makanan & Minuman
+TLKM,1235,2021-06-16,2026-07-31,4,Infrastruktur,Telekomunikasi
+TMAS,1235,2021-06-16,2026-07-31,13,Transportasi & Logistik,Logistik & Pengantaran
+TMPO,1235,2021-06-16,2026-07-31,14,Barang Konsumen Non-Primer,Media & Hiburan
+TNCA,1235,2021-06-16,2026-07-31,29,Transportasi & Logistik,Logistik & Pengantaran
+TOBA,1235,2021-06-16,2026-07-31,6,Energi,"Minyak, Gas & Batu Bara"
+TOOL,954,2022-08-09,2026-07-31,7,Barang Konsumen Non-Primer,Perdagangan Ritel
+TOPS,1238,2021-06-16,2026-07-31,566,Infrastruktur,Konstruksi Bangunan
+TOSK,586,2024-02-07,2026-07-31,6,Teknologi,Perangkat Lunak & Jasa TI
+TOTL,1235,2021-06-16,2026-07-31,4,Infrastruktur,Konstruksi Bangunan
+TOTO,1235,2021-06-16,2026-07-31,5,Perindustrian,Barang Perindustrian
+TOWR,1235,2021-06-16,2026-07-31,4,Infrastruktur,Telekomunikasi
+TOYS,1238,2021-06-16,2026-07-31,525,Barang Konsumen Non-Primer,Barang Rekreasi
+TPIA,1235,2021-06-16,2026-07-31,5,Barang Baku,Barang Baku
+TPMA,1235,2021-06-16,2026-07-31,10,Energi,"Minyak, Gas & Batu Bara"
 TRAM,1,2026-07-17,2026-07-17,1,Energi,"Minyak, Gas & Batu Bara"
-TRGU,975,2022-07-08,2026-07-30,7,Barang Konsumen Primer,Makanan & Minuman
+TRGU,976,2022-07-08,2026-07-31,7,Barang Konsumen Primer,Makanan & Minuman
 TRIL,1,2026-07-17,2026-07-17,1,Perindustrian,Jasa Perindustrian
-TRIM,1234,2021-06-16,2026-07-30,4,Keuangan,Jasa Investasi
-TRIN,1234,2021-06-16,2026-07-30,18,Properti & Real Estat,Properti & Real Estat
+TRIM,1235,2021-06-16,2026-07-31,4,Keuangan,Jasa Investasi
+TRIN,1235,2021-06-16,2026-07-31,18,Properti & Real Estat,Properti & Real Estat
 TRIO,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Perdagangan Ritel
-TRIS,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-TRJA,1234,2021-06-16,2026-07-30,4,Transportasi & Logistik,Transportasi
-TRON,804,2023-03-08,2026-07-30,14,Teknologi,Perangkat Lunak & Jasa TI
-TRST,1234,2021-06-16,2026-07-30,82,Barang Baku,Barang Baku
-TRUE,1234,2021-06-16,2026-07-30,79,Properti & Real Estat,Properti & Real Estat
-TRUK,1234,2021-06-16,2026-07-30,12,Transportasi & Logistik,Logistik & Pengantaran
-TRUS,1234,2021-06-16,2026-07-30,37,Keuangan,Jasa Pembiayaan
-TSPC,1234,2021-06-16,2026-07-30,4,Kesehatan,Farmasi & Riset Kesehatan
-TUGU,1234,2021-06-16,2026-07-30,4,Keuangan,Asuransi
-TYRE,770,2023-05-08,2026-07-30,7,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-UANG,1234,2021-06-16,2026-07-30,107,Properti & Real Estat,Properti & Real Estat
-UCID,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-UDNG,653,2023-10-31,2026-07-30,53,Barang Konsumen Primer,Makanan & Minuman
-UFOE,1234,2021-06-16,2026-07-30,9,Barang Konsumen Non-Primer,Perdagangan Ritel
-ULTJ,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-UNIC,1234,2021-06-16,2026-07-30,47,Barang Baku,Barang Baku
-UNIQ,1234,2021-06-16,2026-07-30,23,Energi,"Minyak, Gas & Batu Bara"
+TRIS,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
+TRJA,1235,2021-06-16,2026-07-31,4,Transportasi & Logistik,Transportasi
+TRON,805,2023-03-08,2026-07-31,14,Teknologi,Perangkat Lunak & Jasa TI
+TRST,1235,2021-06-16,2026-07-31,82,Barang Baku,Barang Baku
+TRUE,1235,2021-06-16,2026-07-31,80,Properti & Real Estat,Properti & Real Estat
+TRUK,1235,2021-06-16,2026-07-31,12,Transportasi & Logistik,Logistik & Pengantaran
+TRUS,1235,2021-06-16,2026-07-31,37,Keuangan,Jasa Pembiayaan
+TSPC,1235,2021-06-16,2026-07-31,4,Kesehatan,Farmasi & Riset Kesehatan
+TUGU,1235,2021-06-16,2026-07-31,4,Keuangan,Asuransi
+TYRE,771,2023-05-08,2026-07-31,7,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+UANG,1235,2021-06-16,2026-07-31,107,Properti & Real Estat,Properti & Real Estat
+UCID,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+UDNG,654,2023-10-31,2026-07-31,53,Barang Konsumen Primer,Makanan & Minuman
+UFOE,1235,2021-06-16,2026-07-31,9,Barang Konsumen Non-Primer,Perdagangan Ritel
+ULTJ,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+UNIC,1235,2021-06-16,2026-07-31,47,Barang Baku,Barang Baku
+UNIQ,1235,2021-06-16,2026-07-31,23,Energi,"Minyak, Gas & Batu Bara"
 UNIT,1,2026-07-17,2026-07-17,1,Barang Konsumen Non-Primer,Pakaian & Barang Mewah
-UNSP,1234,2021-06-16,2026-07-30,42,Barang Konsumen Primer,Makanan & Minuman
-UNTD,585,2024-02-07,2026-07-30,6,Barang Konsumen Non-Primer,Barang Rekreasi
-UNTR,1234,2021-06-16,2026-07-30,4,Perindustrian,Barang Perindustrian
-UNVR,1234,2021-06-16,2026-07-30,5,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-URBN,1234,2021-06-16,2026-07-30,20,Properti & Real Estat,Properti & Real Estat
-UVCR,1206,2021-07-27,2026-07-30,8,Teknologi,Perangkat Lunak & Jasa TI
-VAST,824,2023-02-08,2026-07-30,7,Properti & Real Estat,Properti & Real Estat
-VERN,431,2024-10-08,2026-07-30,4,Barang Konsumen Non-Primer,Media & Hiburan
-VICI,1234,2021-06-16,2026-07-30,8,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
-VICO,1234,2021-06-16,2026-07-30,4,Keuangan,Perusahaan Holding & Investasi
-VINS,1234,2021-06-16,2026-07-30,4,Keuangan,Asuransi
-VISI,574,2024-02-27,2026-07-30,18,Perindustrian,Jasa Perindustrian
-VIVA,1234,2021-06-16,2026-07-30,228,Barang Konsumen Non-Primer,Media & Hiburan
-VKTR,743,2023-06-19,2026-07-30,15,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
-VOKS,1234,2021-06-16,2026-07-30,8,Perindustrian,Barang Perindustrian
-VRNA,1234,2021-06-16,2026-07-30,4,Keuangan,Jasa Pembiayaan
-VTNY,862,2022-12-15,2026-07-30,7,Keuangan,Jasa Pembiayaan
-WAPO,1234,2021-06-16,2026-07-30,7,Barang Konsumen Primer,Makanan & Minuman
-WBSA,78,2026-04-10,2026-07-30,12,Transportasi & Logistik,Logistik & Pengantaran
+UNSP,1235,2021-06-16,2026-07-31,43,Barang Konsumen Primer,Makanan & Minuman
+UNTD,586,2024-02-07,2026-07-31,6,Barang Konsumen Non-Primer,Barang Rekreasi
+UNTR,1235,2021-06-16,2026-07-31,4,Perindustrian,Barang Perindustrian
+UNVR,1235,2021-06-16,2026-07-31,5,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+URBN,1235,2021-06-16,2026-07-31,20,Properti & Real Estat,Properti & Real Estat
+UVCR,1207,2021-07-27,2026-07-31,8,Teknologi,Perangkat Lunak & Jasa TI
+VAST,825,2023-02-08,2026-07-31,7,Properti & Real Estat,Properti & Real Estat
+VERN,432,2024-10-08,2026-07-31,4,Barang Konsumen Non-Primer,Media & Hiburan
+VICI,1235,2021-06-16,2026-07-31,8,Barang Konsumen Primer,Produk Rumah Tangga Tidak Tahan Lama
+VICO,1235,2021-06-16,2026-07-31,4,Keuangan,Perusahaan Holding & Investasi
+VINS,1235,2021-06-16,2026-07-31,4,Keuangan,Asuransi
+VISI,575,2024-02-27,2026-07-31,18,Perindustrian,Jasa Perindustrian
+VIVA,1235,2021-06-16,2026-07-31,228,Barang Konsumen Non-Primer,Media & Hiburan
+VKTR,744,2023-06-19,2026-07-31,15,Barang Konsumen Non-Primer,Otomotif & Komponen Otomotif
+VOKS,1235,2021-06-16,2026-07-31,8,Perindustrian,Barang Perindustrian
+VRNA,1235,2021-06-16,2026-07-31,4,Keuangan,Jasa Pembiayaan
+VTNY,863,2022-12-15,2026-07-31,7,Keuangan,Jasa Pembiayaan
+WAPO,1235,2021-06-16,2026-07-31,7,Barang Konsumen Primer,Makanan & Minuman
+WBSA,79,2026-04-10,2026-07-31,12,Transportasi & Logistik,Logistik & Pengantaran
 WEGE,1234,2021-06-16,2026-07-30,4,Infrastruktur,Konstruksi Bangunan
-WEHA,1234,2021-06-16,2026-07-30,5,Transportasi & Logistik,Transportasi
-WGSH,1115,2021-12-06,2026-07-30,8,Teknologi,Perangkat Lunak & Jasa TI
-WICO,1237,2021-06-16,2026-07-30,799,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
-WIDI,731,2023-07-10,2026-07-30,17,Perindustrian,Barang Perindustrian
-WIFI,1234,2021-06-16,2026-07-30,11,Teknologi,Perangkat Lunak & Jasa TI
-WIIM,1234,2021-06-16,2026-07-30,4,Barang Konsumen Primer,Rokok
-WIKA,1237,2021-06-16,2026-07-30,428,Infrastruktur,Konstruksi Bangunan
-WINE,844,2023-01-10,2026-07-30,7,Barang Konsumen Primer,Makanan & Minuman
-WINR,1020,2022-04-25,2026-07-30,7,Properti & Real Estat,Properti & Real Estat
-WINS,1235,2021-06-16,2026-07-30,5,Energi,"Minyak, Gas & Batu Bara"
-WIRG,1034,2022-04-04,2026-07-30,8,Teknologi,Perangkat Lunak & Jasa TI
-WMPP,1115,2021-12-06,2026-07-30,443,Barang Konsumen Primer,Makanan & Minuman
-WMUU,1234,2021-06-16,2026-07-30,93,Barang Konsumen Primer,Makanan & Minuman
-WOMF,1234,2021-06-16,2026-07-30,4,Keuangan,Jasa Pembiayaan
-WOOD,1234,2021-06-16,2026-07-30,4,Barang Konsumen Non-Primer,Barang Rumah Tangga
-WOWS,1234,2021-06-16,2026-07-30,103,Energi,"Minyak, Gas & Batu Bara"
-WSBP,1234,2021-06-16,2026-07-30,305,Barang Baku,Barang Baku
+WEHA,1235,2021-06-16,2026-07-31,5,Transportasi & Logistik,Transportasi
+WGSH,1116,2021-12-06,2026-07-31,8,Teknologi,Perangkat Lunak & Jasa TI
+WICO,1238,2021-06-16,2026-07-31,800,Barang Konsumen Primer,Perdagangan Ritel Barang Primer
+WIDI,732,2023-07-10,2026-07-31,17,Perindustrian,Barang Perindustrian
+WIFI,1235,2021-06-16,2026-07-31,11,Teknologi,Perangkat Lunak & Jasa TI
+WIIM,1235,2021-06-16,2026-07-31,4,Barang Konsumen Primer,Rokok
+WIKA,1238,2021-06-16,2026-07-31,429,Infrastruktur,Konstruksi Bangunan
+WINE,845,2023-01-10,2026-07-31,7,Barang Konsumen Primer,Makanan & Minuman
+WINR,1021,2022-04-25,2026-07-31,7,Properti & Real Estat,Properti & Real Estat
+WINS,1236,2021-06-16,2026-07-31,5,Energi,"Minyak, Gas & Batu Bara"
+WIRG,1035,2022-04-04,2026-07-31,8,Teknologi,Perangkat Lunak & Jasa TI
+WMPP,1116,2021-12-06,2026-07-31,443,Barang Konsumen Primer,Makanan & Minuman
+WMUU,1235,2021-06-16,2026-07-31,93,Barang Konsumen Primer,Makanan & Minuman
+WOMF,1235,2021-06-16,2026-07-31,4,Keuangan,Jasa Pembiayaan
+WOOD,1235,2021-06-16,2026-07-31,4,Barang Konsumen Non-Primer,Barang Rumah Tangga
+WOWS,1235,2021-06-16,2026-07-31,103,Energi,"Minyak, Gas & Batu Bara"
+WSBP,1235,2021-06-16,2026-07-31,306,Barang Baku,Barang Baku
 WSKT,1,2026-07-17,2026-07-17,1,Infrastruktur,Konstruksi Bangunan
-WTON,1234,2021-06-16,2026-07-30,4,Barang Baku,Barang Baku
-YELO,1234,2021-06-16,2026-07-30,23,Barang Konsumen Non-Primer,Perdagangan Ritel
-YOII,370,2025-01-08,2026-07-30,4,Keuangan,Asuransi
-YPAS,1234,2021-06-16,2026-07-30,298,Barang Baku,Barang Baku
-YULE,1234,2021-06-16,2026-07-30,288,Keuangan,Jasa Investasi
-YUPI,319,2025-03-25,2026-07-30,4,Barang Konsumen Primer,Makanan & Minuman
-ZATA,887,2022-11-10,2026-07-30,34,Barang Konsumen Non-Primer,Perdagangan Ritel
-ZBRA,1237,2021-06-16,2026-07-30,273,Perindustrian,Perusahaan Holding Multi Sektor
-ZINC,1237,2021-06-16,2026-07-30,156,Barang Baku,Barang Baku
+WTON,1235,2021-06-16,2026-07-31,4,Barang Baku,Barang Baku
+YELO,1235,2021-06-16,2026-07-31,23,Barang Konsumen Non-Primer,Perdagangan Ritel
+YOII,371,2025-01-08,2026-07-31,4,Keuangan,Asuransi
+YPAS,1235,2021-06-16,2026-07-31,298,Barang Baku,Barang Baku
+YULE,1235,2021-06-16,2026-07-31,288,Keuangan,Jasa Investasi
+YUPI,320,2025-03-25,2026-07-31,4,Barang Konsumen Primer,Makanan & Minuman
+ZATA,888,2022-11-10,2026-07-31,34,Barang Konsumen Non-Primer,Perdagangan Ritel
+ZBRA,1238,2021-06-16,2026-07-31,274,Perindustrian,Perusahaan Holding Multi Sektor
+ZINC,1238,2021-06-16,2026-07-31,157,Barang Baku,Barang Baku
 ZONE,1234,2021-06-16,2026-07-30,5,Barang Konsumen Non-Primer,Perdagangan Ritel
-ZYRX,1234,2021-06-16,2026-07-30,7,Teknologi,Perangkat Keras & Peralatan Teknologi
+ZYRX,1235,2021-06-16,2026-07-31,7,Teknologi,Perangkat Keras & Peralatan Teknologi
