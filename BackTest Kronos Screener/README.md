@@ -29,20 +29,20 @@ score selects 30. A realized hit requires:
 actual target-day high / actual previous-session close - 1 >= 5%
 ```
 
-The engine uses 42 backtest origins, a chronological 70/30 optimization/holdout
-split, and an embargo equal to the maximum forecast horizon. Outputs include
-the full candidate panel, selected daily top 30, Optuna trials, global weights,
-horizon win rates, baselines, a JSON summary, and `origin_quality_audit.csv`.
+The engine uses 42 backtest origins. Optuna searches one global weight vector
+against every valid origin in the configured time frame with no chronological
+split. Outputs include the full candidate panel, selected daily
+top 30, Optuna trials, global full-timeframe weights, horizon win rates,
+baselines, a JSON summary, and `origin_quality_audit.csv`.
 Before optimization, a whole origin is automatically removed when any horizon
 has forecast coverage below 80% of the median daily universe or fewer than 30
 positive candidates. Each notebook packages the results and automatically
 starts downloading its ZIP when the run finishes.
 
 These runs calibrate a secondary screener around already-trained frozen models.
-They are not independent evaluations of the underlying Kronos checkpoints for
-dates that were included in those checkpoints' fine-tuning data. The temporal
-holdout measures the scorer weights, while genuinely live dates after the model
-cutoff remain the strongest final check.
+The reported win rate is the in-sample objective optimized across the complete
+backtest time frame, not an out-of-sample performance estimate. Genuinely live
+dates after the model cutoff remain the strongest final check.
 
 Regenerate all notebooks with:
 

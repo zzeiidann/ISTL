@@ -60,7 +60,9 @@ def build_notebook(model: dict, horizon: int) -> dict:
             For every rolling origin in the last 42 eligible sessions, the model
             uses only the previous 120 sessions as context. Each horizon filters
             positive predicted close gain, keeps at most 100 candidates, then
-            Optuna tunes one global rank-weight vector to select 30 stocks.
+            Optuna tunes one global rank-weight vector against **all valid
+            rolling origins** to select 30 stocks with no chronological split.
+            The reported win rate is the full-timeframe optimization objective.
 
             A hit means actual target-day high is at least 5% above the actual
             previous trading-session close. Kronos weights are never updated.

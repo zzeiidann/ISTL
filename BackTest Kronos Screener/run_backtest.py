@@ -468,29 +468,20 @@ def main() -> None:
     candidates = prepare_candidate_panel(labeled, args.top_positive, args.select)
     candidates.to_parquet(output_dir / "daily_positive_top100_panel.parquet", index=False)
 
-    unique_origins = sorted(candidates["origin"].unique())
-    split_index = max(1, int(len(unique_origins) * 0.70))
-    embargo = max(horizons)
-    train_end = max(1, split_index - embargo)
-    train_origins = set(unique_origins[:train_end])
-    test_origins = set(unique_origins[split_index:])
-    train = candidates[candidates["origin"].isin(train_origins)].copy()
-    test = candidates[candidates["origin"].isin(test_origins)].copy()
-    if train.empty or test.empty:
-        raise RuntimeError("Train/test split kosong; tambah backtest sessions.")
-
-    weights, study = optimize_weights(train, args.trials, args.select, args.seed)
-    train_precision, train_selected = group_precision(train, score_with_weights(train, weights), args.select)
-    test_precision, test_selected = group_precision(test, score_with_weights(test, weights), args.select)
-    selected = pd.concat(
-        [train_selected.assign(split="optimization"), test_selected.assign(split="holdout")],
-        ignore_index=True,
+    # One global vector is optimized against every valid rolling origin. The
+    # resulting production weights therefore use the complete configured time
+    # frame with no chronological split.
+    weights, study = optimize_weights(candidates, args.trials, args.select, args.seed)
+    overall_precision, selected = group_precision(
+        candidates,
+        score_with_weights(candidates, weights),
+        args.select,
     )
     selected.to_csv(output_dir / "selected_top30_daily.csv", index=False)
     pd.DataFrame(study.trials_dataframe()).to_csv(output_dir / "optuna_trials.csv", index=False)
 
     horizon_metrics = (
-        selected.groupby(["split", "horizon"])
+        selected.groupby("horizon")
         .agg(selections=("hit5", "size"), hits=("hit5", "sum"), win_rate=("hit5", "mean"))
         .reset_index()
     )
@@ -512,10 +503,10 @@ def main() -> None:
         "selected_per_group": args.select,
         "forecast_paths": args.paths,
         "optuna_trials": args.trials,
-        "optimization_win_rate": train_precision,
-        "holdout_win_rate": test_precision,
-        "holdout_kronos_gain_baseline": baseline_precision(test, "pred_close_gain_mean", args.select),
-        "holdout_predicted_hit5_baseline": baseline_precision(test, "pred_hit5_probability", args.select),
+        "optimization_scope": "all_valid_sessions",
+        "overall_win_rate": overall_precision,
+        "kronos_gain_baseline": baseline_precision(candidates, "pred_close_gain_mean", args.select),
+        "predicted_hit5_baseline": baseline_precision(candidates, "pred_hit5_probability", args.select),
         "best_weights": weights,
     }
     (output_dir / "best_weights.json").write_text(json.dumps(weights, indent=2), encoding="utf-8")
