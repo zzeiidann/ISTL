@@ -344,15 +344,15 @@ def build_july_31_screen_notebook() -> dict:
                 candidates["score_percentile"] = candidates["secondary_score"].rank(pct=True, method="average")
                 candidates["model"] = config["slug"]
                 for feature in runner.SCORE_FEATURES:
-                    candidates[f"contribution_{{feature}}"] = candidates[f"r_{{feature}}"] * weights[feature]
-                contribution_columns = [f"contribution_{{feature}}" for feature in runner.SCORE_FEATURES]
+                    candidates[f"contribution_{feature}"] = candidates[f"r_{feature}"] * weights[feature]
+                contribution_columns = [f"contribution_{feature}" for feature in runner.SCORE_FEATURES]
                 candidates["top_support"] = candidates[contribution_columns].idxmax(axis=1).str.removeprefix("contribution_")
                 candidates["top_penalty"] = candidates[contribution_columns].idxmin(axis=1).str.removeprefix("contribution_")
 
                 selected = candidates.nlargest(30, "secondary_score").copy()
                 selected["selected_rank"] = np.arange(1, len(selected) + 1)
-                candidates.to_csv(OUTPUT_DIR / f"{{config['slug']}}_all_candidates.csv", index=False)
-                selected.to_csv(OUTPUT_DIR / f"{{config['slug']}}_top30.csv", index=False)
+                candidates.to_csv(OUTPUT_DIR / f"{config['slug']}_all_candidates.csv", index=False)
+                selected.to_csv(OUTPUT_DIR / f"{config['slug']}_top30.csv", index=False)
                 all_scored.append(candidates)
                 all_selected.append(selected)
                 display(selected[["selected_rank", "ticker", "secondary_score", "pred_close_gain_mean", "pred_hit5_probability", "top_support", "top_penalty"]])
