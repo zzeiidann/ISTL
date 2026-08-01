@@ -9,11 +9,11 @@ rolling daily backtest modes:
 | Refit-run validated epoch 4 | `backtest_1d_refit_run_validated_e4.ipynb` | `backtest_5d_refit_run_validated_e4.ipynb` |
 | Production refit epoch 4 | `backtest_1d_production_refit_e4.ipynb` | `backtest_5d_production_refit_e4.ipynb` |
 
-`screen_2026_07_31_backtest_weights.ipynb` menjalankan screening live untuk
-31 Juli 2026 dengan checkpoint validated no-refit E15 dan production refit E4.
-Masing-masing model menggunakan bobot terbaik dari arsip backtest 1D miliknya,
-menampilkan arti serta arah setiap bobot, menghasilkan top 30 per model, lalu
-membuat top 30 consensus.
+`screen_2026_07_31_backtest_weights.ipynb` menjalankan screening untuk 31 Juli
+serta 3–7 Agustus 2026 dengan checkpoint validated no-refit E15 dan production
+refit E4. Masing-masing model menggunakan bobot terbaik dari arsip backtest 1D
+miliknya, menampilkan arti serta arah setiap bobot, menghasilkan top 30 per
+model per tanggal, lalu membuat top 30 consensus per tanggal.
 
 Each notebook clones `https://github.com/zzeiidann/ISTL.git`, pulls only its own
 Git LFS checkpoint, installs PyTorch 2.3.1 CUDA 11.8 for Kaggle P100/T4, runs

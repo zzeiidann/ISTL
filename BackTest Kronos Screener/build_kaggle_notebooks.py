@@ -182,15 +182,18 @@ def build_notebook(model: dict, horizon: int) -> dict:
     }
 
 
-def build_july_31_screen_notebook() -> dict:
+def build_july_31_and_august_week_screen_notebook() -> dict:
     cells = [
         markdown(
             """
-            # Screen IDX 31 Juli 2026 dengan bobot backtest 1D
+            # Screen IDX 31 Juli dan 3–7 Agustus 2026
 
-            Notebook ini membuat forecast **31 Juli 2026** dari data penutupan
-            **30 Juli 2026** menggunakan dua checkpoint yang sudah mempunyai hasil
-            backtest 1D:
+            Notebook ini menjalankan dua jadwal forecast:
+
+            - origin **30 Juli 2026** → target **31 Juli 2026**;
+            - origin **31 Juli 2026** → target **3–7 Agustus 2026**.
+
+            Dua checkpoint yang digunakan:
 
             1. Validated no-refit epoch 15.
             2. Production refit epoch 4.
@@ -199,6 +202,10 @@ def build_july_31_screen_notebook() -> dict:
             `BackTest Results`. Kandidat awal adalah maksimum 100 saham dengan
             prediksi close positif. Skor akhir adalah jumlah
             `percentile_rank(feature) × weight`, lalu dipilih top 30 per model.
+
+            Bobot berasal dari backtest 1D full-timeframe. Bobot yang sama
+            diterapkan pada setiap horizon target 3–7 Agustus sesuai kebutuhan
+            screening ini.
 
             Bobot positif menyukai nilai feature yang tinggi; bobot negatif
             menekan nilai feature yang tinggi dan relatif menyukai nilai rendah.
@@ -264,9 +271,38 @@ def build_july_31_screen_notebook() -> dict:
             device = runner.configure_runtime(42)
             prices = runner.load_prices(REPO)
             featured = runner.add_stock_features(prices)
-            ORIGIN = pd.Timestamp("2026-07-30")
-            TARGET_DATE = pd.Timestamp("2026-07-31")
-            assert ORIGIN in set(featured["date"]), "Data 30 Juli 2026 belum tersedia."
+            available_dates = set(featured["date"])
+            JULY_30 = pd.Timestamp("2026-07-30")
+            JULY_31 = pd.Timestamp("2026-07-31")
+            AUGUST_TARGETS = list(pd.date_range("2026-08-03", "2026-08-07", freq="D"))
+            assert JULY_30 in available_dates, "Data 30 Juli 2026 belum tersedia."
+
+            if JULY_31 in available_dates:
+                week_origin = JULY_31
+                week_future_dates = AUGUST_TARGETS
+                week_horizons = [1, 2, 3, 4, 5]
+            else:
+                # Tetap menghasilkan target 3–7 Agustus ketika actual 31 Juli
+                # belum tersedia: 31 Juli menjadi langkah forecast perantara.
+                week_origin = JULY_30
+                week_future_dates = [JULY_31, *AUGUST_TARGETS]
+                week_horizons = [2, 3, 4, 5, 6]
+                print("Data 31 Juli belum tersedia; week screen memakai origin 30 Juli.")
+
+            SCREEN_JOBS = [
+                {
+                    "name": "2026-07-31",
+                    "origin": JULY_30,
+                    "target_dates": [JULY_31],
+                    "horizons": [1],
+                },
+                {
+                    "name": "2026-08-03_to_07",
+                    "origin": week_origin,
+                    "target_dates": week_future_dates,
+                    "horizons": week_horizons,
+                },
+            ]
 
             kronos_dir = REPO / "Kronos IDX FineTune/Kronos"
             if not (kronos_dir / "model/kronos.py").exists():
@@ -319,7 +355,7 @@ def build_july_31_screen_notebook() -> dict:
         markdown("## 5. Forecast dan screen top 30 per model"),
         code(
             """
-            OUTPUT_DIR = Path("/kaggle/working/screen_2026-07-31_backtest_weights")
+            OUTPUT_DIR = Path("/kaggle/working/screen_2026-07-31_and_2026-08-03_to_07")
             OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
             tokenizer = KronosTokenizer.from_pretrained("NeoQuasar/Kronos-Tokenizer-base").to(device).eval()
             all_scored = []
@@ -329,35 +365,49 @@ def build_july_31_screen_notebook() -> dict:
                 print("Running", config["label"])
                 model = Kronos.from_pretrained(str(config["checkpoint"])).to(device).eval()
                 predictor = KronosPredictor(model, tokenizer, device=str(device), max_context=512)
-                forecast = runner.forecast_origin(
-                    predictor=predictor,
-                    featured=featured,
-                    origin=ORIGIN,
-                    future_dates=[TARGET_DATE],
-                    horizons=[1],
-                    paths=5,
-                    batch_size=32,
-                    lookback=120,
-                    seed=42,
-                )
-                candidates = runner.prepare_candidate_panel(forecast, top_positive=100, select=30)
                 weights = json.loads(config["weights"].read_text())
-                candidates["secondary_score"] = runner.score_with_weights(candidates, weights)
-                candidates["score_percentile"] = candidates["secondary_score"].rank(pct=True, method="average")
-                candidates["model"] = config["slug"]
-                for feature in runner.SCORE_FEATURES:
-                    candidates[f"contribution_{feature}"] = candidates[f"r_{feature}"] * weights[feature]
-                contribution_columns = [f"contribution_{feature}" for feature in runner.SCORE_FEATURES]
-                candidates["top_support"] = candidates[contribution_columns].idxmax(axis=1).str.removeprefix("contribution_")
-                candidates["top_penalty"] = candidates[contribution_columns].idxmin(axis=1).str.removeprefix("contribution_")
+                model_candidates = []
+                model_selected = []
+                for job in SCREEN_JOBS:
+                    forecast = runner.forecast_origin(
+                        predictor=predictor,
+                        featured=featured,
+                        origin=job["origin"],
+                        future_dates=job["target_dates"],
+                        horizons=job["horizons"],
+                        paths=5,
+                        batch_size=32,
+                        lookback=120,
+                        seed=42,
+                    )
+                    candidates = runner.prepare_candidate_panel(forecast, top_positive=100, select=30)
+                    candidates["secondary_score"] = runner.score_with_weights(candidates, weights)
+                    candidates["score_percentile"] = candidates.groupby("target_date")["secondary_score"].rank(pct=True, method="average")
+                    candidates["model"] = config["slug"]
+                    for feature in runner.SCORE_FEATURES:
+                        candidates[f"contribution_{feature}"] = candidates[f"r_{feature}"] * weights[feature]
+                    contribution_columns = [f"contribution_{feature}" for feature in runner.SCORE_FEATURES]
+                    candidates["top_support"] = candidates[contribution_columns].idxmax(axis=1).str.removeprefix("contribution_")
+                    candidates["top_penalty"] = candidates[contribution_columns].idxmin(axis=1).str.removeprefix("contribution_")
 
-                selected = candidates.nlargest(30, "secondary_score").copy()
-                selected["selected_rank"] = np.arange(1, len(selected) + 1)
-                candidates.to_csv(OUTPUT_DIR / f"{config['slug']}_all_candidates.csv", index=False)
-                selected.to_csv(OUTPUT_DIR / f"{config['slug']}_top30.csv", index=False)
-                all_scored.append(candidates)
-                all_selected.append(selected)
-                display(selected[["selected_rank", "ticker", "secondary_score", "pred_close_gain_mean", "pred_hit5_probability", "top_support", "top_penalty"]])
+                    selected_parts = []
+                    for _, daily in candidates.groupby("target_date", sort=True):
+                        chosen = daily.nlargest(30, "secondary_score").copy()
+                        chosen["selected_rank"] = np.arange(1, len(chosen) + 1)
+                        selected_parts.append(chosen)
+                    selected = pd.concat(selected_parts, ignore_index=True)
+                    model_candidates.append(candidates)
+                    model_selected.append(selected)
+
+                model_candidates = pd.concat(model_candidates, ignore_index=True)
+                model_selected = pd.concat(model_selected, ignore_index=True)
+                model_candidates.to_csv(OUTPUT_DIR / f"{config['slug']}_all_candidates.csv", index=False)
+                model_selected.to_csv(OUTPUT_DIR / f"{config['slug']}_top30_by_date.csv", index=False)
+                all_scored.append(model_candidates)
+                all_selected.append(model_selected)
+                for target_date, daily in model_selected.groupby("target_date", sort=True):
+                    print(config["label"], pd.Timestamp(target_date).date())
+                    display(daily[["selected_rank", "ticker", "secondary_score", "pred_close_gain_mean", "pred_hit5_probability", "top_support", "top_penalty"]])
 
                 del predictor, model
                 gc.collect()
@@ -370,26 +420,32 @@ def build_july_31_screen_notebook() -> dict:
             scored = pd.concat(all_scored, ignore_index=True)
             selected = pd.concat(all_selected, ignore_index=True)
             consensus = (
-                scored.groupby("ticker", as_index=False)
+                scored.groupby(["target_date", "ticker"], as_index=False)
                 .agg(models_available=("model", "nunique"), mean_score_percentile=("score_percentile", "mean"))
             )
-            selected_counts = selected.groupby("ticker")["model"].nunique().rename("models_selected")
-            consensus = consensus.merge(selected_counts, on="ticker", how="left").fillna({"models_selected": 0})
+            selected_counts = selected.groupby(["target_date", "ticker"])["model"].nunique().rename("models_selected")
+            consensus = consensus.merge(selected_counts, on=["target_date", "ticker"], how="left").fillna({"models_selected": 0})
             consensus["models_selected"] = consensus["models_selected"].astype(int)
-            consensus = consensus.sort_values(["models_selected", "mean_score_percentile"], ascending=False).head(30)
-            consensus.insert(0, "consensus_rank", np.arange(1, len(consensus) + 1))
-            consensus.to_csv(OUTPUT_DIR / "consensus_top30.csv", index=False)
+            consensus = consensus.sort_values(
+                ["target_date", "models_selected", "mean_score_percentile"],
+                ascending=[True, False, False],
+            )
+            consensus["consensus_rank"] = consensus.groupby("target_date").cumcount() + 1
+            consensus = consensus[consensus["consensus_rank"].le(30)].copy()
+            consensus.to_csv(OUTPUT_DIR / "consensus_top30_by_date.csv", index=False)
             weight_table.to_csv(OUTPUT_DIR / "weight_meanings.csv", index=False)
-            display(consensus)
+            for target_date, daily in consensus.groupby("target_date", sort=True):
+                print("Consensus", pd.Timestamp(target_date).date())
+                display(daily[["consensus_rank", "ticker", "models_selected", "models_available", "mean_score_percentile"]])
 
             import shutil
             from IPython.display import Javascript
-            archive = shutil.make_archive("/kaggle/working/screen_2026-07-31_backtest_weights", "zip", OUTPUT_DIR)
+            archive = shutil.make_archive("/kaggle/working/screen_2026-07-31_and_2026-08-03_to_07", "zip", OUTPUT_DIR)
             print("Download:", archive)
             display(Javascript(
                 "const a=document.createElement('a');"
-                "a.href='/files/kaggle/working/screen_2026-07-31_backtest_weights.zip';"
-                "a.download='screen_2026-07-31_backtest_weights.zip';"
+                "a.href='/files/kaggle/working/screen_2026-07-31_and_2026-08-03_to_07.zip';"
+                "a.download='screen_2026-07-31_and_2026-08-03_to_07.zip';"
                 "document.body.appendChild(a);a.click();a.remove();"
             ))
             """
@@ -414,5 +470,5 @@ for model in MODELS:
         print(output)
 
 screen_output = ROOT / "screen_2026_07_31_backtest_weights.ipynb"
-screen_output.write_text(json.dumps(build_july_31_screen_notebook(), indent=1), encoding="utf-8")
+screen_output.write_text(json.dumps(build_july_31_and_august_week_screen_notebook(), indent=1), encoding="utf-8")
 print(screen_output)

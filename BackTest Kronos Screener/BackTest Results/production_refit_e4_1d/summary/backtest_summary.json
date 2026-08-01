@@ -1,0 +1,42 @@
+{
+  "run_name": "production_refit_e4_1d",
+  "model_path": "/kaggle/working/ISTL/Kronos IDX FineTune/results/2026-07-30/refit-run-e4/production_model",
+  "horizon_mode": 1,
+  "horizons": [
+    1
+  ],
+  "backtest_sessions": 42,
+  "valid_backtest_sessions": 41,
+  "excluded_anomalous_sessions": 1,
+  "min_universe_ratio": 0.8,
+  "origin_start": "2026-06-02",
+  "origin_end": "2026-07-29",
+  "target": "actual_high / previous_actual_close - 1 >= 0.05",
+  "top_positive": 100,
+  "selected_per_group": 30,
+  "forecast_paths": 5,
+  "optuna_trials": 1500,
+  "optimization_scope": "all_valid_sessions",
+  "overall_win_rate": 0.47154471544715443,
+  "kronos_gain_baseline": 0.3796747967479675,
+  "predicted_hit5_baseline": 0.40162601626016264,
+  "best_weights": {
+    "pred_high_gain_mean": 0.01238805866056943,
+    "pred_high_gain_median": 0.05102540241844693,
+    "pred_hit5_probability": 0.10278477300974757,
+    "pred_close_gain_mean": -0.02657394905601148,
+    "pred_close_up_probability": -0.025294487321956927,
+    "pred_range_mean": -0.10823074332493904,
+    "pred_high_gain_dispersion": 0.047550455518989475,
+    "pred_low_gain_mean": -0.08073575636405672,
+    "hit5_rate_20": 0.06337995222952991,
+    "hit5_rate_60": 0.11259981498421703,
+    "mom_5": 0.03702901730018058,
+    "mom_20": -0.03800845766949079,
+    "volatility_20": 0.046997987679124956,
+    "volume_ratio_5_60": 0.07897452822829572,
+    "turnover_accel": -0.09762131460384055,
+    "range_20": 0.027271838122071655,
+    "drawdown_60": 0.0435334635085313
+  }
+}
