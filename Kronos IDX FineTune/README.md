@@ -57,3 +57,13 @@ seluruh Juli menjadi validation, dan best validated checkpoint langsung dipakai
 untuk forecast dengan context sampai 30 Juli. Tidak ada post-validation refit,
 sehingga model final tetap memiliki pengukuran validation independen. Notebook
 ini diregenerasikan dengan `build_kaggle_notebook_80gb_no_refit.py`.
+
+## Varian 80 GB dengan tokenizer IDX
+
+`kronos_idx_kaggle_finetune_80gb_tokenizer_idx.ipynb` mengadaptasi tokenizer
+pretrained pada window IDX yang targetnya berakhir sebelum 1 Juli 2026, lalu
+membekukannya dan fine-tune predictor dari `Kronos-base` dengan cutoff yang
+sama. Seluruh Juli hanya menjadi validation dan forecast dimulai 3 Agustus 2026
+dengan causal context sampai close 31 Juli.
+Notebook ini diregenerasikan dengan
+`build_kaggle_notebook_80gb_tokenizer_idx.py`.
