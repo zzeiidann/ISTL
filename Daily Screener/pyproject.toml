@@ -1,0 +1,21 @@
+[project]
+name = "istl-daily-screener"
+version = "0.1.0"
+description = "Local IDX TF15 data update and Kronos next-session screener"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "einops==0.8.1",
+  "huggingface-hub==0.33.1",
+  "ipykernel>=6.29",
+  "ipywidgets>=8.1",
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "pyarrow>=16",
+  "safetensors==0.6.2",
+  "torch==2.7.1",
+  "tqdm>=4.66",
+  "yfinance>=0.2.65",
+]
+
+[tool.uv]
+package = false
