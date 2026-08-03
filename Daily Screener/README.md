@@ -20,6 +20,10 @@ menarik checkpoint TF15 serta TF1D yang diperlukan lewat selective Git LFS.
 Source Kronos resmi juga otomatis di-clone dan dipin ke commit yang digunakan
 saat training apabila submodule repo belum tersedia.
 
+Notebook memasang PyTorch 2.7.1 CUDA 12.8 agar kompatibel dengan GPU Blackwell
+`sm_120`, lalu menjalankan architecture smoke test. Jika torch lama sudah pernah
+di-import dalam session Kaggle, restart session sekali setelah cell instalasi.
+
 Regenerasikan notebook dengan:
 
 ```bash

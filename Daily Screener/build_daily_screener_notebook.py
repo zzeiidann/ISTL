@@ -37,6 +37,10 @@ cells = [
     """),
     md("## 1. Runtime setup"),
     code("""
+    # Blackwell (sm_120) needs a CUDA 12.8 PyTorch wheel. Run this cell first.
+    # If torch was already imported in this session, restart the kernel once
+    # after installation and then Run All.
+    %pip install -q --upgrade torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
     %pip install -q einops==0.8.1 huggingface_hub==0.33.1 safetensors==0.6.2 pyarrow plotly tqdm
     """),
     code("""
@@ -58,6 +62,24 @@ cells = [
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     random.seed(SEED); np.random.seed(SEED); torch.manual_seed(SEED)
     if torch.cuda.is_available(): torch.cuda.manual_seed_all(SEED)
+
+    if DEVICE.type == "cuda":
+        capability = torch.cuda.get_device_capability(0)
+        expected_arch = f"sm_{capability[0]}{capability[1]}"
+        compiled_arches = set(torch.cuda.get_arch_list())
+        print({"torch": torch.__version__, "cuda": torch.version.cuda,
+               "gpu": torch.cuda.get_device_name(0), "required_arch": expected_arch,
+               "compiled_arches": sorted(compiled_arches)})
+        if expected_arch not in compiled_arches:
+            raise RuntimeError(
+                f"PyTorch {torch.__version__} tidak menyediakan {expected_arch}. "
+                "Restart Kaggle session setelah cell instalasi, lalu Run All dari awal."
+            )
+        smoke = torch.ones(8, device=DEVICE)
+        torch.cuda.synchronize()
+        del smoke
+        torch.cuda.empty_cache()
+        print("CUDA architecture smoke test passed.")
 
     if Path("/content").exists() and not Path("/content/drive/MyDrive").exists():
         try:
