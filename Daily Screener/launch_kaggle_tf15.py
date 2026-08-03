@@ -12,13 +12,20 @@ import sys
 import time
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 
 HERE = Path(__file__).resolve().parent
+load_dotenv(HERE / ".env.kaggle.local")
 RUNNER = HERE / "kaggle_tf15_runner.py"
 BUILD = HERE / ".runtime/kaggle-tf15"
 OUTPUT = HERE / "outputs/kaggle"
 SLUG = "istl-tf15-full-universe"
 KAGGLE = str(Path(sys.executable).with_name("kaggle"))
+
+
+def configured_username() -> str:
+    return os.environ.get("KAGGLE_USERNAME", "").strip()
 
 
 def execute(command: list[str], capture: bool = False) -> subprocess.CompletedProcess[str]:
@@ -91,7 +98,7 @@ def submit_and_wait(username: str, poll_seconds: int = 30, timeout_minutes: int 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--username", default=os.environ.get("KAGGLE_USERNAME"))
+    parser.add_argument("--username", default=configured_username())
     parser.add_argument("--poll-seconds", type=int, default=30)
     args = parser.parse_args()
     if not args.username:

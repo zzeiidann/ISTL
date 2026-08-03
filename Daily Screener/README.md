@@ -63,11 +63,18 @@ cd "Daily Screener"
 uv run kaggle auth login
 ```
 
-Browser hanya diperlukan untuk menyetujui login pertama. Setelah itu isi username
-Kaggle di notebook `03`; submit T4, polling status, dan download output dilakukan
-otomatis. Credential disimpan oleh Kaggle CLI di konfigurasi user dan tidak boleh
-dimasukkan ke repository. Alternatif resmi tanpa OAuth adalah menyimpan token dari
-Kaggle Settings API ke `~/.kaggle/access_token`.
+Browser hanya diperlukan untuk menyetujui login pertama. Simpan username pada file
+lokal yang sudah diabaikan Git:
+
+```bash
+KAGGLE_USERNAME=mraffy
+```
+
+di `Daily Screener/.env.kaggle.local`. Notebook `03` membacanya otomatis; submit
+T4, polling status, dan download output tidak memerlukan username hard-coded.
+Credential disimpan oleh Kaggle CLI di konfigurasi user dan tidak dimasukkan ke
+repository. Alternatif resmi tanpa OAuth adalah menyimpan token dari Kaggle
+Settings API ke `~/.kaggle/access_token`.
 
 Runner T4 juga menjalankan update/compound Yahoo TF15 di dalam job sebelum
 inference, sehingga tidak bergantung pada kapan parquet lokal terakhir di-push.

@@ -150,15 +150,15 @@ kaggle_cells = [
     code("""
     import importlib.util
 
-    KAGGLE_USERNAME = "GANTI_DENGAN_USERNAME_KAGGLE"
+    KAGGLE_USERNAME = launcher.configured_username()
     POLL_SECONDS = 30
 
     module_path = HERE / "launch_kaggle_tf15.py"
     spec = importlib.util.spec_from_file_location("kaggle_launcher", module_path)
     launcher = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(launcher)
-    if KAGGLE_USERNAME.startswith("GANTI_"):
-        raise ValueError("Isi KAGGLE_USERNAME dulu, contoh: 'zzeiidann'")
+    if not KAGGLE_USERNAME:
+        raise ValueError("Isi KAGGLE_USERNAME di file .env.kaggle.local")
 
     downloaded_to = launcher.submit_and_wait(KAGGLE_USERNAME, poll_seconds=POLL_SECONDS)
     downloaded_to
