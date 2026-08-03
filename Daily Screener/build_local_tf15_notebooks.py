@@ -73,8 +73,9 @@ project_cells = [
     # 02 — Project next IDX session with the TF15 model
 
     Uses actual TF15 context through the newest completed candle. By default it
-    screens the 30 most liquid eligible stocks and ranks the predicted first
-    15-minute candle of the next weekday. CPU is supported; it is slower than CUDA.
+    screens every stock with enough context and ranks the predicted first
+    15-minute candle of the next weekday. There is no liquidity pre-filter.
+    CPU is supported, but a full-universe run is substantially slower than CUDA.
 
     Run notebook 01 first. If tomorrow is an IDX holiday, set `TARGET_DATE` manually.
     """),
@@ -93,15 +94,13 @@ project_cells = [
     """),
     markdown("## Configuration"),
     code("""
-    CANDIDATE_COUNT = 30
     LOOKBACK_BARS = 240
-    SAMPLE_PATHS = 3       # use 1 for a quick CPU smoke test; 5 for a stronger estimate
+    SAMPLE_PATHS = 5       # use 1 for a quick CPU smoke test
     BATCH_SIZE = None      # automatic: CPU=2, CUDA=16
     TARGET_DATE = None     # example: "2026-08-04"; None = next weekday after latest actual bar
     """),
     code("""
     ranking, forecast_paths, metadata = tf15.run_projection(
-        candidate_count=CANDIDATE_COUNT,
         lookback=LOOKBACK_BARS,
         paths=SAMPLE_PATHS,
         batch_size=BATCH_SIZE,
@@ -111,7 +110,8 @@ project_cells = [
     """),
     code("""
     from IPython.display import display
-    styled = ranking.style.format({
+    top30 = ranking.head(30)
+    styled = top30.style.format({
         "anchor_close": "{:,.2f}", "expected_opening_bar_close": "{:,.2f}",
         "expected_return": "{:+.2%}", "median_return": "{:+.2%}",
         "probability_up": "{:.0%}", "downside_p10": "{:+.2%}",

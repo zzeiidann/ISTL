@@ -70,19 +70,17 @@ def load_prices(path: Path) -> pd.DataFrame:
     return prices.dropna(subset=["open", "high", "low", "close"])
 
 
-def liquid_candidates(prices: pd.DataFrame, count: int, lookback_sessions: int = 20) -> list[str]:
-    last_days = sorted(prices.date.dt.normalize().unique())[-lookback_sessions:]
-    recent = prices[prices.date.dt.normalize().isin(last_days)]
-    minimum_bars = max(1, len(last_days) * 8)
-    stats = recent.groupby("ticker").agg(median_amount=("amount", "median"), bars=("date", "size"))
-    return stats[stats.bars.ge(minimum_bars)].nlargest(count, "median_amount").index.tolist()
+def eligible_candidates(prices: pd.DataFrame, lookback: int) -> list[str]:
+    """Return every ticker with enough history; do not pre-rank by liquidity."""
+    counts = prices.groupby("ticker").size()
+    return sorted(counts[counts.ge(lookback)].index.tolist())
 
 
 def run_projection(
     data_path: Path = DATA,
     model_path: Path = MODEL,
     output_dir: Path = OUTPUT,
-    candidate_count: int = 30,
+    max_tickers: int | None = None,
     lookback: int = 240,
     paths: int = 3,
     batch_size: int | None = None,
@@ -98,9 +96,11 @@ def run_projection(
     if target.normalize() <= context_end.normalize():
         raise ValueError("target_date must be after the final actual context date")
     schedule = session_schedule(prices, target)
-    candidates = liquid_candidates(prices, candidate_count)
+    candidates = eligible_candidates(prices, lookback)
+    if max_tickers is not None:
+        candidates = candidates[:max_tickers]
 
-    contexts, x_times, names, anchors = [], [], [], {}
+    contexts, x_times, names, anchors, context_ends = [], [], [], {}, {}
     for ticker in candidates:
         context = prices[prices.ticker.eq(ticker)].tail(lookback)
         if len(context) < lookback:
@@ -109,6 +109,7 @@ def run_projection(
         x_times.append(pd.Series(context.date.to_numpy()))
         names.append(ticker)
         anchors[ticker] = float(context.close.iloc[-1])
+        context_ends[ticker] = context.date.iloc[-1]
     if not names:
         raise RuntimeError("No candidate has enough context bars")
 
@@ -144,13 +145,15 @@ def run_projection(
                         rows.append(
                             {"ticker": ticker, "path_id": path_id, "horizon_step": step,
                              "forecast_time": forecast_time, "forecast_close": close,
-                             "anchor_close": anchors[ticker], "return": close / anchors[ticker] - 1}
+                             "anchor_close": anchors[ticker], "context_last": context_ends[ticker],
+                             "return": close / anchors[ticker] - 1}
                         )
 
     forecasts = pd.DataFrame(rows)
     first = forecasts[forecasts.horizon_step.eq(1)]
     ranking = first.groupby("ticker").agg(
         anchor_close=("anchor_close", "first"),
+        context_last=("context_last", "first"),
         expected_opening_bar_close=("forecast_close", "mean"),
         expected_return=("return", "mean"),
         median_return=("return", "median"),
@@ -165,7 +168,8 @@ def run_projection(
     }
     output_dir.mkdir(parents=True, exist_ok=True)
     stamp = target.strftime("%Y_%m_%d")
-    ranking.to_csv(output_dir / f"top30_tf15_first_bar_{stamp}.csv", index=False)
+    ranking.to_csv(output_dir / f"ranking_all_tf15_first_bar_{stamp}.csv", index=False)
+    ranking.head(30).to_csv(output_dir / f"top30_tf15_first_bar_{stamp}.csv", index=False)
     forecasts.to_parquet(output_dir / f"paths_tf15_{stamp}.parquet", index=False)
     (output_dir / f"metadata_tf15_{stamp}.json").write_text(json.dumps(metadata, indent=2) + "\n")
     del predictor, model, tokenizer
@@ -178,7 +182,7 @@ def main() -> None:
     parser.add_argument("--data", type=Path, default=DATA)
     parser.add_argument("--model", type=Path, default=MODEL)
     parser.add_argument("--output", type=Path, default=OUTPUT)
-    parser.add_argument("--candidates", type=int, default=30)
+    parser.add_argument("--max-tickers", type=int, default=None, help="Optional debug limit; default screens all eligible tickers")
     parser.add_argument("--lookback", type=int, default=240)
     parser.add_argument("--paths", type=int, default=3)
     parser.add_argument("--batch-size", type=int, default=None)
@@ -186,7 +190,7 @@ def main() -> None:
     args = parser.parse_args()
     ranking, _, metadata = run_projection(
         data_path=args.data, model_path=args.model, output_dir=args.output,
-        candidate_count=args.candidates, lookback=args.lookback, paths=args.paths,
+        max_tickers=args.max_tickers, lookback=args.lookback, paths=args.paths,
         batch_size=args.batch_size, target_date=args.target_date,
     )
     print(json.dumps(metadata, indent=2))

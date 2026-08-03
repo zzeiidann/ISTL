@@ -28,11 +28,12 @@ Model TF15 dan parquet canonical sudah dibaca langsung dari repository lokal.
 Source Kronos resmi akan di-clone sekali ke `.runtime/Kronos`, sedangkan tokenizer
 akan diunduh dan disimpan dalam cache Hugging Face pada pemakaian pertama.
 
-CPU didukung dan menjadi fallback otomatis. Konfigurasi default membatasi
-inference ke 30 saham paling likuid, tiga sampled paths, dan batch dua pada CPU.
-Gunakan `SAMPLE_PATHS = 1` untuk smoke test yang lebih cepat atau GPU CUDA untuk
-inference rutin. Output CSV/parquet/metadata ditulis ke `Daily Screener/outputs/`
-dan sengaja tidak dilacak Git.
+CPU didukung dan menjadi fallback otomatis. Seluruh ticker yang memiliki minimal
+240 bar masuk inference tanpa pre-filter likuiditas. Konfigurasi default memakai
+lima sampled paths dan batch dua pada CPU. Gunakan `SAMPLE_PATHS = 1` untuk smoke
+test atau GPU CUDA untuk full-universe inference rutin. Output ranking lengkap,
+Top 30, seluruh path, dan metadata ditulis ke `Daily Screener/outputs/` dan
+sengaja tidak dilacak Git.
 
 `TARGET_DATE = None` memilih weekday berikutnya. Karena itu tidak mengetahui
 libur khusus BEI; isi tanggal secara manual pada notebook `02` bila sesi berikutnya
