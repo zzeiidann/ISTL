@@ -98,6 +98,18 @@ cells = [
             "Kronos IDX FineTune/results/2026-07-31/tokenizer-idx-e10-predictor-e4/**",
         ], check=True)
         print("Cloned repository and downloaded required LFS objects:", REPO)
+
+    LFS_INCLUDE = (
+        "Kronos IDX FineTune/data/idx_kronos_all_daily.parquet,"
+        "Kronos IDX FineTune 15 Minutes/data/idx_kronos_all_15m.parquet,"
+        "Kronos IDX FineTune 15 Minutes/results/2026-07-30/refit-run-e4/production_model/**,"
+        "Kronos IDX FineTune/results/2026-07-31/tokenizer-idx-e10-predictor-e4/**"
+    )
+    if (REPO / ".git").exists() and os.access(REPO, os.W_OK):
+        # Handles a stale /kaggle/working clone left by an earlier failed run.
+        subprocess.run(["git", "-C", str(REPO), "pull", "--ff-only", "origin", "main"], check=True)
+        subprocess.run(["git", "-C", str(REPO), "lfs", "install", "--local"], check=True)
+        subprocess.run(["git", "-C", str(REPO), "lfs", "pull", "--include", LFS_INCLUDE], check=True)
     DATA_15M = REPO / "Kronos IDX FineTune 15 Minutes/data/idx_kronos_all_15m.parquet"
     DATA_1D = REPO / "Kronos IDX FineTune/data/idx_kronos_all_daily.parquet"
     DAILY_RUN = REPO / "Kronos IDX FineTune/results/2026-07-31/tokenizer-idx-e10-predictor-e4"
@@ -108,6 +120,19 @@ cells = [
 
     RUNTIME = Path("/kaggle/working/daily_screener") if Path("/kaggle/working").exists() else Path("/content/daily_screener") if Path("/content").exists() else REPO / "Daily Screener/outputs"
     RUNTIME.mkdir(parents=True, exist_ok=True)
+    KRONOS_COMMIT = "67b630e67f6a18c9e9be918d9b4337c960db1e9a"
+    if not (KRONOS_DIR / "model/kronos.py").exists():
+        # A normal GitHub clone does not populate the Kronos submodule. Clone the
+        # pinned upstream source explicitly so Kaggle/Colab never depends on
+        # submodule state in the parent repository.
+        KRONOS_DIR = RUNTIME / "Kronos-runtime"
+        if not (KRONOS_DIR / "model/kronos.py").exists():
+            if KRONOS_DIR.exists():
+                shutil.rmtree(KRONOS_DIR)
+            subprocess.run(["git", "clone", "https://github.com/shiyu-coder/Kronos.git", str(KRONOS_DIR)], check=True)
+            subprocess.run(["git", "-C", str(KRONOS_DIR), "checkout", KRONOS_COMMIT], check=True)
+        print("Loaded pinned upstream Kronos source:", KRONOS_DIR)
+
     MODEL_15M = REPO_MODEL_15M
     ZIP_15M = None
     if not (MODEL_15M / "model.safetensors").exists():
@@ -121,7 +146,7 @@ cells = [
         if MODEL_15M.exists(): shutil.rmtree(MODEL_15M)
         extracted.rename(MODEL_15M)
 
-    for required in (DATA_15M, DATA_1D, DAILY_MODEL / "model.safetensors", DAILY_TOKENIZER / "model.safetensors", MODEL_15M / "model.safetensors"):
+    for required in (DATA_15M, DATA_1D, DAILY_MODEL / "model.safetensors", DAILY_TOKENIZER / "model.safetensors", MODEL_15M / "model.safetensors", KRONOS_DIR / "model/kronos.py"):
         if not required.exists(): raise FileNotFoundError(required)
     sys.path.insert(0, str(KRONOS_DIR))
     from model import Kronos, KronosTokenizer, KronosPredictor

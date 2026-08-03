@@ -15,6 +15,8 @@ LFS yang diperlukan.
 
 Kaggle/Colab tidak perlu upload ZIP lagi. Notebook otomatis clone repository dan
 menarik checkpoint TF15 serta TF1D yang diperlukan lewat selective Git LFS.
+Source Kronos resmi juga otomatis di-clone dan dipin ke commit yang digunakan
+saat training apabila submodule repo belum tersedia.
 
 Regenerasikan notebook dengan:
 
