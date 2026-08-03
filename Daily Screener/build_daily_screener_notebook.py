@@ -45,7 +45,7 @@ cells = [
     """),
     code("""
     from pathlib import Path
-    import gc, json, os, random, shutil, subprocess, sys, zipfile
+    import gc, json, os, random, shutil, subprocess, sys
 
     import numpy as np
     import pandas as pd
@@ -81,45 +81,13 @@ cells = [
         torch.cuda.empty_cache()
         print("CUDA architecture smoke test passed.")
 
-    if Path("/content").exists() and not Path("/content/drive/MyDrive").exists():
-        try:
-            from google.colab import drive
-            drive.mount("/content/drive")
-        except Exception as exc:
-            print("Drive mount skipped:", exc)
-
-    SEARCH_ROOTS = [Path.cwd(), Path("/kaggle/working"), Path("/kaggle/input"), Path("/content"), Path("/content/drive/MyDrive")]
-    SEARCH_ROOTS = [p for p in SEARCH_ROOTS if p.exists()]
-
-    def find_named(name, want_dir=False):
-        for root in SEARCH_ROOTS:
-            if root.name == name and root.is_dir() == want_dir:
-                return root.resolve()
-            direct = root / name
-            if direct.exists() and direct.is_dir() == want_dir:
-                return direct.resolve()
-            for hit in root.glob(f"**/{name}"):
-                if hit.is_dir() == want_dir:
-                    return hit.resolve()
-        raise FileNotFoundError(f"{name} tidak ditemukan di Kaggle/Colab/local search roots")
-
-    try:
-        REPO = find_named("ISTL", want_dir=True)
-        print("Using existing repository:", REPO)
-    except FileNotFoundError:
-        clone_root = Path("/kaggle/working") if Path("/kaggle/working").exists() else Path("/content")
-        REPO = clone_root / "ISTL"
+    WORKSPACE = Path("/kaggle/working") if Path("/kaggle/working").exists() else Path("/content") if Path("/content").exists() else Path.cwd()
+    REPO = Path.cwd().resolve() if Path.cwd().name == "ISTL" and (Path.cwd() / ".git").exists() else WORKSPACE / "ISTL"
+    if not (REPO / ".git").exists():
         clone_env = {**os.environ, "GIT_LFS_SKIP_SMUDGE": "1"}
         subprocess.run(["git", "clone", "https://github.com/zzeiidann/ISTL.git", str(REPO)], check=True, env=clone_env)
-        subprocess.run(["git", "-C", str(REPO), "lfs", "install", "--local"], check=True)
-        subprocess.run([
-            "git", "-C", str(REPO), "lfs", "pull", "--include",
-            "Kronos IDX FineTune/data/idx_kronos_all_daily.parquet,"
-            "Kronos IDX FineTune 15 Minutes/data/idx_kronos_all_15m.parquet,"
-            "Kronos IDX FineTune 15 Minutes/results/2026-07-30/refit-run-e4/production_model/**,"
-            "Kronos IDX FineTune/results/2026-07-31/tokenizer-idx-e10-predictor-e4/**",
-        ], check=True)
-        print("Cloned repository and downloaded required LFS objects:", REPO)
+    else:
+        subprocess.run(["git", "-C", str(REPO), "pull", "--ff-only", "origin", "main"], check=True)
 
     LFS_INCLUDE = (
         "Kronos IDX FineTune/data/idx_kronos_all_daily.parquet,"
@@ -127,11 +95,9 @@ cells = [
         "Kronos IDX FineTune 15 Minutes/results/2026-07-30/refit-run-e4/production_model/**,"
         "Kronos IDX FineTune/results/2026-07-31/tokenizer-idx-e10-predictor-e4/**"
     )
-    if (REPO / ".git").exists() and os.access(REPO, os.W_OK):
-        # Handles a stale /kaggle/working clone left by an earlier failed run.
-        subprocess.run(["git", "-C", str(REPO), "pull", "--ff-only", "origin", "main"], check=True)
-        subprocess.run(["git", "-C", str(REPO), "lfs", "install", "--local"], check=True)
-        subprocess.run(["git", "-C", str(REPO), "lfs", "pull", "--include", LFS_INCLUDE], check=True)
+    subprocess.run(["git", "-C", str(REPO), "lfs", "install", "--local"], check=True)
+    subprocess.run(["git", "-C", str(REPO), "lfs", "pull", "--include", LFS_INCLUDE], check=True)
+    print("Repository and required LFS files ready:", REPO)
     DATA_15M = REPO / "Kronos IDX FineTune 15 Minutes/data/idx_kronos_all_15m.parquet"
     DATA_1D = REPO / "Kronos IDX FineTune/data/idx_kronos_all_daily.parquet"
     DAILY_RUN = REPO / "Kronos IDX FineTune/results/2026-07-31/tokenizer-idx-e10-predictor-e4"
@@ -156,23 +122,12 @@ cells = [
         print("Loaded pinned upstream Kronos source:", KRONOS_DIR)
 
     MODEL_15M = REPO_MODEL_15M
-    ZIP_15M = None
-    if not (MODEL_15M / "model.safetensors").exists():
-        # Backward-compatible fallback for an uploaded Kaggle/Drive ZIP.
-        ZIP_15M = find_named("kronos_idx_15m_outputs.zip")
-        MODEL_15M = RUNTIME / "model_15m"
-        with zipfile.ZipFile(ZIP_15M) as archive:
-            for member in ("production_model/model.safetensors", "production_model/config.json", "production_model/README.md"):
-                archive.extract(member, RUNTIME)
-        extracted = RUNTIME / "production_model"
-        if MODEL_15M.exists(): shutil.rmtree(MODEL_15M)
-        extracted.rename(MODEL_15M)
 
     for required in (DATA_15M, DATA_1D, DAILY_MODEL / "model.safetensors", DAILY_TOKENIZER / "model.safetensors", MODEL_15M / "model.safetensors", KRONOS_DIR / "model/kronos.py"):
         if not required.exists(): raise FileNotFoundError(required)
     sys.path.insert(0, str(KRONOS_DIR))
     from model import Kronos, KronosTokenizer, KronosPredictor
-    print({"device": str(DEVICE), "repo": str(REPO), "model_15m": str(MODEL_15M), "zip_fallback": str(ZIP_15M) if ZIP_15M else None, "output": str(RUNTIME)})
+    print({"device": str(DEVICE), "repo": str(REPO), "model_15m": str(MODEL_15M), "output": str(RUNTIME)})
     """),
     md("## 2. Load and audit the two timeframes"),
     code("""

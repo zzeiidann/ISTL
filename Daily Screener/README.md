@@ -3,20 +3,19 @@
 Notebook ini membandingkan dua model Kronos untuk 3 Agustus 2026:
 
 - TF15: `production_model` yang tersimpan di repository melalui Git LFS, hanya
-  forecast bar pertama pukul 09:00 WIB. ZIP lama tetap didukung sebagai fallback.
+  forecast bar pertama pukul 09:00 WIB.
 - TF1D: predictor dan tokenizer IDX dari run
   `tokenizer-idx-e10-predictor-e4`, hanya forecast harian 3 Agustus.
 
 Keduanya memakai data terakhir sampai 31 Juli 2026 dan menghasilkan Top 30
 untuk 3 dan 4 Agustus serta tabel perbandingan gabungan. Forecast 4 Agustus
 dibuat secara causal: TF15 mengambil step 21 setelah membentuk 20 bar tanggal 3,
-sedangkan TF1D mengambil step 2. Notebook mencari repo, data, dan ZIP
-secara otomatis pada local workspace, Kaggle, atau Google Drive/Colab. Jika repo
-belum tersedia, notebook otomatis menjalankan `git clone` dan menarik objek Git
-LFS yang diperlukan.
+sedangkan TF1D mengambil step 2. Notebook memakai workspace runtime langsung
+(`/kaggle/working`, `/content`, atau working directory lokal), kemudian
+clone/pull repository dan menarik objek Git LFS yang diperlukan. Tidak ada
+Google Drive mount, pencarian recursive, permission prompt, atau ZIP eksternal.
 
-Kaggle/Colab tidak perlu upload ZIP lagi. Notebook otomatis clone repository dan
-menarik checkpoint TF15 serta TF1D yang diperlukan lewat selective Git LFS.
+Notebook otomatis menarik checkpoint TF15 serta TF1D lewat selective Git LFS.
 Source Kronos resmi juga otomatis di-clone dan dipin ke commit yang digunakan
 saat training apabila submodule repo belum tersedia.
 
