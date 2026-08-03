@@ -41,7 +41,7 @@ cells = [
     """),
     code("""
     from pathlib import Path
-    import gc, json, os, random, shutil, sys, zipfile
+    import gc, json, os, random, shutil, subprocess, sys, zipfile
 
     import numpy as np
     import pandas as pd
@@ -81,7 +81,22 @@ cells = [
                     return hit.resolve()
         raise FileNotFoundError(f"{name} tidak ditemukan di Kaggle/Colab/local search roots")
 
-    REPO = find_named("ISTL", want_dir=True)
+    try:
+        REPO = find_named("ISTL", want_dir=True)
+        print("Using existing repository:", REPO)
+    except FileNotFoundError:
+        clone_root = Path("/kaggle/working") if Path("/kaggle/working").exists() else Path("/content")
+        REPO = clone_root / "ISTL"
+        clone_env = {**os.environ, "GIT_LFS_SKIP_SMUDGE": "1"}
+        subprocess.run(["git", "clone", "https://github.com/zzeiidann/ISTL.git", str(REPO)], check=True, env=clone_env)
+        subprocess.run(["git", "-C", str(REPO), "lfs", "install", "--local"], check=True)
+        subprocess.run([
+            "git", "-C", str(REPO), "lfs", "pull", "--include",
+            "Kronos IDX FineTune/data/idx_kronos_all_daily.parquet,"
+            "Kronos IDX FineTune 15 Minutes/data/idx_kronos_all_15m.parquet,"
+            "Kronos IDX FineTune/results/2026-07-31/tokenizer-idx-e10-predictor-e4/**",
+        ], check=True)
+        print("Cloned repository and downloaded required LFS objects:", REPO)
     DATA_15M = REPO / "Kronos IDX FineTune 15 Minutes/data/idx_kronos_all_15m.parquet"
     DATA_1D = REPO / "Kronos IDX FineTune/data/idx_kronos_all_daily.parquet"
     DAILY_RUN = REPO / "Kronos IDX FineTune/results/2026-07-31/tokenizer-idx-e10-predictor-e4"

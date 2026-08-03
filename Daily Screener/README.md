@@ -9,7 +9,9 @@ Notebook ini membandingkan dua model Kronos untuk 3 Agustus 2026:
 
 Keduanya memakai data terakhir sampai 31 Juli 2026 dan menghasilkan Top 30
 terpisah serta tabel perbandingan gabungan. Notebook mencari repo, data, dan ZIP
-secara otomatis pada local workspace, Kaggle, atau Google Drive/Colab.
+secara otomatis pada local workspace, Kaggle, atau Google Drive/Colab. Jika repo
+belum tersedia, notebook otomatis menjalankan `git clone` dan menarik objek Git
+LFS yang diperlukan.
 
 Untuk Kaggle, tambahkan repository/dataset ISTL dan upload ZIP 15-menit sebagai
 Kaggle Dataset. Untuk Colab, simpan repo dan ZIP di Google Drive atau upload ke
