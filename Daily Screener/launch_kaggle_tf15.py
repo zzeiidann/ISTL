@@ -64,8 +64,21 @@ def status(kernel_id: str) -> tuple[str, str]:
     result = execute([KAGGLE, "kernels", "status", kernel_id], capture=True)
     message = (result.stdout + "\n" + result.stderr).strip()
     lowered = message.lower()
-    match = re.search(r'has status[ :]?[ "\']*([a-z]+)', lowered)
-    state = match.group(1) if match else lowered
+    # New Kaggle CLI formats states as KernelWorkerStatus.RUNNING/ERROR.
+    # Check terminal keywords in the full response before any generic parsing.
+    if "error" in lowered or "failed" in lowered:
+        state = "error"
+    elif "complete" in lowered:
+        state = "complete"
+    elif "running" in lowered:
+        state = "running"
+    elif "queued" in lowered:
+        state = "queued"
+    elif "cancel" in lowered:
+        state = "cancelled"
+    else:
+        match = re.search(r'has status[ :]?[ "\']*([a-z.]+)', lowered)
+        state = match.group(1) if match else lowered
     return state, message
 
 
