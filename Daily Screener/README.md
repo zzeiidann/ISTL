@@ -4,7 +4,8 @@ Workflow lokal utama sekarang memakai model Kronos IDX TF15:
 
 1. `01_update_compound_tf15.ipynb` mengunduh rolling data Yahoo Finance,
    membuang candle yang belum selesai, lalu menggabungkannya dengan parquet
-   historis tanpa menghapus data lama.
+   historis tanpa menghapus data lama. Cell terakhir commit dan push hanya file
+   parquet canonical ke `origin/main`.
 2. `02_project_next_session_tf15.ipynb` memakai context aktual paling baru dan
    memproyeksikan semua candle pada sesi bursa berikutnya. Ranking utamanya
    berdasarkan return candle pertama (09:00–09:15 WIB).
@@ -76,5 +77,5 @@ Credential disimpan oleh Kaggle CLI di konfigurasi user dan tidak dimasukkan ke
 repository. Alternatif resmi tanpa OAuth adalah menyimpan token dari Kaggle
 Settings API ke `~/.kaggle/access_token`.
 
-Runner T4 juga menjalankan update/compound Yahoo TF15 di dalam job sebelum
-inference, sehingga tidak bergantung pada kapan parquet lokal terakhir di-push.
+Runner T4 tidak mengunduh Yahoo lagi. Ia memakai parquet yang sudah di-update dan
+di-push oleh notebook `01`, menarik checkpoint model LFS, lalu langsung inference.

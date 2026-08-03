@@ -23,7 +23,7 @@ def main() -> None:
     run([
         sys.executable, "-m", "pip", "install", "-q",
         "einops==0.8.1", "huggingface-hub==0.33.1", "safetensors==0.6.2",
-        "pandas>=2.2,<3", "pyarrow>=16", "tqdm>=4.66", "yfinance>=0.2.65",
+        "pandas>=2.2,<3", "pyarrow>=16", "tqdm>=4.66",
     ])
     if REPO.exists():
         shutil.rmtree(REPO)
@@ -36,9 +36,6 @@ def main() -> None:
     ])
 
     daily = REPO / "Daily Screener"
-    # Refresh and compound the rolling Yahoo TF15 feed inside the remote job so
-    # Kaggle inference does not depend on when the repository parquet was pushed.
-    run([sys.executable, str(daily / "update_tf15_parquet.py"), "--pause", "0.05"])
     sys.path.insert(0, str(daily))
     from project_tf15_next_session import run_projection
 

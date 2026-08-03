@@ -66,6 +66,21 @@ update_cells = [
     })
     prices.tail()
     """),
+    markdown("""
+    ## Push only the refreshed parquet
+
+    This cell commits and pushes only the canonical TF15 parquet. Other dirty or
+    staged project files are excluded from the commit by an explicit pathspec.
+    """),
+    code("""
+    import importlib.util
+
+    push_module = HERE / "push_tf15_parquet.py"
+    spec = importlib.util.spec_from_file_location("tf15_push", push_module)
+    tf15_push = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(tf15_push)
+    tf15_push.push_parquet()
+    """),
 ]
 
 project_cells = [
