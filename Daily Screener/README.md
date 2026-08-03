@@ -8,6 +8,8 @@ Workflow lokal utama sekarang memakai model Kronos IDX TF15:
 2. `02_project_next_session_tf15.ipynb` memakai context aktual paling baru dan
    memproyeksikan semua candle pada sesi bursa berikutnya. Ranking utamanya
    berdasarkan return candle pertama (09:00–09:15 WIB).
+3. `03_run_tf15_on_kaggle_t4.ipynb` mengirim full-universe inference ke Kaggle
+   T4, memantau status, dan mengunduh output kembali tanpa membuka Kaggle setiap run.
 
 Notebook lama TF15-vs-TF1D dan TF30 tetap disimpan sebagai eksperimen historis;
 dua notebook bernomor di atas adalah workflow produksi lokal.
@@ -51,3 +53,21 @@ Notebook diregenerasi dari source dengan:
 ```bash
 uv run python build_local_tf15_notebooks.py
 ```
+
+## Login Kaggle satu kali
+
+Kaggle CLI tersimpan di environment `uv`. Login OAuth sekali dengan:
+
+```bash
+cd "Daily Screener"
+uv run kaggle auth login
+```
+
+Browser hanya diperlukan untuk menyetujui login pertama. Setelah itu isi username
+Kaggle di notebook `03`; submit T4, polling status, dan download output dilakukan
+otomatis. Credential disimpan oleh Kaggle CLI di konfigurasi user dan tidak boleh
+dimasukkan ke repository. Alternatif resmi tanpa OAuth adalah menyimpan token dari
+Kaggle Settings API ke `~/.kaggle/access_token`.
+
+Runner T4 juga menjalankan update/compound Yahoo TF15 di dalam job sebelum
+inference, sehingga tidak bergantung pada kapan parquet lokal terakhir di-push.

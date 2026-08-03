@@ -120,10 +120,66 @@ project_cells = [
     """),
 ]
 
+kaggle_cells = [
+    markdown("""
+    # 03 — Run full-universe TF15 on Kaggle T4
+
+    This local launcher submits the Kaggle runner, monitors its status, and
+    downloads the resulting CSV/parquet files automatically. Kaggle OAuth is
+    required only once on this computer; later runs do not require opening Kaggle.
+    """),
+    markdown("""
+    ## One-time login
+
+    Run the next cell only when this computer has not authenticated with Kaggle.
+    It opens Kaggle authorization once. Do not paste or commit a token here.
+    """),
+    code("""
+    from pathlib import Path
+    import subprocess
+
+    HERE = Path.cwd().resolve()
+    if HERE.name != "Daily Screener":
+        HERE = HERE / "Daily Screener"
+    assert (HERE / "launch_kaggle_tf15.py").exists(), f"Open from the ISTL repository: {HERE}"
+
+    # Uncomment for the first login only, then follow the authorization prompt:
+    # subprocess.run([str(HERE / ".venv/bin/kaggle"), "auth", "login"], check=True)
+    """),
+    markdown("## Submit, monitor, and download"),
+    code("""
+    import importlib.util
+
+    KAGGLE_USERNAME = "GANTI_DENGAN_USERNAME_KAGGLE"
+    POLL_SECONDS = 30
+
+    module_path = HERE / "launch_kaggle_tf15.py"
+    spec = importlib.util.spec_from_file_location("kaggle_launcher", module_path)
+    launcher = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(launcher)
+    if KAGGLE_USERNAME.startswith("GANTI_"):
+        raise ValueError("Isi KAGGLE_USERNAME dulu, contoh: 'zzeiidann'")
+
+    downloaded_to = launcher.submit_and_wait(KAGGLE_USERNAME, poll_seconds=POLL_SECONDS)
+    downloaded_to
+    """),
+    code("""
+    import pandas as pd
+    from IPython.display import display
+
+    ranking_files = list(downloaded_to.rglob("ranking_all_tf15_first_bar_*.csv"))
+    if not ranking_files:
+        raise FileNotFoundError(f"Ranking CSV tidak ditemukan di {downloaded_to}")
+    kaggle_ranking = pd.read_csv(ranking_files[0])
+    display(kaggle_ranking.head(30))
+    """),
+]
+
 
 for filename, cells in (
     ("01_update_compound_tf15.ipynb", update_cells),
     ("02_project_next_session_tf15.ipynb", project_cells),
+    ("03_run_tf15_on_kaggle_t4.ipynb", kaggle_cells),
 ):
     (HERE / filename).write_text(json.dumps(notebook(cells), indent=1) + "\n")
     print("Wrote", HERE / filename)
