@@ -173,26 +173,52 @@ cells = [
     print(f"TF1D: {len(prices_1d):,} rows / {prices_1d.ticker.nunique()} ticker / last {prices_1d.date.max()}")
     print(f"Common universe: {len(common)}")
     """),
-    md("## 3. Shared one-step inference"),
+    md("## 3. Shared causal multi-step inference"),
     code("""
-    def build_contexts(frame, tickers, lookback, intraday):
+    def future_schedule(frame, intraday):
+        if not intraday:
+            return pd.Series(pd.bdate_range(FORECAST_DATE, periods=2))
+        observed = frame.assign(clock=frame.date.dt.strftime("%H:%M"))
+        clock_frequency = observed.groupby("clock")["date"].count().sort_values(ascending=False)
+        clocks = sorted(clock_frequency.head(20).index)
+        if len(clocks) < 20:
+            raise RuntimeError(f"Observed intraday schedule hanya memiliki {len(clocks)} clock bars")
+        values = []
+        for day in pd.bdate_range(FORECAST_DATE, periods=2):
+            values.extend(day + pd.Timedelta(hours=int(x[:2]), minutes=int(x[3:])) for x in clocks)
+        return pd.Series(values)
+
+    def build_contexts(frame, tickers, lookback, schedule):
         contexts, x_times, y_times, names, anchors, skipped = [], [], [], [], {}, []
-        target = pd.Timestamp("2026-08-03 09:00:00") if intraday else FORECAST_DATE
         for ticker in tickers:
             g = frame[frame.ticker.eq(ticker)].tail(lookback)
             if len(g) < lookback:
                 skipped.append((ticker, len(g))); continue
             contexts.append(g[FEATURES].copy())
             x_times.append(pd.Series(g.date.to_numpy()))
-            y_times.append(pd.Series([target]))
+            y_times.append(schedule.copy())
             names.append(ticker); anchors[ticker] = float(g.close.iloc[-1])
         return contexts, x_times, y_times, names, anchors, skipped
 
-    def screen_one(model_path, tokenizer_path, frame, tickers, lookback, intraday, label):
+    def rank_paths(paths, step, label):
+        selected = paths[paths.horizon_step.eq(step)]
+        ranking = selected.groupby("ticker").agg(
+            anchor_close=("anchor_close", "first"), expected_close=("forecast_close", "mean"),
+            expected_return=("return", "mean"), median_return=("return", "median"),
+            probability_up=("return", lambda x: float((x > 0).mean())),
+            downside_p10=("return", lambda x: float(np.quantile(x, 0.10))),
+            dispersion=("return", "std"),
+        ).reset_index().sort_values(["expected_return", "probability_up"], ascending=False)
+        ranking["rank"] = np.arange(1, len(ranking) + 1)
+        ranking["scope"] = label
+        return ranking
+
+    def screen_horizon(model_path, tokenizer_path, frame, tickers, lookback, intraday, label):
         tokenizer = KronosTokenizer.from_pretrained(str(tokenizer_path)).to(DEVICE).eval()
         model = Kronos.from_pretrained(str(model_path)).to(DEVICE).eval()
         predictor = KronosPredictor(model, tokenizer, device=str(DEVICE), max_context=512)
-        contexts, x_times, y_times, names, anchors, skipped = build_contexts(frame, tickers, lookback, intraday)
+        schedule = future_schedule(frame, intraday)
+        contexts, x_times, y_times, names, anchors, skipped = build_contexts(frame, tickers, lookback, schedule)
         rows = []
         with torch.inference_mode():
             for path_id in range(N_PATHS):
@@ -202,60 +228,60 @@ cells = [
                     stop = start + BATCH_SIZE
                     preds = predictor.predict_batch(
                         df_list=contexts[start:stop], x_timestamp_list=x_times[start:stop],
-                        y_timestamp_list=y_times[start:stop], pred_len=1, T=0.8,
+                        y_timestamp_list=y_times[start:stop], pred_len=len(schedule), T=0.8,
                         top_p=0.9, top_k=0, sample_count=1, verbose=False,
                     )
                     for ticker, pred in zip(names[start:stop], preds):
-                        close = float(pred["close"].iloc[0])
-                        rows.append({"ticker": ticker, "path_id": path_id, "forecast_close": close,
-                                     "anchor_close": anchors[ticker], "return": close / anchors[ticker] - 1})
+                        for step in ([1, 21] if intraday else [1, 2]):
+                            close = float(pred["close"].iloc[step - 1])
+                            rows.append({"ticker": ticker, "path_id": path_id, "horizon_step": step,
+                                         "forecast_time": schedule.iloc[step - 1], "forecast_close": close,
+                                         "anchor_close": anchors[ticker], "return": close / anchors[ticker] - 1})
         paths = pd.DataFrame(rows)
-        ranking = paths.groupby("ticker").agg(
-            anchor_close=("anchor_close", "first"), expected_close=("forecast_close", "mean"),
-            expected_return=("return", "mean"), median_return=("return", "median"),
-            probability_up=("return", lambda x: float((x > 0).mean())),
-            downside_p10=("return", lambda x: float(np.quantile(x, 0.10))),
-            dispersion=("return", "std"),
-        ).reset_index().sort_values(["expected_return", "probability_up"], ascending=False)
-        ranking["rank"] = np.arange(1, len(ranking) + 1)
-        ranking["timeframe"] = label
+        rankings = {
+            "today": rank_paths(paths, 1, f"{label} 2026-08-03"),
+            "tomorrow": rank_paths(paths, 21 if intraday else 2, f"{label} 2026-08-04"),
+        }
         del predictor, model, tokenizer
         gc.collect()
         if torch.cuda.is_available(): torch.cuda.empty_cache()
-        return ranking, paths, skipped
+        return rankings, paths, skipped
     """),
-    md("## 4. TF15 — first 15-minute bar of 3 August"),
+    md("## 4. TF15 — first 15-minute bars of 3 and 4 August"),
     code("""
     tokenizer_15m_id = "NeoQuasar/Kronos-Tokenizer-base"
-    rank_15m, paths_15m, skipped_15m = screen_one(
+    ranks_15m, paths_15m, skipped_15m = screen_horizon(
         MODEL_15M, tokenizer_15m_id, prices_15m, common, 240, True, "TF15"
     )
-    top30_15m = rank_15m.head(30).copy()
-    display(top30_15m.style.format({"anchor_close":"{:,.0f}", "expected_close":"{:,.2f}", "expected_return":"{:+.2%}", "median_return":"{:+.2%}", "probability_up":"{:.0%}", "downside_p10":"{:+.2%}", "dispersion":"{:.2%}"}))
+    top30_15m, top30_15m_tomorrow = ranks_15m["today"].head(30).copy(), ranks_15m["tomorrow"].head(30).copy()
+    print("TF15 TODAY — first bar 3 August"); display(top30_15m)
+    print("TF15 TOMORROW — first bar 4 August (causal step 21)"); display(top30_15m_tomorrow)
     """),
-    md("## 5. TF1D — 3 August daily bar"),
+    md("## 5. TF1D — daily bars of 3 and 4 August"),
     code("""
-    rank_1d, paths_1d, skipped_1d = screen_one(
+    ranks_1d, paths_1d, skipped_1d = screen_horizon(
         DAILY_MODEL, DAILY_TOKENIZER, prices_1d, common, 120, False, "TF1D"
     )
-    top30_1d = rank_1d.head(30).copy()
-    display(top30_1d.style.format({"anchor_close":"{:,.0f}", "expected_close":"{:,.2f}", "expected_return":"{:+.2%}", "median_return":"{:+.2%}", "probability_up":"{:.0%}", "downside_p10":"{:+.2%}", "dispersion":"{:.2%}"}))
+    top30_1d, top30_1d_tomorrow = ranks_1d["today"].head(30).copy(), ranks_1d["tomorrow"].head(30).copy()
+    print("TF1D TODAY — 3 August"); display(top30_1d)
+    print("TF1D TOMORROW — 4 August (causal step 2)"); display(top30_1d_tomorrow)
     """),
-    md("## 6. Compare the two Top 30 lists"),
+    md("## 6. Compare TF15 and TF1D for each date"),
     code("""
-    comparison = top30_15m[["ticker","rank","expected_return","probability_up","downside_p10"]].rename(columns={
-        "rank":"rank_15m", "expected_return":"return_15m", "probability_up":"p_up_15m", "downside_p10":"p10_15m"
-    }).merge(top30_1d[["ticker","rank","expected_return","probability_up","downside_p10"]].rename(columns={
-        "rank":"rank_1d", "expected_return":"return_1d", "probability_up":"p_up_1d", "downside_p10":"p10_1d"
-    }), on="ticker", how="outer")
-    comparison["in_both_top30"] = comparison.rank_15m.notna() & comparison.rank_1d.notna()
-    comparison = comparison.sort_values(["in_both_top30","rank_15m","rank_1d"], ascending=[False,True,True])
-    print("Overlap Top 30:", int(comparison.in_both_top30.sum()))
-    display(comparison.style.format({"return_15m":"{:+.2%}","p_up_15m":"{:.0%}","p10_15m":"{:+.2%}","return_1d":"{:+.2%}","p_up_1d":"{:.0%}","p10_1d":"{:+.2%}"}))
+    def compare_lists(tf15, tf1d):
+        out = tf15[["ticker","rank","expected_return","probability_up"]].rename(columns={"rank":"rank_15m","expected_return":"return_15m","probability_up":"p_up_15m"}).merge(
+            tf1d[["ticker","rank","expected_return","probability_up"]].rename(columns={"rank":"rank_1d","expected_return":"return_1d","probability_up":"p_up_1d"}), on="ticker", how="outer")
+        out["in_both_top30"] = out.rank_15m.notna() & out.rank_1d.notna()
+        return out.sort_values(["in_both_top30","rank_15m","rank_1d"], ascending=[False,True,True])
 
-    chart_data = pd.concat([top30_15m.assign(scope="TF15 first bar"), top30_1d.assign(scope="TF1D today")])
+    comparison = compare_lists(top30_15m, top30_1d)
+    comparison_tomorrow = compare_lists(top30_15m_tomorrow, top30_1d_tomorrow)
+    print("3 August overlap:", int(comparison.in_both_top30.sum())); display(comparison)
+    print("4 August overlap:", int(comparison_tomorrow.in_both_top30.sum())); display(comparison_tomorrow)
+
+    chart_data = pd.concat([top30_15m_tomorrow, top30_1d_tomorrow])
     fig = px.bar(chart_data, x="expected_return", y="ticker", color="scope", barmode="group",
-                 orientation="h", title="3 August 2026 — TF15 First Bar vs TF1D", template="plotly_white")
+                 orientation="h", title="4 August 2026 — TF15 First Bar vs TF1D", template="plotly_white")
     fig.update_layout(height=1000, yaxis={"categoryorder":"total ascending"}, xaxis_tickformat="+.1%")
     fig.show()
     """),
@@ -263,17 +289,21 @@ cells = [
     code("""
     top30_15m.to_csv(RUNTIME / "top30_tf15_first_bar_2026_08_03.csv", index=False)
     top30_1d.to_csv(RUNTIME / "top30_tf1d_2026_08_03.csv", index=False)
+    top30_15m_tomorrow.to_csv(RUNTIME / "top30_tf15_first_bar_2026_08_04.csv", index=False)
+    top30_1d_tomorrow.to_csv(RUNTIME / "top30_tf1d_2026_08_04.csv", index=False)
     comparison.to_csv(RUNTIME / "comparison_tf15_vs_tf1d_2026_08_03.csv", index=False)
+    comparison_tomorrow.to_csv(RUNTIME / "comparison_tf15_vs_tf1d_2026_08_04.csv", index=False)
     paths_15m.to_parquet(RUNTIME / "paths_tf15_first_bar.parquet", index=False)
     paths_1d.to_parquet(RUNTIME / "paths_tf1d_today.parquet", index=False)
     metadata = {
-        "forecast_date": str(FORECAST_DATE.date()), "context_end": str(AS_OF),
-        "tf15_model": str(MODEL_15M), "tf15_lookback_bars": 240, "tf15_horizon_bars": 1,
+        "forecast_dates": ["2026-08-03", "2026-08-04"], "context_end": str(AS_OF),
+        "tf15_model": str(MODEL_15M), "tf15_lookback_bars": 240, "tf15_horizon_bars": 21,
         "tf1d_model": str(DAILY_MODEL), "tf1d_tokenizer": str(DAILY_TOKENIZER),
-        "tf1d_lookback_bars": 120, "tf1d_horizon_bars": 1,
+        "tf1d_lookback_bars": 120, "tf1d_horizon_bars": 2,
         "sample_paths": N_PATHS, "common_universe": len(common),
-        "eligible_tf15": len(rank_15m), "eligible_tf1d": len(rank_1d),
+        "eligible_tf15": len(ranks_15m["today"]), "eligible_tf1d": len(ranks_1d["today"]),
         "top30_overlap": int(comparison.in_both_top30.sum()),
+        "top30_overlap_tomorrow": int(comparison_tomorrow.in_both_top30.sum()),
         "warning": "Statistical forecasts, not investment advice.",
     }
     (RUNTIME / "run_metadata.json").write_text(json.dumps(metadata, indent=2))

@@ -8,7 +8,9 @@ Notebook ini membandingkan dua model Kronos untuk 3 Agustus 2026:
   `tokenizer-idx-e10-predictor-e4`, hanya forecast harian 3 Agustus.
 
 Keduanya memakai data terakhir sampai 31 Juli 2026 dan menghasilkan Top 30
-terpisah serta tabel perbandingan gabungan. Notebook mencari repo, data, dan ZIP
+untuk 3 dan 4 Agustus serta tabel perbandingan gabungan. Forecast 4 Agustus
+dibuat secara causal: TF15 mengambil step 21 setelah membentuk 20 bar tanggal 3,
+sedangkan TF1D mengambil step 2. Notebook mencari repo, data, dan ZIP
 secara otomatis pada local workspace, Kaggle, atau Google Drive/Colab. Jika repo
 belum tersedia, notebook otomatis menjalankan `git clone` dan menarik objek Git
 LFS yang diperlukan.
