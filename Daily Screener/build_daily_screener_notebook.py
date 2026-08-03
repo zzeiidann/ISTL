@@ -94,6 +94,7 @@ cells = [
             "git", "-C", str(REPO), "lfs", "pull", "--include",
             "Kronos IDX FineTune/data/idx_kronos_all_daily.parquet,"
             "Kronos IDX FineTune 15 Minutes/data/idx_kronos_all_15m.parquet,"
+            "Kronos IDX FineTune 15 Minutes/results/2026-07-30/refit-run-e4/production_model/**,"
             "Kronos IDX FineTune/results/2026-07-31/tokenizer-idx-e10-predictor-e4/**",
         ], check=True)
         print("Cloned repository and downloaded required LFS objects:", REPO)
@@ -103,12 +104,16 @@ cells = [
     DAILY_MODEL = DAILY_RUN / "kronos_base_idx_all/best_model"
     DAILY_TOKENIZER = DAILY_RUN / "tokenizer_idx_best"
     KRONOS_DIR = REPO / "Kronos IDX FineTune/Kronos"
-    ZIP_15M = find_named("kronos_idx_15m_outputs.zip")
+    REPO_MODEL_15M = REPO / "Kronos IDX FineTune 15 Minutes/results/2026-07-30/refit-run-e4/production_model"
 
     RUNTIME = Path("/kaggle/working/daily_screener") if Path("/kaggle/working").exists() else Path("/content/daily_screener") if Path("/content").exists() else REPO / "Daily Screener/outputs"
     RUNTIME.mkdir(parents=True, exist_ok=True)
-    MODEL_15M = RUNTIME / "model_15m"
+    MODEL_15M = REPO_MODEL_15M
+    ZIP_15M = None
     if not (MODEL_15M / "model.safetensors").exists():
+        # Backward-compatible fallback for an uploaded Kaggle/Drive ZIP.
+        ZIP_15M = find_named("kronos_idx_15m_outputs.zip")
+        MODEL_15M = RUNTIME / "model_15m"
         with zipfile.ZipFile(ZIP_15M) as archive:
             for member in ("production_model/model.safetensors", "production_model/config.json", "production_model/README.md"):
                 archive.extract(member, RUNTIME)
@@ -120,7 +125,7 @@ cells = [
         if not required.exists(): raise FileNotFoundError(required)
     sys.path.insert(0, str(KRONOS_DIR))
     from model import Kronos, KronosTokenizer, KronosPredictor
-    print({"device": str(DEVICE), "repo": str(REPO), "zip_15m": str(ZIP_15M), "output": str(RUNTIME)})
+    print({"device": str(DEVICE), "repo": str(REPO), "model_15m": str(MODEL_15M), "zip_fallback": str(ZIP_15M) if ZIP_15M else None, "output": str(RUNTIME)})
     """),
     md("## 2. Load and audit the two timeframes"),
     code("""

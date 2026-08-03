@@ -33,3 +33,7 @@ python3 "Kronos IDX FineTune 15 Minutes/build_kaggle_notebook_15m_80gb.py"
 
 Output notebook disimpan sebagai `kronos_idx_15m_outputs` agar tidak menimpa
 hasil model harian.
+
+Checkpoint production hasil run 30 Juli disimpan melalui Git LFS di
+`results/2026-07-30/refit-run-e4/production_model` dan dapat langsung digunakan
+oleh `Daily Screener` tanpa ZIP eksternal.
