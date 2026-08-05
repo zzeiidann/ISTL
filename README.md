@@ -102,7 +102,7 @@ The model universe covers 958 Indonesian equities. Actual eligible counts can be
 Current live observations indicate that the 15-minute model is better than the tested higher timeframes at surfacing at least one stock that subsequently reaches or approaches Auto Rejection Atas (ARA). It does not yet identify the eventual ARA stock reliably as a single direct prediction, so forecast ranking still requires a technical selection layer.
 
 > [!NOTE]
-> **Operational timing matters.** The screener is intended to run after the previous trading session is complete, using the final available 15-minute context bar at 15:45 WIB, and the ranking must be generated **before the next market session opens**. The GTSI and CBPE observations below were therefore pre-market candidate selections for the following session—not signals produced after the price move or ARA had already occurred.
+> **Operational timing matters.** The screener is intended to run after the previous trading session is complete, using the final available 15-minute context bar at 15:45 WIB, and the ranking must be generated **before the next market session opens**. The GTSI and CBPE observations below were therefore pre-market candidate selections for the following session, not signals produced after the price move or ARA had already occurred.
 
 Two early forward observations illustrate the behavior:
 
