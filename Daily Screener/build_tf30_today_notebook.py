@@ -22,8 +22,8 @@ if DEVICE.type=='cuda':
     if arch not in arches: raise RuntimeError(f'Restart kernel after torch install; {arch} absent from {sorted(arches)}')
     torch.ones(1,device=DEVICE); torch.cuda.synchronize()
 WORK=Path('/kaggle/working') if Path('/kaggle/working').exists() else Path('/content') if Path('/content').exists() else Path.cwd()
-REPO=Path.cwd().resolve() if Path.cwd().name=='ISTL' and (Path.cwd()/'.git').exists() else WORK/'ISTL'
-if not (REPO/'.git').exists(): subprocess.run(['git','clone','https://github.com/zzeiidann/ISTL.git',str(REPO)],check=True,env={**os.environ,'GIT_LFS_SKIP_SMUDGE':'1'})
+REPO=Path.cwd().resolve() if Path.cwd().name=='SIER' and (Path.cwd()/'.git').exists() else WORK/'SIER'
+if not (REPO/'.git').exists(): subprocess.run(['git','clone','https://github.com/zzeiidann/SIER.git',str(REPO)],check=True,env={**os.environ,'GIT_LFS_SKIP_SMUDGE':'1'})
 else: subprocess.run(['git','-C',str(REPO),'pull','--ff-only','origin','main'],check=True)
 include='Kronos IDX FineTune 30 Minutes/data/idx_kronos_all_30m.parquet,Kronos IDX FineTune 30 Minutes/results/2026-07-30/refit-run-e4/production_model/**'
 subprocess.run(['git','-C',str(REPO),'lfs','install','--local'],check=True); subprocess.run(['git','-C',str(REPO),'lfs','pull','--include',include],check=True)

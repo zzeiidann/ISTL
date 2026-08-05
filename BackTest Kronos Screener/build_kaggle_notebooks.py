@@ -6,7 +6,7 @@ from textwrap import dedent
 
 
 ROOT = Path(__file__).resolve().parent
-REPOSITORY_URL = "https://github.com/zzeiidann/ISTL.git"
+REPOSITORY_URL = "https://github.com/zzeiidann/SIER.git"
 
 MODELS = [
     {
@@ -68,13 +68,13 @@ def build_notebook(model: dict, horizon: int) -> dict:
             previous trading-session close. Kronos weights are never updated.
             """
         ),
-        markdown("## 1. Clone ISTL and pull only this model checkpoint from Git LFS"),
+        markdown("## 1. Clone SIER and pull only this model checkpoint from Git LFS"),
         code(
             f"""
             from pathlib import Path
             import os, subprocess
 
-            REPO = Path("/kaggle/working/ISTL")
+            REPO = Path("/kaggle/working/SIER")
             if not REPO.exists():
                 env = os.environ.copy()
                 env["GIT_LFS_SKIP_SMUDGE"] = "1"
@@ -217,7 +217,7 @@ def build_july_31_and_august_week_screen_notebook() -> dict:
             from pathlib import Path
             import os, subprocess
 
-            REPO = Path("/kaggle/working/ISTL")
+            REPO = Path("/kaggle/working/SIER")
             if not REPO.exists():
                 env = os.environ.copy()
                 env["GIT_LFS_SKIP_SMUDGE"] = "1"

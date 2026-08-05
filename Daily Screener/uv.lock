@@ -434,7 +434,7 @@ wheels = [
 ]
 
 [[package]]
-name = "istl-daily-screener"
+name = "sier-daily-screener"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

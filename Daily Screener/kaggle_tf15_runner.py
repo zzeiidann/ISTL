@@ -10,8 +10,8 @@ import time
 from pathlib import Path
 
 
-REPOSITORY = "https://github.com/zzeiidann/ISTL.git"
-REPO = Path("/tmp/ISTL")
+REPOSITORY = "https://github.com/zzeiidann/SIER.git"
+REPO = Path("/tmp/SIER")
 OUTPUT = Path("/kaggle/working/tf15_results")
 
 

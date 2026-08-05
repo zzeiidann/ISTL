@@ -14,8 +14,8 @@ Paket ini disiapkan untuk Kaggle GPU:
 ## Kaggle
 
 1. Buat notebook Kaggle dan aktifkan GPU serta Internet.
-2. Clone repository ISTL Anda di `/kaggle/working` dengan
-   `git clone --recurse-submodules https://github.com/zzeiidann/ISTL.git`.
+2. Clone repository SIER Anda di `/kaggle/working` dengan
+   `git clone --recurse-submodules https://github.com/zzeiidann/SIER.git`.
 3. Buka/upload notebook ini, lalu **Run All**.
 4. Output utama akan berada di `/kaggle/working/kronos_idx_outputs/` dan
    arsip `kronos_idx_outputs.zip`.

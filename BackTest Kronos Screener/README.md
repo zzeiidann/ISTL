@@ -17,11 +17,11 @@ model per tanggal, lalu membuat top 30 consensus per tanggal.
 Sebelum screening, notebook memperbarui actual OHLCV 31 Juli melalui
 `yfinance`; forecast 3–7 Agustus selalu menggunakan 31 Juli sebagai origin.
 
-Each notebook clones `https://github.com/zzeiidann/ISTL.git`, pulls only its own
+Each notebook clones `https://github.com/zzeiidann/SIER.git`, pulls only its own
 Git LFS checkpoint, installs PyTorch 2.3.1 CUDA 11.8 for Kaggle P100/T4, runs
 frozen-model rolling inference, and performs 1,500 Optuna TPE trials. The runner
 also clones the official Kronos source at the pinned tested commit when it is
-not present in ISTL.
+not present in SIER.
 
 For every origin and horizon, the candidate universe is at most 100 stocks with
 positive predicted daily close gain. A single global weighted percentile-rank

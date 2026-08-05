@@ -82,10 +82,10 @@ cells = [
         print("CUDA architecture smoke test passed.")
 
     WORKSPACE = Path("/kaggle/working") if Path("/kaggle/working").exists() else Path("/content") if Path("/content").exists() else Path.cwd()
-    REPO = Path.cwd().resolve() if Path.cwd().name == "ISTL" and (Path.cwd() / ".git").exists() else WORKSPACE / "ISTL"
+    REPO = Path.cwd().resolve() if Path.cwd().name == "SIER" and (Path.cwd() / ".git").exists() else WORKSPACE / "SIER"
     if not (REPO / ".git").exists():
         clone_env = {**os.environ, "GIT_LFS_SKIP_SMUDGE": "1"}
-        subprocess.run(["git", "clone", "https://github.com/zzeiidann/ISTL.git", str(REPO)], check=True, env=clone_env)
+        subprocess.run(["git", "clone", "https://github.com/zzeiidann/SIER.git", str(REPO)], check=True, env=clone_env)
     else:
         subprocess.run(["git", "-C", str(REPO), "pull", "--ff-only", "origin", "main"], check=True)
 

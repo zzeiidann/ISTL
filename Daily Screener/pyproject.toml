@@ -1,7 +1,7 @@
 [project]
-name = "istl-daily-screener"
+name = "sier-daily-screener"
 version = "0.1.0"
-description = "Local IDX TF15 data update and Kronos next-session screener"
+description = "SIER 15-minute IDX data pipeline and next-session equity screener"
 requires-python = ">=3.11,<3.13"
 dependencies = [
   "einops==0.8.1",
