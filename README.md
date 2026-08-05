@@ -101,6 +101,9 @@ The model universe covers 958 Indonesian equities. Actual eligible counts can be
 
 Current live observations indicate that the 15-minute model is better than the tested higher timeframes at surfacing at least one stock that subsequently reaches or approaches Auto Rejection Atas (ARA). It does not yet identify the eventual ARA stock reliably as a single direct prediction, so forecast ranking still requires a technical selection layer.
 
+> [!NOTE]
+> **Operational timing matters.** The screener is intended to run after the previous trading session is complete, using the final available 15-minute context bar at 15:45 WIB, and the ranking must be generated **before the next market session opens**. The GTSI and CBPE observations below were therefore pre-market candidate selections for the following session—not signals produced after the price move or ARA had already occurred.
+
 Two early forward observations illustrate the behavior:
 
 | Screen | Candidate | Model placement | Observed move |
@@ -142,6 +145,8 @@ uv sync
 uv run python update_tf15_parquet.py
 uv run python project_tf15_next_session.py
 ```
+
+Run the data update after the current session has closed, then complete next-session projection before the following IDX market open. Do not interpret an intraday rerun after a large move has started as equivalent to the documented pre-market workflow.
 
 For causal pattern backtests:
 
