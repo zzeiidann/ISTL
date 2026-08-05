@@ -1,10 +1,46 @@
+<div align="center">
+
 # SIER
 
-**Systematic Indonesian Equity Research** is an end-to-end research pipeline for forecasting and ranking Indonesian equities with Python, PyTorch, Kronos, and `yfinance`.
+### Systematic Indonesian Equity Research
+
+**Foundation-model forecasting and systematic stock ranking for the Indonesian equity market.**
+
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.7-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Market](https://img.shields.io/badge/Market-IDX-E31E24?style=for-the-badge)](https://www.idx.co.id/)
+[![Timeframes](https://img.shields.io/badge/Timeframes-1D_%7C_30m_%7C_15m-6C5CE7?style=for-the-badge)](#research-scope)
+
+[![Universe](https://img.shields.io/badge/Equity_Universe-958-00A86B?style=flat-square)](#training-configuration)
+[![Training](https://img.shields.io/badge/Training_Windows-800K-FF8C00?style=flat-square)](#training-configuration)
+[![GPU](https://img.shields.io/badge/GPU-NVIDIA_A100-76B900?style=flat-square&logo=nvidia&logoColor=white)](#training-configuration)
+[![Tests](https://img.shields.io/badge/Tests-15%2F15_Passing-2EA44F?style=flat-square)](#reproducibility)
+
+[Research Scope](#research-scope) · [Architecture](#system-architecture) · [Findings](#current-findings) · [Run Locally](#reproducibility) · [Limitations](#limitations-and-next-steps)
+
+</div>
+
+---
+
+SIER is an end-to-end research pipeline for forecasting and ranking Indonesian equities with Python, PyTorch, Kronos, and `yfinance`.
 
 SIER fine-tunes a time-series foundation model across 958 IDX-listed equities, produces short-horizon forecasts at daily and intraday resolutions, and converts those forecasts into cross-sectional stock rankings. The final selection layer combines model output with point-in-time price and volume confirmation for breakouts, reversals, market structure, momentum, and volume patterns.
 
+> [!IMPORTANT]
 > This repository is a research project, not investment advice. Historical and live-screening observations do not guarantee future performance.
+
+## Project at a glance
+
+| Universe | Primary model | Production timeframe | Training compute | Evaluation |
+|:---:|:---:|:---:|:---:|:---:|
+| **958 equities** | **Kronos** | **15 minutes** | **NVIDIA A100** | **Rolling backtests** |
+
+| Research layer | Role |
+|---|---|
+| Forecasting | Generate probabilistic short-horizon price and volume paths |
+| Cross-sectional ranking | Compare forecast strength across the full IDX universe |
+| Technical confirmation | Validate breakout, reversal, structure, momentum, and volume setups |
+| Risk filtering | Control for liquidity, volatility, abnormal activity, and market regime |
 
 ## Research scope
 
@@ -67,8 +103,10 @@ Current live observations indicate that the 15-minute model is better than the t
 
 Two early forward observations illustrate the behavior:
 
-- The 3 August 2026 screen ranked GTSI in the 15-minute top five for 4 August; GTSI subsequently advanced by at least 15%.
-- The 4 August 2026 screen ranked CBPE seventh for 5 August; CBPE subsequently reached a 25% ARA move.
+| Screen | Candidate | Model placement | Observed move |
+|---|---|---:|---:|
+| 3 August 2026 | **GTSI** | TF15 top 5 | **≥15%** |
+| 4 August 2026 | **CBPE** | TF15 rank 7 | **25% ARA** |
 
 These are live case studies, not a statistically sufficient performance claim. More forward observations are required before estimating hit rates or expected returns.
 
@@ -79,6 +117,11 @@ Model adaptation alone is insufficient. The training context and prediction targ
 ### 3. Forecasts work best as a candidate generator
 
 The strongest current use of the foundation model is to compress a broad IDX universe into a manageable candidate set. Causal technical confirmation then improves prioritization among those candidates. In the existing 41-origin daily pattern experiment, reranking improved top-5 precision from 49.27% to 54.15% for the validated checkpoint and from 52.68% to 55.61% for the production checkpoint. These figures are full-timeframe optimization results, not untouched out-of-sample estimates.
+
+| Checkpoint | Base top-5 precision | With technical reranking | Change |
+|---|---:|---:|---:|
+| Validated no-refit E15 | 49.27% | **54.15%** | **+4.88 pp** |
+| Production refit E4 | 52.68% | **55.61%** | **+2.93 pp** |
 
 ## Reproducibility
 
@@ -126,7 +169,19 @@ python3 -m unittest discover -s "BackTest Pattern Screener/tests" -v
 
 ## Technology
 
-Python, PyTorch, pandas, NumPy, `yfinance`, Hugging Face, Optuna, Parquet, Jupyter, Kaggle, Git LFS, and the Kronos time-series foundation model.
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face">
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter">
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle">
+  <img src="https://img.shields.io/badge/Parquet-50ABF1?style=flat-square&logo=apacheparquet&logoColor=white" alt="Apache Parquet">
+  <img src="https://img.shields.io/badge/Git_LFS-F05032?style=flat-square&logo=git&logoColor=white" alt="Git LFS">
+</p>
+
+Additional components include `yfinance`, Optuna, Git LFS, and the Kronos time-series foundation model.
 
 ## Acknowledgements
 
