@@ -24,7 +24,7 @@
 
 SIER is an end-to-end research pipeline for forecasting and ranking Indonesian equities with Python, PyTorch, Kronos, and `yfinance`.
 
-SIER fine-tunes a time-series foundation model across 958 IDX-listed equities, produces short-horizon forecasts at daily and intraday resolutions, and converts those forecasts into cross-sectional stock rankings. The final selection layer combines model output with point-in-time price and volume confirmation for breakouts, reversals, market structure, momentum, and volume patterns.
+SIER fine-tunes a time-series foundation model across 958 IDX-listed equities, produces short-horizon forecasts at daily and intraday resolutions, and converts those forecasts into cross-sectional stock rankings. Point-in-time price and volume signals are evaluated as an optional experimental layer rather than a mandatory final filter.
 
 > [!IMPORTANT]
 > This repository is a research project, not investment advice. Historical and live-screening observations do not guarantee future performance.
@@ -39,14 +39,14 @@ SIER fine-tunes a time-series foundation model across 958 IDX-listed equities, p
 |---|---|
 | Forecasting | Generate probabilistic short-horizon price and volume paths |
 | Cross-sectional ranking | Compare forecast strength across the full IDX universe |
-| Technical confirmation | Validate breakout, reversal, structure, momentum, and volume setups |
+| Technical research | Test whether breakout, reversal, structure, momentum, and volume setups add stable value |
 | Risk filtering | Control for liquidity, volatility, abnormal activity, and market regime |
 
 ## Research scope
 
 - Fine-tuning and inference for daily, 30-minute, and 15-minute OHLCV data.
 - Systematic ranking using predicted returns, probability of an upward move, liquidity, volatility, and abnormal price-volume activity.
-- Causal technical confirmation and penalty rules designed to reduce weak or hard-to-trade candidates.
+- Optional causal technical signals and penalty rules, evaluated against the raw model ranking.
 - Leakage-controlled rolling backtests across multiple forecast horizons and market regimes.
 - Reproducible local and Kaggle workflows, including GPU training and full-universe screening.
 
@@ -65,7 +65,7 @@ Probabilistic short-horizon forecasts
 Cross-sectional forecast ranking
         |
         v
-Causal technical confirmation and penalties
+Optional technical experiments
         |
         v
 Liquidity, volatility, and regime filters
@@ -99,7 +99,7 @@ The model universe covers 958 Indonesian equities. Actual eligible counts can be
 
 ### 1. The 15-minute timeframe is the most useful for short-horizon screening
 
-Current live observations indicate that the 15-minute model is better than the tested higher timeframes at surfacing at least one stock that subsequently reaches or approaches Auto Rejection Atas (ARA). It does not yet identify the eventual ARA stock reliably as a single direct prediction, so forecast ranking still requires a technical selection layer.
+Current live observations indicate that the 15-minute model is better than the tested higher timeframes at surfacing at least one stock that subsequently reaches or approaches Auto Rejection Atas (ARA). It does not yet identify the eventual ARA stock reliably as a single direct prediction. Even so, adding more technical rules is not automatically the right solution. The raw model ranking may be more suitable when additional filters reduce coverage or introduce unstable assumptions.
 
 > [!NOTE]
 > **Operational timing matters.** The screener is intended to run after the previous trading session is complete, using the final available 15-minute context bar at 15:45 WIB, and the ranking must be generated **before the next market session opens**. The GTSI and CBPE observations below were therefore pre-market candidate selections for the following session, not signals produced after the price move or ARA had already occurred.
@@ -117,9 +117,13 @@ These are live case studies, not a statistically sufficient performance claim. M
 
 Model adaptation alone is insufficient. The training context and prediction target must match the intended trading decision, while the current dataset still contains incomplete bars, suspensions, zero-volume periods, corporate-action effects, and heterogeneous issuer behavior. Domain knowledge should therefore inform universe construction, issuer-level exclusions, liquidity constraints, and regime-specific calibration.
 
-### 3. Forecasts work best as a candidate generator
+### 3. Raw model ranking may be more robust than a fixed technical strategy
 
-The strongest current use of the foundation model is to compress a broad IDX universe into a manageable candidate set. Causal technical confirmation then improves prioritization among those candidates. In the existing 41-origin daily pattern experiment, reranking improved top-5 precision from 49.27% to 54.15% for the validated checkpoint and from 52.68% to 55.61% for the production checkpoint. These figures are full-timeframe optimization results, not untouched out-of-sample estimates.
+The strongest current use of the foundation model is to compress a broad IDX universe into a manageable candidate set. A technical layer can improve selected historical metrics, but it can also overfit a particular period and make the overall process less robust. IDX trading behavior can change materially from one month to the next. Forecast direction, price action, momentum, volume, liquidity, and market regime frequently do not align at the same time, so one fixed technical playbook should not be assumed to remain valid across periods.
+
+For that reason, SIER treats the raw forecast ranking as a valid standalone output. Technical signals are diagnostics or optional reranking inputs that must prove stable value through chronological out-of-sample testing. They are not required conditions for every selection.
+
+In the existing 41-origin daily pattern experiment, reranking improved top-5 precision from 49.27% to 54.15% for the validated checkpoint and from 52.68% to 55.61% for the production checkpoint. These figures are full-timeframe optimization results. They show that the technical layer can fit the evaluated sample, but they do not establish robustness across future months.
 
 | Checkpoint | Base top-5 precision | With technical reranking | Change |
 |---|---:|---:|---:|
@@ -169,7 +173,8 @@ python3 -m unittest discover -s "BackTest Pattern Screener/tests" -v
 - Clean and version data snapshots, including corporate actions, delistings, suspensions, and zero-volume bars.
 - Add point-in-time issuer metadata and sector-aware filters.
 - Expand walk-forward evaluation with untouched chronological holdouts.
-- Calibrate ranking and technical thresholds separately by liquidity and market regime.
+- Compare the raw model ranking against technical variants on a month-by-month basis.
+- Reject technical thresholds that do not remain stable across liquidity and market regimes.
 - Accumulate a larger forward-test sample for the 15-minute workflow before drawing performance conclusions.
 
 ## Technology
